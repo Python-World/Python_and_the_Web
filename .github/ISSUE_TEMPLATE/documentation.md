@@ -1,8 +1,10 @@
-## 📚 Documentation
+---
+name: Documentation
+about: Describe this issue template's purpose here.
+title: ''
+labels: ''
+assignees: ''
 
-A brief description of the issue.
+---
 
-### Have you read the [Contributing Guidelines on Pull Requests]()?
 
-- [ ] Yes
-- [ ] No
