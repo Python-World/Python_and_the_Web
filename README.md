@@ -17,7 +17,7 @@ Scripts in python that scrape the web or use an API to solve a problem
 ## How to Contribute?
 
 - Select an issue and ask to be *assigned* to it.
-- Check existing scripts [project here.](https://github.com/AdityaJ7/Python_and_the_Web/Scripts)
+- Check existing scripts [project here.](https://github.com/AdityaJ7/Python_and_the_Web/tree/master/Scripts)
 - **Star** the repository.
 - On the [GitHub page for this repository](https://github.com/AdityaJ7/Python_and_the_Web/Scripts), click on the Button "**Fork**".
    ![fork image](https://help.github.com/assets/images/help/repository/fork_button.jpg)
