@@ -16,7 +16,8 @@ Scripts in python that scrape the web, create a bot or use an API to solve a pro
 
 ## How to Contribute?
 
-- Claim an existing issue or create one [here](https://github.com/AdityaJ7/Python_and_the_Web/issues/new)
+- Claim an existing issue or create one [here](https://github.com/AdityaJ7/Python_and_the_Web/issues/new)'
+- Found a bug in some script report it [here]()
 - Check existing scripts [project here.](https://github.com/AdityaJ7/Python_and_the_Web/tree/master/Scripts)
 - **Star** the repository.
 - On the [GitHub page for this repository](https://github.com/AdityaJ7/Python_and_the_Web/Scripts), click on the Button "**Fork**".
