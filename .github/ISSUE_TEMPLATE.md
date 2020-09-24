@@ -3,6 +3,7 @@
 <!-- Please include a summary of the issue.-->
 
 ## Type of issue
+- NOTE: *These boxes can be checked using **`[X]`***
 
 - [ ] Feature (New Script)
 - [ ] Bug
