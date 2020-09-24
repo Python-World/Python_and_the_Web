@@ -36,7 +36,7 @@ Scripts in python that scrape the web, create a bot or use an API to solve a pro
 - Before you make any changes, [keep your fork in sync](https://www.freecodecamp.org/news/how-to-sync-your-fork-with-the-original-git-repository/) to avoid merge conflicts:
 
     ```bash
-    git remote add upstream https://github.com/chavarera/python-mini-projects.git
+    git remote add upstream https://github.com/AdityaJ7/Python_and_the_Web.git
     git fetch upstream
     git pull upstream master
     git push
