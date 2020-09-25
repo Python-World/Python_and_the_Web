@@ -17,9 +17,9 @@ Scripts in python that scrape the web, create a bot or use an API to solve a pro
 ## Steps To Follow
 
 - Select an issue and ask to be *assigned* to it.
-- Check existing scripts [project here.](https://github.com/AdityaJ7/Python_and_the_Web/tree/master/projects)
+- Check existing scripts [project here.](https://github.com/Python-World/Python_and_the_Web)
 - **Star** the repository.
-- On the [GitHub page for this repository](https://github.com/AdityaJ7/Python_and_the_Web), click on the Button "**Fork**".
+- On the [GitHub page for this repository](https://github.com/Python-World/Python_and_the_Web), click on the Button "**Fork**".
    ![fork image](https://help.github.com/assets/images/help/repository/fork_button.jpg)
 - Create clone ***your forked repository*** on your local machine.
    ![code ui](https://docs.github.com/assets/images/help/repository/code-button.png)
@@ -36,7 +36,7 @@ Scripts in python that scrape the web, create a bot or use an API to solve a pro
 - Before you make any changes, [keep your fork in sync](https://www.freecodecamp.org/news/how-to-sync-your-fork-with-the-original-git-repository/) to avoid merge conflicts:
 
     ```bash
-    git remote add upstream https://github.com/AdityaJ7/Python_and_the_Web.git
+    git remote add upstream https://github.com/Python-World/Python_and_the_Web.git
     git fetch upstream
     git pull upstream master
     git push
@@ -46,11 +46,11 @@ Scripts in python that scrape the web, create a bot or use an API to solve a pro
 
 - Checkout to development branch (*name your branch according to the issue name*).
 
-    ```basg
+    ```bash
     git checkout -b <branch-name>
     ```
 
-- Create a folder in [projects directory](https://github.com/chavarera/python-mini-projects/tree/master/projects) according to issue name.
+- Create a folder in one of the folders in the [Scripts' directory](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts) according to issue name.
 - Write your code and add to the respective folder in the projects directory, locally.
 - Don't forget to add a `README.md` in your folder, according to the [README_TEMPLATE.](https://github.com/chavarera/python-mini-projects/blob/master/README_TEMPLATE.md)
 - Add the changes with `git add`, `git commit` ([write a good commit message](https://chris.beams.io/posts/git-commit/), if possible):
@@ -75,7 +75,7 @@ Scripts in python that scrape the web, create a bot or use an API to solve a pro
 
 ## README Template for scripts
 
-[README Template](https://github.com/AdityaJ/Python_and_the_Web/blob/master/README_TEMPLATE.md)
+[README Template](https://github.com/Python-World/Python_and_the_Web/blob/master/README_TEMPLATE.md)
 
 ## Connect On Social media
 
