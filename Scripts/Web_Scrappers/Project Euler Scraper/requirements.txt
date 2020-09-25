@@ -1,0 +1,4 @@
+tqdm==4.32.2
+beautifulsoup4==4.7.1
+json5==0.8.5
+requests==2.23.0
