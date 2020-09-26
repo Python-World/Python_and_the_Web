@@ -12,7 +12,8 @@
 ![Stars](https://img.shields.io/github/stars/AdityaJ7/Python_and_the_Web)
 ![License](https://img.shields.io/github/license/AdityaJ7/Python_and_the_Web)
 
-Scripts in python that scrape the web, create a bot or use an API to solve a problem. 
+Scripts in python that scrape the web, create a bot or use an API to solve a problem.
+We now have a section for miscellaneous scripts as well.
 
 ## Steps To Follow
 
