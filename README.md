@@ -82,3 +82,10 @@ We now have a section for miscellaneous scripts as well.
 ## Connect On Social media
 
 [Join WhatsApp group](https://chat.whatsapp.com/Ghp25kidWLaGrAVA0G0GAa)
+
+## Contributors ✨
+
+SR No   | Project | Author  
+--- | --- | ---
+1 | [Project Euler Scraper](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Web_Scrappers/Project_Euler_Scraper) | [Pratik Choudhari](https://github.com/pratik-choudhari)
+2 | [Pycon Proposals Scraper](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Web_Scrappers/Pycon_Proposals)| [Aditya Jetely](https://github.com/AdityaJ7)
