@@ -5,12 +5,12 @@
 [![forthebadge](https://forthebadge.com/images/badges/built-with-swag.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-cyan.svg?style=flat-square)](#contributors-)
-![Issues](https://img.shields.io/github/issues/AdityaJ7/Python_and_the_Web)
-![Pull Requests](https://img.shields.io/github/issues-pr/AdityaJ7/Python_and_the_Web)
-![Forks](https://img.shields.io/github/forks/AdityaJ7/Python_and_the_Web)
-![Stars](https://img.shields.io/github/stars/AdityaJ7/Python_and_the_Web)
-![License](https://img.shields.io/github/license/AdityaJ7/Python_and_the_Web)
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-cyan.svg?style=flat-square)](#contributors-)
+![Issues](https://img.shields.io/github/issues/Python-World/Python_and_the_Web)
+![Pull Requests](https://img.shields.io/github/issues-pr/Python-World/Python_and_the_Web)
+![Forks](https://img.shields.io/github/forks/Python-World/Python_and_the_Web)
+![Stars](https://img.shields.io/github/stars/Python-World/Python_and_the_Web)
+![License](https://img.shields.io/github/license/Python-World/Python_and_the_Web)
 
 Scripts in python that scrape the web, create a bot or use an API to solve a problem.
 We now have a section for miscellaneous scripts as well.
