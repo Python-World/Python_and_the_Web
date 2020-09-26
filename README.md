@@ -15,6 +15,7 @@
 Scripts in python that scrape the web, create a bot or use an API to solve a problem.
 We now have a section for miscellaneous scripts as well.
 
+**Note**: 100 Ideas implemented using python List available [Here](https://python-world.github.io/python-mini-projects/#/)
 ## Steps To Follow
 
 - Select an issue and ask to be *assigned* to it.
