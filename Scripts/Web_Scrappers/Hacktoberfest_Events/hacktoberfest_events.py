@@ -21,7 +21,7 @@ def scrape_tablerows():
 def hacktoberfest_events(tablerows):
     """This function takes the list of tablerows as input and performs
        scraping of required elements as well as stores the scraped data
-       into a csv file.
+       into a dictionary and returns that dictionary
 
     Args:
         tablerows (list): Lis of tablerows of the target elements.
@@ -33,12 +33,23 @@ def hacktoberfest_events(tablerows):
         name = tablerow.find("td", {"class": "event_name"}).text.strip()
         date = tablerow.find("td", {"class": "date is-hidden"}).text.strip()
         events[i] = [name, date, location, link]
-    df1 = pd.DataFrame.from_dict(events, orient='index')
-    df1.columns = ['Name', 'Date', 'Location', 'Link']
-    df1.to_csv('hacktoberfest_events.csv')
+    return events
+
+
+def make_csv(events):
+    """This function converts the dictionary input into
+       a csv file.
+
+    Args:
+        events (dict): Dictionary object containing the event information.
+    """
+    df = pd.DataFrame.from_dict(events, orient='index')
+    df.columns = ['Name', 'Date', 'Location', 'Link']
+    df.to_csv('hacktoberfest_events.csv')
 
 
 if __name__ == "__main__":
     tablerows = scrape_tablerows()
-    hacktoberfest_events(tablerows)
+    events = hacktoberfest_events(tablerows)
+    make_csv(events)
     print("The events have been stored successfully")
