@@ -1,7 +1,1 @@
-We should install 'speedtest' module in the system, you can use the following command,
-
-```pip3 install speedtest-cli```
-
-To ensure that you have installed the module, check the version.
-
-```speedtest-cli --version```
+speedtest-cli==2.1.2
