@@ -19,14 +19,12 @@ while True:
 
 	if option == 1:
 		download = s.download() / 1000
-		print(f"\nDownload Speed : %.2f kb/s" % download)
-		break
+		print(f"Download Speed : %.2f kb/s\n" % download)
 	elif option == 2:
 		upload = s.upload() / 1000
-		print(f"\nUpload Speed : %.2f kb/s" % upload)
-		break
+		print(f"Upload Speed : %.2f kb/s\n" % upload)
 	elif option == 3:
 		print("\nExiting Successfully...")
 		break
 	else:
-		print("\nINVALID OPTION SELECTED! Re-", end = "")
+		print("INVALID OPTION SELECTED! Re-", end = "")
