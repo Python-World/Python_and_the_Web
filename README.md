@@ -5,7 +5,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/built-with-swag.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-cyan.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-cyan.svg?style=flat-square)](#contributors-)
 ![Issues](https://img.shields.io/github/issues/Python-World/Python_and_the_Web)
 ![Pull Requests](https://img.shields.io/github/issues-pr/Python-World/Python_and_the_Web)
 ![Forks](https://img.shields.io/github/forks/Python-World/Python_and_the_Web)
@@ -90,3 +90,4 @@ SR No   | Project | Author
 1 | [Project Euler Scraper](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Web_Scrappers/Project_Euler_Scraper) | [Pratik Choudhari](https://github.com/pratik-choudhari)
 2 | [Pycon Proposals Scraper](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Web_Scrappers/Pycon_Proposals)| [Aditya Jetely](https://github.com/AdityaJ7)
 3 | [Hacktoberfest Events Scraper](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Web_Scrappers/Hacktoberfest_Events)| [Aditya Jetely](https://github.com/AdityaJ7)
+4 | [Wifi Speed Tester](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Miscellaneous/Wifi_Speed)| [AdeshChoudhar19](https://github.com/AdeshChoudhar19)
