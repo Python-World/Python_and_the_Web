@@ -14,7 +14,7 @@ For Python 3: ```python3 wifiSpeed.py```
 For Python 2: ```python wifiSpeed.py```
 
 ### Screenshot/GIF showing the sample use of the script
-![Screenshot](screenshot.png)
+![Screenshot](Screenshot.png)
 
 ## *Author Name*
 Adesh Choudhar
