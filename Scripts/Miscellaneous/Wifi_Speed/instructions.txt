@@ -1,5 +1,0 @@
-INSTALLING SPEEDTEST MODULE:
-
-For Python 3: pip3 install speedtest-cli
-For Python 2: pip install speedtest-cli
-
