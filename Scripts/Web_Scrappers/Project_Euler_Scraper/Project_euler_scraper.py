@@ -1,8 +1,9 @@
+#libraries import section
 import bs4
 import requests
 import json
 from tqdm import tqdm
-
+#BASE_URL
 BASE_URL = "https://projecteuler.net/archives;page="
 N_PAGES = 15
 data = {}
@@ -12,7 +13,7 @@ problems = []
 
 for n in tqdm(range(1, N_PAGES + 1)):
     page = requests.get(BASE_URL + str(n)).content
-
+    #BeautifulSoup is very important library for web scrapping
     src = bs4.BeautifulSoup(page, 'html.parser')
 
     # get outermost container
