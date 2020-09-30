@@ -1,4 +1,4 @@
-# Python_and_the_Web
+# Python_and_the_Web_an_Amazing_Project
 
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
