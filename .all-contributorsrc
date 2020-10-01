@@ -119,8 +119,17 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Aravindha1234u",
+      "name": "T3cH_W1z4rD",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/52521300?v=4",
+      "profile": "https://aravindha1234u.github.io",
+      "contributions": [
+        "code"
+      ]
     }
-  ,
+  ],
   "contributorsPerLine": 7,
   "projectName": "Python_and_the_Web",
   "projectOwner": "Python-World",
