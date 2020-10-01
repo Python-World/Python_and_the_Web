@@ -6,7 +6,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![Issues](https://img.shields.io/github/issues/Python-World/Python_and_the_Web)
@@ -100,6 +100,9 @@ We now have a section for miscellaneous scripts as well.
     <td align="center"><a href="https://www.linkedin.com/in/ravishankar-chavare-84474a102/"><img src="https://avatars0.githubusercontent.com/u/33047641?v=4" width="100px;" alt=""/><br /><sub><b>Ravishankar Chavare</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/pulls?q=is%3Apr+reviewed-by%3Achavarera" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/Python-World/Python_and_the_Web/commits?author=chavarera" title="Documentation">📖</a> <a href="#projectManagement-chavarera" title="Project Management">📆</a></td>
     <td align="center"><a href="https://github.com/Saujanya0910"><img src="https://avatars1.githubusercontent.com/u/55703178?v=4" width="100px;" alt=""/><br /><sub><b>Saujanya Pandey</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=Saujanya0910" title="Code">💻</a></td>
     <td align="center"><a href="https://amitsingh-396e4.web.app/"><img src="https://avatars2.githubusercontent.com/u/57305134?v=4" width="100px;" alt=""/><br /><sub><b>amit singh</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=amitsingh6391" title="Documentation">📖</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/anandhakrishnanaji"><img src="https://avatars2.githubusercontent.com/u/45736365?v=4" width="100px;" alt=""/><br /><sub><b>Anandha Krishnan Aji</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=anandhakrishnanaji" title="Code">💻</a></td>
   </tr>
 </table>
 
