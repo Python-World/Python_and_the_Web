@@ -37,4 +37,4 @@ if __name__ == "__main__":
     data = pd.DataFrame()
     for symbol, company in tickers:
         data = fetch_daily_data_for_ticker(symbol)
-        data.to_csv(f"{symbol}.csv")
+        data.to_csv(f"CSVs\\{symbol}.csv")
