@@ -1,0 +1,2 @@
+Requirements : 
+Pandas (Data Manipulation Library. Install : pip install pandas)
