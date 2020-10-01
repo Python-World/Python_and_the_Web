@@ -17,7 +17,9 @@ def fetch_ticker_names():
     response = requests.get(WIKI_ENDPOINT, params=params)
     soup = BeautifulSoup(response.content, "lxml")
     symbols = set()
+    # first 500 cells which are the S&P500
     for item in soup.find_all("tr")[:501]:
+        # first cell is symbol, second is company name
         cells = item.find_all("td")[:2]
         try:
             symbol, company = cells[0].a.text, cells[1].a.text
@@ -34,6 +36,9 @@ def fetch_daily_data_for_ticker(symbol):
 
 if __name__ == "__main__":
     tickers = fetch_ticker_names()
+    with open("available_tickers.txt", "w") as ticker_f:
+        for symbol, name in tickers:
+            ticker_f.write(f"{symbol}, {name}\n")
     data = pd.DataFrame()
     for symbol, company in tickers:
         data = fetch_daily_data_for_ticker(symbol)
