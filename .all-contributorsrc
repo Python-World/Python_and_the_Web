@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "pratik-choudhari",
+      "name": "Pratik Choudhari",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/40862682?v=4",
+      "profile": "https://www.linkedin.com/in/pratik-choudhari/",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "Python_and_the_Web",
+  "projectOwner": "Python-World",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}

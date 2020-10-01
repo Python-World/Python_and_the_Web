@@ -1,4 +1,7 @@
 # Python_and_the_Web
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
@@ -86,6 +89,18 @@ We now have a section for miscellaneous scripts as well.
 ## Contributors ✨
 
 SR No   | Project | Author  
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://www.linkedin.com/in/pratik-choudhari/"><img src="https://avatars3.githubusercontent.com/u/40862682?v=4" width="100px;" alt=""/><br /><sub><b>Pratik Choudhari</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=pratik-choudhari" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 --- | --- | ---
 1 | [Project Euler Scraper](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Web_Scrappers/Project_Euler_Scraper) | [Pratik Choudhari](https://github.com/pratik-choudhari)
 2 | [Pycon Proposals Scraper](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Web_Scrappers/Pycon_Proposals)| [Aditya Jetely](https://github.com/AdityaJ7)
