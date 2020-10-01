@@ -32,7 +32,7 @@ $ pip3 install pymongo
 
 # How to run the script
  1.  Git clone repo
- 2. Goto Project_Directory/IMDB/
+ 2. Goto Project_Directory/
  3. Open Terminal/cmd
  4. scrapy crawl imdb
 		
