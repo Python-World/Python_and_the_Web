@@ -8,7 +8,7 @@ The installation commands are provided in requirements.txt
 ### How to run the script
 First you need to go to the JSONtoExcel directory.
 
-```cd Scripts/Miscellaneous/Wifi_Speed```
+```cd Scripts/Miscellaneous/JSONtoExcel```
 
  Do the changes required (like changing the file names or content). And then run the following command once you are in project directory
 
