@@ -5,6 +5,9 @@ In the following notebooks I showcase how easy/difficult it is to port an activa
 
 Link to main notebook --> [Activations.ipynb](https://github.com/Agrover112/ActivationFunctions/blob/master/src/Activation-Functions(GELU%2CSELU%2CELU%2CLeakyReLU%2CPRELU).ipynb)
 
+## Requirements
+Google Colab
+
 ### Implemented activations:
  
 - LeakyReLu
