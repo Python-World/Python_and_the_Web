@@ -6,6 +6,7 @@ Python Web Scraper which Extracts Information Retaled to COVID-19(Number of Case
 <!--Remove the below lines and add yours -->
 Selenium (Web Scrapping Python Library)
 ChromeDriver (Used for Automated Navigation to URLs, which are Provided by Selenium as Input. Download : https://chromedriver.chromium.org/downloads)
+Pandas (Data Manipulation Library)
 
 ### How to run the script
 <!--Remove the below lines and add yours -->

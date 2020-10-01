@@ -5,9 +5,11 @@
 # Requirements : 
 # Selenium (Web Scrapping Python Library. Install : pip install selenium)
 # ChromeDriver (Used for Automated Navigation to URLs, which are Provided by Selenium as Input. Download : https://chromedriver.chromium.org/downloads)
+# Pandas (Data Manipulation Library. Install : pip install pandas)
 
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+import pandas
 import datetime, time, os
 
 td = datetime.date.today()
@@ -15,7 +17,7 @@ wait_imp = 10
 CO = webdriver.ChromeOptions()
 CO.add_experimental_option('useAutomationExtension', False)
 CO.add_argument('--ignore-certificate-errors')
-CO.add_argument('--start-minimized')
+CO.add_argument('--headless')
 
 # Creating WebDriver Object
 wd = webdriver.Chrome(r'C:\\Users\\TEMP\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe',options=CO)
@@ -39,10 +41,13 @@ print("-------------------------------------------------------")
 
 # Using get() method to Open a URL (Worldometers)
 wd.get("https://www.worldometers.info/coronavirus/countries-where-coronavirus-has-spread/")
+
+# Creating Empty Lists to Store Information which will be Retrieved
 country_list = []
 cases_list = []
 deaths_list = []
 continent_list = []
+
 table =  wd.find_element_by_id("table3")
 count = 0
 for row in table.find_elements_by_xpath(".//tr"):
@@ -60,3 +65,11 @@ for row in table.find_elements_by_xpath(".//tr"):
         print("Total Deaths : ", lst[2])
         print("-------------------------------------------------------")
     count += 1
+
+# Closing Chrome After Extraction of Data
+wd.quit()
+
+# Creating a DataFrame (2D-Tabular Data Structure) using the Information Collected
+df = pandas.DataFrame(data={"Country": country_list, "Total Cases": cases_list, "Total Deaths": deaths_list, "Continent": continent_list})
+# Using to_csv() Function which Dumps the Data from the DataFrame to a CSV File
+df.to_csv("./data.csv", sep=',',index=False)
