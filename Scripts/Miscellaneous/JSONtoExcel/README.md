@@ -1,4 +1,4 @@
-# Python script that provides the download and upload speed of your Wifi
+# Python script that converts JSON file to Excel (xlsx) file.
 A Python script that converts JSON file to Excel (xlsx) file.
 
 ### Prerequisites
@@ -15,7 +15,7 @@ First you need to go to the JSONtoExcel directory.
 ```python3 JSONtoEXCEL.py```
 
 
-### Screenshot/GIF showing the sample use of the script
+### Sample use of the script
 Sample file sampleData.json gives the file exported_json_data.xlsx . 
 
 ## *Author Name*
