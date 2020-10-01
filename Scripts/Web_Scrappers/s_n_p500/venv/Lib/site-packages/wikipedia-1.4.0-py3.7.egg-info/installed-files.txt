@@ -1,0 +1,13 @@
+..\wikipedia\__init__.py
+..\wikipedia\__pycache__\__init__.cpython-37.pyc
+..\wikipedia\__pycache__\exceptions.cpython-37.pyc
+..\wikipedia\__pycache__\util.cpython-37.pyc
+..\wikipedia\__pycache__\wikipedia.cpython-37.pyc
+..\wikipedia\exceptions.py
+..\wikipedia\util.py
+..\wikipedia\wikipedia.py
+PKG-INFO
+SOURCES.txt
+dependency_links.txt
+requires.txt
+top_level.txt
