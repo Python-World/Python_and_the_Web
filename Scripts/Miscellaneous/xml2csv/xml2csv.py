@@ -2,27 +2,27 @@ from json import load
 from yaml import dump
 from sys import argv
 
-jsonPath = ""
-yamlPath = ""
+xmlPath = ""
+csvPath = ""
 
 if len(argv) ==1:
-	jsonPath = input("please enter the path to your JSON file: ")
-	yamlPath = input("please enter the path to your YAML file: ")
+	xmlPath = input("please enter the path to your XML file: ")
+	csvPath = input("please enter the path to your CSV file: ")
 elif len(argv) == 2:
-    jsonPath = argv[1]
-    yamlPath = input("please enter the path to your YAML file: ")
+    xmlPath = argv[1]
+    csvPath = input("please enter the path to your CSV file: ")
 elif len(argv) >= 3:
-	jsonPath = argv[1]
-	yamlPath = argv[2]
+	xmlPath = argv[1]
+	csvPath = argv[2]
 
 print("started to convert your file...")
 
-jsonFile = open(jsonPath, "r")
-jsonValue = load(jsonFile)
-jsonFile.close()
+xmlFile = open(xmlPath, "r")
+jsonValue = load(xmlFile)
+xmlFile.close()
 
-yamlFile = open(yamlPath, "w")
-dump(jsonValue, yamlFile)
-yamlFile.close()
+csvFile = open(csvPath, "w")
+dump(jsonValue, csvFile)
+csvFile.close()
 
-print(f"done, your file is now on {yamlPath}")
+print(f"done, your file is now on {csvPath}")

@@ -1,0 +1,24 @@
+<State>
+<Resident Id="100">
+<Name>Sample Name</Name>
+	<PhoneNumber>1234567891</PhoneNumber>
+	<EmailAddress>sample_name@example.com</EmailAddress>
+	<Address>
+		<StreetLine1>Street Line1</StreetLine1>
+		<City>City Name</City>
+		<StateCode>AE</StateCode>
+		<PostalCode>12345</PostalCode>
+	</Address>
+</Resident>
+<Resident Id="101">
+	<Name>Sample Name1</Name>
+	<PhoneNumber>1234567891</PhoneNumber>
+	<EmailAddress>sample_name1@example.com</EmailAddress>
+	<Address>
+		<StreetLine1>Current Address</StreetLine1>
+		<City>Los Angeles</City>
+		<StateCode>CA</StateCode>
+		<PostalCode>56666</PostalCode>
+	</Address>
+</Resident>
+</State>
