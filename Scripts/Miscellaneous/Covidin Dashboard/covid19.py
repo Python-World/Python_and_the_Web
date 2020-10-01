@@ -3,7 +3,7 @@ import requests
 from pytablewriter import MarkdownTableWriter
 from datetime import datetime
 
-response = requests.get('https://api.covid19api.com/summary') #Get Request to pull down data from Covid19 data source
+response = requests.get('https://api.covid19api.com/summary') # Get Request to pull down data from Covid19 data source
 data = response.json()
 
 st.markdown(MarkdownTableWriter(
