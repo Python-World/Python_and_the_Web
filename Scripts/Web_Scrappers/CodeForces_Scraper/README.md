@@ -12,7 +12,11 @@ Run The Command
 
 Run The Command
 
-`python codeforces_scraper.py`
+`python codeforces_scraper.py {CODEFORCES-PROBLEM-CODE}`
+
+## Screenshot - Sample Use
+
+![Screenshot](screenshot.png)
 
 ## *Author Name*
 [Roopesh V S](https://github.com/roopeshvs)
