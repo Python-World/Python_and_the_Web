@@ -1,2 +1,2 @@
 Requirements : 
-Pandas (Data Manipulation Library. Install : pip install pandas)
+pandas==1.1.2
