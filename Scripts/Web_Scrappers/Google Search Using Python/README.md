@@ -3,7 +3,7 @@
 > To install the google module, we can use the pip package installer.
 
 ```
-pip install google
+pip install -r requirements.txt
 ```
 
 > We are using search() function from the googlesearch module.
