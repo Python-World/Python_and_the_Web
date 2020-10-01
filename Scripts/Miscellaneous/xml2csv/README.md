@@ -15,7 +15,10 @@ First you have to go to the xml2csv directory. Run the following command once yo
     cd Scripts/Miscellaneous/xml2csv
 ```
 
-For Python 3: ```python3 xml2csv.py xmlFilePath csvFilePath```
+For Python 3:
+```bash
+    python xml2csv.py xmlFilePath csvFilePath
+```
 
 ### Screenshot/GIF showing the sample use of the script
 
