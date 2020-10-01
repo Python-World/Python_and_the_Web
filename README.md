@@ -1,14 +1,14 @@
 # Python_and_the_Web
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-swag.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-cyan.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
+
 ![Issues](https://img.shields.io/github/issues/Python-World/Python_and_the_Web)
 ![Pull Requests](https://img.shields.io/github/issues-pr/Python-World/Python_and_the_Web)
 ![Forks](https://img.shields.io/github/forks/Python-World/Python_and_the_Web)
@@ -88,7 +88,6 @@ We now have a section for miscellaneous scripts as well.
 
 ## Contributors ✨
 
-SR No   | Project | Author  
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
@@ -101,6 +100,7 @@ SR No   | Project | Author
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+SR No   | Project | Author  
 --- | --- | ---
 1 | [Project Euler Scraper](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Web_Scrappers/Project_Euler_Scraper) | [Pratik Choudhari](https://github.com/pratik-choudhari)
 2 | [Pycon Proposals Scraper](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Web_Scrappers/Pycon_Proposals)| [Aditya Jetely](https://github.com/AdityaJ7)
