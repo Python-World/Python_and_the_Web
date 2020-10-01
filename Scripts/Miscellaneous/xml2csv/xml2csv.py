@@ -6,6 +6,8 @@ from sys import argv
 xmlPath = ""
 csvPath = ""
 
+# validated the ammout of args passed from the command line, so I could get the path from both files before starting the script
+
 if len(argv) == 1:
     xmlPath = input("please enter the path to your XML file: ")
     csvPath = input("please enter the path to your CSV file: ")
@@ -18,7 +20,7 @@ elif len(argv) >= 3:
 
 print("started to convert your file...")
 
-# from line 27 to 31
+# from line 29 to 33
 # I read the file from the xmlPath variable, and got the dictory from parseXML
 # After that I got the first key from the dict (asumming the user passed a single xml liked the test.xml file)
 # After that I got the list of nodes inside the "root"
@@ -35,7 +37,7 @@ csvFile = open(csvPath, "w")
 csvWriter = CSVWriter(csvFile)
 
 
-# from line 44 to 51
+# from line 46 to 53
 # I iterated over all the items on the child of the file root
 # After that i made the variable item into a real dict so I could use
 # .keys and .values, the keys for the header row
