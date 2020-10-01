@@ -1,5 +1,6 @@
-from json import load
-from yaml import dump
+from xmltodict import parse as parseXML
+from csv import writer as CSVWriter
+import json
 from sys import argv
 
 xmlPath = ""
@@ -17,12 +18,23 @@ elif len(argv) >= 3:
 
 print("started to convert your file...")
 
-xmlFile = open(xmlPath, "r")
-jsonValue = load(xmlFile)
+xmlFile = open(xmlPath,"r")
+data_dict = parseXML(xmlFile.read())
 xmlFile.close()
 
 csvFile = open(csvPath, "w")
-dump(jsonValue, csvFile)
+csvWriter = CSVWriter(csvFile)
+
+count = 0
+for emp in data_dict: 
+    if count == 0: 
+        # Writing headers of CSV file 
+        header = emp.keys() 
+        csv_writer.writerow(header) 
+        count += 1
+  
+    # Writing data of CSV file 
+    csv_writer.writerow(emp.values()) 
 csvFile.close()
 
 print(f"done, your file is now on {csvPath}")
