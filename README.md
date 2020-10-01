@@ -6,7 +6,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![Issues](https://img.shields.io/github/issues/Python-World/Python_and_the_Web)
@@ -96,6 +96,7 @@ We now have a section for miscellaneous scripts as well.
     <td align="center"><a href="https://www.linkedin.com/in/pratik-choudhari/"><img src="https://avatars3.githubusercontent.com/u/40862682?v=4" width="100px;" alt=""/><br /><sub><b>Pratik Choudhari</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=pratik-choudhari" title="Code">💻</a></td>
     <td align="center"><a href="https://www.linkedin.com/in/tusharnankani"><img src="https://avatars1.githubusercontent.com/u/61280281?v=4" width="100px;" alt=""/><br /><sub><b>Tushar Nankani</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=tusharnankani" title="Documentation">📖</a></td>
     <td align="center"><a href="http://www.linkedin.com/in/aditya-jetely"><img src="https://avatars3.githubusercontent.com/u/42397096?v=4" width="100px;" alt=""/><br /><sub><b>Aditya Jetely</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=AdityaJ7" title="Code">💻</a> <a href="https://github.com/Python-World/Python_and_the_Web/commits?author=AdityaJ7" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/AdeshChoudhar19"><img src="https://avatars3.githubusercontent.com/u/60918872?v=4" width="100px;" alt=""/><br /><sub><b>AdeshChoudhar19</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=AdeshChoudhar19" title="Code">💻</a></td>
   </tr>
 </table>
 
