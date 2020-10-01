@@ -1,4 +1,4 @@
-# Script Title
+# TWITTER BOT
 <!--Remove the below lines and add yours -->
 This is a twitter bot, it will like and retweet your tweet, containing some keyword and will print the url of tweet.
 
@@ -15,9 +15,9 @@ It will print the link of tweet
 
 ### Screenshot/GIF showing the sample use of the script
 <!--Remove the below lines and add yours -->
-<img src="Scripts/Bots/Twitter_bot/images/Screenshot 1.jpg">
-<img src="Scripts/Bots/Twitter_bot/images/Screenshot 2.png">
+![Editor view](https://github.com/Mysterious-Owl/Python_and_the_Web/blob/Mysterious-Owl-twitter/Scripts/Bots/Twitter_bot/images/Screenshot%201.jpg)
+![Twitter view](https://github.com/Mysterious-Owl/Python_and_the_Web/blob/Mysterious-Owl-twitter/Scripts/Bots/Twitter_bot/images/Screenshot%202.png)
 
 ## *Author Name*
 <!--Remove the below lines and add yours -->
-Mysterious-Owl
+[Mysterious-Owl](https://github.com/Mysterious-Owl)
