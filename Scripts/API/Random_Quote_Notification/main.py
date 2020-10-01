@@ -18,7 +18,7 @@ def fetch(): # This gets the quote from the API and turns it into the quote to b
         return quote
 
 def display(quote): # Uses the plyer module to display the quote
-    notification.notify(title="Random Quote",message=quote,app_name="Random Quote",app_icon="Scripts\API\Random_Quote_Notification\icon.ico", timeout=10,toast=False)
+    notification.notify(title="Random Quote",message=quote,app_name="Random Quote",app_icon="icon.ico", timeout=10,toast=False)
 
 # Main Program
 def task(): # This puts it all together
