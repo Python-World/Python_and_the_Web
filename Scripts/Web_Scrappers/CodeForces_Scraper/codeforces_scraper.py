@@ -35,7 +35,7 @@ def to_txt(problem_code, problem):
     Takes A Problem Code & Its Appropriate Parsed CodeForces Problem And 
     Prints It To A Text File.
     """
-    with open(problem_code + '.txt', 'w') as output_file:R
+    with open(problem_code + '.txt', 'w') as output_file:
         output_file.writelines(problem)
 
 if __name__ == "__main__":
