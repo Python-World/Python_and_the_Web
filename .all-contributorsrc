@@ -103,6 +103,15 @@
       ]
     },
     {
+      "login": "tauseefmohammed2",
+      "name": "tauseefmohammed2",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/35351464?v=4",
+      "profile": "https://github.com/tauseefmohammed2",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
       "login": "ameyanrd",
       "name": "Ameya Deshpande",
       "avatar_url": "https://avatars1.githubusercontent.com/u/42608371?v=4",
@@ -111,7 +120,7 @@
         "code"
       ]
     }
-  ],
+  ,
   "contributorsPerLine": 7,
   "projectName": "Python_and_the_Web",
   "projectOwner": "Python-World",
