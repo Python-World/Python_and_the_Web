@@ -110,8 +110,17 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "ameyanrd",
+      "name": "Ameya Deshpande",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/42608371?v=4",
+      "profile": "https://ameyanrd.github.io/",
+      "contributions": [
+        "code"
+      ]
     }
-  ],
+  ,
   "contributorsPerLine": 7,
   "projectName": "Python_and_the_Web",
   "projectOwner": "Python-World",

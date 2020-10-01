@@ -106,6 +106,7 @@ We now have a section for miscellaneous scripts as well.
     <td align="center"><a href="https://github.com/roopeshvs"><img src="https://avatars3.githubusercontent.com/u/47831211?v=4" width="100px;" alt=""/><br /><sub><b>Roopesh V S</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=roopeshvs" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/Sahil-k1509"><img src="https://avatars1.githubusercontent.com/u/55683054?v=4" width="100px;" alt=""/><br /><sub><b>Sahil Bairagi</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=Sahil-k1509" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/tauseefmohammed2"><img src="https://avatars2.githubusercontent.com/u/35351464?v=4" width="100px;" alt=""/><br /><sub><b>tauseefmohammed2</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=tauseefmohammed2" title="Code">💻</a></td>
+    <td align="center"><a href="https://ameyanrd.github.io/"><img src="https://avatars1.githubusercontent.com/u/42608371?v=4" width="100px;" alt=""/><br /><sub><b>Ameya Deshpande</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=ameyanrd" title="Code">💻</a></td>
   </tr>
 </table>
 
