@@ -3,16 +3,12 @@ import numpy as np
 from instagramy import InstagramUser
 import sys
 
-"""
-Usage:
-    python instalysis.py <text_file_of_usernames>
-"""
 
 try:
     filename = sys.argv[1]
     print("Extracting...")
 except (IndexError, KeyError):
-    print("List of username as textfile in arguement")
+    print("List of username as textfile in argvment")
     sys.exit()
 
 usernames = []
