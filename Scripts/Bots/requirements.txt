@@ -1,0 +1,3 @@
+# Modules required
+telebot
+telethon
