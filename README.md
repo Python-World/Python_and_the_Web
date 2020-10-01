@@ -94,7 +94,7 @@ We now have a section for miscellaneous scripts as well.
 <table>
   <tr>
     <td align="center"><a href="https://www.linkedin.com/in/pratik-choudhari/"><img src="https://avatars3.githubusercontent.com/u/40862682?v=4" width="100px;" alt=""/><br /><sub><b>Pratik Choudhari</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=pratik-choudhari" title="Code">💻</a></td>
-    <td align="center"><a href="https://www.linkedin.com/in/tusharnankani"><img src="https://avatars1.githubusercontent.com/u/61280281?v=4" width="100px;" alt=""/><br /><sub><b>Tushar Nankani</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=tusharnankani" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/tusharnankani"><img src="https://avatars1.githubusercontent.com/u/61280281?v=4" width="100px;" alt=""/><br /><sub><b>Tushar Nankani</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=tusharnankani" title="Documentation">📖</a> <a href="https://github.com/Python-World/Python_and_the_Web/pulls?q=is%3Apr+reviewed-by%3Atusharnankani" title="Reviewed Pull Requests">👀</a> <a href="#projectManagement-tusharnankani" title="Project Management">📆</a></td>
   </tr>
 </table>
 
