@@ -10,16 +10,16 @@ import  pymongo
 
 class ImdbPipeline:
 
-#    def __init__(self):
-#        self.conn = pymongo.MongoClient(
-#            'localhost',
-#            27017
-#        )
-#
-#        db = self.conn['IMDB']
-#        self.collection = db['IMDB']
-#
-#
-#    def process_item(self, item, spider):
-#        self.collection.insert(dict(item))
-#        return item
+    def __init__(self):
+        self.conn = pymongo.MongoClient(
+            'localhost',
+            27017
+        )
+
+        db = self.conn['IMDB']
+        self.collection = db['IMDB']
+
+
+    def process_item(self, item, spider):
+        self.collection.insert(dict(item))
+        return item
