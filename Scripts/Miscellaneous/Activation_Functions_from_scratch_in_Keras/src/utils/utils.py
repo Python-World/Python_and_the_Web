@@ -1,16 +1,16 @@
 import tensorflow as tf
 import numpy as np
-import matplotlib.pyplot as plt      #loading dependencies
+import matplotlib.pyplot as plt  # loading dependencies
 
-def load_data():                                         #method for loading mnist dataset
+def load_data():  # method for loading mnist dataset
     (x_train, y_train), (x_test, y_test) = tf.keras.datasets.mnist.load_data()
     x_train = np.reshape(x_train, (x_train.shape[0], 784))/255.
-    x_test = np.reshape(x_test, (x_test.shape[0], 784))/255.             #normalization of images
-    y_train = tf.keras.utils.to_categorical(y_train)                     #converting to categorical fearures
+    x_test = np.reshape(x_test, (x_test.shape[0], 784))/255.  # normalization of images
+    y_train = tf.keras.utils.to_categorical(y_train)  # converting to categorical fearures
     y_test = tf.keras.utils.to_categorical(y_test)
     return (x_train, y_train), (x_test, y_test)
 
-def plot_random_examples(x, y, p=None):                                  #function that samples randomly and plots images
+def plot_random_examples(x, y, p=None):  # function that samples randomly and plots images
     indices = np.random.choice(range(0, x.shape[0]), 10)
     y = np.argmax(y, axis=1)
     if p is None:
@@ -28,7 +28,7 @@ def plot_random_examples(x, y, p=None):                                  #functi
         plt.xlabel(str(p[index]), color=col)
     return plt
 
-def plot_results(history):                                    # function that accepts history object from keras and plots the Loss,Accuracy,Validation Accuracy
+def plot_results(history):  # function that accepts history object from keras and plots the Loss,Accuracy,Validation Accuracy
     history = history.history
     plt.figure(figsize=(12, 4))
     epochs = len(history['val_loss'])
