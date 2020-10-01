@@ -20,7 +20,9 @@
       "avatar_url": "https://avatars1.githubusercontent.com/u/61280281?v=4",
       "profile": "https://www.linkedin.com/in/tusharnankani",
       "contributions": [
-        "doc"
+        "doc",
+        "review",
+        "projectManagement"
       ]
     },
     {
@@ -32,6 +34,26 @@
         "code",
         "doc",
         "review",
+        "projectManagement"
+      ]
+    },
+    {
+      "login": "AdeshChoudhar19",
+      "name": "AdeshChoudhar19",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/60918872?v=4",
+      "profile": "https://github.com/AdeshChoudhar19",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "chavarera",
+      "name": "Ravishankar Chavare",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/33047641?v=4",
+      "profile": "https://www.linkedin.com/in/ravishankar-chavare-84474a102/",
+      "contributions": [
+        "review",
+        "doc",
         "projectManagement"
       ]
     }

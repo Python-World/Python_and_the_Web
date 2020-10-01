@@ -6,7 +6,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![Issues](https://img.shields.io/github/issues/Python-World/Python_and_the_Web)
@@ -94,8 +94,11 @@ We now have a section for miscellaneous scripts as well.
 <table>
   <tr>
     <td align="center"><a href="https://www.linkedin.com/in/pratik-choudhari/"><img src="https://avatars3.githubusercontent.com/u/40862682?v=4" width="100px;" alt=""/><br /><sub><b>Pratik Choudhari</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=pratik-choudhari" title="Code">💻</a></td>
-    <td align="center"><a href="https://www.linkedin.com/in/tusharnankani"><img src="https://avatars1.githubusercontent.com/u/61280281?v=4" width="100px;" alt=""/><br /><sub><b>Tushar Nankani</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=tusharnankani" title="Documentation">📖</a></td>
     <td align="center"><a href="http://www.linkedin.com/in/aditya-jetely"><img src="https://avatars3.githubusercontent.com/u/42397096?v=4" width="100px;" alt=""/><br /><sub><b>Aditya Jetely</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=AdityaJ7" title="Code">💻</a> <a href="https://github.com/Python-World/Python_and_the_Web/commits?author=AdityaJ7" title="Documentation">📖</a> <a href="https://github.com/Python-World/Python_and_the_Web/pulls?q=is%3Apr+reviewed-by%3AAdityaJ7" title="Reviewed Pull Requests">👀</a> <a href="#projectManagement-AdityaJ7" title="Project Management">📆</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/tusharnankani"><img src="https://avatars1.githubusercontent.com/u/61280281?v=4" width="100px;" alt=""/><br /><sub><b>Tushar Nankani</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=tusharnankani" title="Documentation">📖</a> <a href="https://github.com/Python-World/Python_and_the_Web/pulls?q=is%3Apr+reviewed-by%3Atusharnankani" title="Reviewed Pull Requests">👀</a> <a href="#projectManagement-tusharnankani" title="Project Management">📆</a></td>
+    <td align="center"><a href="https://github.com/AdeshChoudhar19"><img src="https://avatars3.githubusercontent.com/u/60918872?v=4" width="100px;" alt=""/><br /><sub><b>AdeshChoudhar19</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=AdeshChoudhar19" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/ravishankar-chavare-84474a102/"><img src="https://avatars0.githubusercontent.com/u/33047641?v=4" width="100px;" alt=""/><br /><sub><b>Ravishankar Chavare</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/pulls?q=is%3Apr+reviewed-by%3Achavarera" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/Python-World/Python_and_the_Web/commits?author=chavarera" title="Documentation">📖</a> <a href="#projectManagement-chavarera" title="Project Management">📆</a></td>
+
   </tr>
 </table>
 
