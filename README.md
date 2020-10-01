@@ -6,7 +6,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![Issues](https://img.shields.io/github/issues/Python-World/Python_and_the_Web)
@@ -94,6 +94,7 @@ We now have a section for miscellaneous scripts as well.
 <table>
   <tr>
     <td align="center"><a href="https://www.linkedin.com/in/pratik-choudhari/"><img src="https://avatars3.githubusercontent.com/u/40862682?v=4" width="100px;" alt=""/><br /><sub><b>Pratik Choudhari</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=pratik-choudhari" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/tusharnankani"><img src="https://avatars1.githubusercontent.com/u/61280281?v=4" width="100px;" alt=""/><br /><sub><b>Tushar Nankani</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=tusharnankani" title="Documentation">📖</a></td>
   </tr>
 </table>
 
