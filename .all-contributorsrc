@@ -137,6 +137,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "mendoza",
+      "name": "David Mendoza",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/30415552?v=4",
+      "profile": "https://github.com/mendoza",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
