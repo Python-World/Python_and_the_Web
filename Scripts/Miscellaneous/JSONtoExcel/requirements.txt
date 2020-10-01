@@ -1,2 +1,1 @@
-Requirements : 
 pandas==1.1.2
