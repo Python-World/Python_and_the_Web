@@ -7,6 +7,8 @@ This is a twitter bot, it will like and retweet your tweet, containing some keyw
 To install twython
 ```pip install twython```
 or check [here](https://twython.readthedocs.io/en/latest/usage/install.html)
+<br>
+Generate your unique Twitter keys and token from [here](https://developer.twitter.com/en), create a new app and generate your own keys and token.
 
 ### How to run the script
 <!--Remove the below lines and add yours -->
