@@ -1,8 +1,8 @@
 # Python script that provides the download and upload speed of your Wifi
-A simple Python script that uses 'pyyaml' module to conver an input json file into a output yaml file.
+A simple Python script that uses 'xmltodict' module to convert an input xml file into a output json object, and then to a flat csv.
 
 ### Prerequisites
-You will need to install pyyaml. 
+You will need to install xmltodict. 
 The installation commands are provided in requirements.txt
 
 ### How to run the script

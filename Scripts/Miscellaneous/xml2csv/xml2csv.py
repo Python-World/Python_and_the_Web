@@ -1,6 +1,6 @@
 from xmltodict import parse as parseXML
 from csv import writer as CSVWriter
-import json
+from json import loads, dumps
 from sys import argv
 
 xmlPath = ""
@@ -22,7 +22,6 @@ xmlFile = open(xmlPath, "r")
 data_dict = parseXML(xmlFile.read())
 data_root = data_dict[list(data_dict.keys())[0]]
 itemsList = list(data_root.values())[0]
-print(len(itemsList))
 xmlFile.close()
 
 csvFile = open(csvPath, "w")
@@ -30,12 +29,12 @@ csvWriter = CSVWriter(csvFile)
 
 count = 0
 for item in itemsList:
-	item = json.loads(json.dumps(item))
-	if count == 0:
-		header = item.keys()
-		csvWriter.writerow(header)
-		count += 1
-	csvWriter.writerow(item.values())
+    item = loads(dumps(item))
+    if count == 0:
+        header = item.keys()
+        csvWriter.writerow(header)
+        count += 1
+    csvWriter.writerow(item.values())
 csvFile.close()
 
 print(f"done, your file is now on {csvPath}")
