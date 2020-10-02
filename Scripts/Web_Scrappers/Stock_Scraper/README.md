@@ -2,6 +2,9 @@
 
 This is a simple web scraper that collects information about the 500 companies listed in the S&P index
 
+![](stock_scraper.gif)
+
+
 ## Installation
 
 Create a virtual environment for the script:
