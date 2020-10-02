@@ -24,14 +24,14 @@ def create_name(first,last):
 
 def get_table(soup):
     tables=soup.findChildren('table')
-    content_table=list()
+    content_table=[]
     my_table=tables[0]
     # write_to_file(my_table)
     rows = my_table.findChildren(['th', 'tr'])
     for row in rows:
         cells=row.findChildren('td')
         head=row.findChildren('th')
-        row_list=list()
+        row_list=[]
 
         #specially for career stat
         if len(cells)==0 and len(head)>=4:
@@ -68,7 +68,7 @@ def write_to_file(content_table,name):
 #extracts contents from file and presents
 def show_to_teeminal(name):
     not_needed=['5 wickets in innings\n','10 wickets in match\n']
-    final_list=list()
+    final_list=[]
     with io.open('./scraped_texts/{}.txt'.format(name),'r',encoding='UTF-8') as dobj:
         print("----------------------------{}-------------------".format(name))
         for line in dobj:
