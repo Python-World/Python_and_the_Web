@@ -9,7 +9,7 @@ Open the telegram app and search for @BotFather.
 * Then send “/newbot” message to set up a name and a username.
 * After setting name and username BotFather will give you an API token which is your BOT_TOKEN.
 * Now Open bot.py and Change BOT_TOKEN with you token.
-
+* Note - Procfile/worker file added if you want to host Bot
 ## Prerequisites
 ```shell
 $ pip3 install bs4
