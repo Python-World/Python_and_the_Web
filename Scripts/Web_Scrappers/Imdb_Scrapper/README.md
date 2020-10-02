@@ -3,6 +3,7 @@
 <!--Remove the below lines and add yours -->
 This script scraps the following data from imdb
 
+
 ```json
  {
         'imdb_id' : imdb_id,
