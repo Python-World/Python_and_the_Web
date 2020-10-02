@@ -72,4 +72,8 @@ def download_images():
 
 
 if __name__ == '__main__':
+<<<<<<< HEAD
     main()
+=======
+    main()
+>>>>>>> 79910cdec7353dae68e69baad5a81c7300318dde
