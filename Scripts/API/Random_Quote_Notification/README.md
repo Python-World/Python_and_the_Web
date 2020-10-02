@@ -12,5 +12,4 @@ A simple program presenting the use of an API, the plyer notification module and
 ![Expected Output](result.png)
 
 ## *Author Name*
-<!--Remove the below lines and add yours -->
-Your name goes here.
+[Rogue Halo](https://github.com/rogue-halo)
