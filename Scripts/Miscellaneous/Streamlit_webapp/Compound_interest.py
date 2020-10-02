@@ -1,16 +1,13 @@
 import streamlit as st
 import pandas as pd
-# from sklearn import datasets
-# from sklearn.ensemble import RandomForestClassifier
-
 Year_List=[2,3,4,5,6,7,8,9,10]
 st.write("""
-# Compound Interest Calculator!
+# Compound Interest Calculator! #Creates a title for webapp#
 """)
 st.sidebar.header('User Input Values')
 
 def user_input_features():
-    Int_Rate = st.sidebar.slider('Interest Rate in %', 6.0, 42.0, 10.0)
+    Int_Rate = st.sidebar.slider('Interest Rate in %', 6.0, 42.0, 10.0)  #creates a sliding bar for Int_Rate#
     ##st.sidebar.add_rows
     Principal = st.sidebar.text_input('Please input Principal Amount',10000)
     ##st.sidebar.add_rows
