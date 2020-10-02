@@ -1,10 +1,13 @@
 import streamlit as st
 import pandas as pd
+
 Year_List=[2,3,4,5,6,7,8,9,10]
+
 st.write("""
 # Compound Interest Calculator! #Creates a title for webapp#
 """)
 st.sidebar.header('User Input Values')
+
 
 def user_input_features():
     Int_Rate = st.sidebar.slider('Interest Rate in %', 6.0, 42.0, 10.0)  #creates a sliding bar for Int_Rate#
@@ -17,12 +20,14 @@ def user_input_features():
             'No_Of_Years': No_Of_Years}
     features = pd.DataFrame(data, index=[0])
     return features
+
 df = user_input_features()
 st.subheader('User Entered parameters for Rate, Principal amount and No of years is')
 st.write(df)
+
+
 # Compound Interest function
 def compound_int(Principal, Int_Rate, No_Of_Years):
-
     comp=1.0
     for i in range(0, int(No_Of_Years)):
         comp=comp*(1+Int_Rate/100)
