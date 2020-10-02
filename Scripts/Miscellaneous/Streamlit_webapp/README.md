@@ -10,7 +10,7 @@ pip install -r requirements.txt
 # Instructions to run this script:
 
 ```bash
-python Compound_interest.py
+streamlit run Compound_interest.py
 ```
 #Screenshot:
 
