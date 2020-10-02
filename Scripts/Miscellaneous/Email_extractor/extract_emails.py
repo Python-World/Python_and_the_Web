@@ -15,6 +15,11 @@ for i in f:
     em = re.findall('\S+@\S+\.\S+',i)
     for j in em:
         email[j]=email.get(j,0)+1
-        print(j)
-
+        
 f.close()
+
+for i in email:
+    if(email[i]>=2):
+        print(i,email[i])
+    else:
+        print(i)
