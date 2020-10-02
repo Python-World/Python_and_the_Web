@@ -35,7 +35,7 @@ def sendEmail(to, sub, msg):
 if __name__=="__main__": 
 	
 	# read the excel sheet having all the details 
-	dataframe = pd.read_excel("data.xlsx") 
+	dataframe = pd.read_excel("Path-of-your-excel-sheet") 
 	
 	# fetching  todays date in format : DD-MM 
 	today = datetime.datetime.now().strftime("%d-%m") 
@@ -70,5 +70,5 @@ if __name__=="__main__":
 		# this will record the years in which email has been sent 
 		dataframe.loc[i,'Year'] = str(yr) + ',' + str(yearNow)			 
 
-	dataframe.to_excel('data.xlsx', 
+	dataframe.to_excel('Path-of-your-excel-sheet', 
 				index = False)
