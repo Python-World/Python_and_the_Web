@@ -1,3 +1,4 @@
+import sys
 import requests
 
 # Function to call API for details of the User.
@@ -14,8 +15,7 @@ def findUserInfo(username):
 def getField(key, dic):
     if dic[key] is None:
         return 'Not Available'
-    else:
-        return dic[key]
+    return dic[key]
 
 
 if __name__ == "__main__":
@@ -23,7 +23,7 @@ if __name__ == "__main__":
     userDetails = findUserInfo(username)
     if 'message' in userDetails.keys():
         print('Username not Found')
-        exit()
+        sys.exit()
     else:
         print('** Name **\n'+userDetails['name'], '\n')
         print('** About **\n')

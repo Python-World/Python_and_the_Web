@@ -1,3 +1,4 @@
+import sys
 import time
 
 print("-------F.L.A.M.E.S.-------")
@@ -60,4 +61,4 @@ print('\nYour result is: ', flames)
 time.sleep(5)
 print('Exiting!')
 time.sleep(2)
-exit()
+sys.exit()
