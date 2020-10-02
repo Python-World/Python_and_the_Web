@@ -6,7 +6,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-16-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-20-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![Issues](https://img.shields.io/github/issues/Python-World/Python_and_the_Web)
@@ -113,6 +113,10 @@ We now have a section for miscellaneous scripts as well.
   <tr>
     <td align="center"><a href="https://github.com/mendoza"><img src="https://avatars1.githubusercontent.com/u/30415552?v=4" width="100px;" alt=""/><br /><sub><b>David Mendoza</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=mendoza" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/dkarmy12"><img src="https://avatars1.githubusercontent.com/u/55491427?v=4" width="100px;" alt=""/><br /><sub><b>dkarmy12</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=dkarmy12" title="Code">💻</a></td>
+    <td align="center"><a href="http://madhavmehndiratta.me"><img src="https://avatars3.githubusercontent.com/u/43489174?v=4" width="100px;" alt=""/><br /><sub><b>Madhav Mehndiratta</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=madhavmehndiratta" title="Code">💻</a></td>
+    <td align="center"><a href="http://www.linkedin.com/in/yogeshwaran01"><img src="https://avatars1.githubusercontent.com/u/66836092?v=4" width="100px;" alt=""/><br /><sub><b>YOGESHWARAN R</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=yogeshwaran01" title="Code">💻</a></td>
+    <td align="center"><a href="http://pranav6670.github.io"><img src="https://avatars1.githubusercontent.com/u/31882923?v=4" width="100px;" alt=""/><br /><sub><b>Pranav  Natekar</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=pranav6670" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/nj1902"><img src="https://avatars0.githubusercontent.com/u/56442920?v=4" width="100px;" alt=""/><br /><sub><b>DopeKid</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=nj1902" title="Code">💻</a></td>
   </tr>
 </table>
 
@@ -125,3 +129,4 @@ SR No   | Project | Author
 2 | [Pycon Proposals Scraper](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Web_Scrappers/Pycon_Proposals)| [Aditya Jetely](https://github.com/AdityaJ7)
 3 | [Hacktoberfest Events Scraper](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Web_Scrappers/Hacktoberfest_Events)| [Aditya Jetely](https://github.com/AdityaJ7)
 4 | [Wifi Speed Tester](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Miscellaneous/Wifi_Speed)| [AdeshChoudhar19](https://github.com/AdeshChoudhar19)
+5 | [Google Search Using Python](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Miscellaneous/Wifi_Speed)| [Naman Jain](https://github.com/nj1902)
