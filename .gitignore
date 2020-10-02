@@ -1,2 +1,4 @@
 **/.vscode
 **/venv
+.idea/
+.DS_Store
