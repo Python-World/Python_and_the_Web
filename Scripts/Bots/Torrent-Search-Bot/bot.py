@@ -7,7 +7,7 @@ from piratebay import pirate
 
 
 def get_quote(search):
-    # try:
+    
     data = pirate(search)
     name = data[0]["name"]
     if name == 'No results returned':
@@ -17,7 +17,7 @@ def get_quote(search):
     seeders = data[0]["seeders"]
     leechers = data[0]['leechers']
     magnetlink = data[0]['magnetlink']
-    # auth_link = data["hash"]
+    
 
     message = f"{name} \n**Size:** {size} \n**Seeders:** {seeders} \n**Leechers:** {leechers} \nMagnet Link:\n```{magnetlink}```"
 
@@ -28,21 +28,9 @@ def unknown(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id, text="Sorry, I didn't understand that command.😔")
 
 def quote(update,context):
-
-# if the User Is not A Member of The Channel 
-# Bot will not work
-# Uncomment to Implement This Feature
-#   user=context.bot.get_chat_member(chat_id='-1001497612811',user_id=update.message.chat_id)
-#   mem = user["status"]
-#   if(mem=='left'):
-#       notinChannel = """
-#To use to bot you need to be a member of @AlphaProjects in order to stay updated with the latest developments.
-#"""
-#        context.bot.send_message(chat_id=update.message.chat_id,text=notinChannel)
-#        return
     chat_id = update.message.chat_id
-    if update.message:  # your bot can receive updates without messages
-            # Reply to the message
+    if update.message:  
+            
             query = update.message.text
             context.bot.send_message(chat_id=update.effective_chat.id,parse_mode=telegram.ParseMode.MARKDOWN, text=str(get_quote(query)))
 
@@ -68,7 +56,6 @@ Made With ❤️ In India By @Apex-code
 """
     context.bot.send_message(chat_id=update.effective_chat.id,text=
 welcome)
-#   cht = telegram.Bot.get_chat_member("-1001497612811",chat_id,timeout=None)
     user=context.bot.get_chat_member(chat_id='-g370152138',user_id=update.message.chat_id)
 
 
