@@ -8,8 +8,10 @@ Python 2 / Python 3
 
 ```python3 extract_emails.py```
 
-### Screenshot of succesful execution
+### Screenshot of succesful execution for python3
 ![Screenshot](screenshot.png)
+### Screenshot of succesful execution for python2
+![Screenshot](screenshot1.png)
 
 ## *Author Name*
 C V Aswartha Narayana
