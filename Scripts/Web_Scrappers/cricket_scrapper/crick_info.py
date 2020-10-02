@@ -14,11 +14,10 @@ base_url='https://en.wikipedia.org/wiki/'
 def create_name(first,last):
     if first==None and last==None:
         return 'error'
-    else:
-        first=first[0].capitalize()+ first[1:]
-        last=last[0].capitalize()+last[1:]
-        full_name='{}_{}'.format(first,last)
-        return full_name
+    first=first[0].capitalize()+ first[1:]
+    last=last[0].capitalize()+last[1:]
+    full_name='{}_{}'.format(first,last)
+    return full_name
 
 
 
