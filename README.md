@@ -107,6 +107,7 @@ We now have a section for miscellaneous scripts as well.
     <td align="center"><a href="https://github.com/Sahil-k1509"><img src="https://avatars1.githubusercontent.com/u/55683054?v=4" width="100px;" alt=""/><br /><sub><b>Sahil Bairagi</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=Sahil-k1509" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/tauseefmohammed2"><img src="https://avatars2.githubusercontent.com/u/35351464?v=4" width="100px;" alt=""/><br /><sub><b>tauseefmohammed2</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=tauseefmohammed2" title="Code">💻</a></td>
     <td align="center"><a href="https://ameyanrd.github.io/"><img src="https://avatars1.githubusercontent.com/u/42608371?v=4" width="100px;" alt=""/><br /><sub><b>Ameya Deshpande</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=ameyanrd" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/nj1902"><img src="https://user-images.githubusercontent.com/56442920/94884868-4dac4480-048c-11eb-9c56-7aaf87ba3597.jpeg" width="200px;" alt=""/><br /><sub><b>Naman Jain</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=nj1902" title="Code">💻</a></td>
   </tr>
 </table>
 
@@ -119,4 +120,4 @@ SR No   | Project | Author
 2 | [Pycon Proposals Scraper](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Web_Scrappers/Pycon_Proposals)| [Aditya Jetely](https://github.com/AdityaJ7)
 3 | [Hacktoberfest Events Scraper](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Web_Scrappers/Hacktoberfest_Events)| [Aditya Jetely](https://github.com/AdityaJ7)
 4 | [Wifi Speed Tester](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Miscellaneous/Wifi_Speed)| [AdeshChoudhar19](https://github.com/AdeshChoudhar19)
-5 | [Google Search Using Python](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Miscellaneous/Wifi_Speed)| [Naman Jain](https://github.com/nj1902)
+5 | [Google Search Using Python](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Web_Scrappers/Google_Search_Using_Python)| [Naman Jain](https://github.com/nj1902)

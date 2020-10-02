@@ -23,7 +23,7 @@ search(query, tld='co.in', lang='en', num=10, start=0, stop=None, pause=2)
 
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/nj1902"><img src="" width="200px;" alt=""/><sub><b>💻 Naman Jain 💻</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/nj1902"><img src="https://user-images.githubusercontent.com/56442920/94884868-4dac4480-048c-11eb-9c56-7aaf87ba3597.jpeg" width="200px;" alt=""/></br><sub><b>💻 Naman Jain 💻</b></sub></a><br /></td>
    
 
 </table>
