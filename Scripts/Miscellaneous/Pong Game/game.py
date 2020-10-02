@@ -212,8 +212,7 @@ def board():
                 close()
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_q:
-                    close()
-                ## add pause functionality here if possible
+                    close() # add pause functionality after here if possible
                 if event.key == pygame.K_r:
                     reset()
                 if event.key == pygame.K_w:
