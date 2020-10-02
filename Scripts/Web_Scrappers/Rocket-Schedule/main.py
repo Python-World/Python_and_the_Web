@@ -9,7 +9,6 @@ c=0
 total=0
 myList=[]
 
-
 for s in range(1,8):
     s=str(s)
 
@@ -51,6 +50,7 @@ for s in range(1,8):
             print("Provider :",f2[c].a.text)
             print("Location :",f3[c].text.strip().replace("\n", ", "))
             print("Data :",myData)
+
         else:
             c=0
         
@@ -77,14 +77,14 @@ csv_writer = csv.writer(resultFile)
 isHeader=False
 for emp in myList: 
     if isHeader==False: 
-  
+
         # Writing headers of CSV file 
         header = emp.keys()
         csv_writer.writerow(header) 
         isHeader=True
-  
+
     # Writing data of CSV file 
     csv_writer.writerow(emp.values()) 
-  
+
 resultFile.close() 
 print("CSV File created!")
