@@ -1,6 +1,6 @@
 # Upcoming Rocket Launch Schedule
 
-This script 
+This script scrapes the upcoming Rocket Launch Schedule and saves it into a json and csv File
 
 What it does?
 * Scrapes all launch Schedule from https://www.rocketlaunch.live website
