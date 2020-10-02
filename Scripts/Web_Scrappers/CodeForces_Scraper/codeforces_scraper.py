@@ -24,7 +24,7 @@ def get_problem_statement(problem_code):
             raise Exception(page.status_code)
     except Exception as e:
         print("Cannot Find CodeForces Problem!" + str(e))
-        exit(0)
+        sys.exit(0)
     soup = BeautifulSoup(page.content, 'html.parser')
     soup.find('div', class_='header').decompose()
     problem_statement_div = soup.find('div', class_="problem-statement")
@@ -47,7 +47,7 @@ if __name__ == "__main__":
     except Exception:
         print('Please Enter A CodeForces Problem Code as a',
               'Command-Line Argument!')
-        exit(0)
+        sys.exit(0)
     problem = get_problem_statement(problem_code)
     to_txt(problem_code, problem)
     print(f'Problem {problem_code} Successfully Scraped And Saved To',
