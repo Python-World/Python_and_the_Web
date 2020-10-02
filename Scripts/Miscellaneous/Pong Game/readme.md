@@ -17,7 +17,7 @@ Install the required packages
 
 
 ## Screenshot
-![screenshot](capture.png)
+![screenshot](Capture.PNG)
 ## Author
 
 [Vyprath](https://github.com/Vyprath)
