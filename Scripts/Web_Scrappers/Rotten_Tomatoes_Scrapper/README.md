@@ -10,9 +10,14 @@ Run The Command
 
 ## Instructions To Run
 
-Run The Command
+Run The Command in windows
 
 `python rotten_tomatoes_scrapper.py 'movie name'`
+
+Run The Command in ubuntu
+
+` chmod +x rotten_tomatoes_scrapper.py`
+` ./rotten_tomatoes_scrapper.py 'vaild movie name'`
 
 ## Screenshot - Sample Use
 
