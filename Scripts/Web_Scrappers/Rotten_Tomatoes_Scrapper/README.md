@@ -21,7 +21,7 @@ Run The Command in ubuntu
 
 ## Screenshot - Sample Use
 
-![Screenshot](Screenshot.png)
+![Screenshot](screenshot.png)
 
 ## *Author Name*
 [Jaideep Reddy Kotla](https://github.com/Jaideep07)
