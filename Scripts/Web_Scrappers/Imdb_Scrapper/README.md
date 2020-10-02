@@ -3,45 +3,6 @@
 <!--Remove the below lines and add yours -->
 This script scraps the following data from imdb
 
-
-```json
- {
-        'imdb_id' : imdb_id,
-        'names' : {
-            'p_title' : p_title,
-            'o_title' : p_title
-        },
-        'run_time' : run_time,
-        'genres' : genres,
-        'rating' : {
-            'imdb_rating' : imdb_rating,
-            'metascore' : metascore
-        },
-        'description' : {
-            'plot' : imdb_plot_1,
-            'summary' : imdb_plot_2
-        },
-        'production' : production,
-        'cast' : cast,
-        'keywoards' : keywoards,
-        'basic_info' : {
-            'country' : country,
-            'language' : language,
-            'release_date' : {
-                'day' : release_day,
-                'month' : release_month,
-                'year' : release_year
-            },
-            'country' : country
-        },
-        'media' : {
-            'posted' : poster,
-            'trailer' : trailer
-        },
-        'review' : review
-    }
-```
-
 **Example Output**
 
 ```json
