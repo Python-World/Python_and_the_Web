@@ -1,17 +1,20 @@
-# telebot and telethon modules are required
+from configparser import ConfigParser
 from telethon.sync import TelegramClient 
 from telethon.tl.types import InputPeerUser 
-  
+
+
+configur = ConfigParser()
+configur.read('config.ini')
    
 # Enter the API token in 'token'.
 # Enter the API ID and API Hash from
 # the telegram app created.
-api_id = 'API_id'
-api_hash = 'API_hash'
-token = 'bot token'
+api_id = configur.get('app_config', 'api_id')
+api_hash = configur.get('app_config', 'api_hash')
+token = configur.get('bot_api', 'token')
   
 # your phone number 
-phone = 'YOUR_PHONE_NUMBER_WTH_COUNTRY_CODE'
+phone = configur.get('client_details', 'phone')
    
 # creating a telegram session and assigning 
 # it to a variable client 
@@ -29,11 +32,14 @@ if not client.is_user_authorized():
       
     # signing in the client 
     client.sign_in(phone, input('Enter the code: ')) 
-   
-   
+  
+# receiver user_id and access_hash
+user_id = configur.get('receiver_details', 'user_id')
+user_hash = configur.get('receiver_details', 'user_hash')
+
 try: 
-    # receiver user_id and access_hash 
-    receiver = InputPeerUser('user_id', 'user_hash') 
+     
+    receiver = InputPeerUser(user_id, user_hash) 
   
     # sending message using telegram client 
     client.send_message(receiver, "Hello", parse_mode='html')
