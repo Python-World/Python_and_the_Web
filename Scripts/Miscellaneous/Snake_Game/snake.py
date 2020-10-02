@@ -18,8 +18,7 @@ class Snake():
     def turn(self, point):
         if self.length > 1 and (point[0]*-1, point[1]*-1) == self.direction:
             return
-        else:
-            self.direction = point
+        self.direction = point
 
     def move(self):
         cur = self.get_head_position()

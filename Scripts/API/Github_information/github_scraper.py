@@ -15,8 +15,7 @@ def findUserInfo(username):
 def getField(key, dic):
     if dic[key] is None:
         return 'Not Available'
-    else:
-        return dic[key]
+    return dic[key]
 
 
 if __name__ == "__main__":
