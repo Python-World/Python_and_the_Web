@@ -11,7 +11,7 @@ pip install -r requirements.txt
 # Instructions to run the script:
 
 #### Run the command:
-```python
+```bash
 python Scraper.py
 ```
 # Screenshot(images saved in local folder):
