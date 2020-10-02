@@ -1,0 +1,10 @@
+Below are the requirements for executing the News Scraper Python program.
+
+BeautifulSoup4
+Beautiful Soup is a library that makes it easy to scrape information from web pages.
+
+requests
+Requests allows you to send HTTP requests extremely easily. 
+
+json
+Json is a lightweight data interchange format inspired by JavaScript object literal syntax.
