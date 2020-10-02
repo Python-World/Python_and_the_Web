@@ -25,15 +25,12 @@ def getJSONValueFromFile(jsonPath):
 	with open(jsonPath, "r") as jsonFile:
 		return load(jsonFile)
 
-jsonValue = getJSONValueFromFile(jsonPath)
-
-# from line 36 to 38 
+if __name__ == "__main__":
 # I opened (and created if not done) the yaml destination file
 # after that I dumped the dict into the yamlFile through pyyaml
-# after that I closed the csv file
-
-yamlFile = open(yamlPath, "w")
-dump(jsonValue, yamlFile)
-yamlFile.close()
-
-print(f"done, your file is now on {yamlPath}")
+# after that I closed the csv file			
+    jsonValue = getJSONValueFromFile(jsonPath)
+    yamlFile = open(yamlPath, "w")
+    dump(jsonValue, yamlFile)
+    yamlFile.close()
+    print(f"done, your file is now on {yamlPath}")
