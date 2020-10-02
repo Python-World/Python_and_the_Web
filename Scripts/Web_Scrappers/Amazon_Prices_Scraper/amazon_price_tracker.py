@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import smtplib
-import time
+
 #The below link in the URL is of MacBook 16 inch. But you can add the link of the product you want to track.
 URL = 'https://www.amazon.in/Apple-MacBook-16-inch-Storage-2-3GHz/dp/B081JWZSSX/ref=sr_1_3?keywords=macbook+pro&qid=1580832880&sr=8-3'
 
@@ -19,6 +19,7 @@ def check_price():
     converted_price = converted_price.split(",")
     price_final = "".join(converted_price)
     int_price = int(price_final)
+    print("Current price of the product is: ",int_price)
     if int_price < 230000:
         send_mail()
 
@@ -41,8 +42,4 @@ def send_mail():
     server.quit()
 
 
-check_price()
-#If you want to run this program every 30 seconds then remove the comments from below code. You can also change the timing to suit your needs.
-# while(True):
-#   check_price()
-# time.sleep(30)
+print(check_price())
