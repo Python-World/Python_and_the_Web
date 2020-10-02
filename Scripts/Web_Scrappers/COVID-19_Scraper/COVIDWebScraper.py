@@ -8,9 +8,8 @@
 # Pandas (Data Manipulation Library. Install : pip install pandas)
 
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 import pandas
-import datetime, time, os
+import datetime
 
 td = datetime.date.today()
 wait_imp = 10
