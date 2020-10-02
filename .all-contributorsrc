@@ -263,6 +263,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "officialpm",
+      "name": "Parth Maniar",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/45627498?v=4",
+      "profile": "http://linkedin.com/in/parthdmaniar",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
