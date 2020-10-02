@@ -1,0 +1,5 @@
+Before starting the game make sure to install pygame package into your local system or virtual environment
+
+install process - pip install pygame or python3 -m pip install -U pygame --user 
+
+more details about pygame - https://www.pygame.org/wiki/GettingStarted
