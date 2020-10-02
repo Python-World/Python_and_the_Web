@@ -12,7 +12,8 @@ The game was first sold under the _Connect Four_ trademark by "Milton Bradley Co
 
 ## ScreenShots
 
-<img src="./addNames.png" width="45%"></img> <img src="./gameplay.png" width="45%"></img>
+![add names](./addNames.png)
+![gameplay](./gameplay.png)
 
 ## Creator
 
