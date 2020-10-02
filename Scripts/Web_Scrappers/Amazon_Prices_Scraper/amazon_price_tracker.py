@@ -19,6 +19,7 @@ def check_price():
     converted_price = converted_price.split(",")
     price_final = "".join(converted_price)
     int_price = int(price_final)
+    print(title)
     print("Current price of the product is: ",int_price)
     if int_price < 230000:
         send_mail()
