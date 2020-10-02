@@ -6,7 +6,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-19-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-31-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![Issues](https://img.shields.io/github/issues/Python-World/Python_and_the_Web)
@@ -116,6 +116,22 @@ We now have a section for miscellaneous scripts as well.
     <td align="center"><a href="http://madhavmehndiratta.me"><img src="https://avatars3.githubusercontent.com/u/43489174?v=4" width="100px;" alt=""/><br /><sub><b>Madhav Mehndiratta</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=madhavmehndiratta" title="Code">💻</a></td>
     <td align="center"><a href="http://www.linkedin.com/in/yogeshwaran01"><img src="https://avatars1.githubusercontent.com/u/66836092?v=4" width="100px;" alt=""/><br /><sub><b>YOGESHWARAN R</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=yogeshwaran01" title="Code">💻</a></td>
     <td align="center"><a href="http://pranav6670.github.io"><img src="https://avatars1.githubusercontent.com/u/31882923?v=4" width="100px;" alt=""/><br /><sub><b>Pranav  Natekar</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=pranav6670" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/nj1902"><img src="https://avatars0.githubusercontent.com/u/56442920?v=4" width="100px;" alt=""/><br /><sub><b>DopeKid</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=nj1902" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/rohitjoshi6"><img src="https://avatars1.githubusercontent.com/u/56406787?v=4" width="100px;" alt=""/><br /><sub><b>Rohit_Joshi</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=rohitjoshi6" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/varuntumbe"><img src="https://avatars0.githubusercontent.com/u/44541344?v=4" width="100px;" alt=""/><br /><sub><b>Varun Hegde</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=varuntumbe" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/aswarth123"><img src="https://avatars2.githubusercontent.com/u/53229329?v=4" width="100px;" alt=""/><br /><sub><b>aswarth123</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=aswarth123" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Vyprath"><img src="https://avatars3.githubusercontent.com/u/58635215?v=4" width="100px;" alt=""/><br /><sub><b>Pranav</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=Vyprath" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/panudet-24mb"><img src="https://avatars3.githubusercontent.com/u/47716860?v=4" width="100px;" alt=""/><br /><sub><b>Panudet Panumas</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=panudet-24mb" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Jaideep07"><img src="https://avatars0.githubusercontent.com/u/53224282?v=4" width="100px;" alt=""/><br /><sub><b>Jaideep07</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=Jaideep07" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/infern018"><img src="https://avatars1.githubusercontent.com/u/52378712?v=4" width="100px;" alt=""/><br /><sub><b>Vishwas Singh</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=infern018" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/krishnajalan"><img src="https://avatars3.githubusercontent.com/u/69248796?v=4" width="100px;" alt=""/><br /><sub><b>Krishna Jalan</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=krishnajalan" title="Documentation">📖</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="http://linkedin.com/in/parthdmaniar"><img src="https://avatars3.githubusercontent.com/u/45627498?v=4" width="100px;" alt=""/><br /><sub><b>Parth Maniar</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=officialpm" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Rogue-Halo"><img src="https://avatars3.githubusercontent.com/u/47247405?v=4" width="100px;" alt=""/><br /><sub><b>Rogue Halo</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=Rogue-Halo" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Apex-code"><img src="https://avatars2.githubusercontent.com/u/30106022?v=4" width="100px;" alt=""/><br /><sub><b>APEX</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=Apex-code" title="Code">💻</a></td>
   </tr>
 </table>
 
@@ -128,4 +144,4 @@ SR No   | Project | Author
 2 | [Pycon Proposals Scraper](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Web_Scrappers/Pycon_Proposals)| [Aditya Jetely](https://github.com/AdityaJ7)
 3 | [Hacktoberfest Events Scraper](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Web_Scrappers/Hacktoberfest_Events)| [Aditya Jetely](https://github.com/AdityaJ7)
 4 | [Wifi Speed Tester](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Miscellaneous/Wifi_Speed)| [AdeshChoudhar19](https://github.com/AdeshChoudhar19)
-5 | [Google Search Using Python](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Miscellaneous/Wifi_Speed)| [Naman Jain](https://github.com/nj1902)
+5 | [Google Search Using Python](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Web_Scrappers/Google%20Search%20Using%20Python)| [Naman Jain](https://github.com/nj1902)

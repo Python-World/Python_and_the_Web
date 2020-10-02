@@ -1,8 +1,6 @@
 # telebot and telethon modules are required
-import telebot 
 from telethon.sync import TelegramClient 
-from telethon.tl.types import InputPeerUser, InputPeerChannel 
-from telethon import TelegramClient, sync, events 
+from telethon.tl.types import InputPeerUser 
   
    
 # Enter the API token in 'token'.
