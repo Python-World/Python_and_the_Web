@@ -14,8 +14,3 @@ def scrapmag(torrenthash,torrentname):
     tr=[ "tr="+urllib.parse.quote(t,safe='') for t in trackers]
     tr="&".join(tr)
     return prefix+torrenthash+"&"+dn+"&"+tr
-
-# hash = '7643D0625DED0A5FC967B37A9D6AF6990236C180'
-# name = 'Avengers Infinity War 2018 English 1080p'
-
-# scrapmag(hash,name)
