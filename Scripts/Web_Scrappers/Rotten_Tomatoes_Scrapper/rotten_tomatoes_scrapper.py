@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import requests
 import sys
 
+
 def get_movie_ratings(movie):
     """
     This function takes the movie name as input and scraps
@@ -28,9 +29,6 @@ def get_movie_ratings(movie):
     print("AUDIENCE SCORE: ",(ratings[1].get_text()).strip())
     
     return 1
-
-
-
 
 
 if __name__ == "__main__":
