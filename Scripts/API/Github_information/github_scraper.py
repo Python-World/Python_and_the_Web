@@ -1,3 +1,4 @@
+import sys
 import requests
 
 # Function to call API for details of the User.
@@ -23,7 +24,7 @@ if __name__ == "__main__":
     userDetails = findUserInfo(username)
     if 'message' in userDetails.keys():
         print('Username not Found')
-        exit()
+        sys.exit()
     else:
         print('** Name **\n'+userDetails['name'], '\n')
         print('** About **\n')
