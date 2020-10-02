@@ -35,27 +35,32 @@ def send_message_phone(phone, body):
     return True
 
 
-to_phone_number = None
-message = None
+def initiate():
+    to_phone_number = None
+    message = None
 
-if len(sys.argv) > 1:
-	if sys.argv[1] == 'help':
-		print('\nTwilio SMS - usage')
-		print('twilio_sms +917894561230 "Your message" - Requires phone number with country code and your SMS message')
-		print('twilio_sms help - Prints this message\n')
-		sys.exit()
-	if len(sys.argv) != 3:
-		print('twilio_sms help - for usage')
-		sys.exit()
+    if len(sys.argv) > 1:
+    	if sys.argv[1] == 'help':
+    		print('\nTwilio SMS - usage')
+    		print('twilio_sms +917894561230 "Your message" - Requires phone number with country code and your SMS message')
+    		print('twilio_sms help - Prints this message\n')
+    		sys.exit()
+    	if len(sys.argv) != 3:
+    		print('twilio_sms help - for usage')
+    		sys.exit()
 
-	to_phone_number = sys.argv[1]
-	message = sys.argv[2]
+    	to_phone_number = sys.argv[1]
+    	message = sys.argv[2]
 
 
-if to_phone_number and message:
-	if send_message_phone(to_phone_number, message):
-		print('Message sent')
-	else:
-		print('Can\'t send message')
-else:
-	print('Requires phone number and message, type help for proper usage')
+    if to_phone_number and message:
+    	if send_message_phone(to_phone_number, message):
+    		print('Message sent')
+    	else:
+    		print('Can\'t send message')
+    else:
+    	print('Requires phone number and message, type help for proper usage')
+
+
+if __name__ == '__main__':
+    initiate()
