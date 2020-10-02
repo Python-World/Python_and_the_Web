@@ -138,4 +138,4 @@ SR No   | Project | Author
 2 | [Pycon Proposals Scraper](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Web_Scrappers/Pycon_Proposals)| [Aditya Jetely](https://github.com/AdityaJ7)
 3 | [Hacktoberfest Events Scraper](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Web_Scrappers/Hacktoberfest_Events)| [Aditya Jetely](https://github.com/AdityaJ7)
 4 | [Wifi Speed Tester](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Miscellaneous/Wifi_Speed)| [AdeshChoudhar19](https://github.com/AdeshChoudhar19)
-5 | [Google Search Using Python](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Miscellaneous/Wifi_Speed)| [Naman Jain](https://github.com/nj1902)
+5 | [Google Search Using Python](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Web_Scrappers/Google%20Search%20Using%20Python)| [Naman Jain](https://github.com/nj1902)
