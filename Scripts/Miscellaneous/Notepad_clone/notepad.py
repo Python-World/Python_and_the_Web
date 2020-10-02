@@ -39,7 +39,7 @@ class MainWindow(QMainWindow):
         self.addToolBar(file_toolbar)
         file_menu = self.menuBar().addMenu("&File")
 
-       open_file_action = QAction(QIcon(os.path.join('images',
+        open_file_action = QAction(QIcon(os.path.join('images',
                            'blue-folder-open-document.png')),
                            'Open file...', self)
         open_file_action.setStatusTip("Open file")
