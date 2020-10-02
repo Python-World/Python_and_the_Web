@@ -5,9 +5,9 @@ def gSearch(query : str) -> str:
   for item in search(query, tld = "co.in", num=10, stop = 10, pause = 2):
     print(item) 
 
+if __name__ == "__main__":
+  # This is the text that you want to search for.
+  query = input("Enter your query : ")
 
-# This is the text that you want to search for.
-query = input("Enter your query : ")
-  
-# Search Function called
-gSearch(query)
+  # Search Function called
+  gSearch(query)
