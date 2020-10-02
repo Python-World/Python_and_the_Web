@@ -24,7 +24,9 @@ def display(quote): # Uses the plyer module to display the quote
 def task(): # This puts it all together
     quote = fetch()
     display(quote)
-task() # So that it prints a quote without waiting for the interval
-scheduler = BlockingScheduler() # Creates a scheduler
-scheduler.add_job(task, 'interval', hours=1) # Sets the interval, you may change this to your preferences
-scheduler.start() # Starts scheduler
+
+if __name__ == "__main__":
+    task() # So that it prints a quote without waiting for the interval
+    scheduler = BlockingScheduler() # Creates a scheduler
+    scheduler.add_job(task, 'interval', hours=1) # Sets the interval, you may change this to your preferences
+    scheduler.start() # Starts scheduler
