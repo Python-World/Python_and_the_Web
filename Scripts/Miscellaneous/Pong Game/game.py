@@ -239,4 +239,5 @@ def board():
         pygame.display.update()
         clock.tick(60)
 
-board()
+if __name__ == "__main__":
+    board()         
