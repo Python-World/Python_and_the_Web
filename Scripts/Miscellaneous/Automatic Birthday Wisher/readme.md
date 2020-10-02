@@ -20,7 +20,7 @@ Steps:
   
   >So what to do next?
   
-  The next approach is as follows which wont requie to turn on your machine.
+  The next approach is as follows which won't require to turn on your machine.
   
   1.Deploy your python script to Heroku.
   
