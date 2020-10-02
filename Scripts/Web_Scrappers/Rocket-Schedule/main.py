@@ -25,7 +25,7 @@ for s in range(1,8):
     for j in range(1,len(f),2):
         total+=1
         myData={}
-        
+
         # get vehicle type
         myData['vehicle']=f[j].a.text
         
@@ -76,7 +76,7 @@ csv_writer = csv.writer(resultFile)
 
 isHeader=False
 for emp in myList: 
-    if isHeader==False: 
+    if not isHeader: 
 
         # Writing headers of CSV file 
         header = emp.keys()
