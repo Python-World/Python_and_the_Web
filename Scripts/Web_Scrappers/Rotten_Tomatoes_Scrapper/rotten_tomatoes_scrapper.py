@@ -20,7 +20,10 @@ def get_movie_ratings(movie):
     soup = BeautifulSoup(page.content, 'html.parser')
 
     ratings  = soup.find_all("span",class_="mop-ratings-wrap__percentage")
+    critic = soup.find_all("p",class_="mop-ratings-wrap__text mop-ratings-wrap__text--concensus")
 
+    print("Critic Consensus: ",(critic[0].get_text()).strip())
+    print()
     print("TOMATOMETER: ",(ratings[0].get_text()).strip())
     print("AUDIENCE SCORE: ",(ratings[1].get_text()).strip())
     
