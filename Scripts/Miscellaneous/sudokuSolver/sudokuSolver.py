@@ -1,8 +1,5 @@
-global board
-
 #check the validity of the value at particular position
-def isvalid(num,pos):
-    global board
+def isvalid(board,num,pos):
     for i in range(len(board[0])):
         if board[pos[0]][i]==num and pos[1]!=i:
             return False
@@ -21,8 +18,7 @@ def isvalid(num,pos):
 
 
 #print the board
-def printb():
-    global board
+def printb(board):
     for i in range(len(board)):
         if i%3==0 and i!=0:
             print('-----------------------')
@@ -35,8 +31,7 @@ def printb():
                 print(str(board[i][j])+" ",end="")
 
 #check if board is already solved
-def empty():
-    global board
+def empty(board):
     for i in range(len(board)):
         for j in range(len(board)):
             if board[i][j]==0:
@@ -44,24 +39,21 @@ def empty():
     return None
 
 #recursive function to solve the board
-def solve():
-    global board
-    find=empty()
+def solve(board):
+    find=empty(board)
     if not find:
         return True
-    else:
-        row,col=find
+    row,col=find
 
     for i in range(1,10):
-        if isvalid(i,(row,col)):
+        if isvalid(board,i,(row,col)):
             board[row][col]=i
-            if solve():
+            if solve(board):
                 return True
             board[row][col]=0
     return False
 
 if __name__=="__main__":
-    global board
     board=[]
     print("="*5,"Enter Values separated by space and use 0 for empty values","="*5)
     for i in range(9):
@@ -70,7 +62,7 @@ if __name__=="__main__":
         row=list(map(int, row)) #converting every element from the row from string to int
         board.append(row) #appending row to the board
     print("="*5,"Unsolved State","="*5)
-    printb()
-    solve()
+    printb(board)
+    solve(board)
     print("="*5,"Solved State","="*5)
-    printb()
+    printb(board)
