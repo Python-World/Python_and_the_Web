@@ -25,9 +25,9 @@ This project uses the computer vision library OpenCV to detect road lanes in an 
 
 ![lane_detection2](https://user-images.githubusercontent.com/61016383/93895610-a30a8800-fd0d-11ea-8572-6838f45c2717.png)
 
-![Screenshot (54)](https://user-images.githubusercontent.com/61016383/94995455-0b822080-05bc-11eb-8bee-03aa71cbc760.png)
+![Figure_1](https://user-images.githubusercontent.com/61016383/94996320-9a456c00-05c1-11eb-8232-2c6cc9fc10de.png)
 
-![Screenshot (53)](https://user-images.githubusercontent.com/61016383/94995465-176de280-05bc-11eb-8b14-356f10051d73.png)
+![Figure_2](https://user-images.githubusercontent.com/61016383/94996325-a6312e00-05c1-11eb-9a56-cbe2da9417eb.png)
 
 
 # Author Name
