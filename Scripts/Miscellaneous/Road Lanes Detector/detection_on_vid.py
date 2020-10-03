@@ -1,7 +1,6 @@
 # Imports
 import cv2
 import numpy as np
-from matplotlib import pyplot as plt
 
 # ROI 
 def roi(image, vertices):
@@ -21,12 +20,9 @@ def draw_lines(image, hough_lines):
     return image
 
 
-# img = cv2.imread("saved_frame.jpg")
-# img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-
-
 # Process image for detection
 def process(img):
+    
     height = img.shape[0]
     width = img.shape[1]
     roi_vertices = [
@@ -53,6 +49,7 @@ cap = cv2.VideoCapture("./Data/lane_vid2.mp4")
 
 frame_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
 frame_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+
 fourcc = cv2.VideoWriter_fourcc(*"XVID")
 saved_frame = cv2.VideoWriter("lane_detection.avi", fourcc, 30.0, (frame_width, frame_height))
 
@@ -74,7 +71,3 @@ while cap.isOpened():
 cap.release()
 saved_frame.release()
 cv2.destroyAllWindows()
-
-# result = process(img)
-# plt.imshow(result)
-# plt.show()
