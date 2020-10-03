@@ -67,5 +67,5 @@ if __name__ == "__main__":
         dir_path = sys.argv[1]
     except Exception:
         print("Please enter directory path - python3 orgnize.py <path>")
-        exit(0)
+        sys.exit()
     organizeThis(dir_path)
