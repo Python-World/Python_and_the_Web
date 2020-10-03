@@ -12,6 +12,7 @@ http_response = requests.get(nasa_url)
 bsoup = BeautifulSoup(http_response.text, 'html.parser')
 image_tags = bsoup.find_all('img')
 urls = [img['src'] for img in image_tags]
+img = urls[0].split('/')[-1]
 for url in urls:
     filename = re.search(r'/([\w_-]+[.](jpg|gif|png))$', url)
     with open(filename.group(1), 'wb') as f:
@@ -19,8 +20,8 @@ for url in urls:
             url = '{}{}'.format(url_path, url)
         http_response = requests.get(url)
         f.write(http_response.content)
-img_loc = os.path.join(os.getcwd() +'/'+ url.split('/')[-1])
 
+img_loc = os.path.join(os.getcwd() +'/'+ img)
 #comment the 2 lines below if you want to use this in linux
 img_loc = img_loc.replace('/mnt/c', 'C:')
 img_loc = img_loc.replace('/', '\\')
