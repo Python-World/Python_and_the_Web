@@ -107,6 +107,7 @@ def main():
 
         for tr in tr_obj:
             p = driver.find_element_by_id(':3e')
+            print("object found ", tr)
         p.click()
         mark5 = 1
     except AttributeError as exception:
@@ -129,6 +130,7 @@ def main():
         mark6 = 0
         class_obj = next_soup.findAll('div', attrs={'class': 'amn'})
         for i in class_obj:
+            print("object found ", i)
             pq = driver.find_element_by_class_name('bkG')
             pq.click()
         mark6 = 1
