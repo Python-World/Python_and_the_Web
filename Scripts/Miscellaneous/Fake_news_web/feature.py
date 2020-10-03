@@ -3,7 +3,12 @@ import pandas as pd
 import os
 import re
 import nltk
+nltk.download('wordnet')
+nltk.download('punkt')
+nltk.download('stopwords')
 from nltk.stem import WordNetLemmatizer
+from nltk.corpus import stopwords
+stop_words = stopwords.words('english')
 
 def get_all_query(title, author, text):
     total= title + author + text
