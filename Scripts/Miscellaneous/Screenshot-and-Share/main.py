@@ -33,7 +33,7 @@ def execute():
 	with open(os.path.join(path,"captures",fname),'rb') as f:
 		resp = requests.post(url,files={'file':f})
 	if resp.status_code==200:
-		if resp.json()['status'] == True:
+		if resp.json()['status'] is True:
 			print(resp.json()['data']['file']['url']['short'])
 			pyperclip.copy(resp.json()['data']['file']['url']['short'])
 		else:
