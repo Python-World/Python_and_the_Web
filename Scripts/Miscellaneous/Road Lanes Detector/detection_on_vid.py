@@ -1,8 +1,9 @@
+# Imports
 import cv2
 import numpy as np
 from matplotlib import pyplot as plt
 
-
+# ROI 
 def roi(image, vertices):
     mask = np.zeros_like(image)
     mask_color = 255
@@ -11,6 +12,7 @@ def roi(image, vertices):
     return cropped_img
 
 
+# Draw Hough Lines
 def draw_lines(image, hough_lines):
     for line in hough_lines:
         x1, y1, x2, y2 = line[0]
@@ -23,6 +25,7 @@ def draw_lines(image, hough_lines):
 # img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
 
+# Process image for detection
 def process(img):
     height = img.shape[0]
     width = img.shape[1]
