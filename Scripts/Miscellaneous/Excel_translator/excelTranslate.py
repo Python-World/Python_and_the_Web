@@ -1,12 +1,11 @@
 import googletrans
 from googletrans import Translator
 import pandas as pd
-# print(googletrans.LANGUAGES)
+
 langs = googletrans.LANGUAGES
 reverseCode = {}
 for key, value in langs.items():
     reverseCode[value] = key
-
 
 done = False
 while not done:
@@ -16,10 +15,7 @@ while not done:
         done = True
     except FileNotFoundError:
         print("This file doesn't exist. Please check name again.")
-    #except Exception:
-    #    print("Some error occured...")
-        
-        
+               
 done = False
 while not done:
     fromLang = input("Which is the original language? ")
@@ -30,10 +26,7 @@ while not done:
         print("This language is not supported.")
         print()
         print("Supported Languages: ", reverseCode.keys())
-    #except Exception:
-    #    print("Some error occured.")
-        
-        
+            
 done = False
 while not done:
     toLang = input("Which language to translate in? ")
@@ -44,12 +37,8 @@ while not done:
         print("This language is not supported.")
         print()
         print("Supported Languages: ", reverseCode.keys())
-    #except Exception:
-    #    print("Some error occured.")
     
-
 coltochange = []
-
 while True:
     col = input("Choose column name you want to change(choose only one column at a time)(e to end): ")
     if col in ['e', 'E']:
@@ -60,17 +49,12 @@ while True:
     else:
         print("This column doesn't exist. Please recheck the name...")
 
-# pr = input("Do you want to print pronounciations in terminal of converted text to check? (y/n)")
-
-
 translator = Translator()
-
 for index in data.index:
     for col in coltochange:
         lineres = translator.translate(data[col][index], src=fromLang, des=toLang)
         data[col][index] = lineres.text
-        # if pr == 'y': print(lineres.pronunciation)        
-
+        
     
 writer = pd.ExcelWriter('result.xlsx',  engine ='xlsxwriter') # pylint: disable=abstract-class-instantiated
 data.to_excel(writer, sheet_name ='Sheet1') 
