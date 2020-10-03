@@ -17,7 +17,7 @@ def scrape(http_response):
                 url = '{}{}'.format(url_path, url)
             http_response = requests.get(url)
             f.write(http_response.content)
-     return img       
+    return img       
 
             
 if __name__ == "__main__":
