@@ -14,7 +14,7 @@ To install opencv, on command prompt type -
 
 
 
-- Downloading haar cascade files
+- Downloading haar cascade files <br>
 Open the following link to download haar cascade xml file, keep it in the same folder as face-detection.py 
 ``` https://drive.google.com/file/d/15dnrarVLAUzysNj0gF00vu8T4g7U0yaN/view ```
 
