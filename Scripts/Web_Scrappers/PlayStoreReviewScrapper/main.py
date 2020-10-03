@@ -47,7 +47,6 @@ def getPlaystoreReviews(app_id):
                     python_button = browser.find_elements_by_xpath(path)[0]
                     python_button.click()
                 except IndexError:
-                    print("Exception {}".format(ex))
                     pass
                 
         no_of_pagedowns -= 1
