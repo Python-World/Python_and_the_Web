@@ -1,0 +1,2583 @@
+1
+00:00:12,219 --> 00:00:30,579
+hello 
+
+2
+00:00:30,579 --> 00:00:36,650
+i am naveen kashyap and i teach ah psychology
+at indian institute of technology gauwhati
+
+3
+00:00:36,650 --> 00:00:41,680
+ah one of the subjects in psychology that
+i teach here is cognitive psychology and so
+
+4
+00:00:41,680 --> 00:00:49,020
+i will be teaching you this course
+this course on cognitive psychology ah will
+
+5
+00:00:49,020 --> 00:00:56,479
+be covered through eight modules we will start
+with introduction to the history of psychology
+
+6
+00:00:56,479 --> 00:01:02,939
+cognitive psychology then moving on to ah
+the methods of studying cognitive psychology
+
+7
+00:01:02,939 --> 00:01:09,500
+we will ah deal with perception the basic
+process of taking in information then moving
+
+8
+00:01:09,500 --> 00:01:18,040
+to attention the filter or the barrier which
+which lets information gets encoded
+
+9
+00:01:18,040 --> 00:01:22,750
+from there we will move into how whatever
+information has been perceived or taken in
+
+10
+00:01:22,750 --> 00:01:31,130
+into our system how that is ah stored as memories
+further on we will look into what are memories
+
+11
+00:01:31,130 --> 00:01:38,140
+what are the type of memories which are there
+how many processes operate ah things like
+
+12
+00:01:38,140 --> 00:01:44,850
+how processes of encoding and retrieval really
+work and what is the way in which information
+
+13
+00:01:44,850 --> 00:01:50,049
+is organized in in memory
+once you are done with memory we will move
+
+14
+00:01:50,049 --> 00:01:57,450
+into something called thinking which is a
+higher order cognitive processes and which
+
+15
+00:01:57,450 --> 00:02:06,610
+draws on from memory now thinking is a process
+which will lead on to something called decision
+
+16
+00:02:06,610 --> 00:02:14,421
+making another important proper process in
+cognition which is central to ah the idea
+
+17
+00:02:14,421 --> 00:02:21,230
+of how people ah actually make decisions in
+real life or how people decide or make choices
+
+18
+00:02:21,230 --> 00:02:25,200
+in real life
+we will also be venturing into a little bit
+
+19
+00:02:25,200 --> 00:02:34,980
+into something called language ah which is
+how people ah use signs and symbols to communicate
+
+20
+00:02:34,980 --> 00:02:41,440
+ah ideas between them because communication
+of ideas or whatever one thinks whatever cognition
+
+21
+00:02:41,440 --> 00:02:49,700
+ones have sharing that cognition with other
+people is also ah central to the idea of psychology
+
+22
+00:02:49,700 --> 00:02:58,830
+so let us then move ah quickly into ah a brief
+history of cognitive psychology psychology
+
+23
+00:02:58,830 --> 00:03:08,060
+developed from philosophy it came out of philosophy
+and philosophers ah where the people who actually
+
+24
+00:03:08,060 --> 00:03:15,440
+first proposed a how knowledge is stored how
+knowledge is dealt and how knowledge is acquired
+
+25
+00:03:15,440 --> 00:03:22,890
+and so they led to the development of the
+science which is ah psychology and so before
+
+26
+00:03:22,890 --> 00:03:31,520
+moving on to the history of cognitive psychology
+ah lets look at a a a brief history of the
+
+27
+00:03:31,520 --> 00:03:37,931
+philosophical inputs to cognitive psychology
+so one of the brief inputs of philosophy or
+
+28
+00:03:37,931 --> 00:03:44,900
+one of the brief debates of philosophy which
+led to the science of development of cognitive
+
+29
+00:03:44,900 --> 00:03:51,160
+psychology ah was the debate on something
+called nativism and empiricism what is this
+
+30
+00:03:51,160 --> 00:03:59,480
+debate
+empiricism explains that knowledge the idea
+
+31
+00:03:59,480 --> 00:04:05,790
+of knowledge or the idea of how knowledge
+gets stored it comes from individuals experiences
+
+32
+00:04:05,790 --> 00:04:11,890
+so individual so their own experience to their
+own interaction with people around them with
+
+33
+00:04:11,890 --> 00:04:18,720
+society around them or through memories or
+through or other kind of experiencing systems
+
+34
+00:04:18,720 --> 00:04:27,289
+ah generate knowledge
+whereas the nativist believed that the role
+
+35
+00:04:27,289 --> 00:04:35,229
+of heredity the role of biology or the role
+of constitutional factors are responsible
+
+36
+00:04:35,229 --> 00:04:42,190
+for the generation of knowledge so what was
+the debate all about on the empresses side
+
+37
+00:04:42,190 --> 00:04:52,810
+we have people like ah aristotle and people
+like john locke now john locke for one who
+
+38
+00:04:52,810 --> 00:05:01,780
+was an en ah english philosopher ah from sixteen
+thirty two to seventeen o four he talked about
+
+39
+00:05:01,780 --> 00:05:07,960
+knowledge or the basic of cognitive psychology
+in terms of contents of the mind
+
+40
+00:05:07,960 --> 00:05:16,600
+so what is the content of mind and he said
+that mind compose of thoughts it comprises
+
+41
+00:05:16,600 --> 00:05:22,300
+of thoughts and these thoughts are mental
+images a series of mental images which are
+
+42
+00:05:22,300 --> 00:05:28,740
+associated together and they are what mind
+is all about or knowledge is all about also
+
+43
+00:05:28,740 --> 00:05:37,880
+john locke proposed the idea that people at
+the time of birth bo are born with a blank
+
+44
+00:05:37,880 --> 00:05:42,930
+state of mind so there is nothing written
+in the mind itself and this debate that this
+
+45
+00:05:42,930 --> 00:05:49,130
+blank state or this idea that is bank state
+with experience or true experience get written
+
+46
+00:05:49,130 --> 00:05:55,570
+up and that makes knowledge or that develops
+knowledge or cognitions
+
+47
+00:05:55,570 --> 00:06:01,610
+similarly aristotle had a similar viewpoint
+where he believe that personal experiences
+
+48
+00:06:01,610 --> 00:06:13,720
+of people is the reason how ah this knowledge
+develops on the other hand people like plato
+
+49
+00:06:13,720 --> 00:06:21,080
+or people starting with plato other people
+like rene descartes they believed that knowledge
+
+50
+00:06:21,080 --> 00:06:29,270
+actually comes from heredity or it comes from
+the ah composition or biology and so they
+
+51
+00:06:29,270 --> 00:06:35,790
+basically are the descendants or they basically
+progress from darwins point of view they believe
+
+52
+00:06:35,790 --> 00:06:43,310
+that knowledge is inbuilt or it comes as an
+inbuilt mechanism and ah the fact that this
+
+53
+00:06:43,310 --> 00:06:46,600
+inbuilt mechanism is ah as the reason for
+knowledge
+
+54
+00:06:46,600 --> 00:06:53,229
+specific to cognitive psychology rene descartes
+who was a french philosopher he gave this
+
+55
+00:06:53,229 --> 00:07:00,240
+idea of mind and body plato believed that
+memory is the first use of plato where that
+
+56
+00:07:00,240 --> 00:07:06,460
+memories were actually writings which were
+on a wax tablet and he believed that this
+
+57
+00:07:06,460 --> 00:07:13,639
+mind that people have is actually a wax tablet
+and the writings on this tablet is what our
+
+58
+00:07:13,639 --> 00:07:20,120
+memories and so what he goes ahead and says
+is that these memories the way these memories
+
+59
+00:07:20,120 --> 00:07:25,139
+are written the way these writings are the
+wax tablet the strength of these writings
+
+60
+00:07:25,139 --> 00:07:33,000
+actually explain or actually tell you how
+strong or weak a memory is also the content
+
+61
+00:07:33,000 --> 00:07:37,470
+of this what is written on this wax tablet
+will tell you about the content of memories
+
+62
+00:07:37,470 --> 00:07:45,870
+now the idea of john locke that this mental
+images the series of mental images are actually
+
+63
+00:07:45,870 --> 00:07:51,670
+what are the contents of mind was contested
+by someone called george berkeley now what
+
+64
+00:07:51,670 --> 00:07:58,550
+is george berkeley say he contested the idea
+that thought processes or contents of the
+
+65
+00:07:58,550 --> 00:08:02,039
+mind cannot be mental images which are associated
+together
+
+66
+00:08:02,039 --> 00:08:08,979
+the reasoning that he gave to this was that
+abstract ideas like judgment or like truth
+
+67
+00:08:08,979 --> 00:08:16,180
+this cannot be conceptualized as mental images
+as they cannot lead to this idea of the mental
+
+68
+00:08:16,180 --> 00:08:21,919
+images and so these were some of the ah some
+of the basic ah philosophically passions or
+
+69
+00:08:21,919 --> 00:08:28,490
+philosophical view points of what psychology
+ah in general and cognitive psychology in
+
+70
+00:08:28,490 --> 00:08:34,679
+special or in in particular are actually ah
+comprised of or should comprise of
+
+71
+00:08:34,679 --> 00:08:42,879
+with the coming of someone con william wundt
+in the year eighteen seventy nine the first
+
+72
+00:08:42,880 --> 00:08:51,129
+scientific school of psychology developed
+william wundt developed this school at a place
+
+73
+00:08:51,129 --> 00:08:59,360
+in leipzig in germany and with his school
+the first structural school of psychology
+
+74
+00:08:59,360 --> 00:09:06,220
+came into being the basic things or the basic
+ideas that william wundt actually went ahead
+
+75
+00:09:06,220 --> 00:09:12,440
+and studied where the nature of consciousness
+what is consciousness in the nature of consciousness
+
+76
+00:09:12,440 --> 00:09:21,499
+now consciousness as such has been one of
+the basic materials or one of the basic ah
+
+77
+00:09:21,499 --> 00:09:29,370
+inputs which are the ah which are the subject
+matter of cognitive psychology so what william
+
+78
+00:09:29,370 --> 00:09:34,089
+wundt was trying to do as a scientist as a
+scientific school of psychology was studying
+
+79
+00:09:34,089 --> 00:09:40,449
+what consciousness is all about
+for the first time william wundt was able
+
+80
+00:09:40,449 --> 00:09:48,879
+to explain psychology with a scientific viewpoint
+now what was this scientific viewpoint and
+
+81
+00:09:48,879 --> 00:09:55,259
+what was william wundt actually trying to
+do william wundt believe that any psychological
+
+82
+00:09:55,259 --> 00:10:00,579
+process can actually be broken down into sub
+processes
+
+83
+00:10:00,579 --> 00:10:10,079
+now this idea of breaking a mental process
+into his basic process is actually a hangover
+
+84
+00:10:10,079 --> 00:10:16,809
+which comes from the physical sciences and
+since william wundt came from the basic sciences
+
+85
+00:10:16,809 --> 00:10:22,970
+this breaking of the mental process into sub
+processes were actually hangover which he
+
+86
+00:10:22,970 --> 00:10:32,670
+had and what did he believe now william wundt
+basically approached or described consciousness
+
+87
+00:10:32,670 --> 00:10:40,410
+as to ah two part system one he said that
+cons describing a consciousness will require
+
+88
+00:10:40,410 --> 00:10:47,269
+two things characterizing the basic sensations
+which is what are the sensations which characterize
+
+89
+00:10:47,269 --> 00:10:54,380
+the mental process things like ah the heat
+the color the texture of the of the particular
+
+90
+00:10:54,380 --> 00:11:00,879
+ah ah sensation and also characterizing the
+feeling what is the feeling associated with
+
+91
+00:11:00,879 --> 00:11:09,949
+now as you can see in this particular slide
+what william wundt would want is to study
+
+92
+00:11:09,949 --> 00:11:19,119
+mental processes or mental ideas using the
+basic ah process of of the hard sciences like
+
+93
+00:11:19,119 --> 00:11:25,689
+chemistry and physics on this slide you can
+see that there is a structure of a ah chemical
+
+94
+00:11:25,689 --> 00:11:32,899
+or organic chemical compound and as you can
+see this organic chemical compound is ah basically
+
+95
+00:11:32,899 --> 00:11:38,139
+composes of several parts and this chemical
+compound in itself can be described by the
+
+96
+00:11:38,139 --> 00:11:42,259
+parts of our elements or ah the ba the elements
+which comprising
+
+97
+00:11:42,259 --> 00:11:48,370
+what william wundt was attempting to do is
+to study the idea of seeing this apple the
+
+98
+00:11:48,370 --> 00:11:54,989
+consciousness of staying this apple and break
+it into processes greatly into basic processes
+
+99
+00:11:54,989 --> 00:12:01,300
+of how people see this apple as you can see
+on the right hand side there is an apple and
+
+100
+00:12:01,300 --> 00:12:06,759
+there is a process to it
+now the very ba the basic idea of apple what
+
+101
+00:12:06,759 --> 00:12:13,709
+william wundt said is comprised of these five
+or six ideas what is the idea for example
+
+102
+00:12:13,709 --> 00:12:18,750
+it can be described the apple can be described
+in color of in in terms of its color in terms
+
+103
+00:12:18,750 --> 00:12:28,029
+of its taste in terms of its of shape in terms
+of its shine or in terms of how you feel after
+
+104
+00:12:28,029 --> 00:12:32,929
+eating it and that is what i was talking about
+so what william wundt did was the idea or
+
+105
+00:12:32,929 --> 00:12:41,839
+the consciousness or the concept of apple
+the mental image of apple the ah mental construct
+
+106
+00:12:41,839 --> 00:12:48,109
+of apple he described can be described over
+can be broken down into its physical features
+
+107
+00:12:48,109 --> 00:12:53,929
+which is the shape color texture and things
+like that and the feeling that we have after
+
+108
+00:12:53,929 --> 00:13:01,139
+eating an apple or how do we feel after eating
+a particular apple
+
+109
+00:13:01,139 --> 00:13:07,470
+and the second thing is he also wanted they
+also included so one thing was characterizing
+
+110
+00:13:07,470 --> 00:13:13,850
+the feeling and ah the basic sensations and
+the second part of this was to deal with the
+
+111
+00:13:13,850 --> 00:13:18,019
+rules through which these sensations were
+combined together what are the rules which
+
+112
+00:13:18,019 --> 00:13:24,189
+through which we combine the perceptions the
+idea of an apple and the feeling of an apple
+
+113
+00:13:24,189 --> 00:13:28,910
+and so he he related that this could be done
+through perception where in perception we
+
+114
+00:13:28,910 --> 00:13:33,499
+actually not only see the color shape and
+size we combine them together to see a whole
+
+115
+00:13:33,499 --> 00:13:37,079
+apple
+so in all what william wundt was trying to
+
+116
+00:13:37,079 --> 00:13:45,620
+do is trying to explain mental processes in
+terms of the sensations or the the sensation
+
+117
+00:13:45,620 --> 00:13:50,889
+and feelings and also how these sensations
+and feelings combined together to give you
+
+118
+00:13:50,889 --> 00:13:58,819
+the actual construct or the actual im ah image
+of an apple this notion of taking a mental
+
+119
+00:13:58,819 --> 00:14:06,929
+image or taking a ah ah ah mental feeling
+and breaking it into its part this led to
+
+120
+00:14:06,929 --> 00:14:15,489
+two major things
+one he showed that mental activity mental
+
+121
+00:14:15,489 --> 00:14:24,299
+images can be broken down into basic operations
+so when i see something or when i feel something
+
+122
+00:14:24,299 --> 00:14:33,209
+the feeling of a particular sunrise or sunset
+can be broken down into its physical part
+
+123
+00:14:33,209 --> 00:14:37,179
+which is the heat that i feel or the cold
+that i feel or the kind of feeling that i
+
+124
+00:14:37,179 --> 00:14:44,879
+feel and also the basic factors the basic
+temperature the basic light intensity which
+
+125
+00:14:44,879 --> 00:14:49,669
+the sun gives off at sunset i would combine
+these two two things together and then i get
+
+126
+00:14:49,669 --> 00:14:52,989
+this mental activity or the mental feeling
+of what a sunset is
+
+127
+00:14:52,989 --> 00:15:01,189
+and this is the second thing that ah william
+wundt was able to do was to develop an objective
+
+128
+00:15:01,189 --> 00:15:07,309
+method of studying mental activity up till
+now most philosophers are talking about mental
+
+129
+00:15:07,309 --> 00:15:13,410
+activity as a process as etching on a tablet
+or it could be in terms of consciousness but
+
+130
+00:15:13,410 --> 00:15:18,389
+none of these things could actually be studied
+objectively could actually be studied or could
+
+131
+00:15:18,389 --> 00:15:25,109
+actually be measured as changes but what william
+wundt did was take a mental activity was to
+
+132
+00:15:25,109 --> 00:15:31,839
+take from this mental activity and divide
+it into its parts which can be measured and
+
+133
+00:15:31,839 --> 00:15:39,049
+which can which are observable in nature so
+this is the the this is the contribution of
+
+134
+00:15:39,049 --> 00:15:48,110
+william wundt the problem with what william
+wundt suggested was that mental images does
+
+135
+00:15:48,110 --> 00:15:57,889
+not gain guarantee a mental activity and so
+the study of mental images in no way will
+
+136
+00:15:57,889 --> 00:16:04,449
+guarantee the study of mental activity
+for example lets say i give you different
+
+137
+00:16:04,449 --> 00:16:11,350
+weights and ask you to compare two weights
+one is ah lighter or whether one is lighter
+
+138
+00:16:11,350 --> 00:16:17,720
+than the other or when one is heavier than
+the other its an easy task and most people
+
+139
+00:16:17,720 --> 00:16:26,160
+will be able to do it but the question is
+do people actually realize that they are doing
+
+140
+00:16:26,160 --> 00:16:33,029
+this comparison or are people able to basically
+center on those mental activities which are
+
+141
+00:16:33,029 --> 00:16:37,660
+required for doing this comparisons doing
+this comparisons of mental weight and the
+
+142
+00:16:37,660 --> 00:16:44,920
+answer to this is no we do not have any idea
+of what is the mental activity which is going
+
+143
+00:16:44,920 --> 00:16:49,029
+on what is the actual mental activity which
+going on when comparing this face
+
+144
+00:16:49,029 --> 00:16:55,769
+obviously we will get answers on superficial
+terms from people of whether two weights are
+
+145
+00:16:55,769 --> 00:17:01,459
+lighter or harder but what is the actual mental
+activity which is acquire which is required
+
+146
+00:17:01,459 --> 00:17:07,260
+for doing this kind of calculation is not
+possible lets take another example suppose
+
+147
+00:17:07,260 --> 00:17:19,589
+i asked you to describe ah the ear of a cat
+what is the ear of a cat look like most people
+
+148
+00:17:19,589 --> 00:17:28,109
+will be able to do that but when i ask you
+this question that when i said or when i asked
+
+149
+00:17:28,109 --> 00:17:35,409
+you what does the ear of a cat look like did
+you actually bring forth an image of the cat
+
+150
+00:17:35,409 --> 00:17:41,130
+in your mind for answering this question not
+many people will be able to answer it truthfully
+
+151
+00:17:41,130 --> 00:17:46,940
+saying that they do actually bring up the
+idea or the image of a cat
+
+152
+00:17:46,940 --> 00:17:54,030
+why is that one reason is because we do predictions
+and in terms of predictions we know how a
+
+153
+00:17:54,030 --> 00:17:59,759
+ear looks like and so how the cats ear would
+look like it comes from semantic knowledge
+
+154
+00:17:59,759 --> 00:18:05,230
+and we really do not need to imagine a cat
+and then look at its head and then look at
+
+155
+00:18:05,230 --> 00:18:11,770
+its ear in terms of mental activities to actually
+come up with the idea of a ear of a cat or
+
+156
+00:18:11,770 --> 00:18:18,630
+describing the ear texture or shape of a cat
+ear so these are some of the ah problems with
+
+157
+00:18:18,630 --> 00:18:25,590
+his theory or with his structuralism which
+was a solution to that was attempted through
+
+158
+00:18:25,590 --> 00:18:33,730
+something called a new school which was functionalism
+so the school of functionalism was started
+
+159
+00:18:33,730 --> 00:18:43,210
+by someone called william james and so william
+james was ah off the idea that the nature
+
+160
+00:18:43,210 --> 00:18:54,200
+of mental activity is not the only solution
+to ah studying cognition but rather the functions
+
+161
+00:18:54,200 --> 00:19:01,690
+of spec specific mental activities are what
+require or or what is required what do i mean
+
+162
+00:19:01,690 --> 00:19:08,019
+by this
+the functionalist perspective suggest that
+
+163
+00:19:08,019 --> 00:19:14,769
+the components of a mental activity are not
+important but how those that mental activity
+
+164
+00:19:14,769 --> 00:19:25,130
+actually functions or actually is described
+in in in a process is what is of interest
+
+165
+00:19:25,130 --> 00:19:35,590
+for example lets assume that we go to a lecture
+now in a lecture for some people writing a
+
+166
+00:19:35,590 --> 00:19:42,190
+lecture down making note out of a lecture
+down works that is how they learn and for
+
+167
+00:19:42,190 --> 00:19:49,039
+some other people listening to a lecture when
+a lecture is being delivered is what is the
+
+168
+00:19:49,039 --> 00:19:56,210
+key is what is the key to ah to to understanding
+ah of the contents of the lecture now the
+
+169
+00:19:56,210 --> 00:20:03,630
+people for whom listening a lecture or hearing
+a lecture is the key to them for them to learn
+
+170
+00:20:03,630 --> 00:20:11,389
+what these people can do is find out what
+aspects of listening in a lecture not writing
+
+171
+00:20:11,389 --> 00:20:18,679
+the lecture down actually helps them in understanding
+the subject and lets suppose that they find
+
+172
+00:20:18,679 --> 00:20:25,860
+out or the reasons why they ah they subscribe
+to listening a lecture is because when they
+
+173
+00:20:25,860 --> 00:20:30,790
+go into a lecture a listen to a lecture they
+get a chance to ask questions or they get
+
+174
+00:20:30,790 --> 00:20:37,040
+a chance to see visual aids ah and learn things
+these might be the reasons why listening to
+
+175
+00:20:37,040 --> 00:20:42,110
+a lecture is beneficial what they could do
+is in future if they subscribe to a lecture
+
+176
+00:20:42,110 --> 00:20:47,190
+if they want to attend a lecture what they
+can do is basically look at those lectures
+
+177
+00:20:47,190 --> 00:20:52,090
+which gives you opportunity to ask questions
+they can look at teachers which give you opportunities
+
+178
+00:20:52,090 --> 00:20:59,879
+to ask more number of questions and then select
+that particular lecture and learn for a while
+
+179
+00:20:59,879 --> 00:21:05,519
+so basically the functionalist approach says
+that it is not the nature of mental activity
+
+180
+00:21:05,519 --> 00:21:11,980
+that is important what is important is how
+the function of this is when this nature activity
+
+181
+00:21:11,980 --> 00:21:19,799
+actually ah takes place or when this the when
+this nature activities are actually ah taking
+
+182
+00:21:19,799 --> 00:21:29,590
+place ah in in the real sense how does this
+really ah go ahead and an explain mental process
+
+183
+00:21:29,590 --> 00:21:36,710
+so mental process is not just components of
+ah mental images it is it is in terms of how
+
+184
+00:21:36,710 --> 00:21:42,669
+this mental process ah or how this the the
+the acting out of this mental process actually
+
+185
+00:21:42,669 --> 00:21:49,539
+lets you gain knowledge
+functionalism derives a lot from someone called
+
+186
+00:21:49,539 --> 00:21:59,659
+charles darwin ah who proposed that evolution
+is ah the reason or the idea behind ah the
+
+187
+00:21:59,659 --> 00:22:04,370
+gaining of knowledge so basically the den
+the the difference between functionalism and
+
+188
+00:22:04,370 --> 00:22:10,039
+structuralism in terms of explaining the history
+of cognitive psychology is that structuralism
+
+189
+00:22:10,039 --> 00:22:16,230
+basically thought of mental processes thoughts
+of mental images ah or prescribe the idea
+
+190
+00:22:16,230 --> 00:22:20,679
+that mental images are there and these mental
+images can be broken down and then can be
+
+191
+00:22:20,679 --> 00:22:25,389
+studied and that is how a cognition or knowledge
+is is generated
+
+192
+00:22:25,389 --> 00:22:31,380
+whereas functionalism talks about are not
+these mental processes but rather how this
+
+193
+00:22:31,380 --> 00:22:37,879
+mental process operates the operation of these
+mental processes is actually the way how people
+
+194
+00:22:37,879 --> 00:22:45,149
+generate ah knowledge
+a third school which led or a third school
+
+195
+00:22:45,149 --> 00:22:53,559
+which led to the formation of cognitive psychology
+was the get started school now this is a very
+
+196
+00:22:53,559 --> 00:23:04,000
+simple school and this school proposed two
+rules one that the whole is always more than
+
+197
+00:23:04,000 --> 00:23:11,350
+the sum of its part what does it really mean
+it subscribes to the idea that if we see something
+
+198
+00:23:11,350 --> 00:23:17,750
+as a whole and if you see a part ah the same
+thing as parts they may not give us the combined
+
+199
+00:23:17,750 --> 00:23:24,380
+experience think of it in terms of a movie
+when we go to a movie we not only see the
+
+200
+00:23:24,380 --> 00:23:29,870
+pictures but we also see the sounds the which
+is coming from the pictures the whole movie
+
+201
+00:23:29,870 --> 00:23:36,929
+experiences combined together to give you
+the idea of what a movie is well as you take
+
+202
+00:23:36,929 --> 00:23:43,020
+take the movie apart the picture the music
+the sound ah the other effects everything
+
+203
+00:23:43,020 --> 00:23:49,580
+taken ah apart from it and then show you show
+them one by one to you will you have the same
+
+204
+00:23:49,580 --> 00:23:53,970
+experience no you will have entirely different
+experience
+
+205
+00:23:53,970 --> 00:24:04,090
+take another example the idea of a song now
+song composed of lyrics it composes of music
+
+206
+00:24:04,090 --> 00:24:08,809
+which is there it composes of special effects
+and so many other things into it now if i
+
+207
+00:24:08,809 --> 00:24:15,690
+take this apart if i first make you hear the
+lyrics and later on add on or make you hear
+
+208
+00:24:15,690 --> 00:24:21,549
+ah the instruments which play with it and
+later on come out show you or make make you
+
+209
+00:24:21,549 --> 00:24:27,799
+hear the basic effects or are the basic special
+effects will you have the same experience
+
+210
+00:24:27,799 --> 00:24:32,440
+as when these combined together to form the
+song no they are different and that is what
+
+211
+00:24:32,440 --> 00:24:36,499
+cognitive psychology or just all psychology
+proposes of cognitive psychology
+
+212
+00:24:36,499 --> 00:24:46,919
+they say that the idea of studying cognition
+is that cognitive psychology is that the experience
+
+213
+00:24:46,919 --> 00:24:52,340
+that you get from studying a whole process
+is different from breaking the process apart
+
+214
+00:24:52,340 --> 00:24:58,779
+and so this school was in direct opposition
+to william wundt school who proposed structuralism
+
+215
+00:24:58,779 --> 00:25:03,649
+where they said that the mental activity any
+mental activity for that matter can be broken
+
+216
+00:25:03,649 --> 00:25:09,830
+down it is true parts studied and how knowledge
+is gained her knowledge progresses can be
+
+217
+00:25:09,830 --> 00:25:14,419
+understood
+another school which adds up or which basically
+
+218
+00:25:14,419 --> 00:25:25,879
+goes ahead and explains some of the basic
+ideas about cognitive psychology or so one
+
+219
+00:25:25,879 --> 00:25:31,919
+of the basic ideas for cognitive psychology
+is behaviorism now behaviorism was a school
+
+220
+00:25:31,919 --> 00:25:37,570
+which strictly proposed the idea that there
+is a stimulus and there is a response and
+
+221
+00:25:37,570 --> 00:25:45,450
+each stimulus is bound to a particular kind
+of a response so stimuluses leads to response
+
+222
+00:25:45,450 --> 00:25:56,110
+as the moon or main the optimal response is
+always adapted as the effect of a stimulus
+
+223
+00:25:56,110 --> 00:26:04,320
+but behaviorism reasoned did was it didnt
+subscribe to the idea of hidden mental states
+
+224
+00:26:04,320 --> 00:26:08,929
+rehesen behaviorism said since we are not
+able to understand the mind we are since we
+
+225
+00:26:08,929 --> 00:26:16,559
+are not able to understand ah what is inside
+somebodys head so let us look at what is observable
+
+226
+00:26:16,559 --> 00:26:22,289
+so one of the things one of the main propositions
+of behaviorism was that lets look at what
+
+227
+00:26:22,289 --> 00:26:28,630
+is observable so if there is a stimulus and
+it creates a response which can be observed
+
+228
+00:26:28,630 --> 00:26:33,590
+and this response could lead to a consequence
+this is what it should be studied so study
+
+229
+00:26:33,590 --> 00:26:37,940
+a stimulus study a response and study a con
+ah consequence to the response and this is
+
+230
+00:26:37,940 --> 00:26:41,659
+what should be the subject matter of cognitive
+psychology cognitive psychologists should
+
+231
+00:26:41,659 --> 00:26:46,159
+not waste its time on what are the mental
+processes what are the mental images what
+
+232
+00:26:46,159 --> 00:26:53,779
+is inside somebodys mind which and how they
+direct the notions of knowledge gatherin
+
+233
+00:26:53,779 --> 00:27:07,629
+clark hull one of the behaviorist he proposed
+that although mental events cannot be studied
+
+234
+00:27:07,629 --> 00:27:15,450
+through behaviorism but their existence can
+be deduced by their effect on behavior and
+
+235
+00:27:15,450 --> 00:27:21,730
+so what he says is that although things like
+motivation which is basically ah internal
+
+236
+00:27:21,730 --> 00:27:28,590
+behavior or is an internal even they it cannot
+be studied but what can be done is that its
+
+237
+00:27:28,590 --> 00:27:35,720
+effect of motivation can be studied on ah
+behavior can be studied ah ah can be studied
+
+238
+00:27:35,720 --> 00:27:43,899
+through what people do when they are motivated
+so if somebody is motivated he will produce
+
+239
+00:27:43,899 --> 00:27:49,950
+most optimal responses and based on that his
+efforts on doing that particular job or doing
+
+240
+00:27:49,950 --> 00:27:56,129
+that particular act will increase and that
+is why this increase in the response when
+
+241
+00:27:56,129 --> 00:28:02,730
+he gets rewarded by doing that response basically
+shows the presence of motivation skinner who
+
+242
+00:28:02,730 --> 00:28:10,600
+was another ah behaviorist he went so far
+ahead and said that look there are nothing
+
+243
+00:28:10,600 --> 00:28:16,720
+called internal events there are nothing called
+mental process and so the basic idea or the
+
+244
+00:28:16,720 --> 00:28:22,860
+basic subject matter of cognitive psychology
+should be stimulus response and consequences
+
+245
+00:28:22,860 --> 00:28:29,990
+studying the relationship with what stimulus
+says is to what response and optimizing understanding
+
+246
+00:28:29,990 --> 00:28:34,639
+what is the optimal response to a particular
+stimulus and then studying how these responses
+
+247
+00:28:34,639 --> 00:28:40,940
+are strengthen or weaken and that basically
+happens through studying of consequences
+
+248
+00:28:40,940 --> 00:28:47,080
+the problem with behaviorist or the problem
+why behaviorists were not successful in understanding
+
+249
+00:28:47,080 --> 00:28:55,889
+cognition or in developing cognitive psychology
+was that they couldnt go ahead and explain
+
+250
+00:28:55,889 --> 00:29:02,230
+some of the most interesting behaviors or
+the existence are some of the most interesting
+
+251
+00:29:02,230 --> 00:29:07,809
+behaviors
+for example the idea of language or how three
+
+252
+00:29:07,809 --> 00:29:13,970
+d perception and things like language or ah
+death perception initiates in people this
+
+253
+00:29:13,970 --> 00:29:24,860
+led to the fall of behaviorism as a proponent
+or as a school which ah explains you what
+
+254
+00:29:24,860 --> 00:29:30,159
+the subject matter of cognitive psychology
+is or what cognitive psychology is all about
+
+255
+00:29:30,159 --> 00:29:38,519
+since most of these schools were trying to
+understand what should we the subject matter
+
+256
+00:29:38,519 --> 00:29:43,830
+of cognitive psychology or what cognitive
+psychology is all about none of the schools
+
+257
+00:29:43,830 --> 00:29:55,869
+could actually come up with a definitive answer
+of what is the true subject matter of cognition
+
+258
+00:29:55,869 --> 00:30:04,980
+behaviorism to some extent did give some very
+good inputs for developing of a a theory of
+
+259
+00:30:04,980 --> 00:30:10,670
+cognition but they to fail in some ways because
+they were not looking at external ah ex ah
+
+260
+00:30:10,670 --> 00:30:20,760
+events what behaviorism contributed was that
+they developed some of the most rigorous ah
+
+261
+00:30:20,760 --> 00:30:25,009
+idea or experimental techniques of studying
+cognition
+
+262
+00:30:25,009 --> 00:30:34,090
+also they for the first time ah went ahead
+and studied animal cognition and they said
+
+263
+00:30:34,090 --> 00:30:40,960
+that studying the way animals behave could
+lead to understanding how people behave or
+
+264
+00:30:40,960 --> 00:30:47,980
+how people gathered knowledge or how information
+or how cognition really works so they although
+
+265
+00:30:47,980 --> 00:30:53,909
+didnt provide with ah enough matter to the
+development of ah cognitive psychology but
+
+266
+00:30:53,909 --> 00:31:01,769
+they ah did provide enough ah impetus to the
+development of a new school of how knowledge
+
+267
+00:31:01,769 --> 00:31:05,970
+is gathered and what is mental activity questions
+like ah these
+
+268
+00:31:05,970 --> 00:31:18,429
+a new school came in and they started explaining
+what is the subject matter of the mind and
+
+269
+00:31:18,429 --> 00:31:23,429
+how is knowledge gathered and this school
+was called the cognitive school or the cognitive
+
+270
+00:31:23,429 --> 00:31:29,320
+revolution now up till this point of time
+we have been dealing with psychology we have
+
+271
+00:31:29,320 --> 00:31:33,230
+been dooling doing with experiments in psychology
+where we are dealing with people who have
+
+272
+00:31:33,230 --> 00:31:40,090
+worked in psychology and ah they have been
+giving ah several definitions of what psychology
+
+273
+00:31:40,090 --> 00:31:43,830
+is what it should do what cognitive psychology
+should do what should be subject matter of
+
+274
+00:31:43,830 --> 00:31:48,999
+psych cognitive psychology how knowledge is
+gained and those kind of things
+
+275
+00:31:48,999 --> 00:31:57,610
+but the new school that came in and that explained
+what is cognitive psychology or what is ah
+
+276
+00:31:57,610 --> 00:32:06,649
+ah the basic way in which mental events or
+mental processes a function was the cognitive
+
+277
+00:32:06,649 --> 00:32:15,850
+school this school started with the development
+of the first computers and this school ah
+
+278
+00:32:15,850 --> 00:32:21,360
+came up or this school was proposed or came
+out from the ideas of people like herbert
+
+279
+00:32:21,360 --> 00:32:27,399
+simon allen newell and noam chomsky
+for the first time with the development of
+
+280
+00:32:27,399 --> 00:32:35,769
+computers psychologists got an opportunity
+to model the working of the human mind in
+
+281
+00:32:35,769 --> 00:32:47,679
+terms of sets in terms of items which take
+in information and process it and to understand
+
+282
+00:32:47,679 --> 00:32:55,750
+how thought processes or how human thinking
+or mental processes are actually taken care
+
+283
+00:32:55,750 --> 00:33:05,570
+of by the mind
+now the computer gave the cognitivist an ideal
+
+284
+00:33:05,570 --> 00:33:20,659
+medium to study the internal mechanism of
+how information knowledge is grasped is processed
+
+285
+00:33:20,659 --> 00:33:27,100
+and is developed and is used so as i said
+before people like hermans herbert simon and
+
+286
+00:33:27,100 --> 00:33:34,210
+newell who give ah the idea of computers gave
+the idea of computer processing systems provided
+
+287
+00:33:34,210 --> 00:33:40,029
+a chance for the development of the field
+of cognitive psychology
+
+288
+00:33:40,029 --> 00:33:48,090
+now the basic to understanding cognitive psychology
+is studying the mind right up till now we
+
+289
+00:33:48,090 --> 00:33:53,570
+have been looking at schools or we have been
+looking at viewpoints from various schools
+
+290
+00:33:53,570 --> 00:33:59,749
+of psychology and what do you think about
+or how they ah affected the development of
+
+291
+00:33:59,749 --> 00:34:04,200
+cognitive psychology is a field
+from now on we will be looking at what is
+
+292
+00:34:04,200 --> 00:34:10,060
+the subject matter of ah cognitive psychology
+and how it should be studied what are the
+
+293
+00:34:10,060 --> 00:34:17,949
+processes and things like that so one of the
+things that led or that is the core to understanding
+
+294
+00:34:17,949 --> 00:34:24,789
+cognitive psychology or human cognition is
+understanding the working of the human mind
+
+295
+00:34:24,790 --> 00:34:30,610
+now with the development of computers or the
+cognitive revolution there was a chance to
+
+296
+00:34:30,610 --> 00:34:38,270
+compare human mind working with the working
+of the computers
+
+297
+00:34:38,270 --> 00:34:43,219
+but the problem was the working of the mental
+activities which led to the working of the
+
+298
+00:34:43,219 --> 00:34:48,588
+mind of how mind generated knowledge or how
+mind generated any activity and comparing
+
+299
+00:34:48,589 --> 00:34:58,210
+that to a computer program is not a correct
+ah solution the reason is because the analog
+
+300
+00:34:58,210 --> 00:35:09,730
+of mental activities as computer programs
+are wrong is because the mind and or the brain
+
+301
+00:35:09,730 --> 00:35:15,980
+and the computers are made up of in two different
+kind of things or two different kind of elements
+
+302
+00:35:15,980 --> 00:35:22,730
+whereas the brain is made up of neurons and
+biological structures the computers are made
+
+303
+00:35:22,730 --> 00:35:32,490
+up of hardware electronic circuits and several
+other things ah which are not comparable on
+
+304
+00:35:32,490 --> 00:35:41,859
+any dimension also the mind the analogy which
+says that the minds and computers are same
+
+305
+00:35:41,859 --> 00:35:48,530
+it proposes that the mind is the software
+which runs on the hardware which is the brain
+
+306
+00:35:48,530 --> 00:35:56,401
+no as i said the comparison of ah the mind
+and brain to an operating system and the computer
+
+307
+00:35:56,401 --> 00:36:00,600
+is not correct ah what are the reasons that
+i gave is because they are made up of different
+
+308
+00:36:00,600 --> 00:36:09,160
+different kind of elements whereas the brain
+is made up of neurons and neural structures
+
+309
+00:36:09,160 --> 00:36:14,760
+and biologic based materials ah the computers
+on the other hand are made up of electrical
+
+310
+00:36:14,760 --> 00:36:22,880
+circuits
+also if you look at the mind and the brain
+
+311
+00:36:22,880 --> 00:36:31,640
+the brain the mind works on top of the brain
+right which means that the operating system
+
+312
+00:36:31,640 --> 00:36:38,200
+of the brain and the brain itself are one
+and the same thing or is a spot off of the
+
+313
+00:36:38,200 --> 00:36:48,170
+same ah structure whereas computers dont have
+this specificity the idea here is that computer
+
+314
+00:36:48,170 --> 00:36:54,510
+programs can be run on different kind of computers
+if i have an operating system no matter what
+
+315
+00:36:54,510 --> 00:36:59,210
+computer i have no matter what kind of hardware
+that i have i can run this operating system
+
+316
+00:36:59,210 --> 00:37:05,280
+on it and so the hardware the operating system
+the mind in terms of a computer an analog
+
+317
+00:37:05,280 --> 00:37:12,750
+can run on different different hardwares
+whereas the mind that a person has the brain
+
+318
+00:37:12,750 --> 00:37:18,190
+which generates the mind this cannot be transported
+to other person up till now this is not possible
+
+319
+00:37:18,190 --> 00:37:24,780
+where i can take in somebodys mind and and
+transplant it to somebody elses hardware brain
+
+320
+00:37:24,780 --> 00:37:31,660
+and make these people similar
+now these are some of the this is actually
+
+321
+00:37:31,660 --> 00:37:39,609
+one of the most theoretical questions or i
+would say ah thought experiments in philosophy
+
+322
+00:37:39,609 --> 00:37:46,780
+where ah it is described that if i take the
+mind the brain of someone a part of brain
+
+323
+00:37:46,780 --> 00:37:52,500
+or someone and implant it to someone else
+ah who who was having a malfunction brain
+
+324
+00:37:52,500 --> 00:37:59,410
+as brains can can function ah ah half brains
+can function on their own will they be the
+
+325
+00:37:59,410 --> 00:38:03,339
+same person now that is that is a thought
+experiment in philosophy and so this is the
+
+326
+00:38:03,339 --> 00:38:07,970
+question here
+so if i take your mind and put this mind lets
+
+327
+00:38:07,970 --> 00:38:12,609
+lets assume that i can take your mind and
+put this on somebody elses hardware the brain
+
+328
+00:38:12,609 --> 00:38:18,290
+will two of you function similarly because
+the brain is more or less similar in most
+
+329
+00:38:18,290 --> 00:38:24,180
+people and so it doesnt but on the other hand
+in terms of computers what really happens
+
+330
+00:38:24,180 --> 00:38:30,490
+is that if i take an os operating system and
+i take it to any hardware it keeps on functioning
+
+331
+00:38:30,490 --> 00:38:40,400
+or it keeps on ah working in the same way
+also some software programs are so basic that
+
+332
+00:38:40,400 --> 00:38:49,319
+at times we take these ah software programs
+and convert them into some kind of hardware
+
+333
+00:38:49,319 --> 00:38:56,599
+some kind of ah hardware programs for example
+the basic i c chips which allows ah certain
+
+334
+00:38:56,599 --> 00:39:05,390
+ah currents or ah certain signals ah certain
+kind of gates which are there in electronics
+
+335
+00:39:05,390 --> 00:39:11,410
+engineering
+so at times simple programs computer programs
+
+336
+00:39:11,410 --> 00:39:19,589
+can we actually ah converted it into a chip
+and this chip can be later on used for used
+
+337
+00:39:19,589 --> 00:39:27,390
+for ah use as an hardware but basic human
+programs or basic human processes cannot be
+
+338
+00:39:27,390 --> 00:39:34,589
+converted into a part of the brain and can
+be or ah shifted so thats what ah this it
+
+339
+00:39:34,589 --> 00:39:39,560
+says that sometimes deputy programs can be
+cut converted into electrical circuits whereas
+
+340
+00:39:39,560 --> 00:39:46,109
+for humans is not possible
+so then what is the how do we differ between
+
+341
+00:39:46,109 --> 00:39:54,920
+the brain in the computer or the brain and
+the mind this can be understood in terms of
+
+342
+00:39:54,920 --> 00:40:01,510
+the various levels of analysis what does this
+really mean levels of analysis actually means
+
+343
+00:40:01,510 --> 00:40:09,109
+the point from where you are seeing something
+the point from where you are analyzing a particular
+
+344
+00:40:09,109 --> 00:40:17,579
+feature for example in a computer program
+the two levels of analysis can be in terms
+
+345
+00:40:17,579 --> 00:40:22,670
+of the basic electrical current the basic
+circuits that the brain has and the physics
+
+346
+00:40:22,670 --> 00:40:27,170
+of ah the computer
+so one level of analysis will be how current
+
+347
+00:40:27,170 --> 00:40:32,839
+flows through ah several hardwares in a computer
+and how these leads to the functioning of
+
+348
+00:40:32,839 --> 00:40:40,380
+the computer on a second level on another
+level of analysis computers can also be understood
+
+349
+00:40:40,380 --> 00:40:47,450
+in terms of what various programs do how these
+various programs go ahead what kind of processes
+
+350
+00:40:47,450 --> 00:40:53,750
+they do that they have what kind of functions
+that they do and how they go ahead and and
+
+351
+00:40:53,750 --> 00:40:59,589
+actually ah create an output from the input
+given
+
+352
+00:40:59,589 --> 00:41:05,010
+so one level is the physical level in in terms
+of computers understanding levels of analysis
+
+353
+00:41:05,010 --> 00:41:09,530
+could be understanding computers in terms
+of the physics of it in terms of the in terms
+
+354
+00:41:09,530 --> 00:41:14,190
+of the electrical circuits that it has or
+in terms of the programs that run on it and
+
+355
+00:41:14,190 --> 00:41:21,970
+that describe the computer now for understand
+this with a more easy example
+
+356
+00:41:21,970 --> 00:41:29,510
+lets say we are looking at a building so what
+i am trying to tell you is what are different
+
+357
+00:41:29,510 --> 00:41:36,020
+levels of analysis so lets think of a building
+one level of analysis of a building would
+
+358
+00:41:36,020 --> 00:41:41,260
+be the architecture would be the way the building
+is constructed the design of the building
+
+359
+00:41:41,260 --> 00:41:46,109
+how it is how it looks what kind of rooms
+it has and so on and so forth so this is a
+
+360
+00:41:46,109 --> 00:41:50,380
+higher level analysis
+a lower level of analysis or another level
+
+361
+00:41:50,380 --> 00:41:56,559
+of analysis of this building could be in terms
+or the bricks that is used to make this building
+
+362
+00:41:56,559 --> 00:42:03,770
+the cement that is used the steel rods which
+are used and so in terms of the basic components
+
+363
+00:42:03,770 --> 00:42:13,880
+we make up the building although both levels
+of analysis are talking about the same building
+
+364
+00:42:13,880 --> 00:42:19,740
+but they have different different viewpoints
+of it and so this building can be explained
+
+365
+00:42:19,740 --> 00:42:24,539
+with the analysis with the level of the architecture
+architecture input or it could be understood
+
+366
+00:42:24,539 --> 00:42:27,470
+in terms of the level of the basic building
+materials
+
+367
+00:42:27,470 --> 00:42:33,320
+so then this is how the distinction of the
+brain and the mind can be ah done true through
+
+368
+00:42:33,320 --> 00:42:40,859
+different levels of analysis what this would
+mean is that when we are looking at any ah
+
+369
+00:42:40,859 --> 00:42:48,799
+mental process we can look at a mental process
+from both a functional view as well as a structural
+
+370
+00:42:48,799 --> 00:42:56,200
+view
+lets look at emotions what is the functional
+
+371
+00:42:56,200 --> 00:43:05,400
+view of an emotion the functional view of
+an emotion is it is an arousal state it is
+
+372
+00:43:05,400 --> 00:43:12,039
+a state of arousal which quickly clients and
+ah gets back to normal and through which people
+
+373
+00:43:12,039 --> 00:43:18,010
+experience feelings this is more of functional
+view but what is the structural view of looking
+
+374
+00:43:18,010 --> 00:43:21,450
+at an emotion
+the structural view of an emotion could be
+
+375
+00:43:21,450 --> 00:43:27,440
+expressed in terms of the brain regions which
+lead to the emotion and probably the areas
+
+376
+00:43:27,440 --> 00:43:33,760
+which are related to amygdala or areas near
+to it which leads to generation of an emotion
+
+377
+00:43:33,760 --> 00:43:42,220
+so the same emotion that i am talking about
+the same ah emotion that people have can be
+
+378
+00:43:42,220 --> 00:43:48,560
+expressed both on a functional level in terms
+of what people feel and also in terms of the
+
+379
+00:43:48,560 --> 00:43:54,359
+structural level of which regions the brain
+lead to the development of this particular
+
+380
+00:43:54,359 --> 00:44:00,869
+feeling or with this particular emotion
+another interesting thing or another input
+
+381
+00:44:00,869 --> 00:44:09,839
+matter subject matter of cognitive psychology
+are mental representation what a mental representation
+
+382
+00:44:09,839 --> 00:44:17,680
+whenever we think about something maybe it
+could be a job it could be thinking about
+
+383
+00:44:17,680 --> 00:44:24,670
+a friend a particular vacation whenever we
+think about this a lot of mental activities
+
+384
+00:44:24,670 --> 00:44:32,800
+takes place in the brain and so these mental
+activities actually excess or actually use
+
+385
+00:44:32,800 --> 00:44:37,720
+something called mental representations
+so generally what is a mental representation
+
+386
+00:44:37,720 --> 00:44:45,130
+a mental representation is basically a physical
+state that conveys information specifying
+
+387
+00:44:45,130 --> 00:44:53,160
+an object event or category or its characteristics
+in terms of paper and pen a mental representation
+
+388
+00:44:53,160 --> 00:44:59,580
+would be the ink which writes a particular
+letter the way the particular letter is written
+
+389
+00:44:59,580 --> 00:45:06,130
+in terms the brain it could be the neural
+connections which leads to a particular kind
+
+390
+00:45:06,130 --> 00:45:12,609
+of ah network connection a particular kind
+of mental state disease generated or in terms
+
+391
+00:45:12,609 --> 00:45:16,220
+of computers it could be a particular kind
+of magnetic field
+
+392
+00:45:16,220 --> 00:45:25,359
+so mental representation basically is a notion
+is a represent the way something is stored
+
+393
+00:45:25,359 --> 00:45:33,990
+each mental representation or most mental
+representations have two things in common
+
+394
+00:45:33,990 --> 00:45:39,339
+one is a form of the mental representation
+and the second is the content of a mental
+
+395
+00:45:39,339 --> 00:45:43,160
+representation
+what is the form of a mental representation
+
+396
+00:45:43,160 --> 00:45:52,200
+the form of a mental representation states
+the way a particular message is conveyed the
+
+397
+00:45:52,200 --> 00:45:58,240
+format in which it is conveyed the way in
+which it is encode and the content of a mental
+
+398
+00:45:58,240 --> 00:46:06,940
+representation is basically the meaning the
+knowledge the idea which is being conveyed
+
+399
+00:46:06,940 --> 00:46:11,500
+to that representation
+so basically mental representation is ah think
+
+400
+00:46:11,500 --> 00:46:25,730
+of it is a ah unit of knowledge and this unit
+of knowledge has a form which is in which
+
+401
+00:46:25,730 --> 00:46:29,910
+format it has been encoded so it could be
+encoded in visual format it could be encoded
+
+402
+00:46:29,910 --> 00:46:35,140
+in auditory format it could be encoded in
+some other format a haptic format and the
+
+403
+00:46:35,140 --> 00:46:41,750
+content is what is the ah data bytes into
+it what is the knowledge into it so mostly
+
+404
+00:46:41,750 --> 00:46:46,789
+representations are like that
+let us understand what mental representations
+
+405
+00:46:46,789 --> 00:46:52,190
+are and when i say that a mental representation
+is a unit of knowledge and it can it has a
+
+406
+00:46:52,190 --> 00:46:57,190
+form and and a particular kind of a form and
+a particular kind of content let me explain
+
+407
+00:46:57,190 --> 00:47:05,950
+this a little bit more
+for example i want to convey to you the following
+
+408
+00:47:05,950 --> 00:47:14,900
+sentence the ball is on the box this sentence
+means or this idea means that there is something
+
+409
+00:47:14,900 --> 00:47:23,880
+on something a subject an object and a relation
+between a subject an object or it represents
+
+410
+00:47:23,880 --> 00:47:33,190
+an idea now this idea has two parts one is
+what is second is where and the third is on
+
+411
+00:47:33,190 --> 00:47:39,329
+what so the bodies of the box the idea of
+a ball being in a box can be conveyed through
+
+412
+00:47:39,329 --> 00:47:46,550
+two kinds of representations we can use a
+propositional representation and we can use
+
+413
+00:47:46,550 --> 00:47:52,500
+a quasi pictorial representation what is the
+meaning of that prepositional response are
+
+414
+00:47:52,500 --> 00:47:59,950
+representations will tell you two ideas and
+how are these ideas related together whereas
+
+415
+00:47:59,950 --> 00:48:07,349
+a quasi pictorial representation is going
+to tell you show you a picture of how these
+
+416
+00:48:07,349 --> 00:48:14,069
+ideas are related together so when i look
+at the proposition of representation looking
+
+417
+00:48:14,069 --> 00:48:25,119
+into it i have the ball which is on the box
+right so ball and box are two ideas or two
+
+418
+00:48:25,119 --> 00:48:31,140
+representations which are connected by a representation
+on which basically means that something on
+
+419
+00:48:31,140 --> 00:48:37,150
+something and in this case there is a ball
+which is a circular in shape and which is
+
+420
+00:48:37,150 --> 00:48:43,119
+on top of a box which may be or rectangular
+in shape
+
+421
+00:48:43,119 --> 00:48:50,710
+so then what this representation proportional
+presentation explains is a relationship first
+
+422
+00:48:50,710 --> 00:48:56,859
+of all so the ball is in the box if i represent
+it through prepositions it could be in terms
+
+423
+00:48:56,859 --> 00:49:00,970
+it could it could have in terms of proportional
+disposition it should have a relation how
+
+424
+00:49:00,970 --> 00:49:04,809
+the two ideas are connected together that
+undulation here is on
+
+425
+00:49:04,809 --> 00:49:11,650
+second an argument what representations or
+what ideas are connected i have a connector
+
+426
+00:49:11,650 --> 00:49:15,480
+on which is connecting two ideas but what
+are the ideas which is being connected the
+
+427
+00:49:15,480 --> 00:49:22,650
+ball in the box what is the syntax of connecting
+now if i just write on ball box it is not
+
+428
+00:49:22,650 --> 00:49:29,150
+going to make any meaning there is a syntax
+to it a syntax a is that one ball a ball it
+
+429
+00:49:29,150 --> 00:49:37,280
+could be anything on which is the connector
+a box on one thing and the then the connector
+
+430
+00:49:37,280 --> 00:49:44,700
+is so this ball is basically on the box lift
+up when i am saying that i am talking about
+
+431
+00:49:44,700 --> 00:49:51,760
+the particular ball the particular box then
+the abstract what is the abstract the ball
+
+432
+00:49:51,760 --> 00:49:55,829
+in the box the shapes of the balls in the
+box
+
+433
+00:49:55,829 --> 00:50:02,010
+then the propositional representation it doesnt
+happen in a special media in spatial media
+
+434
+00:50:02,010 --> 00:50:05,529
+and the reason that it does not hap happen
+in space it does not explain you in space
+
+435
+00:50:05,529 --> 00:50:10,490
+how these are related so in space you will
+you will generate the idea in your head that
+
+436
+00:50:10,490 --> 00:50:14,990
+there is a ball and there is a box and the
+ball is on the box but you cannot see the
+
+437
+00:50:14,990 --> 00:50:19,829
+picture of the ball on the box although you
+will it will generate the same idea of the
+
+438
+00:50:19,829 --> 00:50:25,549
+ball being on the box and arbitrarily related
+to repre represent objects it can be arbitrarily
+
+439
+00:50:25,549 --> 00:50:30,059
+related to it
+when i use a quasi pictorial representation
+
+440
+00:50:30,059 --> 00:50:38,170
+for explaining the same idea the ball is in
+the box i can draw a ball which is spherical
+
+441
+00:50:38,170 --> 00:50:44,200
+in shape and a box oh here i have to be very
+specific i cannot draw a triangular ball neither
+
+442
+00:50:44,200 --> 00:50:51,290
+can i draw a cubical box ah ah hectagonal
+box obviously it is allowed but then most
+
+443
+00:50:51,290 --> 00:50:55,260
+box will have rectangular or squarish surface
+and so i have to be very strictly to that
+
+444
+00:50:55,260 --> 00:51:04,950
+also the preposition of on suggest that the
+spherical shape has to be on top of the shape
+
+445
+00:51:04,950 --> 00:51:08,900
+of the box
+and so in this case there is no distinct relation
+
+446
+00:51:08,900 --> 00:51:17,960
+there is no distinct arguments no clear syntax
+no concrete ideas but then what happens is
+
+447
+00:51:17,960 --> 00:51:26,380
+it happens this can be expressed in a spatial
+medium what does these mean what is the meaning
+
+448
+00:51:26,380 --> 00:51:36,150
+of this the meaning of this is mental representations
+or mental ideas can not only be expressed
+
+449
+00:51:36,150 --> 00:51:42,119
+in terms of words or in terms of prepositions
+in terms of ideas and connector connectors
+
+450
+00:51:42,119 --> 00:51:48,470
+connecting these ideas but it will also be
+expressed in terms of just images and so images
+
+451
+00:51:48,470 --> 00:51:55,260
+are one way of conveying an idea
+lets take another example ram is running if
+
+452
+00:51:55,260 --> 00:52:03,240
+i say the sentence ram is running the two
+ways of showing it i can use running which
+
+453
+00:52:03,240 --> 00:52:10,430
+is a verb or i can and then i can use ram
+which is the noun and then show the relation
+
+454
+00:52:10,430 --> 00:52:15,190
+between that running is done by ram this is
+a propositional so making the preposition
+
+455
+00:52:15,190 --> 00:52:21,839
+or i can draw somebody running doing the act
+of running or make a cartoon of it and running
+
+456
+00:52:21,839 --> 00:52:26,940
+and then i can show that ram is running by
+that particular thing both these representations
+
+457
+00:52:26,940 --> 00:52:30,099
+both these formats will actually convey the
+same meaning
+
+458
+00:52:30,099 --> 00:52:35,410
+so coming back to the idea that mental representations
+have a particular format and a particular
+
+459
+00:52:35,410 --> 00:52:41,609
+idea or a particular content as you can see
+both these ways of representations have a
+
+460
+00:52:41,609 --> 00:52:47,230
+format the first one has a propositional format
+and the second one has the quasi representational
+
+461
+00:52:47,230 --> 00:52:53,660
+format which is a special format of encoding
+ideas what is the content the content of the
+
+462
+00:52:53,660 --> 00:52:59,700
+first is there is a an object a which is on
+top of object b similarly with the pictorial
+
+463
+00:52:59,700 --> 00:53:07,260
+representations also the same idea or the
+same information is being conveyed that a
+
+464
+00:53:07,260 --> 00:53:11,650
+is on top of b
+so then these mental representations that
+
+465
+00:53:11,650 --> 00:53:18,510
+we have can actually or how do these mental
+representations work the working of these
+
+466
+00:53:18,510 --> 00:53:29,420
+mental representations takes place through
+a process a processing system and algorithm
+
+467
+00:53:29,420 --> 00:53:35,990
+so once we see something once we form a mental
+representation this mental representation
+
+468
+00:53:35,990 --> 00:53:43,010
+is taken by the mind and this then this mind
+makes meaning out of it through using a process
+
+469
+00:53:43,010 --> 00:53:51,020
+or processing system and an algorithm
+what does the process do the process takes
+
+470
+00:53:51,020 --> 00:54:02,220
+in basic information and produces specific
+out of it so the process will look at the
+
+471
+00:54:02,220 --> 00:54:07,230
+mental representation whether it is in propositional
+form or in special form encode it through
+
+472
+00:54:07,230 --> 00:54:18,940
+a ah ah through a system of pros perception
+attention that kind of ah thing a processing
+
+473
+00:54:18,940 --> 00:54:25,630
+system will compose of several processes and
+these several processes will combine with
+
+474
+00:54:25,630 --> 00:54:34,060
+one another to give a output to give us the
+idea that a is on b or that this is what is
+
+475
+00:54:34,060 --> 00:54:40,360
+being conveyed
+so a process is basically one part of a processing
+
+476
+00:54:40,360 --> 00:54:46,710
+system a process is basically a format or
+is is basically a process through which something
+
+477
+00:54:46,710 --> 00:54:53,559
+is some information is taken and this information
+is transformed into specific type of output
+
+478
+00:54:53,559 --> 00:54:59,890
+this specific output is later on combined
+through or it is is pros is passed through
+
+479
+00:54:59,890 --> 00:55:06,410
+several processes and these several processes
+generally are comprised in something called
+
+480
+00:55:06,410 --> 00:55:13,230
+a processing system
+so for example going back to the original
+
+481
+00:55:13,230 --> 00:55:21,480
+thing looking at the quasi representational
+description looking at this makes you understand
+
+482
+00:55:21,480 --> 00:55:27,700
+this knowledge that a ball is on the box now
+for this for you to understand that the ball
+
+483
+00:55:27,700 --> 00:55:31,710
+is on the box there are several processes
+responsible and there is a processing system
+
+484
+00:55:31,710 --> 00:55:37,309
+which is processing it one process the first
+process i would say which is responsible as
+
+485
+00:55:37,309 --> 00:55:42,440
+attention you have to pay your attention to
+this particular image the special image the
+
+486
+00:55:42,440 --> 00:55:49,500
+process of attention will take out everything
+else from the the vicinity of this particular
+
+487
+00:55:49,500 --> 00:55:58,110
+picture and what it will do is it will only
+concentrate your mental concentration onto
+
+488
+00:55:58,110 --> 00:56:04,079
+this box and and this ball
+the process of perception will let you understand
+
+489
+00:56:04,079 --> 00:56:10,510
+this or encode this in a visual format and
+then there will be process of memory through
+
+490
+00:56:10,510 --> 00:56:14,609
+which what will happen is there will be a
+comparison of the size of this the shape of
+
+491
+00:56:14,609 --> 00:56:21,319
+this the relation between this and then there
+will be a process of thinking of up ah decision
+
+492
+00:56:21,319 --> 00:56:25,010
+making will not be a process here but then
+this is how you will develop the idea that
+
+493
+00:56:25,010 --> 00:56:29,760
+the ball is on the table
+so the processing system comprises of several
+
+494
+00:56:29,760 --> 00:56:34,630
+processes and these several processes one
+after another gives you the final output an
+
+495
+00:56:34,630 --> 00:56:43,390
+algorithm is basically a step by step procedure
+of how the processing system should function
+
+496
+00:56:43,390 --> 00:56:51,599
+so any processing system should function in
+a particular way in a particular in in a particular
+
+497
+00:56:51,599 --> 00:57:01,099
+direction and this algorithms tell you how
+to where to start where to go from there what
+
+498
+00:57:01,099 --> 00:57:06,130
+to expect out of it and then where to go from
+there again
+
+499
+00:57:06,130 --> 00:57:15,789
+for example in the idea of perceiving the
+ball and the box the algorithm tells the mind
+
+500
+00:57:15,789 --> 00:57:25,849
+or the brain to first look at the shapes pay
+your attention to the shapes cut out the or
+
+501
+00:57:25,849 --> 00:57:31,630
+separate the background from the foreground
+perceive this in the through the eyes in the
+
+502
+00:57:31,630 --> 00:57:37,799
+visual format hold it into working memory
+let the central executive and an episodic
+
+503
+00:57:37,799 --> 00:57:42,859
+buffer of working memory talk to long term
+memory and make a comparison of what you are
+
+504
+00:57:42,859 --> 00:57:52,750
+seeing and based on that generating this output
+that this particular figure shows a ball on
+
+505
+00:57:52,750 --> 00:57:57,369
+the table so this is how the algorithm says
+so it starts the algorithm says that it starts
+
+506
+00:57:57,369 --> 00:58:02,369
+with attention goes to perception goes to
+memory those to this kind of memory they are
+
+507
+00:58:02,369 --> 00:58:11,750
+retrievers and then make making the decision
+of how this ball is on the table or how the
+
+508
+00:58:11,750 --> 00:58:19,119
+what this particular picture explains
+so up till now what we have seen is what is
+
+509
+00:58:19,119 --> 00:58:26,240
+the history of cognitive psychology and we
+have looked at the schools of area schools
+
+510
+00:58:26,240 --> 00:58:37,630
+which gave their inputs or which led to the
+development of the field of cognitive psychology
+
+511
+00:58:37,630 --> 00:58:43,079
+and we have also looked at what is the subject
+matter of cognitive psychology we looked at
+
+512
+00:58:43,079 --> 00:58:48,460
+what are mental representations how they can
+be encoded what is the ah ah format in which
+
+513
+00:58:48,460 --> 00:58:55,599
+we can encode and things like that we will
+continue our journey by understanding why
+
+514
+00:58:55,599 --> 00:59:01,240
+should we study the brain at all if mind is
+of what is importance why should be studying
+
+515
+00:59:01,240 --> 00:59:08,000
+the brain and then following on following
+this we will also look at the several paradigms
+
+516
+00:59:08,000 --> 00:59:14,869
+of cognitive psychology or what are the basic
+bodies of knowledge of cognitive psychology
+
+517
+00:59:14,869 --> 00:00:00,000
+thank you
+
