@@ -6,7 +6,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-38-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-39-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![Issues](https://img.shields.io/github/issues/Python-World/Python_and_the_Web)
@@ -93,6 +93,7 @@ We now have a section for miscellaneous scripts as well.
     <td align="center"><a href="https://araon.pythonanywhere.com"><img src="https://avatars0.githubusercontent.com/u/30241057?v=4" width="100px;" alt=""/><br /><sub><b>Soumik</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=Araon" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/ShravanBhat"><img src="https://avatars3.githubusercontent.com/u/48554826?v=4" width="100px;" alt=""/><br /><sub><b>Shravan Bhat</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=ShravanBhat" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/Agrover112"><img src="https://avatars3.githubusercontent.com/u/42321810?v=4" width="100px;" alt=""/><br /><sub><b>Agrover112</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=Agrover112" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/ShantanuTaro"><img src="https://avatars3.githubusercontent.com/u/43516930?v=4" width="100px;" alt=""/><br /><sub><b>Shantanu Taro</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=ShantanuTaro" title="Code">💻</a></td>
   </tr>
 </table>
 
