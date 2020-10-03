@@ -36,5 +36,4 @@ def get_metadata(username):
 
     except :
         return {"error": "internal error"}
-
 pprint.pprint(get_metadata("tomhardy"))
