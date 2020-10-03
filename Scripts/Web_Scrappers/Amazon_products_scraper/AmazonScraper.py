@@ -30,7 +30,7 @@ def scrape(url):
     req = requests.get(url, headers=headers)
     # This is just to check if Amazon blocked our scraper.
     if req.status_code > 500:
-        if "Contact for access to amazon data." in r.text:
+        if "Contact for access to amazon data." in req.text:
             print("Amazon Page: %s was blocked by Amazon. Please try using better proxies\n"%url)
         else:
             print("Amazon Page: %s was blocked, status code is: %d"%(url,req.status_code))
