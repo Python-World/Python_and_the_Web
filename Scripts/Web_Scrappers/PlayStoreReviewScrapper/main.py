@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-import requests
 import extracter
 import time
 import re
@@ -36,7 +35,7 @@ def getPlaystoreReviews(app_id):
                 try:
                     python_button = browser.find_elements_by_xpath(path)[0]
                     python_button.click()
-                except:
+                except Exception as ex::
                     elem.send_keys(Keys.PAGE_UP)
                     pass
 
@@ -46,7 +45,7 @@ def getPlaystoreReviews(app_id):
                     elem.send_keys(Keys.PAGE_UP)
                     python_button = browser.find_elements_by_xpath(path)[0]
                     python_button.click()
-                except:
+                except Exception as ex::
                     pass
         no_of_pagedowns -= 1
 
@@ -104,8 +103,7 @@ def main():
             application_id = file.readline()
             if not application_id:
                 break
-            else:
-                getPlaystoreReviews(application_id)
+            getPlaystoreReviews(application_id)
        
 
 if __name__ == '__main__':
