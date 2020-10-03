@@ -14,6 +14,12 @@ A simple python script to detect faces in a webcam.<br>
 
 </p>
 
+<p>Downloading haar cascade files</p>
+<p>Open the following link to download haar cascade xml file, keep it in the same folder as face-detection.py </p>
+```https://drive.google.com/file/d/15dnrarVLAUzysNj0gF00vu8T4g7U0yaN/view```
+
+
+
 ## Running the script
 
 <p> On command prompt/ terminal, Change to the face-detection directory </p>
