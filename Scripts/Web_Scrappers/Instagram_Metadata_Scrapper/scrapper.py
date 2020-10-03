@@ -32,6 +32,6 @@ def get_metadata(username):
             }
         return {"error" : "problem getting the data , please try again"}
 
-    except Exception as e:
+    except Exception as _unused:
         return {"error": "internal error"}
 pprint.pprint(get_metadata("tomhardy"))
