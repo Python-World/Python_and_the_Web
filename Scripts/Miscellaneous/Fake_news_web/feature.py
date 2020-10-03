@@ -3,6 +3,7 @@ import pandas as pd
 import os
 import re
 import nltk
+from nltk.stem import WordNetLemmatizer
 
 def get_all_query(title, author, text):
     total= title + author + text
