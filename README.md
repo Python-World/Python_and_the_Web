@@ -20,6 +20,15 @@ We now have a section for miscellaneous scripts as well.
 
 **Note**: 100 Ideas implemented using python List available [Here](https://python-world.github.io/python-mini-projects/#/)
 
+## How to Contribute?
+
+- Take a look at the Existing [Issues](https://github.com/Python-World/Python_and_the_Web/issues) or create your own Issues!
+- Wait for the Issue to be assigned to you after which you can start working on it.
+- Fork the Repo and create a Branch for any Issue that you are working upon.
+- Read the [Code of Conduct](https://github.com/Python-World/Python_and_the_Web/blob/master/CODE_OF_CONDUCT.md)
+- Create a Pull Request which will be promptly reviewed and suggestions would be added to improve it.
+- Add Screenshots to help us know what this Script is all about.
+- Having difficulty in contributing? Read the [Contribution Guide](https://github.com/Python-World/Python_and_the_Web/blob/master/CONTRIBUTING.md) for a detailed explanation.
 
 ## README Template for scripts
 
