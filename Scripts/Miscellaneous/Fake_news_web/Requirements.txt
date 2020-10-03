@@ -1,0 +1,4 @@
+language: python 3.7
+Utilities:Jupyter notebook (better to totally install anaconda environment)
+libraries to be installed:
+        sklearn,numpy,os,pandas,nltk.
