@@ -1,0 +1,12 @@
+<State>
+<Resident Id="100">
+<Name>Sample Name</Name>
+	<PhoneNumber>1234567891</PhoneNumber>
+	<EmailAddress>sample_name@example.com</EmailAddress>
+</Resident>
+<Resident Id="101">
+	<Name>Sample Name1</Name>
+	<PhoneNumber>1234567891</PhoneNumber>
+	<EmailAddress>sample_name1@example.com</EmailAddress>
+</Resident>
+</State>
