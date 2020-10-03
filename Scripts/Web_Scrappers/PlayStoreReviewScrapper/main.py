@@ -35,7 +35,7 @@ def getPlaystoreReviews(app_id):
                 try:
                     python_button = browser.find_elements_by_xpath(path)[0]
                     python_button.click()
-                except Exception as ex::
+                except Exception as ex:
                     elem.send_keys(Keys.PAGE_UP)
                     pass
 
