@@ -45,7 +45,7 @@ def getPlaystoreReviews(app_id):
                     elem.send_keys(Keys.PAGE_UP)
                     python_button = browser.find_elements_by_xpath(path)[0]
                     python_button.click()
-                except Exception as ex::
+                except Exception as ex:
                     pass
         no_of_pagedowns -= 1
 
