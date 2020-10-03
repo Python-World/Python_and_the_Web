@@ -14,7 +14,7 @@ def get_emails(filename:str):
         for line in file:
             #em = re.find('\S+@\S+\.\S+',line)
             #print(em)
-            regex = re.match('\S+@\S+\.\S+',line) # Creates a match object for a correct match
+            regex = re.match(r'\S+@\S+\.\S+',line) # Creates a match object for a correct match
             if regex: #if match exists
                 emails.append(regex.group(0)) # extracts the text of the match
             
