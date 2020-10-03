@@ -1,6 +1,9 @@
 '''
-This script automate the gmail login and
-Sending mail part.
+This script automate the gmail login process and
+Sending first mail from your inbox and send to the
+sender's Email id
+
+Note: Please create `details.ini` in same Directory (check README.md for more details)  
 '''
 
 # import essential libraries
