@@ -4,7 +4,7 @@ Generate photos of dogs, cats, politicians or even horses that do not exist.
 
 ## Prerequisites
 
-[ ] Run `pip3 install requirements.txt`
+- [ ] Run `pip3 install requirements.txt`
 
 ## How to run the script
 

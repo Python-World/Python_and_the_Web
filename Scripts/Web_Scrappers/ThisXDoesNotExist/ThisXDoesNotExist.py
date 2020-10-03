@@ -5,6 +5,7 @@ import logging
 from datetime import datetime
 from pathlib import Path
 
+# If Pillow isn't installed it won't show the image but just install it
 try:
     import PIL.Image
 
@@ -24,6 +25,10 @@ from functs import (
     get_waifu,
 )
 
+# the functions to call to get the type of the image and the image itself, since the names are all the same a dict
+# isn't really needed, I could've just used getattr or similar tricks.
+# If you want to change a name of a type of a photo (Ex: you don't like dog and want to change "--type dog"
+# to "--type doggo"), you can do it by changing keys in this dict.
 fun_dict = {
     "art": get_art,
     "cat": get_cat,
@@ -73,7 +78,7 @@ del arg_parser
 img_type, img_bytes = fun_dict[args.type]()
 
 if not args.memory:
-    # dd_mm_yyyy_hh_mm
+    # date format: dd_mm_yyyy_hh_mm
     OutPath = Path(args.outdir) / Path(
         args.outfile.format(
             TYPE=args.type,
@@ -84,10 +89,12 @@ if not args.memory:
     OutPath.open(mode="wb").write(img_bytes)
     print("[*] Saved file to: %s" % OutPath)
 
+# If --no-pil wasn't passed and Pil is installed, show the image
 if not args.no_pil and pillow_available:
     try:
         PIL.Image.open(io.BytesIO(img_bytes),).show()
     except PIL.UnidentifiedImageError:
+        # Sometimes the dog site will return a .mp4 file. Pillow can't open such files so it'll throw an exception.
         print(
             "[-] Unable to show the photo (probably because it's a video)! Image extension: %s"
             % img_type

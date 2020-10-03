@@ -6,27 +6,29 @@ from bs4 import BeautifulSoup
 
 
 def get_random_number_with_zero(min: int, max: int) -> str:
+    """
+    Get a random number in range min - max of len max (padded with 0).
+
+    @param min: the lowest number of the range in which the number should be generated
+    @param max: the highest number of the range in which the number should be generated
+    @return: A string like "00183"
+    """
     return str(random.randint(min, max)).zfill(len(str(max)))
 
 
-def get_pony() -> ty.Tuple[str, bytes]:
-    """
-    Returns a photo of a pony that does not exist as bytes.
+# These functions all do the same thing: they return a tuple like (type, bytes) where type is a string
+# that indicates the type of the image and bytes is the image like in ("png", b'....')
 
-    @rtype: bytes
-    """
+def get_pony() -> ty.Tuple[str, bytes]:
     # It's https://thisponydoesnotexist.net/v1/w2x-redo/jpgs/seed + 5 random digits + .jpg
     base_url = "https://thisponydoesnotexist.net/v1/w2x-redo/jpgs/seed%s.jpg"
+    # This is one the images url.
     img_url = base_url % get_random_number_with_zero(0, 99999)
+    # Fetch the photo and return it
     return "jpeg", requests.get(img_url).content
 
 
 def get_politician() -> ty.Tuple[str, bytes]:
-    """
-    Returns a photo of a politician that does not exist as bytes.
-
-    @rtype: bytes
-    """
     # It's https://vole.wtf/this-mp-does-not-exist/mp/mp00 + 3 random digits + .jpg (three random digits < 649)
     base_url = "https://vole.wtf/this-mp-does-not-exist/mp/mp00%s.jpg"
     img_url = base_url % get_random_number_with_zero(0, 649)
@@ -44,6 +46,8 @@ def get_art() -> ty.Tuple[str, bytes]:
 def get_snack() -> ty.Tuple[str, bytes]:
     page_html = requests.get("https://thissnackdoesnotexist.com/").text
     soup = BeautifulSoup(page_html, "html.parser")
+    # the tag looks like:
+    # <meta property="og:image" content="https://images.unsplash.com/photo-....">
     img_url = soup.find("meta", attrs=dict(property="og:image")).get_attribute_list(
         "content"
     )[0]
