@@ -1,2 +1,2 @@
-requests
-selectorlib
+requests==2.24.0
+selectorlib==0.16.0
