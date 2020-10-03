@@ -1,4 +1,4 @@
-
+# Imports
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
@@ -44,8 +44,10 @@ def draw_lines(image, hough_lines):
     return image
 
 
-final_img = draw_lines(img, lines)  # Result
+# Result
+final_img = draw_lines(img, lines)  
 
+# Show the final resluts on a window
 plt.imshow(final_img)
 plt.xticks([])
 plt.yticks([])
