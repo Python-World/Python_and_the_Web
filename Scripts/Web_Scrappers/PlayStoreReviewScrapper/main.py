@@ -10,12 +10,15 @@ from selenium.webdriver.common.keys import Keys
 
 
 def getPlaystoreReviews(app_id):
+
+    # url of the playstore with application_id
     url = "https://play.google.com/store/apps/details?id=" + app_id + "&showAllReviews=true"
 
     browser = webdriver.Chrome("/usr/lib/chromium-browser/chromedriver")
     browser.get(url)
     time.sleep(1)
 
+    #get body content to click buttons
     elem = browser.find_element_by_tag_name("body")
 
     no_of_pagedowns = 400
@@ -24,6 +27,7 @@ def getPlaystoreReviews(app_id):
     path2 = '/html/body/div[1]/div[4]/c-wiz[2]/div/div[2]/div/div[1]/div/div/div[1]/div[2]/div[2]/div/span/span'
     path3 = '/html/body/div[1]/div[4]/c-wiz/div/div[2]/div/div[1]/div/div/div[1]/div[2]/div[2]/div/span/span'
 
+    # Scroll web page to get data
     while no_of_pagedowns:
         elem.send_keys(Keys.PAGE_DOWN)
 
@@ -69,7 +73,7 @@ def getPlaystoreReviews(app_id):
     print("Gathering Reviews")
     print("\t=============Reviews=============")
     review_count = 0
-    # Iterate through each review
+    # Iterate through each review get all feilds of comments
     for div in reviews:
         review_count += 1
         user = div.find("span", {"class": "X43Kjb"})
@@ -94,7 +98,7 @@ def getPlaystoreReviews(app_id):
 def main():
 
     infile = input("Enter file name: ")
-
+    # for each application id get the application reviews
     with open(infile,'r') as file:
         while 1:
             application_id = file.readline()

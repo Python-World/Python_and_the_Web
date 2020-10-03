@@ -3,6 +3,7 @@ import errno
 import csv
 
 
+#Write the reviews result to csv_file
 def writecsv(filename, dict_data):
     csv_columns = ['Sno', 'User', 'Rating', 'Review']
     csv_file = filename + ".csv"
