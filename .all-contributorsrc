@@ -308,6 +308,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "CaptainRoberts",
+      "name": "Benji",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/25398128?v=4",
+      "profile": "https://github.com/CaptainRoberts",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
