@@ -1,6 +1,5 @@
 import cv2
 import numpy as np
-import matplotlib.pyplot as plt
 
 
 # Define ROI
@@ -21,6 +20,7 @@ def draw_lines(lines, image):
     return image
 
 
+# Preprocess the frames for detections
 def process(img):
 
     try:
