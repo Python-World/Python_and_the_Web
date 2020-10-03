@@ -6,7 +6,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-32-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-23-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![Issues](https://img.shields.io/github/issues/Python-World/Python_and_the_Web)
@@ -19,64 +19,18 @@ Scripts in python that scrape the web, create a bot or use an API to solve a pro
 We now have a section for miscellaneous scripts as well.
 
 **Note**: 100 Ideas implemented using python List available [Here](https://python-world.github.io/python-mini-projects/#/)
-## Steps To Follow
 
-- Select an issue and ask to be *assigned* to it.
-- Check existing scripts [project here.](https://github.com/Python-World/Python_and_the_Web)
-- **Star** the repository.
-- On the [GitHub page for this repository](https://github.com/Python-World/Python_and_the_Web), click on the Button "**Fork**".
-   ![fork image](https://help.github.com/assets/images/help/repository/fork_button.jpg)
-- Create clone ***your forked repository*** on your local machine.
-   ![code ui](https://docs.github.com/assets/images/help/repository/code-button.png)
 
-    For example, run this command inside your terminal:
+## How to Contribute?
 
-    ```bash
-    git clone https://github.com/<your-github-username>/Python_and_the_Web.git
-    ```
+- Take a look at the Existing [Issues](https://github.com/Python-World/Python_and_the_Web/issues) or create your own Issues!
+- Wait for the Issue to be assigned to you after which you can start working on it.
+- Fork the Repo and create a Branch for any Issue that you are working upon.
+- Read the [Code of Conduct](https://github.com/Python-World/Python_and_the_Web/blob/master/CODE_OF_CONDUCT.md)
+- Create a Pull Request which will be promptly reviewed and suggestions would be added to improve it.
+- Add Screenshots to help us know what this Script is all about.
+- Having difficulty in contributing? Read the [Contribution Guide](https://github.com/Python-World/Python_and_the_Web/blob/master/CONTRIBUTING.md) for a detailed explanation.
 
-    **Replace \<your-github-username\>!**
-
-    Learn more about [forking](https://help.github.com/en/github/getting-started-with-github/fork-a-repo) and [cloning a repo](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
-- Before you make any changes, [keep your fork in sync](https://www.freecodecamp.org/news/how-to-sync-your-fork-with-the-original-git-repository/) to avoid merge conflicts:
-
-    ```bash
-    git remote add upstream https://github.com/Python-World/Python_and_the_Web.git
-    git fetch upstream
-    git pull upstream master
-    git push
-    ```
-
-- If you run into a **merge conflict**, you have to resolve the conflict. There are a lot of guides online, or you can try this one by [opensource.com](https://opensource.com/article/20/4/git-merge-conflict).
-
-- Checkout to development branch (*name your branch according to the issue name*).
-
-    ```bash
-    git checkout -b <branch-name>
-    ```
-
-- Create a folder in one of the folders in the [Scripts' directory](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts) according to issue name.
-- Write your code and add to the respective folder in the projects directory, locally.
-- Don't forget to add a `README.md` in your folder, according to the [README_TEMPLATE.](https://github.com/chavarera/python-mini-projects/blob/master/README_TEMPLATE.md)
-- Add the changes with `git add`, `git commit` ([write a good commit message](https://chris.beams.io/posts/git-commit/), if possible):
-
-    ```bash
-    git add -A
-    git commit -m "<your message>"
-    ```
-
-- Push the code *to your repository*.
-
-    ```bash
-    git push origin <branch-name>
-    ```
-
-- Go to the GitHub page of _your fork_, and **make a pull request**:
-
-    ![pull request image](https://help.github.com/assets/images/help/pull_requests/choose-base-and-compare-branches.png)
-
-    Read more about pull requests on the [GitHub help pages](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
-- Now wait, until one of us *reviews your Pull Request*! If there are any conflicts, you will get a notification.
 
 ## README Template for scripts
 
@@ -122,17 +76,6 @@ We now have a section for miscellaneous scripts as well.
   <tr>
     <td align="center"><a href="https://github.com/varuntumbe"><img src="https://avatars0.githubusercontent.com/u/44541344?v=4" width="100px;" alt=""/><br /><sub><b>Varun Hegde</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=varuntumbe" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/aswarth123"><img src="https://avatars2.githubusercontent.com/u/53229329?v=4" width="100px;" alt=""/><br /><sub><b>aswarth123</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=aswarth123" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/Vyprath"><img src="https://avatars3.githubusercontent.com/u/58635215?v=4" width="100px;" alt=""/><br /><sub><b>Pranav</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=Vyprath" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/panudet-24mb"><img src="https://avatars3.githubusercontent.com/u/47716860?v=4" width="100px;" alt=""/><br /><sub><b>Panudet Panumas</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=panudet-24mb" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/Jaideep07"><img src="https://avatars0.githubusercontent.com/u/53224282?v=4" width="100px;" alt=""/><br /><sub><b>Jaideep07</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=Jaideep07" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/infern018"><img src="https://avatars1.githubusercontent.com/u/52378712?v=4" width="100px;" alt=""/><br /><sub><b>Vishwas Singh</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=infern018" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/krishnajalan"><img src="https://avatars3.githubusercontent.com/u/69248796?v=4" width="100px;" alt=""/><br /><sub><b>Krishna Jalan</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=krishnajalan" title="Documentation">📖</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="http://linkedin.com/in/parthdmaniar"><img src="https://avatars3.githubusercontent.com/u/45627498?v=4" width="100px;" alt=""/><br /><sub><b>Parth Maniar</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=officialpm" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/Rogue-Halo"><img src="https://avatars3.githubusercontent.com/u/47247405?v=4" width="100px;" alt=""/><br /><sub><b>Rogue Halo</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=Rogue-Halo" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/Apex-code"><img src="https://avatars2.githubusercontent.com/u/30106022?v=4" width="100px;" alt=""/><br /><sub><b>APEX</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=Apex-code" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/yuvraajnarula"><img src="https://avatars3.githubusercontent.com/u/49155095?v=4" width="100px;" alt=""/><br /><sub><b>Yuvraaj Narula</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=yuvraajnarula" title="Code">💻</a></td>
   </tr>
 </table>
 
@@ -145,4 +88,4 @@ SR No   | Project | Author
 2 | [Pycon Proposals Scraper](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Web_Scrappers/Pycon_Proposals)| [Aditya Jetely](https://github.com/AdityaJ7)
 3 | [Hacktoberfest Events Scraper](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Web_Scrappers/Hacktoberfest_Events)| [Aditya Jetely](https://github.com/AdityaJ7)
 4 | [Wifi Speed Tester](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Miscellaneous/Wifi_Speed)| [AdeshChoudhar19](https://github.com/AdeshChoudhar19)
-5 | [Google Search Using Python](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Web_Scrappers/Google%20Search%20Using%20Python)| [Naman Jain](https://github.com/nj1902)
+5 | [Google Search Using Python](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Miscellaneous/Wifi_Speed)| [Naman Jain](https://github.com/nj1902)
