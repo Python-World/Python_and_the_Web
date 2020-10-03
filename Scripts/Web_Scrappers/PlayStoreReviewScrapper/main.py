@@ -35,10 +35,10 @@ def getPlaystoreReviews(app_id):
                 try:
                     python_button = browser.find_elements_by_xpath(path)[0]
                     python_button.click()
-                except Exception as ex:
-                    print("Exception {}".format(ex))
+                except IndexError:
                     elem.send_keys(Keys.PAGE_UP)
                     pass
+                
 
         if((no_of_pagedowns - 1) % 25 == 0):
             for path in [path1, path2, path3]:
@@ -46,9 +46,10 @@ def getPlaystoreReviews(app_id):
                     elem.send_keys(Keys.PAGE_UP)
                     python_button = browser.find_elements_by_xpath(path)[0]
                     python_button.click()
-                except Exception as ex:
+                except IndexError:
                     print("Exception {}".format(ex))
                     pass
+                
         no_of_pagedowns -= 1
 
 
