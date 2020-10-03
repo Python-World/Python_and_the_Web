@@ -65,7 +65,6 @@ arg_parser.add_argument(
     "--outdir",
     "-od",
     type=str,
-    nargs=1,
     default="images",
     help="The directory where the file should be saved. Default set to images",
 )
