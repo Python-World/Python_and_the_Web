@@ -2,8 +2,7 @@
 
 from selectorlib import Extractor
 import requests 
-import json 
-from time import sleep
+import json
 
 
 # CSS selectors of the product we will scrape.
