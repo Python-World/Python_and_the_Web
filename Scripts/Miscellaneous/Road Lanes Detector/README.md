@@ -21,14 +21,17 @@ This project uses the computer vision library OpenCV to detect road lanes in an 
  5. Run the python files of your choice by typing the filenames in the cmd as `detection_on_image.py`, `detection_on_vid.py` or `nyc_lane_detection.py`
  
 
-### Here are some snippets:
+### Here are some snippets
+
+### In an image
 
 ![lane_detection2](https://user-images.githubusercontent.com/61016383/93895610-a30a8800-fd0d-11ea-8572-6838f45c2717.png)
 
-![Figure_1](https://user-images.githubusercontent.com/61016383/94996320-9a456c00-05c1-11eb-8232-2c6cc9fc10de.png)
+### In videos
 
-![Figure_2](https://user-images.githubusercontent.com/61016383/94996325-a6312e00-05c1-11eb-9a56-cbe2da9417eb.png)
+![Manhattan_lane_detection](https://user-images.githubusercontent.com/61016383/94136193-2fd65280-fe82-11ea-93da-7bd9db3453f2.gif)
 
+![lane_detection](https://user-images.githubusercontent.com/61016383/93894440-5a9e9a80-fd0c-11ea-8450-02753297a7df.gif)
 
 # Author Name
 ADITYA GANDHAMAL
