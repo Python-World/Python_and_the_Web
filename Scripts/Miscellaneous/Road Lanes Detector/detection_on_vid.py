@@ -25,15 +25,19 @@ def process(img):
     
     height = img.shape[0]
     width = img.shape[1]
+    
+    # ROI vertices
     roi_vertices = [
         (0, 650),
         (2*width/3, 2*height/3),
         (width, 1000)
     ]
-
+    
+    # Convert to Grayscale and apply dilations
     gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     gray_img = cv2.dilate(gray_img, kernel=np.ones((3, 3), np.uint8))
-
+    
+    # Find edges using Canny method
     canny = cv2.Canny(gray_img, 130, 220)
 
     roi_img = roi(canny, np.array([roi_vertices], np.int32))
