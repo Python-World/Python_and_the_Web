@@ -5,19 +5,20 @@ import requests
 from bs4 import BeautifulSoup
 
 
-def get_random_number_with_zero(min: int, max: int) -> str:
+def get_random_number_with_zero(min_num: int, max_num: int) -> str:
     """
-    Get a random number in range min - max of len max (padded with 0).
+    Get a random number in range min_num - max_num of len max_num (padded with 0).
 
-    @param min: the lowest number of the range in which the number should be generated
-    @param max: the highest number of the range in which the number should be generated
+    @param min_num: the lowest number of the range in which the number should be generated
+    @param max_num: the highest number of the range in which the number should be generated
     @return: A string like "00183"
     """
-    return str(random.randint(min, max)).zfill(len(str(max)))
+    return str(random.randint(min_num, max_num)).zfill(len(str(max_num)))
 
 
 # These functions all do the same thing: they return a tuple like (type, bytes) where type is a string
 # that indicates the type of the image and bytes is the image like in ("png", b'....')
+
 
 def get_pony() -> ty.Tuple[str, bytes]:
     # It's https://thisponydoesnotexist.net/v1/w2x-redo/jpgs/seed + 5 random digits + .jpg
