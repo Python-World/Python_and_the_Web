@@ -6,7 +6,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-32-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-33-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![Issues](https://img.shields.io/github/issues/Python-World/Python_and_the_Web)
@@ -85,6 +85,7 @@ We now have a section for miscellaneous scripts as well.
     <td align="center"><a href="https://github.com/Rogue-Halo"><img src="https://avatars3.githubusercontent.com/u/47247405?v=4" width="100px;" alt=""/><br /><sub><b>Rogue Halo</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=Rogue-Halo" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/Apex-code"><img src="https://avatars2.githubusercontent.com/u/30106022?v=4" width="100px;" alt=""/><br /><sub><b>APEX</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=Apex-code" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/yuvraajnarula"><img src="https://avatars3.githubusercontent.com/u/49155095?v=4" width="100px;" alt=""/><br /><sub><b>Yuvraaj Narula</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=yuvraajnarula" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Anshul275"><img src="https://avatars0.githubusercontent.com/u/54087991?v=4" width="100px;" alt=""/><br /><sub><b>Anshul275</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=Anshul275" title="Code">💻</a></td>
   </tr>
 </table>
 
