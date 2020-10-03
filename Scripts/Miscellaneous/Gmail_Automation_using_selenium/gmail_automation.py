@@ -3,7 +3,9 @@ This script automate the gmail login process and
 Sending first mail from your inbox and send to the
 sender's Email id
 
-Note: Please create `details.ini` in same Directory (check README.md for more Details)  
+Note: Please create `details.ini` in same Directory
+(check README.md for more Details)
+
 '''
 
 # import essential libraries
@@ -105,7 +107,6 @@ class Demo:
                 tr_obj = elem.findAll('tr')
 
             for tr in tr_obj:
-                td_obj = tr.findAll('td')[0]
                 p = driver.find_element_by_id(':3e')
             p.click()
             mark5 = 1
@@ -117,17 +118,12 @@ class Demo:
                     tr_obj = elem.findAll('tr')
 
                 for tr in tr_obj:
-                    td_obj = tr.findAll('td')[0]
                     p = driver.find_element_by_id(':3e')
                 p.click()
             print("exception has been  thown--> " + str(exception))
             print("grid of emails not found due to slow internet !")
 
         next_soup = BeautifulSoup(driver.page_source, "html.parser")
-        button = next_soup.findAll('td', attrs={'class': 'gH acX bAm'})
-
-        for el in button:
-            all_td = el.findAll('div')[1]
 
         # picking first mail and opening send panel
         try:
@@ -156,7 +152,6 @@ class Demo:
         try:
             flag = 0
             for i in filed:
-                nm = third_soup.find('div', attrs={'class': 'l1'})
 
                 # pasting sender's email id
                 driver.find_element_by_class_name(
