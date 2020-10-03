@@ -1,0 +1,5 @@
+com.whatsapp
+com.viber.voip
+com.skype.raider
+com.fingersoft.hillclimb
+com.biglime.cookingmadness
