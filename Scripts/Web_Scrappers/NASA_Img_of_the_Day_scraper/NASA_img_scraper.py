@@ -17,13 +17,14 @@ def scrape(http_response):
                 url = '{}{}'.format(url_path, url)
             http_response = requests.get(url)
             f.write(http_response.content)
+     return img       
 
             
 if __name__ == "__main__":
     nasa_url = "https://apod.nasa.gov/apod/astropix.html"
     url_path = nasa_url.replace("astropix.html","")
     http_response = requests.get(nasa_url)
-    scrape(http_response)
+    img = scrape(http_response)
     img_loc = os.path.join(os.getcwd() +'/'+ img)
     #comment the 2 lines below if you want to use this in linux
     img_loc = img_loc.replace('/mnt/c', 'C:')
