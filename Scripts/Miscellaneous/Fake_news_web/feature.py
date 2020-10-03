@@ -13,7 +13,7 @@ def get_all_query(title, author, text):
 def remove_punctuation_stopwords_lemma(sentence):
     filter_sentence = ''
     lemmatizer=WordNetLemmatizer()
-    sentence = re.sub(r'[^\w\s]','',s)
+    sentence = re.sub(r'[^\w\s]','',sentence)
     words = nltk.word_tokenize(sentence) #tokenization
     words = [w for w in words if not w in stop_words]
     for word in words:
