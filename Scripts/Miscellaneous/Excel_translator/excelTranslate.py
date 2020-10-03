@@ -66,16 +66,11 @@ while True:
 translator = Translator()
 
 for index in data.index:
-    try:
-        for col in coltochange:
-            lineres = translator.translate(data[col][index], src=fromLang, des=toLang)
-            data[col][index] = lineres.text
-            # if pr == 'y': print(lineres.pronunciation)
-        
-    except Exception as e:
-        print("Error occured")
-        print(e)
-        break
+    for col in coltochange:
+        lineres = translator.translate(data[col][index], src=fromLang, des=toLang)
+        data[col][index] = lineres.text
+        # if pr == 'y': print(lineres.pronunciation)        
+
     
 writer = pd.ExcelWriter('result.xlsx',  engine ='xlsxwriter') # pylint: disable=abstract-class-instantiated
 data.to_excel(writer, sheet_name ='Sheet1') 
