@@ -2,7 +2,7 @@
 
 This is a very simple python script that searches a text accross different captions files (srt files)  and brings up the results. 
 
-### To run the program 
+### How to run the script
 `python search_in_srt.py --dir folder-containing-srt-files`
 
 ### Screenshots
@@ -13,3 +13,5 @@ This is a very simple python script that searches a text accross different capti
 
 
 
+## Author Name
+V K Dingu Sagar 
