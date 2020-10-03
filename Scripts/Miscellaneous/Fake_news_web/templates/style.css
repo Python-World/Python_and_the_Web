@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Norwester';
+    src: url('fonts/norwester-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  background-color: #8f0000;
+  transition: background-color .75s ease;
+  font-family: "Lucida Grande", "Helvetica Neue", "Arial", sans-serif;
+  color: white;
+  margin: 0px;
+  text-align:center;
+}
+
+#logo {
+  max-width: 600px;
+  min-width: 300px;
+  width: 90%;
+  display:block;
+  margin: 0 auto 50px auto;
+}
+
+.container {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  position:relative;
+}
+
+#innerContainer {
+  min-height: 220px;
+}
+
+#info, .results {
+  text-align: center;
+  margin-bottom:50px;
+  margin-top: 15px;
+  max-width:660px;
+  margin-right: auto;
+  margin-left: auto;
+  left:0;
+  right:0;
+  position:absolute;
+}
+
+#info {
+  font-size: 13px;
+  margin-top:40px;
+}
+
+#info p {
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+
+.results {
+  font-size:18px;
+  opacity: 0;
+}
+
+h2 {
+  font-family: "Norwester";
+  margin-bottom: 10px;
+  font-size:40px;
+}
+
+#loadingImage {
+  height: 100px;
+  margin-top:30px;
+  opacity: .4;
+}
+
+form {
+  white-space: nowrap;
+}
+
+#inputs-wrapper {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 475px;
+  display:flex;
+}
+
+input {
+  padding: 8px 11px;
+  font-size:28px;
+  height: 51px;
+  border: 1px solid white;
+  color: #222;
+
+}
+
+#url-wrapper {
+  width: 100%;
+}
+
+#url {
+  margin-right:51px;
+  width:100%;
+}
+
+input::placeholder {
+  color: #bbb;
+}
+
+#submit {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  height:51px;
+  width: 51px;
+  background-image: url('images/searchicon.png');
+  background-size: cover;
+}
+
+#submit:hover {
+  cursor: pointer;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0px;
+  padding: 5px;
+  text-align:center;
+  height: 40px;
+  width: 100%;
+  margin: 0;
+  padding: 2px;
+  background-color: inherit;
+  font-size:13px;
+}
+
+a {
+  color: white;
+}
