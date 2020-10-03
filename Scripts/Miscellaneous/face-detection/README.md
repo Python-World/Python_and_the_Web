@@ -4,19 +4,19 @@ A simple python script to detect faces in a webcam.<br>
 
 ## Requeriments
 
-<p> Python 3 </p>
+- Python 3 
 
-<p>opencv-python package</p>
+- opencv-python package
 
-<p>To install opencv, on command prompt type -
+To install opencv, on command prompt type -
 
 ```pip install opencv-python```
 
-</p>
 
-<p>Downloading haar cascade files</p>
-<p>Open the following link to download haar cascade xml file, keep it in the same folder as face-detection.py </p>
-```https://drive.google.com/file/d/15dnrarVLAUzysNj0gF00vu8T4g7U0yaN/view```
+
+- Downloading haar cascade files
+Open the following link to download haar cascade xml file, keep it in the same folder as face-detection.py 
+``` https://drive.google.com/file/d/15dnrarVLAUzysNj0gF00vu8T4g7U0yaN/view ```
 
 
 
