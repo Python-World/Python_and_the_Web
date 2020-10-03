@@ -70,7 +70,7 @@ def expand_subtitle(full_subtitles_list, threshold=5):
     '''
     response = input('\n Enter ID of subtitle : ')
     if response == 'q':
-        exit()
+        return
 
     if not response.isnumeric():
         print('ID should be an integer')
