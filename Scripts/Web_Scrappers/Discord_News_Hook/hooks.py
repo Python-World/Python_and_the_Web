@@ -1,6 +1,5 @@
 from dhooks import Webhook, Embed
 from inshorts import getNews
-import json
 import time
 
 """
