@@ -13,7 +13,7 @@ Steps on how to run the script along with suitable examples.
 
 ### Screenshot/GIF showing the sample use of the script
 <!--Remove the below lines and add yours -->
-Add a jpeg/png/gif file here.
+gmail_mail_forward.png
 
 ## *Author Name*
 <!--Remove the below lines and add yours -->
