@@ -16,8 +16,8 @@ while not done:
         done = True
     except FileNotFoundError:
         print("This file doesn't exist. Please check name again.")
-    except Exception:
-        print("Some error occured...")
+    #except Exception:
+    #    print("Some error occured...")
         
         
 done = False
@@ -30,8 +30,8 @@ while not done:
         print("This language is not supported.")
         print()
         print("Supported Languages: ", reverseCode.keys())
-    except Exception:
-        print("Some error occured.")
+    #except Exception:
+    #    print("Some error occured.")
         
         
 done = False
@@ -44,8 +44,8 @@ while not done:
         print("This language is not supported.")
         print()
         print("Supported Languages: ", reverseCode.keys())
-    except Exception:
-        print("Some error occured.")
+    #except Exception:
+    #    print("Some error occured.")
     
 
 coltochange = []
