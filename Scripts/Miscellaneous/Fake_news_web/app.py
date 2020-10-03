@@ -1,7 +1,7 @@
-from flask import Flask, abort, jsonify, request, render_template
+from flask import Flask, request, render_template
 from sklearn.externals import joblib
 from feature import *
-import json
+
 
 pipeline = joblib.load('pipeline.sav')
 
@@ -21,7 +21,7 @@ def get_delay():
     query_text = result['maintext']
     print(query_text)
     query = get_all_query(query_title, query_author, query_text)
-    user_input = {'query':query}
+    ##user_input = {'query':query}
     pred = pipeline.predict(query)
     print(pred)
     dic = {1:'real',0:'fake'}
