@@ -12,7 +12,7 @@ pip install -r requirements.txt
 * Make sure you are connected to the internet, then run the following command in project directory
 * Make sure you have added your own discord channel webhook url [Read More](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
 * IMPORTANT STEP: don't forget to change the url from 'https://discordapp.com/api/webhooks...' to 'https://discord.com/api/webhooks/...' remove the app part from discord webhook url
-[Example](https://media.giphy.com/media/BOMqjV2fo48JI8kH9o/giphy.gif)
+![Example](https://media.giphy.com/media/BOMqjV2fo48JI8kH9o/giphy.gif)
 
 ```
 python3 hooks.py
