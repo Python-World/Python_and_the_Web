@@ -37,7 +37,7 @@ Modules required to be able to use the script successfully and how to install th
 
 ### Screenshot/GIF showing the sample use of the script
 
-gmail_mail_forwarding.png
+![Screenshot](gmail_mail_forwarding.png)
 
 ## _Author Name_
 
