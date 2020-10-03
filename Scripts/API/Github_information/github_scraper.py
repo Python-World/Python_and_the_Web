@@ -17,6 +17,9 @@ def getField(key, dic):
         return 'Not Available'
     return dic[key]
 
+def getdata(request_type,key):
+    if(request_type==get_branch):
+        return[key]
 
 if __name__ == "__main__":
     username = input('Enter the Username: ')
