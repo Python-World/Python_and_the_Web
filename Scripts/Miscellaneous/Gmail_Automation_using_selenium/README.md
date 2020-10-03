@@ -41,4 +41,4 @@ Modules required to be able to use the script successfully and how to install th
 
 ## _Author Name_
 
-![Hardik_Dadhich](https://github.com/hardik-dadhich)
+[Hardik_Dadhich](https://github.com/hardik-dadhich)
