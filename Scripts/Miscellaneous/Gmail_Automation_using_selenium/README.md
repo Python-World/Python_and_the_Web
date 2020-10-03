@@ -41,4 +41,4 @@ gmail_mail_forwarding.png
 
 ## _Author Name_
 
-Hardik Dadhich
+![Hardik_Dadhich](https://github.com/hardik-dadhich)

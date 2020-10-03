@@ -3,7 +3,7 @@ This script automate the gmail login process and
 Sending first mail from your inbox and send to the
 sender's Email id
 
-Note: Please create `details.ini` in same Directory (check README.md for more details)  
+Note: Please create `details.ini` in same Directory (check README.md for more Details)  
 '''
 
 # import essential libraries
@@ -46,8 +46,7 @@ class Demo:
                 elem.send_keys(username_for_email)
             print("exception has been  thown--> " + str(exception))
 
-        # driver.refresh()
-
+        # paste username in username bar
         try:
             mark2 = 0
             next_btn_for_email = driver.find_element_by_id('identifierNext')
@@ -63,8 +62,8 @@ class Demo:
                 driver.find_element_by_id('identifierNext').click()
                 time.sleep(3)
             print("exception thrown : " + str(exception))
-        # driver.refresh()
 
+        # paste Password in password bar
         try:
             mark3 = 0
             password_field = driver.find_element_by_name('password')
@@ -77,6 +76,7 @@ class Demo:
             print("exception has been  thown--> " + str(exception))
             # driver.refresh()
 
+        # clcik submit button
         try:
             mark4 = 0
             next_btn_for_password = driver.find_element_by_id('passwordNext')
@@ -98,7 +98,7 @@ class Demo:
         soup = BeautifulSoup(html_code, "html.parser")
         table_obj_code = soup.findAll('table', attrs={'id': ':34'})
 
-        # selection of grid
+        # selection of grid to pick first email
         try:
             mark5 = 0
             for elem in table_obj_code:
@@ -129,6 +129,7 @@ class Demo:
         for el in button:
             all_td = el.findAll('div')[1]
 
+        # picking first mail and opening send panel
         try:
             mark6 = 0
             class_obj = next_soup.findAll('div', attrs={'class': 'amn'})
@@ -150,14 +151,20 @@ class Demo:
         third_soup = BeautifulSoup(driver.page_source, "html.parser")
 
         filed = third_soup.findAll('table', attrs={'class': 'GS'})
+
+        # click Send button
         try:
             flag = 0
             for i in filed:
                 nm = third_soup.find('div', attrs={'class': 'l1'})
+
+                # pasting sender's email id
                 driver.find_element_by_class_name(
                     'vO').send_keys(sending_email_add)
                 flag = 1
                 succ = driver.find_element_by_class_name('btA')
+
+                # send mail
                 succ.click()
                 time.sleep(1)
         except Exception as exception:
