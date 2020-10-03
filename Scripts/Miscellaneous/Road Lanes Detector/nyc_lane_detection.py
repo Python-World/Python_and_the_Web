@@ -55,11 +55,14 @@ def process(img):
         return img
 
 
+# Capture the video file 
 cap = cv2.VideoCapture("./Data/Manhattan_Trim.mp4")
 
+# PropIDs of the video frame
 frame_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
 frame_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
+# FourCC Codec
 fourcc = cv2.VideoWriter_fourcc(*"XVID")
 saved_frame = cv2.VideoWriter("Manhattan_detection.avi", fourcc, 30.0, (frame_width, frame_height))
 
