@@ -1,13 +1,13 @@
 #python3
 ##taking inputs rom users
-adjective_for_friend = input("Enter an adjective describes your friends")
+adjective_for_friend = input("Enter an adjective describes your friends ")
 noun_game = input("enter your favorite game's name ")
-city = input("enter your favorite city in ur country")
-team = input("enter your favorite team's(for the game entered before)")
-sports_shop_name = input("enter any sports shop name")
-sports_stuff = input("enter sports accesorries(like shirts or caps or horns for cheering in game)")
-food = input("enter ur favorite food")
-drink = input("enter ue favorite drink")
+city = input("enter your favorite city in ur country ")
+team = input("enter your favorite team's(for the game entered before) ")
+sports_shop_name = input("enter any sports shop name ")
+sports_stuff = input("enter sports accesorries(like shirts or caps or horns for cheering in game) ")
+food = input("enter ur favorite food ")
+drink = input("enter ue favorite drink ")
 ##END OF INPUTS
 print("One day my "+adjective_for_friend+" friend and I decided to go to the "+noun_game+" game in "+city+". "+\
 
