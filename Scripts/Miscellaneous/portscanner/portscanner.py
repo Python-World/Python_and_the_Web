@@ -13,7 +13,7 @@ def connScan(host,port):
         skt.recv(100)
         lock.acquire()
         print(f'[+] {port} is open')
-    except Exception as e:
+    except timeout:
         lock.acquire()
         print(f'[-] {port} is closed')
     finally:
