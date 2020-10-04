@@ -26,7 +26,7 @@ class TodoModel(QtCore.QAbstractListModel):
                 return tick
             return untick
 
-    def rowCount(self,index):
+    def rowCount(self, index):
         return len(self.todos)
 
 
