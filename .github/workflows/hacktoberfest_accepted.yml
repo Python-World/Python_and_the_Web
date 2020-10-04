@@ -1,5 +1,5 @@
 on: pull_request_review
-name: Label approved pull requests
+name: Label hacktoberfest-accepted
 jobs:
   labelWhenApproved:
     name: Label when approved
@@ -8,6 +8,6 @@ jobs:
     - name: Label when approved
       uses: pullreminders/label-when-approved-action@master
       env:
-        APPROVALS: "2"
+        APPROVALS: "1"
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         ADD_LABEL: "hacktoberfest-accepted"
