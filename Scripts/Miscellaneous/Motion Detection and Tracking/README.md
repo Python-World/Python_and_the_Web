@@ -3,7 +3,7 @@ The python script `tracker.py` detects motion of people moving in a videoframe `
 
 # Prerequisites 
   - Python>=3.7
-  - Opencv
+  - OpenCV
   - Numpy
   
 # Steps to use this project:
