@@ -39,7 +39,7 @@ def client_handler(client):
 
 #get a remote shell
 def getShell(host,port,_shell,cmd):
-    flag=bool(cmd)
+    flag=True if cmd else False
     client=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
     client.connect((host,port))
     while True:
