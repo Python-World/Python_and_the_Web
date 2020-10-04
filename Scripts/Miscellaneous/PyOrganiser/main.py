@@ -4,10 +4,10 @@ from PyQt5 import QtCore, QtGui, QtWidgets, uic
 from PyQt5.QtCore import Qt
 
 
-qt_creator_file = "mainwindow.ui"
+qt_creator_file = "media/mainwindow.ui"
 Ui_MainWindow, QtBaseClass = uic.loadUiType(qt_creator_file)
-tick = QtGui.QImage('tick.png')
-untick = QtGui.QImage('todo.png')
+tick = QtGui.QImage('media/tick.png')
+untick = QtGui.QImage('media/todo.png')
 
 
 class TodoModel(QtCore.QAbstractListModel):
