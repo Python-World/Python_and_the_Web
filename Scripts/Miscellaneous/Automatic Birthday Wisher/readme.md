@@ -5,12 +5,14 @@
 Steps:
 
   1.Create an Excel sheet for containing records like this: Name, Email, Contact, Birthday, and Year.
+  ![](images/excel.png)
   
   2.Add Path to your excel sheet in main.py script.
   
   3.Add your gmail credentials.
   
   4.Run main.py script.
+  ![](images/gmail.png)
 
 >Now lets schedule our scripts to run everyday at 12:00 AM.
 
