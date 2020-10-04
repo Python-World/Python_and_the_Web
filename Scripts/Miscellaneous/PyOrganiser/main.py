@@ -1,7 +1,5 @@
 import sys
 import json
-import PyQt5
-import PyQt5.QtCore
 from PyQt5 import QtCore, QtGui, QtWidgets, uic
 from PyQt5.QtCore import Qt
 
@@ -27,10 +25,9 @@ class TodoModel(QtCore.QAbstractListModel):
             status, _ = self.todos[index.row()]
             if status:
                 return tick
-            else:
-                return untick
+            return untick
 
-    def rowCount(self, index):
+    def rowCount(self,index):
         return len(self.todos)
 
 
@@ -81,7 +78,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         if indexes:
             index = indexes[0]
             row = index.row()
-            status, text = self.model.todos[row]
+            text = self.model.todos[row][1]
             self.model.todos[row] = (True, text)
             # .dataChanged takes top-left and bottom right, which are equal
             # for a single selection.
@@ -96,7 +93,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         if indexes:
             index = indexes[0]
             row = index.row()
-            status, text = self.model.todos[row]
+            text = self.model.todos[row][1]
             self.model.todos[row] = (False, text)
             # .dataChanged takes top-left and bottom right, which are equal
             # for a single selection.
@@ -126,7 +123,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 jsondata = json.load(f)
                 try:
                     k = jsondata[self.date][0]
-                except KeyError as ke:
+                except KeyError :
                     jsondata[self.date] = [{'name': None, 'todos': []}]
                 k = jsondata[self.date][0]
                 self.model.database = jsondata
@@ -138,7 +135,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
     def save(self):
         with open('data.db', 'w') as f:
-            data = json.dump(self.model.database, f)
+            json.dump(self.model.database, f)
 
 
 app = QtWidgets.QApplication(sys.argv)
