@@ -38,13 +38,3 @@ Open the following link to download haar cascade xml file, keep it in the same f
 ## Author 
 
 <p> Mitanshi Kshatriya </p>
-
-
-
-
-
-
-
-
-
-
