@@ -13,7 +13,7 @@ $ python3 netcat.py -h
 ```
 
 # working screenshots #
-![Screenshot1](ScreenShots/screenshot01.jpg)
+![Screenshot1](Screenshots/screenshot01.jpg)
 
 ## Author name
 <a href="https://github.com/jaesharma">Jayesh sharma</a>
