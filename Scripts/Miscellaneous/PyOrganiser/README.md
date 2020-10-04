@@ -1,13 +1,21 @@
 # Organiser application
+  This application was built with the PyQt5 Python
 
     - Add plans to your day
     - Organise your day
     - Keep track abouts all meetings and todos
-    
+
+  
 # Installing
 
   `pip install requirements.txt`
   
-# Demo
+# How to run the script
+  `python main.py`
 
- <img src="demo.png"/>
+# Screenshot
+ <img src="media/demo.png"/>
+
+## *Author Name*
+
+[Swaroop Maddu](https://github.com/swaroopmaddu)
