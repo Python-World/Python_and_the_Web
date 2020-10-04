@@ -1,4 +1,4 @@
-# Python_and_the_Web
+# Python🐍and_the_Web
 
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
@@ -15,10 +15,10 @@
 ![Stars](https://img.shields.io/github/stars/Python-World/Python_and_the_Web)
 ![License](https://img.shields.io/github/license/Python-World/Python_and_the_Web)
 
-Scripts in python that scrape the web, create a bot or use an API to solve a problem.
-We now have a section for miscellaneous scripts as well.
+Scripts/Programs in python that scrape the web, create a bot or use an API to solve a problem.
+We now have a section for miscellaneous scripts/programs as well.
 
-**Note**: 100 Ideas implemented using python: [python-mini-projects](https://python-world.github.io/python-mini-projects/#/)
+**Note**: 100 Ideas implemented using python🐍: [python-mini-projects](https://python-world.github.io/python-mini-projects/#/)
 
 ## How to Contribute?
 
