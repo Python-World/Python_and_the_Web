@@ -57,6 +57,7 @@ while cap.isOpened():
     except Exception:
         break
 
-cap.release()                                                                                        # Release the captured frame
-saved_frame.release()                                                                                # Release the saved frame'
+# Clean up 
+cap.release()                                                                                        
+saved_frame.release()                                                                                
 cv2.destroyAllWindows()                                                                              # Close the window
