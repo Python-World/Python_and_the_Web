@@ -1,7 +1,6 @@
 import cv2
 
 # harcascades variables
-
 haarcascade = r'./haarcascade_frontalface_default.xml'
 model = cv2.CascadeClassifier(haarcascade)
 # using a webcam
