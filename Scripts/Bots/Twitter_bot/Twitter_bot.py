@@ -2,7 +2,8 @@ from twython import Twython
 from twython import TwythonStreamer
 import configparser
 class MyStreamer(TwythonStreamer):
-	def on_success(self, data):
+	@staticmethod
+	def on_success(data):
 		if 'text' in data:
 			a=data['text'].lower()
 			username=data['user']['screen_name']
