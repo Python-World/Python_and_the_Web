@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>../Downloads/file.png</normaloff>../Downloads/file.png</iconset>
+    <normaloff>icon.png</normaloff>icon.png</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QListView" name="todoView">
@@ -100,7 +100,7 @@
      </rect>
     </property>
     <property name="value">
-     <number>24</number>
+     <number>0</number>
     </property>
    </widget>
    <widget class="QLabel" name="label">
@@ -124,7 +124,7 @@
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="text">
-     <string>TITLE HERE</string>
+     <string>Py Organiser</string>
     </property>
    </widget>
    <widget class="QPushButton" name="deleteButton">

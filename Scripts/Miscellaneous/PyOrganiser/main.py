@@ -2,7 +2,6 @@ import sys
 import json
 from PyQt5 import QtCore, QtGui, QtWidgets,uic
 from PyQt5.QtCore import Qt
-from design import Ui_MainWindow
 
 qt_creator_file = "media/mainwindow.ui"
 Ui_MainWindow, QtBaseClass = uic.loadUiType(qt_creator_file)
@@ -27,7 +26,7 @@ class TodoModel(QtCore.QAbstractListModel):
                 return tick
             return untick
 
-    def rowCount(self):
+    def rowCount(self,index):
         return len(self.todos)
 
 
