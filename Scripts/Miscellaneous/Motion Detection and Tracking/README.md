@@ -9,9 +9,9 @@ The python script `tracker.py` detects motion of people moving in a videoframe `
 # Steps to use this project:
   1. [Clone](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) this repo
   
-  2. Install the dependencies mentioned in the Prerequisites or just run `pip install requirements.txt`
+  2. Go to the directory of this repo cloned onto your local machine and open cmd.
   
-  3. Go to the directory of this repo cloned onto your local machine and open cmd.
+  3. Install the dependencies mentioned in the Prerequisites by running `pip install requirements.txt` in the cmd
   
   4. Run the python file `tracker.py` in the cmd
   
