@@ -10,7 +10,7 @@ while i != 2:
 	address = input("Enter address: ")
 	if len(address) < 1: break
 
-	params = dict()
+	params = {}
 	params['address'] = address
 	params['key'] = 42
 	req = requests.get(baseurl, params = params)
