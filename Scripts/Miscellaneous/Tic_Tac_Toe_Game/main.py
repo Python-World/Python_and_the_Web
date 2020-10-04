@@ -13,13 +13,13 @@ count = 0
 # This function prevents the user from clicking the same button again.
 def button(buttons):
     global bclick, count
-    if buttons["text"] == "" and bclick == True:
+    if buttons["text"] == "" and bclick is True:
         buttons["text"] = "X"
         bclick = False
         winner()
         count += 1
 
-    elif buttons["text"] == "" and bclick == False:
+    elif buttons["text"] == "" and bclick is False:
         buttons["text"] = "O"
         bclick = True
         winner()
