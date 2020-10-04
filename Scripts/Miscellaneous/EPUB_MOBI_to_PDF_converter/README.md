@@ -13,24 +13,24 @@ Save the script and run it normally. The GUI will start, which can then be follo
 ### Screenshots of use
 
 1. Run the script
-![](/screenshots/1.png)
+![start window](/screenshots/1.png)
 
 2. convertAPI signup page
-![](/screenshots/2.png)
+![signup page](/screenshots/2.png)
 
 3. Enter your secret key
-![](/screenshots/3.jpg)
+![secret key](/screenshots/3.jpg)
 
 4. Choose file to be converted
-![](/screenshots/4.png)
-![](/screenshots/5.png)
-![](/screenshots/6.png)
+![choose file-1](/screenshots/4.png)
+![choose file-2](/screenshots/5.png)
+![choose file-3](/screenshots/6.png)
 
 5. Conversion screen
-![](/screenshots/7.png)
+![inProgress](/screenshots/7.png)
 
 6. Conversion Complete
-![](/screenshots/8.png)
+![complete](/screenshots/8.png)
 
 ## *Author Name*
 [Paritosh Malhotra](https://github.com/malhotra-paritosh)
