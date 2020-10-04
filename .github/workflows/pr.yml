@@ -1,5 +1,5 @@
 on: pull_request_review
-name: Label hacktoberfest-accepted
+name: Label approved pull requests
 jobs:
   labelWhenApproved:
     name: Label when approved
