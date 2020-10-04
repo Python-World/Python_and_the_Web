@@ -40,7 +40,7 @@ count = 0
 
 for letter in names:
     # count all characters other than replaced/spaces
-    if(letter != '_' and letter != ' '):
+    if letter not in('_', ' '):
         count+=1
 
 index = 0

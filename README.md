@@ -6,7 +6,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-36-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-43-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![Issues](https://img.shields.io/github/issues/Python-World/Python_and_the_Web)
@@ -18,27 +18,27 @@
 Scripts in python that scrape the web, create a bot or use an API to solve a problem.
 We now have a section for miscellaneous scripts as well.
 
-**Note**: 100 Ideas implemented using python List available [Here](https://python-world.github.io/python-mini-projects/#/)
+**Note**: 100 Ideas implemented using python: [python-mini-projects](https://python-world.github.io/python-mini-projects/#/)
 
 ## How to Contribute?
 
 - Take a look at the Existing [Issues](https://github.com/Python-World/Python_and_the_Web/issues) or create your own Issues!
-- Wait for the Issue to be assigned to you after which you can start working on it.
-- Fork the Repo and create a Branch for any Issue that you are working upon.
+- **Wait for the Issue to be assigned to you after which you can start working on it.**
+- Fork the Repo and create a branch for any Issue that you are working upon.
 - Read the [Code of Conduct](https://github.com/Python-World/Python_and_the_Web/blob/master/CODE_OF_CONDUCT.md)
 - Create a Pull Request which will be promptly reviewed and suggestions would be added to improve it.
 - Add Screenshots to help us know what this Script is all about.
 - Having difficulty in contributing? Read the [Contribution Guide](https://github.com/Python-World/Python_and_the_Web/blob/master/CONTRIBUTING.md) for a detailed explanation.
 
-## README Template for scripts
+## README Template for the scripts
 
 [README Template](https://github.com/Python-World/Python_and_the_Web/blob/master/README_TEMPLATE.md)
 
-## Connect On Social media
+## Connect with us On Social media
 
 [Join WhatsApp group](https://chat.whatsapp.com/Ghp25kidWLaGrAVA0G0GAa)
 
-## Contributors ✨
+## *Contributors* ✨
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -91,16 +91,18 @@ We now have a section for miscellaneous scripts as well.
   </tr>
   <tr>
     <td align="center"><a href="https://araon.pythonanywhere.com"><img src="https://avatars0.githubusercontent.com/u/30241057?v=4" width="100px;" alt=""/><br /><sub><b>Soumik</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=Araon" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/ShravanBhat"><img src="https://avatars3.githubusercontent.com/u/48554826?v=4" width="100px;" alt=""/><br /><sub><b>Shravan Bhat</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=ShravanBhat" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Agrover112"><img src="https://avatars3.githubusercontent.com/u/42321810?v=4" width="100px;" alt=""/><br /><sub><b>Agrover112</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=Agrover112" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/ShantanuTaro"><img src="https://avatars3.githubusercontent.com/u/43516930?v=4" width="100px;" alt=""/><br /><sub><b>Shantanu Taro</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=ShantanuTaro" title="Code">💻</a></td>
+    <td align="center"><a href="https://suvamprogrammer.blogspot.com"><img src="https://avatars3.githubusercontent.com/u/32155332?v=4" width="100px;" alt=""/><br /><sub><b>suvam prasad</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=SuvamPrasd" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.youtube.com/channel/UCpkxxb7y9nIlUlft5GKTNsg/"><img src="https://avatars3.githubusercontent.com/u/66870959?v=4" width="100px;" alt=""/><br /><sub><b>Mysterious-Owl</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=Mysterious-Owl" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/antoniouaa"><img src="https://avatars0.githubusercontent.com/u/15040368?v=4" width="100px;" alt=""/><br /><sub><b>Alex Antoniou</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=antoniouaa" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/swaroopmaddu"><img src="https://avatars1.githubusercontent.com/u/24986270?v=4" width="100px;" alt=""/><br /><sub><b>Swaroop Maddu</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=swaroopmaddu" title="Code">💻</a></td>
   </tr>
 </table>
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-SR No   | Project | Author  
---- | --- | ---
-1 | [Project Euler Scraper](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Web_Scrappers/Project_Euler_Scraper) | [Pratik Choudhari](https://github.com/pratik-choudhari)
-2 | [Pycon Proposals Scraper](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Web_Scrappers/Pycon_Proposals)| [Aditya Jetely](https://github.com/AdityaJ7)
-3 | [Hacktoberfest Events Scraper](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Web_Scrappers/Hacktoberfest_Events)| [Aditya Jetely](https://github.com/AdityaJ7)
-4 | [Wifi Speed Tester](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Miscellaneous/Wifi_Speed)| [AdeshChoudhar19](https://github.com/AdeshChoudhar19)
-5 | [Google Search Using Python](https://github.com/Python-World/Python_and_the_Web/tree/master/Scripts/Web_Scrappers/Google%20Search%20Using%20Python)| [Naman Jain](https://github.com/nj1902)
