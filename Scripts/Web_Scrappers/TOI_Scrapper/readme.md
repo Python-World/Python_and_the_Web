@@ -15,5 +15,5 @@ pip install requirements.txt
 Navigate to the TOI_Scrapper Folder and run the following command in your cmd.
 
 ```bash
-pyhton TOI.py
+python TOI.py
 ```
