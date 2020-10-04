@@ -1,4 +1,4 @@
-#check the validity of the value at particular position
+# check the validity of the value at particular position
 def isvalid(board,num,pos):
     for i in range(len(board[0])):
         if board[pos[0]][i]==num and pos[1]!=i:
@@ -17,7 +17,7 @@ def isvalid(board,num,pos):
     return True
 
 
-#print the board
+# print the board
 def printb(board):
     for i in range(len(board)):
         if i%3==0 and i!=0:
@@ -30,7 +30,8 @@ def printb(board):
             else:
                 print(str(board[i][j])+" ",end="")
 
-#check if board is already solved
+                
+# check if board is already solved
 def empty(board):
     for i in range(len(board)):
         for j in range(len(board)):
@@ -38,7 +39,8 @@ def empty(board):
                 return (i,j)
     return None
 
-#recursive function to solve the board
+
+# recursive function to solve the board
 def solve(board):
     find=empty(board)
     if not find:
@@ -52,6 +54,7 @@ def solve(board):
                 return True
             board[row][col]=0
     return False
+
 
 if __name__=="__main__":
     board=[]
