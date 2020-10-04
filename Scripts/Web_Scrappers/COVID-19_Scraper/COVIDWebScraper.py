@@ -8,6 +8,7 @@
 # Pandas (Data Manipulation Library. Install : pip install pandas)
 
 import datetime
+import sys
 
 import pandas
 from selenium import webdriver
@@ -41,7 +42,6 @@ def scrapeCovidStats():
     driver.implicitly_wait(wait_imp)
     w_total = driver.find_element_by_id("confirmedCases")
     w_death = driver.find_element_by_id("confirmedDeaths")
-    total_c = driver.find_element_by_id("involvedCountries")
     print("WorldWide")
     print("Total Cases : ", w_total.text)
     print("Total Deaths : ", w_death.text)
@@ -99,4 +99,4 @@ if __name__ == "__main__":
         scrapedData.to_csv("./data.csv", sep=",", index=False)
     except Exception:
         print("Please check your internet!")
-        exit(0)
+        sys.exit(1)
