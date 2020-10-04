@@ -7,13 +7,16 @@ from os import listdir
 from os.path import isfile, join
 
 
+#function to open the convertAPI webiste in browser
 def openWebsite():
     webbrowser.open("https://www.convertapi.com/a", new=3)
 
+#function to clear all widgets in the main frame to render new ones
 def clearFrame():
     for w in main_frame.winfo_children():
         w.destroy()
 
+#function to choose file to be converted
 def chooseFile():
     global CHOSEN_FILE_LOC 
     CHOSEN_FILE_LOC = filedialog.askopenfilename(initialdir=os.getcwd(), title='Select file to convert',
@@ -25,19 +28,12 @@ def chooseFile():
     clearFrame()
 
     label4 = Label(main_frame, text='Chosen file: '+CHOSEN_FILE_LOC.split('/')[-1])
-    button_next = Button(main_frame, text="CONVERT>> (takes 2-3 minutes)", padx=5, pady=5, bg='#F48024', fg='#FFFFFF', command=lambda:inProgress())
+    button_next = Button(main_frame, text="CONVERT>> (takes 2-3 minutes)", padx=5, pady=5, bg='#F48024', fg='#FFFFFF', command=lambda:convertToPDF())
     
     label4.grid(row=2, column=0, padx=10, pady=10)
     button_next.grid(row=4, column=0, padx=10, pady=10)
 
-def inProgress():
-
-    clearFrame()
-    label = Label(main_frame, text='File is converting, takes 2-3 minutes')
-    label.grid(row=0, column=0, padx=10, pady=10)
-
-    convertToPDF()
-
+#function that contacts convertAPI with the file & carries out the conversion
 def convertToPDF():
 
     global CHOSEN_FILE_LOC
@@ -69,6 +65,7 @@ def convertToPDF():
     label.grid(row=0, column=0, padx=10, pady=10)
     button_exit.grid(row=1, column=0, padx=10, pady=10)
 
+#first tkinter window of the code
 def window1():
 
     #define the labels, input box and buttons
@@ -97,11 +94,13 @@ def window2():
     button_file_choose.grid(row=1, column=0, padx=10, pady=10)
 
 
+#driver code
 if __name__ == "__main__":
     root = Tk()
     root.title('Ebook to PDF converter')
     root.iconbitmap('pdfIcon.ico')
     
+    #the main frame which will be re-rendered for new window
     main_frame = LabelFrame(root, padx=25, pady=25)
     key_text_box = Entry(main_frame, borderwidth=5)
     main_frame.pack()
