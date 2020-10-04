@@ -1,6 +1,5 @@
 import requests
-from bs4 import BeautifulSoup
-import os, sys, subprocess,json
+import json
 import urllib.request,urllib.parse
 from scrapmagnet import scrapmag
 
