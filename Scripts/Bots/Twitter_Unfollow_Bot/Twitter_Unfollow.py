@@ -4,12 +4,13 @@ import time
 import tweepy
 import sys
 
+# Replace the foo bar with your twitter API keys from dev.twitter.com
 auth = tweepy.auth.OAuthHandler(
-        consumer_key='xIroUblS5O8dIa2qjreI2fzB4',
-        consumer_secret='lo14kVvmDbtJAH52Bgdp3ML6KrOAp5WUqqxxeu7EP1tqkmVyvJ')
+        consumer_key='foo',
+        consumer_secret='bar')
 auth.set_access_token(
-        '2212266949-N8yEYkAJWIpmHtVE2igWamMKr4kAg9UwE6HPEa3',
-        '1gG1PG5eSEHnsBYrVjaooc6hfUPnGVOiKXmFTABFvFTfV')
+        'foo',
+        'bar')
 
 # the following dictionaries etc aren't strictly needed for this
 # but useful for your own more in-depth apps.
