@@ -1,0 +1,3 @@
+Requirements:
+
+• PyautoGUI==0.9.51
