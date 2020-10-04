@@ -45,5 +45,7 @@ class Typing_Test_Typer:
 def main():
     typer = Typing_Test_Typer()
     typer.take_test()
+    
+    
 if __name__ == "__main__":
     main()
