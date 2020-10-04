@@ -1,10 +1,11 @@
 import sys
 import json
-from PyQt5 import QtCore, QtGui, QtWidgets, uic
+from PyQt5 import QtCore, QtGui, QtWidgets,uic
 from PyQt5.QtCore import Qt
 from design import Ui_MainWindow
 
-
+qt_creator_file = "media/mainwindow.ui"
+Ui_MainWindow, QtBaseClass = uic.loadUiType(qt_creator_file)
 tick = QtGui.QImage('media/tick.png')
 untick = QtGui.QImage('media/todo.png')
 
