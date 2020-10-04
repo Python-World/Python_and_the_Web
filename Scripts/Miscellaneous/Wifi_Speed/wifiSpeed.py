@@ -19,10 +19,10 @@ while True:
 
 	if option == 1:
 		download = s.download() / 1000
-		print(f"Download Speed : %.2f kb/s\n" % download)
+		print("Download Speed : %.2f kb/s\n" % download)
 	elif option == 2:
 		upload = s.upload() / 1000
-		print(f"Upload Speed : %.2f kb/s\n" % upload)
+		print("Upload Speed : %.2f kb/s\n" % upload)
 	elif option == 3:
 		print("\nExiting Successfully...")
 		break

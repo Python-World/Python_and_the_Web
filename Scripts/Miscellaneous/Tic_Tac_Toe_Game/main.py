@@ -13,13 +13,13 @@ count = 0
 # This function prevents the user from clicking the same button again.
 def button(buttons):
     global bclick, count
-    if buttons["text"] == "" and bclick == True:
+    if buttons["text"] == "" and bclick is True:
         buttons["text"] = "X"
         bclick = False
         winner()
         count += 1
 
-    elif buttons["text"] == "" and bclick == False:
+    elif buttons["text"] == "" and bclick is False:
         buttons["text"] = "O"
         bclick = True
         winner()
@@ -69,10 +69,10 @@ def winner():
 
 # Game Board
 
-restart = Button(tk, text = "RESTART", font = "Arial", bg = "white", fg = "black", height = 3, width = 8, command = lambda: playagain())
+restart = Button(tk, text = "RESTART", font = "Arial", bg = "white", fg = "black", height = 3, width = 8, command = playagain)
 restart.grid(row = 2, column = 0)
 
-quit = Button(tk, text = "EXIT", font = "Arial", bg = "white", fg = "black", height = 3, width = 8, command = lambda: tk.destroy())
+quit = Button(tk, text = "EXIT", font = "Arial", bg = "white", fg = "black", height = 3, width = 8, command = tk.destroy)
 quit.grid(row = 2, column = 2)
 
 button1 = Button(tk, text = "", font = "Arial", bg = "Black", fg = "white", height = 4, width=8, command=lambda: button(button1))

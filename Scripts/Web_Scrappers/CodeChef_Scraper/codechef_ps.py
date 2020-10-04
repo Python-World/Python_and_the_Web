@@ -39,7 +39,7 @@ def scrapeCodeChef(code):
         print(f"[FINISHED] - File saved - problems/{code}.txt")
     except Exception:
         print("Cannot Find CodeChef Problem! - " + code)
-        exit(0)
+        sys.exit(0)
 
 
 if __name__ == "__main__":
@@ -47,5 +47,5 @@ if __name__ == "__main__":
         code = sys.argv[1]
     except Exception:
         print("Please Enter A CodeChef Problem Code as a", "Command-Line Argument!")
-        exit(0)
+        sys.exit(0)
     scrapeCodeChef(code)

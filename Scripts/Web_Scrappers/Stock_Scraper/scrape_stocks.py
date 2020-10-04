@@ -1,7 +1,6 @@
 from datetime import datetime, timedelta
 import requests
 import yfinance
-import pandas as pd
 from bs4 import BeautifulSoup
 from contextlib import contextmanager
 import sys
