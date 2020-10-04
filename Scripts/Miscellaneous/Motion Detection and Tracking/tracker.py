@@ -2,15 +2,17 @@
 import cv2
 import numpy as np
 
-# An instance of the class cv2.VideoCapture() to capture the frame
+# Open the video 
 cap = cv2.VideoCapture("vid.mp4")
 
 # PropIds of the frame
 frame_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
 frame_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
-# An instance of the class cv2.VideoWriter() to save the frame
+# FourCC Codec to identidy the data format of the video file
 fourcc = cv2.VideoWriter_fourcc(*"XVID")
+
+# Save the results
 saved_frame = cv2.VideoWriter("motion_detection_tracking.avi", fourcc, 20.0, (frame_width, frame_height))
 
 # Reading two frames
@@ -22,6 +24,7 @@ kernel = np.ones((3, 3), np.uint8)
 
 # Capturing frames
 while cap.isOpened():
+    
     try:
 
         diff = cv2.absdiff(frame1, frame2)                                                       # Difference between two frames (frame1 and frame2)
@@ -42,6 +45,7 @@ while cap.isOpened():
         # cv2.drawContours(frame1, contours, -1, (0, 255, 0), 3)
 
         saved_frame.write(frame1)
+        
         cv2.imshow("result", frame1)
 
         frame1 = frame2
