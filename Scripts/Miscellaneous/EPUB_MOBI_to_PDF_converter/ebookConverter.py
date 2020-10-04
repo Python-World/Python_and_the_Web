@@ -3,8 +3,6 @@ from tkinter import filedialog
 import webbrowser
 import convertapi
 import os
-from os import listdir
-from os.path import isfile, join
 
 
 #function to open the convertAPI webiste in browser
