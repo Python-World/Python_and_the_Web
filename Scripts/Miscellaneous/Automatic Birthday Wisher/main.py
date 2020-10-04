@@ -43,7 +43,7 @@ if __name__=="__main__":
 			# calling the sendEmail function 
 			sendEmail(item['Email'], "Happy Birthday", 
 					msg)	 
-			 writeInd.append(index)								 
+			writeInd.append(index)								 
 	for i in writeInd: 
 		yr = dataframe.loc[i,'Year'] 
 		# this will record the years in which email has been sent 
