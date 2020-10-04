@@ -16,7 +16,7 @@ class Typing_Test_Typer:
                 play_button = self.chrome.find_element_by_class_name('start-btn')
                 play_button.click()
                 break
-            except:
+            except ElementNotInteractableException:
                 time.sleep(2)
     def take_test(self):
 
@@ -25,7 +25,7 @@ class Typing_Test_Typer:
             try:
                 text_area = self.chrome.find_element_by_id('test-edit-area')
                 break
-            except:
+            except ElementNotInteractableException:
                 time.sleep(2)
         # Type in the textbox
         while True:
@@ -40,7 +40,7 @@ class Typing_Test_Typer:
                 word_text = str(highlighted_word.text)
                 text_area.send_keys(word_text)
                 text_area.send_keys(Keys.SPACE)
-            except:
+            except ElementNotInteractableException:
                 break    
 def main():
     typer = Typing_Test_Typer()
