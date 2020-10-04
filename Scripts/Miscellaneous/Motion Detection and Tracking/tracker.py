@@ -40,7 +40,7 @@ while cap.isOpened():
             if cv2.contourArea(contour) < 1100:
                 continue
             cv2.rectangle(frame1, (x, y), (x+w, y+h), (0, 255, 0), 2)                                   # Draw bounding rectangles
-            cv2.putText(frame1, f"Status: Movement", (10, 20), cv2.FONT_ITALIC, 0.7, (0, 255, 0), 2)    # Putting text
+            cv2.putText(frame1, "Status: Movement", (10, 20), cv2.FONT_ITALIC, 0.7, (0, 255, 0), 2)    # Putting text
 
         # cv2.drawContours(frame1, contours, -1, (0, 255, 0), 3)
 
