@@ -11,7 +11,14 @@ Auto organizing files into images, music, videos executables, documents folders
 ```shell
 ❯ python3 organize.py [dir-path]
 ```
+### Screens
 
+<div align="center">
+  
+![](FileOrganizer.gif)
+
+ </div>
+ 
 ## Author
 
 **[Parth Maniar](https://github.com/officialpm)**
