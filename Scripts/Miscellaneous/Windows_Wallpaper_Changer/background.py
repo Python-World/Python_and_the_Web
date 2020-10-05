@@ -1,9 +1,6 @@
 from tkinter import Tk     # from Tkinter import Tk for Python 2.x
 from tkinter.filedialog import askopenfilename
 import ctypes
-
-
-
 Tk().withdraw() 
 filename = askopenfilename() 
 SPI_SETDESKWALLPAPER = 20
