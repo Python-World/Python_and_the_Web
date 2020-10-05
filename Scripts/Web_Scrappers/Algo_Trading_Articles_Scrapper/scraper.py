@@ -78,9 +78,10 @@ def main():
     quantopian = get_quantopian_articles()
     quantocracy = get_quantocracy_articles()
     quantstart = get_quantstart_articles()
-    print(quantopian)
-    print(quantocracy)
-    print(quantstart)
+    file = open('output.txt', 'w')
+    file.write(f"{quantopian}\n\n{quantocracy}\n\n{quantstart}")
+    file.close()
+    print("Article Links saved in the output file")
 
 if __name__ == "__main__":
     main()
