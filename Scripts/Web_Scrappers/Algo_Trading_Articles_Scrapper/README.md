@@ -12,3 +12,9 @@ Scrapes top articles of algorithmic trading and mathematical finance from quanto
 
 - Run the following command:<br>
 `python scraper.py`
+
+### Script in Action
+![script in action](output/script_in_action.PNG)
+
+### Script Output Text File
+![output file](output/output.PNG)
