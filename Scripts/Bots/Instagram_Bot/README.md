@@ -58,6 +58,23 @@ _Note:_
 
 ### Screenshot/GIF showing the sample use of the script
 
+#### When you open the app 1st time
+
+<img src="MainPage.PNG" alt="MainPage">
+
+#### After adding your username and password
+
+<img src="LoginPage.PNG" alt="LoginPage">
+
+#### Bot Commands available
+
+<img src="MenuPage.png" alt="MenuPage">
+
+#### Passwords stays safe(encrypted), even in your own computer
+
+<img src="Users.png" alt="Users">
+
+---------------------------------------
 
 ## *Author Name*
 
