@@ -1,0 +1,215 @@
+Country,Total Cases,Total Deaths,Continent
+United States,"7,549,323","213,524",North America
+India,"6,473,544","100,875",Asia
+Brazil,"4,882,231","145,431",South America
+Russia,"1,204,502","21,251",Europe
+Colombia,"841,531","26,397",South America
+Peru,"821,564","32,609",South America
+Spain,"810,807","32,086",Europe
+Argentina,"779,689","20,599",South America
+Mexico,"753,090","78,492",North America
+South Africa,"677,833","16,909",Africa
+France,"589,653","32,155",Europe
+United Kingdom,"467,146","42,268",Europe
+Chile,"466,590","12,867",South America
+Iran,"464,596","26,567",Asia
+Iraq,"372,259","9,298",Asia
+Bangladesh,"366,383","5,305",Asia
+Saudi Arabia,"335,578","4,823",Asia
+Turkey,"321,512","8,325",Asia
+Italy,"319,908","35,941",Europe
+Philippines,"319,330","5,678",Asia
+Pakistan,"313,984","6,507",Asia
+Germany,"298,363","9,596",Europe
+Indonesia,"295,499","10,972",Asia
+Israel,"258,920","1,633",Asia
+Ukraine,"222,322","4,353",Europe
+Canada,"162,659","9,409",North America
+Ecuador,"139,534","11,495",South America
+Bolivia,"136,219","8,045",South America
+Romania,"132,001","4,915",Europe
+Morocco,"128,565","2,263",Africa
+Netherlands,"127,922","6,428",Europe
+Qatar,"126,164",215,Asia
+Belgium,"124,234","10,037",Europe
+Panama,"113,962","2,406",North America
+Dominican Republic,"113,350","2,117",North America
+Kazakhstan,"108,106","1,725",Asia
+Kuwait,"106,087",615,Asia
+Egypt,"103,466","5,956",Africa
+Oman,"98,585",935,Asia
+Poland,"98,140","2,604",Europe
+United Arab Emirates,"96,529",424,Asia
+Sweden,"94,283","5,895",Europe
+Guatemala,"93,090","3,267",North America
+China,"85,434","4,634",Asia
+Japan (+Diamond Princess),"84,927","1,591",Asia
+Nepal,"82,450",520,Asia
+Belarus,"79,421",844,Europe
+Honduras,"78,269","2,386",North America
+Czech Republic (Czechia),"78,051",699,Europe
+Costa Rica,"77,829",930,North America
+Portugal,"77,284","1,983",Europe
+Ethiopia,"76,988","1,208",Africa
+Venezuela,"76,820",643,South America
+Bahrain,"71,803",255,Asia
+Nigeria,"59,127","1,112",Africa
+Singapore,"57,800",27,Asia
+Uzbekistan,"57,776",475,Asia
+Moldova,"55,016","1,344",Europe
+Switzerland,"54,384","2,075",Europe
+Armenia,"51,925",972,Asia
+Algeria,"51,847","1,749",Africa
+Kyrgyzstan,"47,056","1,065",Asia
+Ghana,"46,694",301,Africa
+Austria,"46,374",803,Europe
+Paraguay,"42,684",890,South America
+Lebanon,"42,173",386,Asia
+State of Palestine,"40,766",321,Asia
+Azerbaijan,"40,453",594,Asia
+Afghanistan,"39,297","1,462",Asia
+Kenya,"38,923",725,Africa
+Ireland,"37,063","1,801",Europe
+Libya,"35,717",570,Africa
+Serbia,"33,735",751,Europe
+Hungary,"29,717",812,Europe
+El Salvador,"29,175",853,North America
+Denmark,"28,932",652,Europe
+Bosnia and Herzegovina,"27,975",871,Europe
+Australia,"27,121",893,Australia/Oceania
+South Korea,"24,027",420,Asia
+Bulgaria,"21,336",838,Europe
+Cameroon,"20,924",420,Africa
+Côte d'Ivoire,"19,793",120,Africa
+Tunisia,"19,721",271,Africa
+Greece,"19,346",398,Europe
+North Macedonia,"18,363",749,Europe
+Croatia,"17,401",293,Europe
+Madagascar,"16,493",232,Africa
+Myanmar,"15,525",353,Asia
+Senegal,"15,051",312,Africa
+Zambia,"14,830",333,Africa
+Norway,"14,284",275,Europe
+Albania,"13,965",389,Europe
+Sudan,"13,653",836,Africa
+Jordan,"13,650",79,Asia
+Slovakia,"12,321",54,Europe
+Malaysia,"11,771",136,Asia
+Montenegro,"11,690",172,Europe
+Namibia,"11,480",123,Africa
+Guinea,"10,735",66,Africa
+DR Congo,"10,729",272,Africa
+Maldives,"10,398",34,Asia
+Finland,"10,244",345,Europe
+French Guiana,"9,968",67,South America
+Tajikistan,"9,852",77,Asia
+Mozambique,"8,979",64,Africa
+Gabon,"8,797",54,Africa
+Haiti,"8,792",229,North America
+Luxembourg,"8,709",125,Europe
+Uganda,"8,491",79,Africa
+Zimbabwe,"7,858",228,Africa
+Georgia,"7,564",48,Asia
+Mauritania,"7,511",162,Africa
+Jamaica,"6,704",116,North America
+Cabo Verde,"6,205",62,Africa
+Slovenia,"6,103",154,Europe
+Malawi,"5,783",179,Africa
+Cuba,"5,718",122,North America
+Guadeloupe,"5,528",57,North America
+Eswatini,"5,521",111,Africa
+Djibouti,"5,417",61,Africa
+Angola,"5,211",189,Africa
+Nicaragua,"5,170",151,North America
+Hong Kong,"5,105",105,Asia
+Congo,"5,089",89,Africa
+Equatorial Guinea,"5,045",83,Africa
+Lithuania,"4,956",93,Europe
+Suriname,"4,899",105,South America
+Rwanda,"4,847",29,Africa
+Central African Republic,"4,829",62,Africa
+Trinidad and Tobago,"4,629",76,North America
+Syria,"4,289",203,Asia
+Bahamas,"4,220",96,North America
+Réunion,"4,178",16,Africa
+Aruba,"4,038",30,North America
+Mayotte,"3,779",42,Africa
+Somalia,"3,593",99,Africa
+Gambia,"3,585",115,Africa
+Thailand,"3,583",59,Asia
+Estonia,"3,577",67,Europe
+Sri Lanka,"3,388",13,Asia
+Botswana,"3,172",16,Africa
+Mali,"3,156",131,Africa
+Malta,"3,139",37,Europe
+Guyana,"2,968",85,South America
+Iceland,"2,809",10,Europe
+South Sudan,"2,715",50,Africa
+Guinea-Bissau,"2,362",39,Africa
+Benin,"2,357",41,Africa
+Sierra Leone,"2,252",72,Africa
+Burkina Faso,"2,123",59,Africa
+Andorra,"2,110",53,Europe
+Uruguay,"2,097",48,South America
+Belize,"2,080",28,North America
+Yemen,"2,040",589,Asia
+Latvia,"2,019",38,Europe
+French Polynesia,"1,964",8,Australia/Oceania
+New Zealand,"1,849",25,Australia/Oceania
+Togo,"1,818",48,Africa
+Cyprus,"1,789",22,Asia
+Lesotho,"1,680",39,Africa
+Martinique,"1,543",21,North America
+Liberia,"1,346",82,Africa
+Chad,"1,211",85,Africa
+Niger,"1,198",69,Africa
+Vietnam,"1,096",35,Asia
+Sao Tome & Principe,911,15,Africa
+San Marino,732,42,Europe
+Turks and Caicos,695,6,North America
+Channel Islands,677,48,Europe
+Sint Maarten,674,22,North America
+Papua New Guinea,539,7,Australia/Oceania
+Taiwan,517,7,Asia
+Burundi,513,1,Africa
+Tanzania,509,21,Africa
+Comoros,484,7,Africa
+Faeroe Islands,472,0,Europe
+Gibraltar,416,0,Europe
+Curaçao,411,1,North America
+Saint Martin,403,8,North America
+Mauritius,385,10,Africa
+Eritrea,381,0,Africa
+Isle of Man,341,24,Europe
+Mongolia,313,0,Asia
+Bhutan,283,0,Asia
+Cambodia,278,0,Asia
+Monaco,221,2,Europe
+Cayman Islands,213,1,North America
+Barbados,193,7,North America
+Bermuda,181,9,North America
+Brunei,146,3,Asia
+Seychelles,145,0,Africa
+Caribbean Netherlands,121,1,North America
+Liechtenstein,120,1,Europe
+Antigua and Barbuda,106,3,North America
+British Virgin Islands,71,1,North America
+St. Vincent & Grenadines,64,0,North America
+Saint Barthelemy,54,0,North America
+Macao,46,0,Asia
+Fiji,32,2,Australia/Oceania
+Dominica,31,0,North America
+Timor-Leste,28,0,Asia
+Saint Lucia,27,0,North America
+New Caledonia,27,0,Australia/Oceania
+Grenada,24,0,North America
+Laos,23,0,Asia
+Saint Kitts & Nevis,19,0,North America
+Saint Pierre & Miquelon,16,0,North America
+Greenland,14,0,North America
+Montserrat,13,1,North America
+Falkland Islands,13,0,South America
+Holy See,12,0,Europe
+Western Sahara,10,1,Africa
+MS Zaandam,9,2,
+Anguilla,3,0,North America
