@@ -7,11 +7,11 @@ You just require Python Version 3.x or up.
 
 ### How to run the script
 
-Step 1. If you wish to run the script in the Python IDLE, Launch the IDLE and open this file. 
+Step 1. If you wish to run the script in the Python IDLE, Launch the IDLE and open this file. </br>
 Step 2. Run the Script by pressing the F5 Key.
 
-If you are executing from the terminal:
-Step 1. Launch the CMD or any bash.
+If you are executing from the terminal:</br>
+Step 1. Launch the CMD or any bash.</br>
 Step 2. Type 'python3 background.py' (Make Sure you are in the correct directory)
 
 
