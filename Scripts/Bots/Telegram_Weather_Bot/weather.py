@@ -14,7 +14,7 @@ class weather_info():
 		return json.loads(res.content)
 	
 	@staticmethod
-	def read_config(self, config):
+	def read_config(config):
 		parser = cfg.ConfigParser()
 		parser.read(config)
 		return parser.get('creds', 'token')
