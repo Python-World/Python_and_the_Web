@@ -8,7 +8,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 
 class InstaBot:
-    def start(self, username, pw):
+    def __init__(self, username, pw):
         path=pathlib.Path().absolute()
         try:
             self.driver = webdriver.Chrome(r"{}\{}".format(path,"chromedriver.exe"))
@@ -22,7 +22,6 @@ class InstaBot:
                     print("Webdriver not found")
 
         print("\n----Please wait for the menu, as we are signing in through your id----")
-        self.username=username
         self.driver.get("https://instagram.com")
         self.wait = WebDriverWait(self.driver, 10).until
 
@@ -38,11 +37,12 @@ class InstaBot:
             for i in range(2):
                 WebDriverWait(self.driver, 50).until(EC.element_to_be_clickable((By.XPATH, "//button[contains(., 'Not Now')]"))) \
                     .click()
+            self.driver.minimize_window()
         except:
             for i in range(2):
                 self.wait(EC.element_to_be_clickable((By.XPATH, "//button[contains(., 'Not Now')]"))) \
                     .click()
-        self.driver.minimize_window()
+            self.driver.minimize_window()
 
     def get_unfollowers(self):
         self.driver.find_element_by_xpath("//img[@alt='Instagram']") \
@@ -180,14 +180,10 @@ class InstaBot:
             .click()
         Users().start_user()
 
-    def closetab(self):
-        self.driver.quit()
-
 
 class Users:
 
     def __init__(self):
-        super().__init__()
         self.users = {}
         count = self.check_user()
         if count == 0:
@@ -212,22 +208,21 @@ class Users:
             print("( {} ) {}".format(i + 1, list(self.users.keys())[i]))
         print('''\n(a) To Add user      (r) To Remove user      (q) Quit application
         (re) Refresh the list(if the list didn't update)\n''')
-        self.ans = input(":-   ")
+        ans = input(":-   ")
         try:
-            if self.ans == "q" or self.ans == "Q":
+            if ans == "q" or ans == "Q":
                 pass
             else:
-                if self.ans == "a" or self.ans == "A":
+                if ans in ("a","A"):
                     add_user()
-                    self.refresh()
+                    self.check_user()
                     self.start_user()
-                elif self.ans == "r" or self.ans == "R":
+                elif ans in ("R","r"):
                     self.remove_user()
                     self.start_user()
-                elif self.ans == "re" or self.ans == "RE" or self.ans == "Re":
+                elif ans in ("re","RE","Re"):
                     self.refresh()
-                self.bot = InstaBot()
-                self.bot.start(list(self.users.keys())[int(self.ans) - 1],list(self.users.values())[int(self.ans) - 1])
+                self.bot = InstaBot(list(self.users.keys())[int(ans) - 1],list(self.users.values())[int(ans) - 1])
                 f.close()
                 self.start_cmd()
         except:
@@ -250,25 +245,20 @@ class Users:
         self.check_user()
 
     def start_cmd(self):
-        print(
-            "Choose an action \n(1) Follow Back stats [OPTIONAL->Unfollow/Follow back]\n(2) Spam Bot\n(3) Change User\n(4) Quit application\n")
+        print("\n\nChoose an action \n(1) Follow Back stats [OPTIONAL->Unfollow/Follow back]\n(2) Spam Bot\n(3) Change User\n")
         a = int(input(" :-   ").strip())
-        if a == 4:
-            self.bot.closetab()
-        else:
-            try:
-                if a == 1:
-                    print("\n----Please wait, this command will take several seconds----\n")
-                    self.bot.get_unfollowers()
-                elif a == 2:
-                    self.bot.spamming()
-                elif a == 3:
-                    self.bot.log_out()
-            except:
-                print("Some error occurred\n Please try again")
-                input("\n\n")
-
-            self.start_cmd()
+        try:
+            if a == 1:
+                print("\n----Please wait, this command will take several seconds----\n")
+                self.bot.get_unfollowers()
+            elif a == 2:
+                self.bot.spamming()
+            elif a == 3:
+                self.bot.log_out()
+        except:
+            print("Some error occurred\n Please try again")
+            input("\n\n")
+        self.start_cmd()
 
     def refresh(self):
         self.check_user()
@@ -306,7 +296,7 @@ try:
 except:
     f = open("Users", "w")
     f.close()
-sleep(2.5)
+sleep(1.5)
 start = Users()
 start.start_user()
 print('\n------------------THANKS FOR USING MY BOT------------------\n')
