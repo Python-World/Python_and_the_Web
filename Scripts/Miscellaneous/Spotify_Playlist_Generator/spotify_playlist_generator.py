@@ -11,8 +11,12 @@ scope = "playlist-modify-public"
 spotipy_instance = spotipy.Spotify(auth_manager=SpotifyOAuth(scope=scope, cache_path=os.getcwd()))
 
 
-# Method to read the command line arguments and parse them
+# 
 def get_args():
+    """
+    Method to read the command line arguments and parse them
+    """
+    
     parser = argparse.ArgumentParser(description='Split a playlist into multiple playlists')
     # Required arguments for the program
     parser.add_argument('-p', '--playlist_id', required=True,
@@ -26,15 +30,19 @@ def get_args():
 def get_track_ids_for_playlist(playlist):
     res = []
     for song in playlist:
-        #Extract the ID of the track
-        res.append(song['track']['id'])
+        res.append(song['track']['id']) #Extract the ID of the track
     return res
 
 
-# This method generates smaller playlists from the input playlist
+
 def generate_playlists(playlist_size, playlist_songs, user_id):
+    """
+    This method generates smaller playlists from the input playlist
+    """
+
     # Create the smaller playlists from the given large playlist 
-    smaller_playlists = [playlist_songs[x:x + playlist_size] for x in range(0, len(playlist_songs), playlist_size)]
+    smaller_playlists = [playlist_songs[x:x + playlist_size] 
+    for x in range(0, len(playlist_songs), playlist_size)]
     for index, playlist in enumerate(smaller_playlists):
         # Once we have the smaller playlists we need to create them on the account
         # For that we need to extract IDS of the songs in the smaller playlists

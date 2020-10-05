@@ -18,7 +18,7 @@ Spotify Playlist Generator
 
 ### Screenshot/GIF showing the sample use of the script
 <!--Remove the below lines and add yours -->
-![alt text](/screenshots/screenshot.png)
+![alt text](screenshots/screenshot.png)
 
 ## *Author Name*
 <!--Remove the below lines and add yours -->
