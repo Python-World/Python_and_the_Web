@@ -29,6 +29,7 @@ def get_quantopian_articles():
 
 # function to get top 10 articles from quantocracy
 def get_quantocracy_articles():
+    # using user agent to bypass the site block for bots
     headers = {"User-Agent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36'}
     res = requests.get("https://quantocracy.com/", headers = headers)
     soup = BeautifulSoup(res.text, "html.parser")
