@@ -18,7 +18,7 @@ It also saves boht of the list of the people in the form of simple text file.
 
 For your convinience I created the executable file which functions the same and it doesn't even have any prerequisites except for the web driver
 
-It waits for 40 seconds if you have second authorization enabled
+It waits for 50 seconds if you have second authorization enabled
 
 ## Prerequisites
 
