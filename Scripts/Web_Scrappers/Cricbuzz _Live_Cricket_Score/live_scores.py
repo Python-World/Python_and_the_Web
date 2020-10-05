@@ -44,7 +44,10 @@ def live_score():
                     team2_score = team2.find("div", attrs={"class": "cb-ovr-flo","style": "display:inline-block; width:140px"}).text
                     print("\t\t", team2_name, team2_score)
 
-                match_status = details.find("div", attrs={"class": "cb-text-live"}).text
+                match_status = details.find("div", attrs={"class": "cb-text-live"})
+                if match_status is None:
+                    match_status = details.find("div", attrs={"class": "cb-text-complete"})
+                match_status = match_status.text
                 print("\t\t Match Status:",match_status)
 
 # Scraping the live cricket score and displaying it
