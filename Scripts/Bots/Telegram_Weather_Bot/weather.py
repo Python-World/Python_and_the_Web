@@ -13,10 +13,8 @@ class weather_info():
 		res = requests.get(url)
 		return json.loads(res.content)
 	
+	@staticmethod
 	def read_config(self, config):
 		parser = cfg.ConfigParser()
 		parser.read(config)
 		return parser.get('creds', 'token')
-
-# w = weather_info('owm_config.cfg')
-# print(w.get_info('mumbai'))
