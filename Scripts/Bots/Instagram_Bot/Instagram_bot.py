@@ -34,7 +34,7 @@ class InstaBot:
         try:
             self.driver.find_element_by_xpath("//input[@aria-label='Security Code']")
             print("\nEnter the otp and login to continue\n")
-            for i in range(2):
+            for _ in range(2):
                 WebDriverWait(self.driver, 50).until(EC.element_to_be_clickable((By.XPATH, "//button[contains(., 'Not Now')]"))) \
                     .click()
             self.driver.minimize_window()
@@ -161,7 +161,7 @@ class InstaBot:
                 .click()
             self.wait(EC.element_to_be_clickable((By.XPATH, "//textarea[@placeholder='Message...']"))) \
                 .click()
-            for k in range(count):
+            for _ in range(count):
                 self.driver.find_element_by_xpath("//textarea[@placeholder='Message...']") \
                     .send_keys(msg)
                 self.wait(EC.element_to_be_clickable((By.XPATH, "//button[contains(text(),'Send')]"))) \
@@ -178,7 +178,7 @@ class InstaBot:
         log_out = "/html/body/div[1]/section/nav/div[2]/div/div/div[3]/div/div[5]/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div"
         self.wait(EC.element_to_be_clickable((By.XPATH, log_out))) \
             .click()
-        Users().start_user()
+        Users()
 
 
 class Users:
@@ -190,6 +190,33 @@ class Users:
             print("No user found, please add atleast 1 user")
             add_user()
 
+        f = open("Users", "r")
+        print("\nSelect user : ")
+        for i in range(len(self.users)):
+            print("( {} ) {}".format(i + 1, list(self.users.keys())[i]))
+        print('''\n(a) To Add user      (r) To Remove user      (q) Quit application
+        (re) Refresh the list(if the list didn't update)\n''')
+        ans = input(":-   ")
+        try:
+            if ans in ("Q",'q'):
+                pass
+            else:
+                if ans in ("a","A"):
+                    add_user()
+                    self.check_user()
+                    Users()
+                elif ans in ("R","r"):
+                    self.remove_user()
+                    Users()
+                elif ans in ("re","RE","Re"):
+                    self.refresh()
+                self.bot = InstaBot(list(self.users.keys())[int(ans) - 1],list(self.users.values())[int(ans) - 1])
+                f.close()
+                self.start_cmd()
+        except:
+            print("Some error occurred, please enter numeric input to choose among the options.")
+            Users()
+
     def check_user(self):
         key = "LO8QifH5rNwyNUhbs8GeDKExO1vToMA6AmdvaR1brgU="
         with open("Users", "r") as f:
@@ -200,34 +227,6 @@ class Users:
                     self.users[str(data[i])[0:-1].strip()] =str(decrypted.decode())
             else:
                 return 0
-
-    def start_user(self):
-        f = open("Users", "r")
-        print("\nSelect user : ")
-        for i in range(len(self.users)):
-            print("( {} ) {}".format(i + 1, list(self.users.keys())[i]))
-        print('''\n(a) To Add user      (r) To Remove user      (q) Quit application
-        (re) Refresh the list(if the list didn't update)\n''')
-        ans = input(":-   ")
-        try:
-            if ans == "q" or ans == "Q":
-                pass
-            else:
-                if ans in ("a","A"):
-                    add_user()
-                    self.check_user()
-                    self.start_user()
-                elif ans in ("R","r"):
-                    self.remove_user()
-                    self.start_user()
-                elif ans in ("re","RE","Re"):
-                    self.refresh()
-                self.bot = InstaBot(list(self.users.keys())[int(ans) - 1],list(self.users.values())[int(ans) - 1])
-                f.close()
-                self.start_cmd()
-        except:
-            print("Some error occurred, please enter numeric input to choose among the options.")
-            self.start_user()
 
     def remove_user(self):
         key = "LO8QifH5rNwyNUhbs8GeDKExO1vToMA6AmdvaR1brgU="
@@ -262,7 +261,7 @@ class Users:
 
     def refresh(self):
         self.check_user()
-        self.start_user()
+        Users()
 
 
 def add_user():
@@ -298,6 +297,5 @@ except:
     f.close()
 sleep(1.5)
 start = Users()
-start.start_user()
 print('\n------------------THANKS FOR USING MY BOT------------------\n')
 sleep(2)
