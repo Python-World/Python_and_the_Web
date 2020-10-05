@@ -2,7 +2,6 @@ import urllib.request, urllib.parse, urllib.error
 import json
 import os
 import webbrowser
-import ssl
 import configparser
 
 config = configparser.ConfigParser()
@@ -10,11 +9,6 @@ config.read('config.ini')
 
 api_key = config['keys']['api_key']
 serviceurl = config['keys']['service_url']
-
-# Ignore SSL certificate errors
-ctx = ssl.create_default_context()
-ctx.check_hostname = False
-ctx.verify_mode = ssl.CERT_NONE
 
 with open("where.txt") as fh, open("where.js","w",encoding="utf-8") as where:
     adrs=[]
@@ -31,7 +25,7 @@ with open("where.txt") as fh, open("where.js","w",encoding="utf-8") as where:
         else:
             raise ValueError from None
 
-        with urllib.request.urlopen(req, context=ctx) as resp:
+        with urllib.request.urlopen(req) as resp:
 
             data = resp.read().decode()
     
