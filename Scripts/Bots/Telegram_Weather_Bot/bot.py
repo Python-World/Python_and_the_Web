@@ -20,6 +20,7 @@ class telegram_chatbot():
 		if msg is not None:
 			requests.get(url)
 
+	@staticmethod
 	def read_config(self, config):
 		parser = cfg.ConfigParser()
 		parser.read(config)
