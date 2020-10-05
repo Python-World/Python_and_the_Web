@@ -20,28 +20,32 @@ with open("where.txt") as fh, open("where.js","w",encoding="utf-8") as where:
     adrs=[]
     parms={}
     for line in fh:
-    
+
         address = line.strip()
         parms["address"] = address
         parms['key'] = api_key
         url = serviceurl + urllib.parse.urlencode(parms)
+
         if url.lower().startswith('http'):
-            pass
+            req = urllib.request.Request(url)
         else:
             raise ValueError from None
-        data = urllib.request.urlopen(url, context=ctx).read().decode()
 
-        try:
-            js = json.loads(data)
-        except:
-            print(data)
-            continue
+        with urllib.request.urlopen(req, context=ctx) as resp:
 
-        try:
-            adrs.append([js['results'][0]['geometry']['lat'],js['results'][0]['geometry']['lng'],js['results'][0]['formatted']])
-            print('Retrieved ', url)
-        except:
-            print("Not Found " + line.strip())
+            data = resp.read().decode()
+    
+            try:
+                js = json.loads(data)
+            except:
+                print(data)
+                continue
+
+            try:
+                adrs.append([js['results'][0]['geometry']['lat'],js['results'][0]['geometry']['lng'],js['results'][0]['formatted']])
+                print('Retrieved ', url)
+            except:
+                print("Not Found " + line.strip())
 
     print("\n\nOpening Webpage")
 
