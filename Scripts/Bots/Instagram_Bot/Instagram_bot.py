@@ -62,13 +62,11 @@ class InstaBot:
         self.driver.find_element_by_xpath("//img[@alt='Instagram']") \
             .click()
 
-        f1 = open("Not Following Back", "w")
-        f1.write("\n".join(not_following_back))
-        f1.close()
+        with open("Not Following Back", "w") as f1:
+            f1.write("\n".join(not_following_back))
 
-        f2 = open("You not Following Back", "w")
-        f2.write("\n".join(you_not_following_back))
-        f2.close()
+        with open("You not Following Back", "w") as f2:
+            f2.write("\n".join(you_not_following_back))
         self.driver.minimize_window()
 
         print("People who aren't following back ({}) :\n".format(len(not_following_back)))
@@ -198,15 +196,14 @@ class Users:
 
     def check_user(self):
         key = "LO8QifH5rNwyNUhbs8GeDKExO1vToMA6AmdvaR1brgU="
-        f = open("Users", "r")
-        data = f.readlines()
-        if len(data) != 0:
-            for i in range(0, len(data) - 1, 2):
-                decrypted = Fernet(key).decrypt((str(data[i + 1])[0:-1].strip()).encode())
-                self.users[str(data[i])[0:-1].strip()] =str(decrypted.decode())
-        else:
-            return 0
-        f.close()
+        with open("Users", "r") as f:
+            data = f.readlines()
+            if len(data) != 0:
+                for i in range(0, len(data) - 1, 2):
+                    decrypted = Fernet(key).decrypt((str(data[i + 1])[0:-1].strip()).encode())
+                    self.users[str(data[i])[0:-1].strip()] =str(decrypted.decode())
+            else:
+                return 0
 
     def start_user(self):
         f = open("Users", "r")
@@ -245,12 +242,11 @@ class Users:
             print("( {} ) {}".format(i+1,usersl[i]))
         remove = int(input("User that to be removed: "))
         self.users.pop(list(self.users.keys())[remove-1])
-        f = open("Users", "w")
-        for i in self.users:
-            usr=self.users.get(i)
-            encrypted= Fernet(key).encrypt(usr.encode())
-            f.write(i + "\n" + encrypted.decode() + "\n")
-        f.close()
+        with open("Users", "w") as f:
+            for i in self.users:
+                usr=self.users.get(i)
+                encrypted= Fernet(key).encrypt(usr.encode())
+                f.write(i + "\n" + encrypted.decode() + "\n")
         self.check_user()
 
     def start_cmd(self):
@@ -281,15 +277,14 @@ class Users:
 
 def add_user():
     key="LO8QifH5rNwyNUhbs8GeDKExO1vToMA6AmdvaR1brgU="
-    f = open("Users", "a")
-    a=int(input("No. of users to be added : "))
-    for i in range(a):
-        username=input("Enter username {}: ".format(i+1))
-        f.write(username + '\n')
-        password=input("Enter password of username( {} ): ".format(username))
-        encrypted = Fernet(key).encrypt(password.encode())
-        f.write(encrypted.decode()+'\n')
-    f.close()
+    with open("Users", "a") as f:
+        a=int(input("No. of users to be added : "))
+        for i in range(a):
+            username=input("Enter username {}: ".format(i+1))
+            f.write(username + '\n')
+            password=input("Enter password of username( {} ): ".format(username))
+            encrypted = Fernet(key).encrypt(password.encode())
+            f.write(encrypted.decode()+'\n')
     Users().check_user()
 
 
