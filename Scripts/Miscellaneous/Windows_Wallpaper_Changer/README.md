@@ -17,7 +17,7 @@ Step 2. Type 'python3 background.py' (Make Sure you are in the correct directory
 
 ### Screenshot/GIF showing the sample use of the script
 <!--Remove the below lines and add yours -->
-Add a jpeg/png/gif file here.
+(https://github.com/symtalha14/Python_and_the_Web/blob/master/Scripts/Miscellaneous/Windows_Wallpaper_Changer/Screenshot%20(101).png)
 
 ## *Author Name*
 Syed Mohd Talha
