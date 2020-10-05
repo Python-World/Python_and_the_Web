@@ -9,5 +9,6 @@ def main():
     for i in range(200):
         pyautogui.leftClick(467,517)
 
+
 if __name__ == "__main__":
     main()
