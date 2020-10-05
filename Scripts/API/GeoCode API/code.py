@@ -53,4 +53,5 @@ for item in adrs:
     where.write(",\n")
 where.write("];\n")
 fh.close()
+where.close()
 webbrowser.open('file://' + os.path.realpath("index.html"))
