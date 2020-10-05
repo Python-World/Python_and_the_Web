@@ -33,7 +33,7 @@ class InstaBot:
         self.driver.find_element_by_xpath('//button[@type="submit"]') \
             .click()
         try:
-            verification= self.driver.find_element_by_xpath("//input[@aria-label='Security Code']")
+            self.driver.find_element_by_xpath("//input[@aria-label='Security Code']")
             print("\nEnter the otp and login to continue\n")
             for i in range(2):
                 WebDriverWait(self.driver, 50).until(EC.element_to_be_clickable((By.XPATH, "//button[contains(., 'Not Now')]"))) \
@@ -75,18 +75,18 @@ class InstaBot:
         print('\n'.join(not_following_back))
         print("\n\nDo you want to UNFOLLOW them all??")
         ans1 = input("Y/N : ")
-        if ans1 == "Y" or ans1 == "y":
+        if ans1 in ('Y', 'y'):
             InstaBot.unfollow(self, not_following_back)
-        elif ans1 == "N" or ans1 == "n":
+        elif ans1 in ('N', 'n'):
             pass
 
         print("\n\n\n\nPeople whom you don't follow back ({}) :\n".format(len(you_not_following_back)))
         print('\n'.join(you_not_following_back))
         print("\n\nDo you want to FOLLOW BACK them all??")
         ans2 = input("Y/N : ")
-        if ans2 == "Y" or ans2 == "y":
+        if ans2 in ('Y', 'y'):
             InstaBot.follow_back(self, you_not_following_back)
-        elif ans2 == "N" or ans2 == "n":
+        elif ans2 in ('N', 'n'):
             pass
 
     def _get_names(self):
@@ -315,4 +315,3 @@ start = Users()
 start.start_user()
 print('\n------------------THANKS FOR USING MY BOT------------------\n')
 sleep(2)
-exit()
