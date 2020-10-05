@@ -5,7 +5,7 @@ Learning SDEs in Python
 https://www.quantopian.com/posts/learning-sdes-in-python
 Futures Data Now Available in Research
 https://www.quantopian.com/posts/futures-data-now-available-in-research
-New Strategy - Presenting the ìQuality Companies in an Uptrendî Model
+New Strategy - Presenting the ‚ÄúQuality Companies in an Uptrend‚Äù Model
 https://www.quantopian.com/posts/new-strategy-presenting-the-quality-companies-in-an-uptrend-model-1
 Global Equity Pricing and Fundamental Data
 https://www.quantopian.com/posts/global-equity-pricing-and-fundamental-data
@@ -24,7 +24,7 @@ https://www.quantopian.com/posts/the-101-alphas-project
 Here's the top 10 articles from Quantocracy:
 Exploring the PMFG Portfolios for Covid-19 Robustness [Hudson and Thames]
 https://hudsonthames.org/exploring-the-pmfg-portfolios-for-covid-19-robustness/
-The Next 5 Weeks All Are Among The Weakest ñ And Strongest ñ Of The Year [Quantifiable Edges]
+The Next 5 Weeks All Are Among The Weakest ‚Äì And Strongest ‚Äì Of The Year [Quantifiable Edges]
 https://quantifiableedges.com/the-next-5-weeks-all-are-among-the-weakest-and-strongest-of-the-year/
 Lottery Preferences and Their Relationship with Factor Investing [Alpha Architect]
 https://alphaarchitect.com/2020/10/01/lottery-preferences-and-anomalies/
