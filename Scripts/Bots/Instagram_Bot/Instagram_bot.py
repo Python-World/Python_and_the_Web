@@ -39,7 +39,7 @@ class InstaBot:
                     .click()
             self.driver.minimize_window()
         except:
-            for i in range(2):
+            for _ in range(2):
                 self.wait(EC.element_to_be_clickable((By.XPATH, "//button[contains(., 'Not Now')]"))) \
                     .click()
             self.driver.minimize_window()
