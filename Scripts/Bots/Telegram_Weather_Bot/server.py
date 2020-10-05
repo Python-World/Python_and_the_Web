@@ -8,7 +8,7 @@ def make_reply(message):
 	reply = None
 	if message is not None:
 		stats = wi.get_info(message)
-	if message == '/start' or message == '/help':
+	if message in ('/start', '/help'):
 		reply = "Enter a city name in chat to get its real time weather stats\nSend '/help' in case of unexpected behaviour or difficulties\n\nNote: Make sure you enter a 'valid city name' and not any state or country name, doing so will result in improper replies"
 		return reply
 	if str(stats['cod']) == '404':
