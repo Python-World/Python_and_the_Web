@@ -247,7 +247,8 @@ class Users:
         self.users.pop(list(self.users.keys())[remove-1])
         f = open("Users", "w")
         for i in self.users:
-            encrypted= Fernet(key).encrypt(self.users.get(i).encode())
+            usr=self.users.get(i)
+            encrypted= Fernet(key).encrypt(usr.encode())
             f.write(i + "\n" + encrypted.decode() + "\n")
         f.close()
         self.check_user()
