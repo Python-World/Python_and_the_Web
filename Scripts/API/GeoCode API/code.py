@@ -19,14 +19,17 @@ ctx.verify_mode = ssl.CERT_NONE
 fh = open("where.txt")
 where = open("where.js","w",encoding="utf-8")
 adrs=[]
-
+parms={}
 for line in fh:
 
     address = line.strip()
-    parms = dict()
     parms["address"] = address
     parms['key'] = api_key
     url = serviceurl + urllib.parse.urlencode(parms)
+    if url.lower().startswith('http'):
+        pass
+    else:
+        raise ValueError from None
     data = urllib.request.urlopen(url, context=ctx).read().decode()
 
     try:
@@ -49,5 +52,5 @@ for item in adrs:
     where.write(st)
     where.write(",\n")
 where.write("];\n")
-
+fh.close()
 webbrowser.open('file://' + os.path.realpath("index.html"))
