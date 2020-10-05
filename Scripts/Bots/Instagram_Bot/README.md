@@ -64,7 +64,7 @@ _Note:_
 
 #### After adding your username and password
 
-<img src="LoginPage.PNG" alt="LoginPage">
+<img src="LoginPage.png" alt="LoginPage">
 
 #### Bot Commands available
 
