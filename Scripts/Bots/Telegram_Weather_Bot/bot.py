@@ -21,7 +21,7 @@ class telegram_chatbot():
 			requests.get(url)
 
 	@staticmethod
-	def read_config(self, config):
+	def read_config(config):
 		parser = cfg.ConfigParser()
 		parser.read(config)
 		return parser.get('creds', 'token')
