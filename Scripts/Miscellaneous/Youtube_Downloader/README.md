@@ -12,7 +12,7 @@
 
 ### Screenshot
 
-    <img src="demo.png">
+ <img src="demo.png">
 
 ## *Author Name*
 
