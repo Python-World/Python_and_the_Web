@@ -35,6 +35,3 @@ while cap.isOpened():
 cap.release()
 saved_frame.release()
 cv2.destroyAllWindows()
-
-
-
