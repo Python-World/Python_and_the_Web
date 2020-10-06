@@ -27,12 +27,12 @@ for s in main_div:
     s4=s.find('h2', attrs={'class' : re.compile('cb-nws-hdln cb-font-18 line-ht24')})
     heading.append(s4.text)
 l=len(heading)
-file = open("out.txt", "w")
-for i in range(l):
-    file.write(typ[i]+"\n")
-    file.write(heading[i]+"\n")
-    file.write(intro[i]+"\n")
-    file.write('Ref: '+links[i]+"\n")
-    file.write('Posted: '+time[i]+"\n\n")
+with open("out.txt", "w") as file:
+    for i in range(l):
+        file.write(typ[i]+"\n")
+        file.write(heading[i]+"\n")
+        file.write(intro[i]+"\n")
+        file.write('Ref: '+links[i]+"\n")
+        file.write('Posted: '+time[i]+"\n\n")
 file.close()
 print("Your News is ready in 'out.txt'")
