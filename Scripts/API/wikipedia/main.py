@@ -9,13 +9,8 @@ def parse(content, esc):
     """
     type(content) = str
     """
-    assert type(content) == str
-
-    # if content=='':
-    #   return None
-    # finding max numbers of nested sections
     d = {}
-    for i, c in enumerate(content.split(esc)):
+    for c in content.split(esc):
         c = c.split(esc[::-1])
         if len(c) == 1:
             section = c[0]
@@ -44,7 +39,7 @@ def traversal(content, esc):
 def get_all_wiki(name):
     search_result = wiki.search(name)
     if len(search_result) == 0:
-        raise ValueError("no result found for this name.")
+        return None
     else:
         page = wiki.page(search_result[0], auto_suggest=True)
 
@@ -63,7 +58,7 @@ def main():
         page = get_all_wiki(name)
         parsed = page['content']
         keys = list(parsed.keys())
-        while type(parsed) == dict:
+        while isinstance(parsed,dict):
             for ind, (topic, content) in enumerate(parsed.items()):
                 if content is None:
                     print("\n\n", topic, "\n")
