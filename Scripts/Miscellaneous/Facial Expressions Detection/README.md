@@ -1,6 +1,6 @@
 # Facial expressions detection
 This project detects facial expressions of humans using Deep Learning and Computer Vision with the help of Python.
-
+The facial features for detection are extracted using [OpenCV](https://github.com/opencv/opencv) with the help of the Haar Cascade Classifier `haarcascade_frontalface_default.xml`. You can downlaod the .xml file [here.](https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_default.xml)
 
 ### Prerequisites
 
