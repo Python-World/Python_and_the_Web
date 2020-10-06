@@ -1,6 +1,5 @@
 # Author: Mahesh Bharadwaj K (https://github.com/MaheshBharadwaj)
 
-import os
 import re
 import sys
 
