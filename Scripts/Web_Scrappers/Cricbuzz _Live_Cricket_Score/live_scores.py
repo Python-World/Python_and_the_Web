@@ -50,6 +50,7 @@ def live_score():
                 match_status = match_status.text
                 print("\t\t Match Status:",match_status)
 
+
 if __name__ == "__main__":                
 # Scraping the live cricket score and displaying it
     live_score()
