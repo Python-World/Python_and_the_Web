@@ -6,7 +6,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-59-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-60-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![Issues](https://img.shields.io/github/issues/Python-World/Python_and_the_Web)
@@ -120,6 +120,7 @@ We now have a section for miscellaneous scripts/programs as well.
     <td align="center"><a href="https://www.kaggle.com/shivanshsinghal107"><img src="https://avatars3.githubusercontent.com/u/47008582?v=4" width="100px;" alt=""/><br /><sub><b>Shivansh Singhal</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=shivanshsinghal107" title="Code">💻</a></td>
     <td align="center"><a href="https://fuzz.me.uk"><img src="https://avatars0.githubusercontent.com/u/1335181?v=4" width="100px;" alt=""/><br /><sub><b>Serban Constantin</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=fuzzmz" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/symtalha14"><img src="https://avatars2.githubusercontent.com/u/26308379?v=4" width="100px;" alt=""/><br /><sub><b>Talha</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=symtalha14" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/danieljo09"><img src="https://avatars0.githubusercontent.com/u/67842986?v=4" width="100px;" alt=""/><br /><sub><b>Daniel Jo</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=danieljo09" title="Code">💻</a></td>
   </tr>
 </table>
 
