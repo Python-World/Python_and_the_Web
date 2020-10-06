@@ -1,0 +1,1 @@
+This is your personel assisatant which will talk to you and it can do many things like sending E-mails , playing music , Searching Wikipedia ETC. With you voice only !!!!!!!!!!!

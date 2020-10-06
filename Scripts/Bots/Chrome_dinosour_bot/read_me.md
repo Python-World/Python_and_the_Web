@@ -1,0 +1,1 @@
+This is a script which will automate the game chrome dinasour.
