@@ -39,7 +39,7 @@ def traversal(content, esc):
 def get_all_wiki(name):
     search_result = wiki.search(name)
     if len(search_result) == 0:
-        return None
+        d = None
     else:
         page = wiki.page(search_result[0], auto_suggest=True)
 
@@ -48,7 +48,7 @@ def get_all_wiki(name):
             'url': page.links,
             'summary': page.summary
         }
-        return d
+    return d
 
 
 def main():
