@@ -33,8 +33,8 @@ def parse(content, esc):
 def traversal(content, esc):
     if content != '':
         d = parse(content, esc)
-        for k in d.keys():
-            d[k] = traversal(d[k], esc=esc.strip(" ")+"= ")
+        for k, v in d.items():
+            d[k] = traversal(v, esc=esc.strip(" ")+"= ")
         if '' in d:
             del d['']
         return d
@@ -62,11 +62,10 @@ def main():
         # get name of item to search
         page = get_all_wiki(name)
         parsed = page['content']
-
+        keys = list(parsed.keys())
         while type(parsed) == dict:
-            keys = list(parsed.keys())
-            for ind, topic in enumerate(keys):
-                if parsed[topic] is None:
+            for ind, (topic, content) in enumerate(parsed.items()):
+                if content is None:
                     print("\n\n", topic, "\n")
                 else:
                     print(ind+1, ":", topic)
