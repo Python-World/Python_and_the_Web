@@ -1,6 +1,12 @@
 import wikipedia as wiki
 from collections import deque
 
+"""
+author: Monil [https://www.github.com/MNISAR]
+
+"""
+
+
 def parse(content, esc):
 	"""
 	type(content) = str
