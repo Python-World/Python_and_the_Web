@@ -1,16 +1,21 @@
+# IMPORTS
 import cv2
-import numpy as np
 
+# Read the video file
 cap = cv2.VideoCapture("./Data/cars.avi")
 
+# PROPids of the video frame
 frame_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
 frame_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
+# FourCC Codec to identify the video file format
 fourcc = cv2.VideoWriter_fourcc(*"XVID")
 saved_frame = cv2.VideoWriter("car_detection.avi", fourcc, 20.0, (frame_width, frame_height))
 
+# Load the model
 model = cv2.CascadeClassifier("haarcascade_car.xml")
 
+# Capture the frames
 while cap.isOpened():
     _, frame = cap.read()
 
@@ -26,6 +31,7 @@ while cap.isOpened():
     if cv2.waitKey(1) & 0xFF == 27:
         break
 
+# Cleaning
 cap.release()
 saved_frame.release()
 cv2.destroyAllWindows()
