@@ -1,0 +1,2 @@
+discord.py==1.5.0
+youtube_dl==2020.9.20

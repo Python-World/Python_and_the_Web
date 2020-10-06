@@ -91,7 +91,7 @@ def main():
     elif p2_points > p1_points:
         print(f"{p2} won by {p2_points - p1_points} points."); sleep(0.3)
     else:
-        print(f"Game ended in a draw..."); sleep(0.3)
+        print("Game ended in a draw..."); sleep(0.3)
         
     print('\nFinal Score Board:')
     show_score(i+1, p1, p2, p1_points, p2_points)

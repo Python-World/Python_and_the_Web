@@ -167,9 +167,8 @@ def showScore():
 
 # Game Over
 def gameOver():
-    if scoreLeft == maxScore or scoreRight == maxScore:
-        gameon = True
-        while gameon:
+    if maxScore in(scoreLeft, scoreRight):
+        while True:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     close()
