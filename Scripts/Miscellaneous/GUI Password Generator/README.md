@@ -25,5 +25,9 @@ And now your password will be generated and you can use it anywhere by copying i
 ## How to run the Script:
     python passwordGenerator.py
 
+## Screenshots
+![Screenshot](https://i.postimg.cc/D0Q6rn7X/ss.png)
+
+
 ## Authon Name:
 Rohit Kumar Saini
