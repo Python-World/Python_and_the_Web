@@ -1,6 +1,9 @@
 # Cryptozor.py
 
+@author- Abhinav Anand
+
 ## A Python Cryptocurrency converter.
+
 
 ## Run test.py (python test.py)
 ### Example:
