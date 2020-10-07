@@ -12,26 +12,8 @@ class Cryptozor:
         except KeyError:
             pass
         # Bitcoin
-        if self.cryptocurrency == ('BTC'):
-           return amount / float(currentPrice)
-        # Ethereum
-        elif self.cryptocurrency == ('ETH'):
-            return amount / float(currentPrice)
-        # Ethereum Classic
-        elif self.cryptocurrency == ('ETC'):
-            return amount / float(currentPrice)
-        # Bitcoin Cash
-        elif self.cryptocurrency == ('BCH'):
-            return amount / float(currentPrice)
-        # Litecoin
-        elif self.cryptocurrency == ('LTC'):
-            return amount / float(currentPrice)
-        # ZCash
-        elif self.cryptocurrency == ('ZEC'):
-            return amount / float(currentPrice)
-        # 0x
-        elif self.cryptocurrency == ('ZRX'):
+        operations = ['BTC','ETH','ETC','BCH','LTC','ZEC','ZRX']
+        if self.cryptocurrency in operations:
             return amount / float(currentPrice)
         else:
-            print('The coin "'+self.cryptocurrency+'" isn\'t implemented yet or doesn\'t exist.')
-
+            return'Not Implemented or does not exist'
