@@ -1,24 +1,19 @@
+
 # Github-Folder-Download-Tool
 A tool for downloading a single github folder (and its subfolders and files) ... 
 
-NOTES: Accepts a github folder url as input and downloads the entire content of the folder! ... No more downloading a whole repository just to get a folder
+### Prerequisite
+Check requirements.txt for needed dependencies.
 
-TODO:
+### How to run the script
+Accepts a github folder url as input and downloads the entire content of the folder!
 
-[-] Proper and Xtensive Error handling ... the tool is still in it's early stages ...
+Example: py gitfold.py https://github.com/TEMHITHORPHE/Python_and_the_Web/
 
-[-] Implement the tool using svn ...
+### Screenshot/GIF showing the sample use of the script
+<img width="964" alt="Script in action" src="https://github.com/TEMHITHORPHE/Python_and_the_Web/blob/master/Scripts/Miscellaneous/Github-Folder-Download-Tool/img/gitfold.png">
 
-[-] Rewrite using urllib3 or urllib2 ... as download time is still a little slow
-
-[-] Anything! you! think! will! make! it! awesome!
-
-
-** Track future changes and development in my repository
-
-[-] https://github.com/TEMHITHORPHE/Github-Folder-Download-Tool
-
-
-Author: https://github.com/TEMHITHORPHE
-
+## *Author Name*
+TEMHITHORPHE
+https://github.com/TEMHITHORPHE
 email: tehmhithorphe@gmail.com
