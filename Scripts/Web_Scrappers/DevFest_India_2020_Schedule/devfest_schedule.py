@@ -6,9 +6,13 @@ from bs4 import BeautifulSoup
 def devfest_schedule():
     url = "https://devfestindia.com/schedule"
 
+    # Running the driver in headless mode
+    options = webdriver.ChromeOptions()
+    options.add_argument("headless")
+
     # Change the driver_path to where your chrome driver is installed
     driver_path = '/Users/pc/Desktop/Rough/DevFest_India_2020_Schedule/chromedriver/chromedriver.exe'
-    driver = webdriver.Chrome(executable_path = driver_path)
+    driver = webdriver.Chrome(executable_path = driver_path, options=options)
 
     # Requesting the desired webpage through selenium Chrome driver
     driver.get(url)
