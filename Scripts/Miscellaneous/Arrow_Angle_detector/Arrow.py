@@ -1,18 +1,14 @@
 import cv2
 import numpy as np
 
-
-def nothing(x):
-	pass
-
 font = cv2.FONT_HERSHEY_COMPLEX
 cap = cv2.VideoCapture(0)
-cv2.namedWindow("Adjust")
+cv2.namedWindow("Adjust") #Adjust help us to find the right threshold values for better accuracy using slider window.
 cv2.createTrackbar("min","Adjust",110,255,nothing)
-#resized = cv2.resize(image, (width, height), interpolation=cv2.INTER_AREA)
+
 text = 'Left'
 while True:
-	ret ,frame = cap.read()
+	ret ,frame = cap.read() #Reading each frame.
 	frame = cv2.resize(frame, (640,480), interpolation=cv2.INTER_AREA)
 	cropped = frame[100:400,100:500]
 	cropped = cv2.flip(cropped,1)
@@ -27,35 +23,27 @@ while True:
 
 	for cnt in contours :
 		area = cv2.contourArea(cnt)
-		if area > 400 :
+		if area > 400 : #Selecting Contours only with area greater then 400
 			approx = cv2.approxPolyDP(cnt,0.01*cv2.arcLength(cnt,True),True)
 			approx_area = cv2.contourArea(approx)
-			if(len(approx)==7):
+			if(len(approx)==7): #As an arrow has seven edges, hence we are selecting the polygon with 7 edges
 					n = approx.ravel()
-					x1 = n[0]
-					y1 = n[1]
+					x1 = n[0] #First Co-ordinate always point to the topmost vertex
+					y1 = n[1] 
 					x2 = n[2]
 					y2 = n[3]
 					x3 = n[6]
 					y3 = n[7]
-					distance1 = (x1 - x2)*(x1 - x2) + (y1 - y2)*(y1 - y2)
+					distance1 = (x1 - x2)*(x1 - x2) + (y1 - y2)*(y1 - y2) 
 					distance2 = (x1 - x3)*(x1 - x3) + (y1 - y3)*(y1 - y3)
-					ratio = distance1/distance2
+					ratio = distance1/distance2 #Ratio will help us to determine the orientation or angle of the arrow
 					if(2500<approx_area<25000 and (0.2<ratio<0.3 or ratio <0.1)):
 						cv2.drawContours(temp,[approx],0,(0,0,255),5)
 
 						x = approx.ravel()[0]
 						y = approx.ravel()[1]
 						
-						#x1 = n[0]
-						#y1 = n[1]
-						#x2 = n[2]
-						#y2 = n[3]
-						#x3 = n[6]
-						#y3 = n[7]
-						#distance1 = (x1 - x2)*(x1 - x2) + (y1 - y2)*(y1 - y2)
-						#distance2 = (x1 - x3)*(x1 - x3) + (y1 - y3)*(y1 - y3)
-						if(0.2 < distance1/distance2 < 0.3):
+						if(0.2 < distance1/distance2 < 0.3): #Finding the tip of the arrow with the help of the ratios
 							cv2.putText(temp,"Arrow tip",(x,y),font,0.5,(0,0,255))
 							endx = (n[6]+n[8])/2
 							endy = (n[7]+n[9])/2
@@ -67,11 +55,10 @@ while True:
 								print(0)
 							else:
 								tan = (topy - y_v)/(topx - endx)
-								print(np.arctan(tan)*57.3*2)
-							#between 90 and -90	
+								print(np.arctan(tan)*57.3*2) #Basic cirle property to print the angles ( between 90 and -90)
+							
 						else :
 							cv2.putText(temp,"Arrow end",(x,y),font,0.5,(0,0,255))
-							# below 90 and -90
 							if(distance1/distance2 <0.1):
 								endx = (n[2]+n[0])/2
 								endy = (n[3]+n[1])/2
