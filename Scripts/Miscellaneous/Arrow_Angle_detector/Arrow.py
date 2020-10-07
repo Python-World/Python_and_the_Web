@@ -4,7 +4,7 @@ import numpy as np
 font = cv2.FONT_HERSHEY_COMPLEX
 cap = cv2.VideoCapture(0)
 cv2.namedWindow("Adjust") #Adjust help us to find the right threshold values for better accuracy using slider window.
-cv2.createTrackbar("min","Adjust",110,255,lambda x:none)
+cv2.createTrackbar("min","Adjust",110,255, lambda x: None)
 
 text = 'Left'
 while True:
