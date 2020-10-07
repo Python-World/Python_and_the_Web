@@ -80,7 +80,7 @@ if __name__ == "__main__":
     if "linux" in os_platform or "linux2" in os_platform or 'darwin' in os_platform or 'posix' in os_platform:
         try:
             mkdir(path.join(path.expanduser('~'), 'Desktop','Git-Folder_Download'))
-        except FileExistError:
+        except FileExistsError:
             chdir(path.join(path.expanduser('~'), 'Desktop','Git-Folder_Download'))
 
     elif "win32" in os_platform or "windows" in os_platform or 'nt' in os_platform or 'win64' in os_platform:
