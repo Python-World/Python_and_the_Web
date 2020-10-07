@@ -31,7 +31,8 @@ def download_files(files_to_download):
         open_file_url_res = requests.get(url_build) # uses python's request librar to download the file from github
         print("get-request-time => ", time.time()-req_timenow)
         wr_timenow = time.time()
-        open(filename, 'wb').write(open_file_url_res.content) # writes just downloaded file to disk
+        with open(filename, 'wb') as file_handle:
+            file_handle.write(open_file_url_res.content) # writes the just downloaded file to disk
         print("write time => ", time.time()-wr_timenow)
 
         print(f"Retrieved {filename}") #\n
