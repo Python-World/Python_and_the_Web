@@ -13,3 +13,7 @@ learning model that predicts the fake news is trained.
 To test the model you can simply pick data from the fake-news 
 folder and give it as input(screenshots can be referred) and
 the model will predict the output.
+
+#### _Link to data_
+The dataset can be downloaded from the following url
+https://www.kaggle.com/c/fake-news/data
