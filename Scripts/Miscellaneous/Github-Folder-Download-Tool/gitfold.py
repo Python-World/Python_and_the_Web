@@ -1,4 +1,3 @@
-
 from sys import argv, platform
 from bs4 import BeautifulSoup
 from os import mkdir, getcwd, chdir, path
@@ -7,9 +6,7 @@ import requests, time
 
 def get_folder_links(folder_url):
     get_folder_url_contents = requests.get(folder_url).content
-    bs4 = BeautifulSoup(get_folder_url_contents, "lxml")
-    # get_folder_url_contents = open("libinjection.html", "br")
-    # bs4 = BeautifulSoup(get_folder_url_contents, "lxml")
+    bs4 = BeautifulSoup(get_folder_url_contents, "html.parser")
     link_grep = bs4.find_all("a", class_="js-navigation-open link-gray-dark") # Filters for folders and file links on github page
     _all_folder_links = [link.attrs["href"] for link in link_grep] # extracts href attribute from <a> tag
     _all_folder_links_href = [link for link in _all_folder_links if 'blob' in link] # exracts all folder links
@@ -23,7 +20,6 @@ def get_folder_links(folder_url):
 def download_files(files_to_download):
 
     for file in files_to_download:
-        # timenow = time.time()
         print("\nfile - ",file)
         filename = file.split('/')[-1] # Uses the last name on the path as filename of file to be saved to disk
         url_build = "https://raw.githubusercontent.com" + file.replace('/blob', '') # Builds the url used to retrieve the file
@@ -36,24 +32,6 @@ def download_files(files_to_download):
         print("write time => ", time.time()-wr_timenow)
 
         print(f"Retrieved {filename}") #\n
-
-# The comments below are an attempt to make the download faster by setting the "requests.get" parameter "stream" to true
-# in the hopes of making the download faster, but decided agaisnt it since most files on gihub are quite small < 1.5-2MB and the effort
-# will not produce anything noticeable ... 
-# TODO: Add a check for file size "hopefully github provides a content-lenght header", then use "stream=true" if file is greater
-# than a certain threshhold
-# PS: Script can takeup memory quite quickly if it encounters a fairly large file, as current implementation will just fetch the
-# the file untill complete into memory, instead of iterating through it in chunks.
-
-        # print("For-loop time => ", time.time()-timenow, "\n")
-        # with open(filename, 'wb') as fd:
-        #     written = 0
-        #     print(f"Retrieving {filename}\n")
-        #     fd.write(open_file_url_res.content)
-            # for chunk in open_file_url_res.iter_content(chunk_size=1048576):  # 524,288 is cool too, 524kb
-            #     fd.write(chunk)
-            #     written += len(chunk)
-            #     # print(written)
 
 
 def recursive_folder_download(folder_links_received, file_hrefs_received):
@@ -73,6 +51,7 @@ def recursive_folder_download(folder_links_received, file_hrefs_received):
             chdir('..') # changes working directory to the parent directory ... helps preserve folder structure
     else:
         download_files(file_hrefs_received)
+
 
 if __name__ == "__main__":
 
@@ -106,4 +85,3 @@ if __name__ == "__main__":
         recursive_folder_download(folder_links, file_hrefs)
         print(f"\n\n[x] Download complete! \n[x] Folder saved to [{getcwd()}]")
         break
-
