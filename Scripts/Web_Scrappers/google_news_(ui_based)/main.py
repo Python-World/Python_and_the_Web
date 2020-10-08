@@ -44,7 +44,7 @@ def fetch_news(link, file_name='custom_news.txt'):
     if(file_name=='custom_news.txt'):
         print('Your news in ready in "custom_news.txt" file.')
 
-ans = input("Do you want to fetch latest World News (y/n) ?")
+ans = input("Do you want to fetch latest World News (y/n) ? ")
 if(ans=='y'):
     print('Fetching World News...    This might take a while')
     fetch_news('https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx1YlY4U0FtVnVHZ0pKVGlnQVAB?hl=en-IN&gl=IN&ceid=IN%3Aen', 'world_news.txt')
@@ -224,9 +224,12 @@ elif(ch==6):
 else:
     c1=False
 print('')
-if(c1==True and c2==True):
-    print('Fetching your custom News...')
-    fetch_news(link=fetch)
-    print('Thank You')
+if(c1==True):
+    if(c2==True):
+        print('Fetching your custom News...')
+        fetch_news(link=fetch)
+        print('Thank You')
+    else:
+        print('The program will now exit!')
 else:
     print('The program will now exit!')
