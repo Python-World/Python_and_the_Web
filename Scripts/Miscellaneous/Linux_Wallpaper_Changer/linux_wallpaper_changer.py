@@ -24,7 +24,7 @@ def get_file():
 
 def set_wallpaper():
     # Return if an image file is not selected
-    if filename == None:
+    if filename is None:
         return
     # Identify the user's platform (Windows, Linux or Mac OS)
     user_os = platform.lower()
