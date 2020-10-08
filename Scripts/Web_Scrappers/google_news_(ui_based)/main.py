@@ -224,12 +224,10 @@ elif(ch==6):
 else:
     c1=False
 print('')
-if(c1==True):
-    if(c2==True):
-        print('Fetching your custom News...')
-        fetch_news(link=fetch)
-        print('Thank You')
-    else:
-        print('The program will now exit!')
+cond = c1 & c2
+if cond == True:
+    print('Fetching your custom News...')
+    fetch_news(link=fetch)
+    print('Thank You')
 else:
     print('The program will now exit!')
