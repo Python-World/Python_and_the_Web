@@ -10,6 +10,11 @@
 
     python scrapper.py
 
+3. Enter the username and get the result.
+
+## Output :
+   ![output](https://raw.githubusercontent.com/AnkDos/Python_and_the_Web/instagram-metadata-scrapper/Scripts/Web_Scrappers/Instagram_Metadata_Scrapper/output/out_hf-min.png)
+
 ### Author
 
 [Ankur Pandey](https://github.com/ankdos)
