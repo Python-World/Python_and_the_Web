@@ -1,4 +1,4 @@
-# Python_and_the_Web
+# Python🐍and_the_Web
 
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
@@ -6,7 +6,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-49-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-75-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![Issues](https://img.shields.io/github/issues/Python-World/Python_and_the_Web)
@@ -15,10 +15,10 @@
 ![Stars](https://img.shields.io/github/stars/Python-World/Python_and_the_Web)
 ![License](https://img.shields.io/github/license/Python-World/Python_and_the_Web)
 
-Scripts in python that scrape the web, create a bot or use an API to solve a problem.
-We now have a section for miscellaneous scripts as well.
+Scripts/Programs in python that scrape the web, create a bot or use an API to solve a problem.
+We now have a section for miscellaneous scripts/programs as well.
 
-**Note**: 100 Ideas implemented using python: [python-mini-projects](https://python-world.github.io/python-mini-projects/#/)
+**Note**: 100 Ideas implemented using python🐍: [python-mini-projects](https://python-world.github.io/python-mini-projects/#/)
 
 ## How to Contribute?
 
@@ -106,6 +106,40 @@ We now have a section for miscellaneous scripts as well.
     <td align="center"><a href="https://xinyixiang.github.io/PersonalWebsiteXinyi/"><img src="https://avatars1.githubusercontent.com/u/30137615?v=4" width="100px;" alt=""/><br /><sub><b>Xinyi Xiang</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=xinyixiang" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/chhipashubham970"><img src="https://avatars2.githubusercontent.com/u/54745010?v=4" width="100px;" alt=""/><br /><sub><b>Shubham Chhipa</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=chhipashubham970" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/Jayanth19524"><img src="https://avatars0.githubusercontent.com/u/65494099?v=4" width="100px;" alt=""/><br /><sub><b>G V S Jayanth</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=Jayanth19524" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/Cheemashyper"><img src="https://avatars2.githubusercontent.com/u/68045666?v=4" width="100px;" alt=""/><br /><sub><b>Ck Cheema</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=Cheemashyper" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/jaesharma"><img src="https://avatars2.githubusercontent.com/u/44082416?v=4" width="100px;" alt=""/><br /><sub><b>Jayesh sharma</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=jaesharma" title="Code">💻</a></td>
+    <td align="center"><a href="http://dhiganthrao.github.io"><img src="https://avatars0.githubusercontent.com/u/53207198?v=4" width="100px;" alt=""/><br /><sub><b>Dhiganth Rao</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=dhiganthrao" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/adityagandhamal"><img src="https://avatars0.githubusercontent.com/u/61016383?v=4" width="100px;" alt=""/><br /><sub><b>Aditya Gandhamal</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=adityagandhamal" title="Code">💻</a></td>
+    <td align="center"><a href="https://hardik.urspace.io/"><img src="https://avatars3.githubusercontent.com/u/25060629?v=4" width="100px;" alt=""/><br /><sub><b>HARDIK DADHICH</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=hardik-dadhich" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/twozero88"><img src="https://avatars0.githubusercontent.com/u/44749717?v=4" width="100px;" alt=""/><br /><sub><b>twozero88</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=twozero88" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/namanshah01"><img src="https://avatars1.githubusercontent.com/u/64421164?v=4" width="100px;" alt=""/><br /><sub><b>Naman Shah</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=namanshah01" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://www.kaggle.com/shivanshsinghal107"><img src="https://avatars3.githubusercontent.com/u/47008582?v=4" width="100px;" alt=""/><br /><sub><b>Shivansh Singhal</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=shivanshsinghal107" title="Code">💻</a></td>
+    <td align="center"><a href="https://fuzz.me.uk"><img src="https://avatars0.githubusercontent.com/u/1335181?v=4" width="100px;" alt=""/><br /><sub><b>Serban Constantin</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=fuzzmz" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/symtalha14"><img src="https://avatars2.githubusercontent.com/u/26308379?v=4" width="100px;" alt=""/><br /><sub><b>Talha</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=symtalha14" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/danieljo09"><img src="https://avatars0.githubusercontent.com/u/67842986?v=4" width="100px;" alt=""/><br /><sub><b>Daniel Jo</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=danieljo09" title="Code">💻</a></td>
+    <td align="center"><a href="http://rohitsaini.pythonanywhere.com/"><img src="https://avatars2.githubusercontent.com/u/40729749?v=4" width="100px;" alt=""/><br /><sub><b>Rohit Kumar Saini</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=rockingrohit9639" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/arthuralmeida93"><img src="https://avatars0.githubusercontent.com/u/13452140?v=4" width="100px;" alt=""/><br /><sub><b>Arthur</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=arthuralmeida93" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/StarSeeker123"><img src="https://avatars0.githubusercontent.com/u/57768079?v=4" width="100px;" alt=""/><br /><sub><b>StarSeeker123</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=StarSeeker123" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/k1m0ch1"><img src="https://avatars0.githubusercontent.com/u/5756522?v=4" width="100px;" alt=""/><br /><sub><b>Yahya Fadhlulloh Al-Fatih</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=k1m0ch1" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/GodSaveTheDoge"><img src="https://avatars0.githubusercontent.com/u/51802433?v=4" width="100px;" alt=""/><br /><sub><b>GodSaveTheDoge</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=GodSaveTheDoge" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/kartavyashankar"><img src="https://avatars3.githubusercontent.com/u/55027697?v=4" width="100px;" alt=""/><br /><sub><b>Kartavya Shankar</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=kartavyashankar" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/MNISAR"><img src="https://avatars2.githubusercontent.com/u/20768577?v=4" width="100px;" alt=""/><br /><sub><b>Monil Nisar</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=MNISAR" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/wolflegend99"><img src="https://avatars2.githubusercontent.com/u/38404778?v=4" width="100px;" alt=""/><br /><sub><b>wolflegend99</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=wolflegend99" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/schezeen-fazulbhoy-6a5957110/"><img src="https://avatars1.githubusercontent.com/u/28871211?v=4" width="100px;" alt=""/><br /><sub><b>Schezeen Fazulbhoy</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=schezfaz" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/jairoufps"><img src="https://avatars2.githubusercontent.com/u/23509868?v=4" width="100px;" alt=""/><br /><sub><b>jairoufps</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=jairoufps" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/YASHBRO"><img src="https://avatars3.githubusercontent.com/u/67703411?v=4" width="100px;" alt=""/><br /><sub><b>Yash Joglekar</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=YASHBRO" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Atharv-Joshi"><img src="https://avatars1.githubusercontent.com/u/53505850?v=4" width="100px;" alt=""/><br /><sub><b>Atharv Joshi</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=Atharv-Joshi" title="Code">💻</a></td>
+    <td align="center"><a href="http://maheshbharadwaj.github.io/"><img src="https://avatars2.githubusercontent.com/u/48756374?v=4" width="100px;" alt=""/><br /><sub><b>Mahesh Bharadwaj K</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=MaheshBharadwaj" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/ritesh-dt"><img src="https://avatars0.githubusercontent.com/u/53569176?v=4" width="100px;" alt=""/><br /><sub><b>Ritesh T</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=ritesh-dt" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/TEMHITHORPHE"><img src="https://avatars0.githubusercontent.com/u/19387360?v=4" width="100px;" alt=""/><br /><sub><b>TEMITOPE</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=TEMHITHORPHE" title="Code">💻</a></td>
   </tr>
 </table>
 

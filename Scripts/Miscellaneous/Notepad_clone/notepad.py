@@ -1,4 +1,4 @@
-from PyQt5.QtGui import QVBoxLayout
+from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 from PyQt5.QtPrintSupport import *
@@ -39,9 +39,7 @@ class MainWindow(QMainWindow):
         self.addToolBar(file_toolbar)
         file_menu = self.menuBar().addMenu("&File")
 
-        open_file_action = QAction(QIcon(os.path.join('images',
-                           'blue-folder-open-document.png')),
-                           'Open file...', self)
+        open_file_action = QAction(QIcon(os.path.join('images','blue-folder-open-document.png')),'Open file...', self)
         open_file_action.setStatusTip("Open file")
         open_file_action.triggered.connect(self.file_open)
         file_menu.addAction(open_file_action)

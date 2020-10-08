@@ -10,3 +10,9 @@ Python:
   - "."
 Up-for-grab:
   - "."
+Scraping:
+  - "(scrape|Scraping|Scraped|scraped|scraping|Scrape)"
+API:
+  - "(API|api|Api)"
+Bot:
+  -"(bot|Bot|BOT)"  

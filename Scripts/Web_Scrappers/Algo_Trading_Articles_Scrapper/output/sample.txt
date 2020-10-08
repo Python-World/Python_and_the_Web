@@ -1,0 +1,67 @@
+Here's the top 10 articles from Quantopian:
+Welles Wilder's ADX - Average Directional Index (technical indicator implementation)
+https://www.quantopian.com/posts/welles-wilders-adx-average-directional-index-technical-indicator-implementation
+Learning SDEs in Python
+https://www.quantopian.com/posts/learning-sdes-in-python
+Futures Data Now Available in Research
+https://www.quantopian.com/posts/futures-data-now-available-in-research
+New Strategy - Presenting the “Quality Companies in an Uptrend” Model
+https://www.quantopian.com/posts/new-strategy-presenting-the-quality-companies-in-an-uptrend-model-1
+Global Equity Pricing and Fundamental Data
+https://www.quantopian.com/posts/global-equity-pricing-and-fundamental-data
+New book on Quantopian/Zipline backtesting and modeling
+https://www.quantopian.com/posts/new-book-on-quantopian-slash-zipline-backtesting-and-modeling
+Pairs Trading with Machine Learning
+https://www.quantopian.com/posts/pairs-trading-with-machine-learning
+The Next Quantopian-Based Paper on Uncovering Momentum
+https://www.quantopian.com/posts/the-next-quantopian-based-paper-on-uncovering-momentum
+Analyzing the relationship between investor attention and the predictability of arbitrage strategies for the US market
+https://www.quantopian.com/posts/analyzing-the-relationship-between-investor-attention-and-the-predictability-of-arbitrage-strategies-for-the-us-market
+The 101 Alphas Project
+https://www.quantopian.com/posts/the-101-alphas-project
+
+
+Here's the top 10 articles from Quantocracy:
+Exploring the PMFG Portfolios for Covid-19 Robustness [Hudson and Thames]
+https://hudsonthames.org/exploring-the-pmfg-portfolios-for-covid-19-robustness/
+The Next 5 Weeks All Are Among The Weakest – And Strongest – Of The Year [Quantifiable Edges]
+https://quantifiableedges.com/the-next-5-weeks-all-are-among-the-weakest-and-strongest-of-the-year/
+Lottery Preferences and Their Relationship with Factor Investing [Alpha Architect]
+https://alphaarchitect.com/2020/10/01/lottery-preferences-and-anomalies/
+Using strength to exit a mean reversion trade [Alvarez Quant Trading]
+https://alvarezquanttrading.com/blog/using-strength-to-exit-a-mean-reversion-trade/
+Safe Withdrawal Rates for Tactical Asset Allocation vs Buy & Hold [Allocate Smartly]
+https://allocatesmartly.com/safe-withdrawal-rates-for-tactical-asset-allocation-vs-buy-hold/?aff=634
+Does Financial Leverage Make Stocks Riskier? [Factor Research]
+https://www.factorresearch.com/research-does-financial-leverage-make-stocks-riskier
+September update, paper trading with IB [Regressionist]
+http://www.regressionist.com/2020/09/25/september-update-paper-trading-with-ib/
+Writing conundrums [OSM]
+https://osm.netlify.app/post/writing-conundrums/
+API Algo Trading Landscape [Alpaca]
+https://alpaca.markets/learn/algo-trading-landscape/
+Petra on Programming: The Gann Hi-Lo Activator [Financial Hacker]
+https://financial-hacker.com/petra-on-programming-the-gann-hi-lo-activator/
+
+
+Here's the top 10 articles from Quantstart Systematic Trading:
+Connecting to the Interactive Brokers Native Python API
+https://www.quantstart.com/articles/connecting-to-the-interactive-brokers-native-python-api/
+Generating Synthetic Histories for Backtesting Tactical Asset Allocation Strategies
+https://www.quantstart.com/articles/generating-synthetic-histories-for-backtesting-tactical-asset-allocation-strategies/
+The 60/40 Benchmark Portfolio
+https://www.quantstart.com/articles/the-6040-benchmark-portfolio/
+Systematic Tactical Asset Allocation: An Introduction
+https://www.quantstart.com/articles/systematic-tactical-asset-allocation-an-introduction/
+Capital Raising for Early Stage Quant Fund Managers - Part I
+https://www.quantstart.com/articles/capital-raising-for-early-stage-quant-fund-managers-part-i/
+High Frequency Trading III: Optimal Execution
+https://www.quantstart.com/articles/high-frequency-trading-iii-optimal-execution/
+High Frequency Trading II: Limit Order Book
+https://www.quantstart.com/articles/high-frequency-trading-ii-limit-order-book/
+High Frequency Trading I: Introduction to Market Microstructure
+https://www.quantstart.com/articles/high-frequency-trading-i-introduction-to-market-microstructure/
+Backtesting Systematic Trading Strategies in Python: Considerations and Open Source Frameworks
+https://www.quantstart.com/articles/backtesting-systematic-trading-strategies-in-python-considerations-and-open-source-frameworks/
+What are the Different Types of Quant Funds?
+https://www.quantstart.com/articles/what-are-the-different-types-of-quant-funds/
