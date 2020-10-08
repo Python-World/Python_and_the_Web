@@ -63,9 +63,9 @@ c2=True
 ch = int(input('Enter your choice (Eg : 1 for Business): '))
 print('')
 
-print('Enter the sub-topic of the category you selected. You can choose from :')
 fetch = ""
 if(ch==1):
+    print('Enter the sub-topic of the category you selected. You can choose from :')
     print('\t a. Latest')
     print('\t b. Economy')
     print('\t c. Markets')
@@ -89,6 +89,7 @@ if(ch==1):
         print('Invalid Choice!')
         c2=False
 elif(ch==2):
+    print('Enter the sub-topic of the category you selected. You can choose from :')
     print('\t a. Latest')
     print('\t b. Mobile')
     print('\t c. Gadgets')
@@ -115,6 +116,7 @@ elif(ch==2):
         print('Invalid Choice!')
         c2=False
 elif(ch==3):
+    print('Enter the sub-topic of the category you selected. You can choose from :')
     print('\t a. Latest')
     print('\t b. Movies')
     print('\t c. Music')
@@ -141,6 +143,7 @@ elif(ch==3):
         print('Invalid Choice!')
         c2=False
 elif(ch==4):
+    print('Enter the sub-topic of the category you selected. You can choose from :')
     print('\t a. Latest')
     print('\t b. Cricket')
     print('\t c. Hockey')
@@ -176,6 +179,7 @@ elif(ch==4):
         print('Invalid Choice!')
         c2=False
 elif(ch==5):
+    print('Enter the sub-topic of the category you selected. You can choose from :')
     print('\t a. Latest')
     print('\t b. Environment')
     print('\t c. Outer space')
@@ -199,6 +203,7 @@ elif(ch==5):
         print('Invalid Choice!')
         c2=False
 elif(ch==6):
+    print('Enter the sub-topic of the category you selected. You can choose from :')
     print('\t a. Latest')
     print('\t b. Medicine')
     print('\t c. Healthcare')
@@ -225,7 +230,7 @@ else:
     c1=False
 print('')
 cond = c1 & c2
-if cond == True:
+if cond is True:
     print('Fetching your custom News...')
     fetch_news(link=fetch)
     print('Thank You')
