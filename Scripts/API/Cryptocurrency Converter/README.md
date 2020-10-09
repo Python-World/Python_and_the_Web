@@ -5,7 +5,8 @@ Using this convertor the existing value of currencies can be converted into the 
 ### Prerequisites
 <!--Remove the below lines and add yours -->
 -> It is located in requirements.txt.
--> Install the package using pip install -r requirements.txt .
+
+-> Install the package using pip install -r requirements.txt.
 ### How to run the script
 <!--Remove the below lines and add yours -->
 python test.py
