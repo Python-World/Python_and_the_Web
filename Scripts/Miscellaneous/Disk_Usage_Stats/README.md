@@ -1,12 +1,18 @@
-Disk Usage Stats
+# Disk Usage Stats
 
-A python script which takes a command line argument as a directory (default specified) and stores the stats in a csv file.
+### A python script which takes a command line argument as a directory (default specified) and stores the stats in a csv file.
+#### This csv file will be stored in the same folder as that of the script. An example is attached in this repo.
 
-To run the script:
+## To run the script:
 
-In Linux:
-./disk_usage.py /home
+### In Linux:
+```./disk_usage.py /home```
 
-In Windows: 
-python3 disk_usage.py 
+### In Windows: 
+```python3 disk_usage.py```
 
+### Output:
+![Screenshot](/Screenshot.PNG)
+
+### Author
+##### Vani Gupta
