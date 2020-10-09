@@ -12,7 +12,8 @@ def get_metadata(username):
         # Grabing the page html content to be parsed by BeautifulSoup 
         res=requests.get(url,
                         #  headers={'User-Agent':Faker().user_agent() },
-                         allow_redirects=True)
+                        #  allow_redirects=True
+                         )
 
         if res.status_code == 404 :
             return {"error" : "user not found"}
