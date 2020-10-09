@@ -17,7 +17,7 @@ LEAGUE_CODE = {
     "SA": {'code': 2019, 'name': 'Serie A'},  # Serie A
 }
 
-API_KEY = os.getenv('API_KEY', None)
+API_KEY = os.getenv('API_KEY')
 API_URL = "https://api.football-data.org/v2/"
 HEADER = {'X-Auth-Token': str(API_KEY)}
 
@@ -57,13 +57,13 @@ if __name__ == "__main__":
 
         arg = sys.argv[1]
 
-        if arg == '--help' or arg == '-h':
+        if arg in ['--help', '-h']:
             print('List of leagues and the codes: ')
             for sno, key in enumerate(LEAGUE_CODE.keys()):
                 print('%2d. %-30s %s' % (sno+1, LEAGUE_CODE[key]['name'], key))
             sys.exit(0)
 
-        league_id = LEAGUE_CODE.get(arg, None)
+        league_id = LEAGUE_CODE.get(arg)
         if league_id is None:
             print('Invalid League Code!\nrun: python3 main.py --help | -h to get list of league codes')
 
