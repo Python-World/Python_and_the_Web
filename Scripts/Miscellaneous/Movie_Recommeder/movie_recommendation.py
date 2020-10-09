@@ -55,6 +55,7 @@ def get_sorted_recommendations(listMovieTitle, recom_limit):
     listMovie= sorted(listMovie, key = lambda movieName: (get_movie_rating(get_movie_data(movieName)), movieName), reverse=True)
     return listMovie
 
+
 if __name__ == "__main__":
     movielist = input("Enter movies seprated by comma(,) - ").split(",")
     recommendation_limit = input("Enter the limit of of recommended movies - ")
