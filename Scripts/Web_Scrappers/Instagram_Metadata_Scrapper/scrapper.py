@@ -3,7 +3,7 @@ import pprint
 import requests
 
 from bs4 import BeautifulSoup
-from faker import Faker
+# from faker import Faker
 
 def get_metadata(username):
     """"""
@@ -11,7 +11,7 @@ def get_metadata(username):
         url = 'https://www.instagram.com/{username}/'.format(username=username)
         # Grabing the page html content to be parsed by BeautifulSoup 
         res=requests.get(url,
-                         headers={'User-Agent':Faker().user_agent() },
+                        #  headers={'User-Agent':Faker().user_agent() },
                          allow_redirects=True)
 
         if res.status_code == 404 :
