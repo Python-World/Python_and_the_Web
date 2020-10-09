@@ -1,11 +1,11 @@
 # Cryptozor.py
 
-**Author -> Abhinav Anand
 
 ## A Python Cryptocurrency converter.
 
-## Run test.py (python test.py)
-### Example:
+## How to Run the script 
+     python test.py
+### Example Output:
 ``` python
 from cryptozor import Cryptozor
 
@@ -18,7 +18,7 @@ value = cryptozor.convert(2500)
 # Float value
 print(value) 
 ```
-
+## Expected output: 0.22570734424613295
 ### Currency support: 
 
 Cryptocurrencies:
@@ -30,3 +30,5 @@ Cryptocurrencies:
 * ZCash (ZEC)
 * 0x (ZRX)
 
+**AUTHOR NAME 
+   -> Abhinav Anand
