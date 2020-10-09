@@ -12,6 +12,7 @@ To get API key for OMDB you can [visit here](http://www.omdbapi.com/apikey.aspx)
 # How to run
 To run this program you need to run in command line/terminal from program directory.
 ```
+$ pip install -r requirements.txt
 $ python movie_recommendation.py
 ```
 
