@@ -12,7 +12,7 @@
 ```python3 disk_usage.py```
 
 ### Output:
-![Screenshot](/Screenshot.PNG)
+![Screenshot](https://github.com/vanigupta20024/Python_and_the_Web/blob/master/Scripts/Miscellaneous/Disk_Usage_Stats/Screenshot.PNG)
 
 ### Author
 ##### Vani Gupta
