@@ -31,8 +31,8 @@ As the search query is an infinite loop, to terminate it, just enter `0` in the 
 
 ## Screenshot/GIF showing the sample use of the script
 
-####This how it looks
-<br/>
+### This how it looks
+
 <img src="Screenshot.png" alt="Screenshot of the scraper">
 
 
