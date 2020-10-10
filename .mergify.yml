@@ -5,3 +5,23 @@ pull_request_rules:
     actions:
       merge:
         method: merge
+      label:
+        add: ["hacktoberfest-accepted"] 
+  - name: automatic merge for ImgBot pull requests
+    conditions:
+      - author=imgbot[bot]
+    actions:
+      merge:
+        method: merge
+  - name: automatic merge for Allcontributors pull requests
+    conditions:
+      - author=allcontributors[bot]
+    actions:
+      merge:
+        method: merge
+  - name: automatic merge for deepsorce-autofix pull requests
+    conditions:
+      - author=deepsource-autofix[bot]
+    actions:
+      merge:
+        method: merge

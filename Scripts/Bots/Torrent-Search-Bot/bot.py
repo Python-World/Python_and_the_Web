@@ -1,5 +1,4 @@
 from telegram.ext import Updater, CommandHandler,MessageHandler,Filters
-import re
 import logging
 logging.basicConfig(level=logging.WARNING)
 import telegram

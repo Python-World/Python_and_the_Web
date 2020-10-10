@@ -1,25 +1,29 @@
 #!/usr/bin/env python3
 import re
 
-print("Enter the name of the input file: ")
-file=str(input())
+def main():
+    print("Enter the name of the input file: ")
+    file=str(input())
+    return print_emails(get_emails(file))
+    # Can add os.path functionality
 
-try:
-    f = open(file,"r")
-except FileNotFoundError:
-    print("File does not exists")
+def get_emails(filename:str):
+    """Function to return list of email matches found in filename passed"""
+    with open(filename,'r') as file:
+        emails=[]
+        for line in file:
+            #em = re.find('\S+@\S+\.\S+',line)
+            #print(em)
+            regex = re.match(r'\S+@\S+\.\S+',line) # Creates a match object for a correct match
+            if regex: #if match exists
+                emails.append(regex.group(0)) # extracts the text of the match
+            
+        return emails
 
-email={}
+def print_emails(emails):
+    """Simple printing function"""
+    for email in emails:
+        print(email)
 
-for i in f:
-    em = re.findall('\S+@\S+\.\S+',i)
-    for j in em:
-        email[j]=email.get(j,0)+1
-        
-f.close()
-
-for i in email:
-    if(email[i]>=2):
-        print(i,email[i])
-    else:
-        print(i)
+if __name__ == "__main__":
+    main()
