@@ -6,9 +6,9 @@ Unlike other the scraper, with this one, you can even search for the stats for a
 This script, after running, displays the following things:
 1. COVID-19 stats including total cases, total deaths, people recovered.
 2. Stats of top-10 countries suffering from this pandemic.
-3. You can even search stats for any country or any state, searching a city name will most probabily give you the stats of that state and that country in which the city exist. 
+3. You can even search stats for any country or any state, searching a city name will most probably give you the stats of that state and that country in which the city exists.  
 
-You can search infinite number of times without exiting the script.
+You can search an infinite number of times without exiting the script.
 
 ## Prerequisites
 
