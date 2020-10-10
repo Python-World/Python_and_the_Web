@@ -1,5 +1,7 @@
 
 ### Input the instagram id and get the meta data of that id
+####(This Script only works on Linux machine right now, will find a solution to run it on Windows and will update soon)
+
 ### Using the script
 
 1. Make sure all the requirements for the script are present in your system by running:
