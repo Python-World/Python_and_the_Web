@@ -14,7 +14,7 @@ def start_quiz(questions):
             
             continue
         print()
-        if answer > 0 and answer < 5:
+        if 0 < answer < 5:
             if(questions[i]["correct_answer"] == "option"+str(answer)):
                 print(chalk.green("Correct Answer!!!\n"))
                 score = score + 1
