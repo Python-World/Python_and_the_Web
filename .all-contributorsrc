@@ -704,6 +704,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "AnkDos",
+      "name": "Ankur",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/20462784?v=4",
+      "profile": "https://ankdos.github.io/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
