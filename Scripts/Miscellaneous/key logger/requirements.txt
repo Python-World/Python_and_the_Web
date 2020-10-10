@@ -1,0 +1,5 @@
+pynput 1.7.1
+
+
+install by:
+pip install pynput
