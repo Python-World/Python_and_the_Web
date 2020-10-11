@@ -129,10 +129,8 @@ try:
                 params=params,
             )
             json_data = None
-            try:
-                json_data = yaml.safe_load(json.dumps(response.json()), yaml.Loader)
-            except:
-                json_data = response.json()
+            
+            json_data = response.json()
 
             for index in range(len(json_data["results"])):
                 if language_filter(json_data["results"][index]["technology_tags"]):
