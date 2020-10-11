@@ -1,6 +1,4 @@
 import requests
-import json
-import yaml
 from bs4 import BeautifulSoup
 from rich.console import Console
 from rich.table import Table
