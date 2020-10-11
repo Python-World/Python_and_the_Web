@@ -130,7 +130,7 @@ try:
             )
             json_data = None
             try:
-                json_data = yaml.load(json.dumps(response.json()), yaml.Loader)
+                json_data = yaml.safe_load(json.dumps(response.json()), yaml.Loader)
             except:
                 json_data = response.json()
 
