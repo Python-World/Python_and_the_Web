@@ -4,7 +4,6 @@ import yaml
 from bs4 import BeautifulSoup
 from rich.console import Console
 from rich.table import Table
-import time
 from yaspin import yaspin
 
 language = "python"
@@ -129,8 +128,11 @@ try:
                 headers=headers,
                 params=params,
             )
-
-            json_data = yaml.load(json.dumps(response.json()), yaml.Loader)
+            json_data = None
+            try:
+                json_data = yaml.load(json.dumps(response.json()), yaml.Loader)
+            except:
+                json_data = response.json()
 
             for index in range(len(json_data["results"])):
                 if language_filter(json_data["results"][index]["technology_tags"]):
@@ -158,5 +160,3 @@ except Exception as e:
 finally:
 
     print("Script ran successfully!")
-
-    quit()
