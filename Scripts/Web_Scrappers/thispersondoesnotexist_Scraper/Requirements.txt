@@ -1,4 +1,1 @@
-1. requests - library for sending http get and post requests
-	      used here to send get request to thispersondoesnotexist.com
-2. os -       module for interacting with os
-	      used here to create a directory
+requests 
