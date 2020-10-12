@@ -100,7 +100,7 @@ class Pomodoro():
         '''
             Formats a timedelta object to a string displaying minutes & seconds.
         '''
-
+        self_type = type(self) # Dummy line
         # find seconds
         total_seconds = int(td.total_seconds())
 
