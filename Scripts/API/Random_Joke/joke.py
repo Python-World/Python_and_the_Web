@@ -61,7 +61,7 @@ def main(category: str = "Any", exclude: str = ""):
             ERROR_MSG.format(error_message=rst + fg(9) + res["additionalInfo"]),
             file=sys.stderr,
         )
-        exit(1)
+        sys.exit(1)
 
     else:
         print(
