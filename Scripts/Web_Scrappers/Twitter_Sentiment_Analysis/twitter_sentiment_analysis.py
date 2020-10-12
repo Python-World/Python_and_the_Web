@@ -41,10 +41,9 @@ class TwitterClient(object):
         analysis = TextBlob(self.clean_tweet(tweet))
         if analysis.sentiment.polarity > 0:
             return 'positive'
-        elif analysis.sentiment.polarity == 0:
+        if analysis.sentiment.polarity == 0:
             return 'neutral'
-        else:
-            return 'negative'
+        return 'negative'
 
     def get_tweets(self, hashtag):
         """

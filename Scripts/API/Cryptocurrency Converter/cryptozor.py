@@ -16,7 +16,6 @@ class Cryptozor:
         operations = ['BTC','ETH','ETC','BCH','LTC','ZEC','ZRX']
         if self.cryptocurrency in operations:
             return amount / float(currentPrice)
-        else:
-            return'Not Implemented'
+        return'Not Implemented'
         
 
