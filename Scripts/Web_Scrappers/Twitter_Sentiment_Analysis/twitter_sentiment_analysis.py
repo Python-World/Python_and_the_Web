@@ -28,7 +28,8 @@ class TwitterClient(object):
         except:
             print("Error: Authentication Failed")
 
-    def clean_tweet(self, tweet):
+    @staticmethod
+    def clean_tweet(tweet):
         """
             Removing links/special characters to clean up tweet
         """
