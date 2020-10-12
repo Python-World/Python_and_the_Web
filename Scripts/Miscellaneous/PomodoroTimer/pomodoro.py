@@ -68,7 +68,7 @@ class Pomodoro():
         '''
 
         # set start & end times
-        self.timer_start = datetime.datetime.now()
+        self.timer_start = datetime.now()
         self.timer_end = self.timer_start + self.long_break
         self.timer_type = self.TIMER_LONG_BREAK
 
@@ -100,9 +100,10 @@ class Pomodoro():
         '''
             Formats a timedelta object to a string displaying minutes & seconds.
         '''
-        self_type = type(self) # Dummy line
+        var = type(self) # Dummy line
+        var = td.total_seconds()
         # find seconds
-        total_seconds = int(td.total_seconds())
+        total_seconds = int(var)
 
         # 3600 seconds in an hour
         hours, remainder = divmod(total_seconds,3600)
