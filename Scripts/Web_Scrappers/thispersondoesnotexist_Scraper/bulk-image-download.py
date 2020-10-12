@@ -1,10 +1,3 @@
-
-"""
-Created on Thu Aug 20 20:27:24 2020
-
-@author: Incognito
-"""
-
 import requests
 import os
 def download(fileName):
