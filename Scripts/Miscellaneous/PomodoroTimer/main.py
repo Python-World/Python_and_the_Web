@@ -38,7 +38,7 @@ def main():
             # check to see if need to continue to a break or stop the pomodoro
             if pomodoro.done():
                 break
-            elif pomodoro.task_count % pomodoro.long_break_goal == 0:
+            if pomodoro.task_count % pomodoro.long_break_goal == 0:
                 pomodoro.start_long_break()
             else:
                 pomodoro.start_short_break()

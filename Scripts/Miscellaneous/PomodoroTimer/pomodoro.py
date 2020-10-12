@@ -1,5 +1,4 @@
 from datetime import timedelta, datetime
-import datetime
 class Pomodoro():
     ''' Mimics a Pomodoro timer, a time management tool that breaks work into intervals separated by
         breaks.
@@ -34,13 +33,17 @@ class Pomodoro():
         # initialize timer
         self.timer_type = self.TIMER_NONE
 
+        #initialize timer start and end
+        self.timer_start = 0
+        self.timer_end = 0
+
     def start_task(self):
         '''
             Stars a task timer.
         '''
 
         # set start & end times
-        self.timer_start = datetime.datetime.now()
+        self.timer_start = datetime.now()
         self.timer_end = self.timer_start + self.task_length
         self.timer_type = self.TIMER_TASK
 
@@ -52,7 +55,7 @@ class Pomodoro():
         '''
 
         # set start & end times
-        self.timer_start = datetime.datetime.now()
+        self.timer_start = datetime.now()
         self.timer_end = self.timer_start + self.short_break
         self.timer_type = self.TIMER_SHORT_BREAK
 
@@ -91,7 +94,7 @@ class Pomodoro():
         '''
             returns the amount of time remaining in the current timer in the form of a timedelta object.
         '''
-        return self.timer_end - datetime.datetime.now()
+        return self.timer_end - datetime.now()
 
     def format_timedelta(self, td):
         '''
@@ -107,7 +110,7 @@ class Pomodoro():
         # 60 seconds in a minute
         minutes, seconds = divmod(remainder,60)
 
-        return ('{} mins {} secs'.format(minutes,seconds))
+        return ('{} hours {} mins {} secs'.format(hours,minutes,seconds))
 
     def print_summary(self):
         '''
