@@ -27,6 +27,8 @@ class GetRandomAlbum:
     def driver_method(self):
         """A method for all methods"""
         self.load_dataset()
-        self.get_random_album() if self.context == 'random' \
-            else self.get_all_album()
+        if self.context == 'random':
+            self.get_random_album() 
+        else:
+            self.get_all_album()
         return self.__out
