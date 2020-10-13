@@ -7,7 +7,8 @@ class GetRandomAlbum:
     def __init__(self, context):
         """"""
         self.context = context
-        self.__out = list() 
+        self.__out = []
+        self.dataset = None
     
     def load_dataset(self):
         """loading the dataset into pandas"""
