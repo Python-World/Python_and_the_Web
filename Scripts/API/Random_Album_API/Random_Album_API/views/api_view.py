@@ -1,4 +1,4 @@
-from flask import Blueprint, current_app, jsonify, request, abort
+from flask import Blueprint, jsonify, request
 from flask.views import MethodView
 
 from Random_Album_API.shared_resources.argument_check import validate_arguments
