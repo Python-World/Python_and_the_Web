@@ -46,6 +46,6 @@ def status_based_on_countries():
 
 
 print(total_cases())
-# for i in all_countries_status():
-#     print(i)
-# print(status_based_on_countries())
+for i in all_countries_status():
+    print(i)
+print(status_based_on_countries())
