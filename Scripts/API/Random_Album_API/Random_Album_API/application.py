@@ -1,5 +1,4 @@
 from flask import Flask, jsonify
-from flask_cors import CORS, cross_origin
 from Random_Album_API.views.api_view import RandomAlbumAPI, random_album
 from Random_Album_API.shared_resources.exceptions import APIException
 
