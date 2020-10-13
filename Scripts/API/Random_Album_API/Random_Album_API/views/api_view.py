@@ -15,7 +15,8 @@ def logic_caller(api_key, context):
 class RandomAlbumAPI(MethodView):
     """
     """
-    def get(self):
+    @staticmethod
+    def get():
         api_key = request.args.get('api_key',None)
         context = request.args.get('context',None)
         return jsonify(logic_caller(api_key, context))
