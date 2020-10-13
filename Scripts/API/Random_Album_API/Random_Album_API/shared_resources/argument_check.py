@@ -5,16 +5,12 @@ def validate_arguments(func):
     """"""
     def argument_validator(api_key, context):
         """"""
-        try :
-            assert api_key == 'jUstA!<eY1'
-        except AssertionError:
+        if api_key != 'jUstA!<eY1':
             raise APIException(
                 message="Invalid API Key",
                 status_code=401
             )
-        try :
-            assert context in ("random", "all")
-        except AssertionError:
+        if context not in ("random", "all"):
             raise APIException(
                 message="Invalid Context",
                 status_code=406                                   
