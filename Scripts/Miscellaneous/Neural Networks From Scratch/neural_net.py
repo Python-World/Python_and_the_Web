@@ -52,7 +52,7 @@ class MLP():
     Returns:
       Output vector with shape (N,o).
     """
-    l0, l1, l2 = self.forward(X)
+    l2 = self.forward(X)[2]
     return l2
     
     
