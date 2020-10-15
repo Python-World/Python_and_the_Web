@@ -7,7 +7,7 @@ from tweepy import OAuthHandler
 from textblob import TextBlob
 
 
-class TwitterClient(object):
+class TwitterClient():
     def __init__(self):
         """
             Class constructor: Authentication via twitter API keys
