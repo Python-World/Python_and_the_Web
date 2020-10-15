@@ -202,10 +202,6 @@ while True:
 	draw_pacman(screen, pacman_position)
 
 	#TODO: Take input from the user and update pacman moving direction, Currently hardcoded to always move down
-	
-
- 	
-
 	#Update player position based on movement.
 	pacman_position = add_to_pos(pacman_position, move_direction)
 
