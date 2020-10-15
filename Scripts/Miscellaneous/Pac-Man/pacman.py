@@ -3,6 +3,7 @@ from pygame.locals import *
 from numpy import loadtxt
 import time
 import random
+import sys
 
 ##################################
 # Enter the name of the music file
@@ -130,7 +131,7 @@ while True:
 	move_direction = NONE
 	for event in pygame.event.get():
 		if event.type == QUIT:
-			exit()
+			sys.exit()
 
 		if event.type == pygame.KEYDOWN:
 			
@@ -141,7 +142,7 @@ while True:
 				for col in range(cols):
 					for row in range(rows):
 						value = layout[pac_pos[1]][pac_pos[0]]
-						if value == '.' or value == 'c':		
+						if value in ('.', 'c'):		
 							move_direction=RIGHT
 						else:
 							move_direction=NONE
@@ -153,7 +154,7 @@ while True:
 				for col in range(cols):
 					for row in range(rows):
 						value = layout[pac_pos[1]][pac_pos[0]]
-						if value == '.' or value == 'c':	
+						if value in ('.', 'c'):	
 							move_direction=LEFT
 						else:
 							move_direction=NONE
@@ -165,7 +166,7 @@ while True:
 				for col in range(cols):
 					for row in range(rows):
 						value = layout[pac_pos[1]][pac_pos[0]]
-						if value == '.' or value == 'c':
+						if value in ('.', 'c'):
 							move_direction=TOP
 						else:
 							move_direction=NONE
@@ -177,7 +178,7 @@ while True:
 				for col in range(cols):
 					for row in range(rows):
 						value = layout[pac_pos[1]][pac_pos[0]]
-						if value == '.' or value == 'c':
+						if value in ('.', 'c'):
 							move_direction=DOWN
 						else:
 							move_direction=NONE
@@ -220,5 +221,3 @@ while True:
 		pygame.QUIT()
 	
 	pygame.display.set_caption("PACMAN  ::  SCORE  "+str(score))
-
-
