@@ -18,8 +18,7 @@ def user_info(handles):
 		d = r.json()
 		if d['status'] == 'OK':
 			return d['result']
-		else:
-			raise UserNotFoundError(d['comment'])
+		raise UserNotFoundError(d['comment'])
 
 
 def main():

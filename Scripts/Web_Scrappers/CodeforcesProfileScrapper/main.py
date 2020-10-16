@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
-from tkinter import Label, Button
+from tkinter import Label
 from PIL import Image, ImageTk
 from urllib.request import urlopen
 from datetime import datetime
@@ -11,6 +11,7 @@ import constants as c
 
 class Bunch(dict):
 	def __init__(self, adict):
+		dict.__init__(self)
 		self.update(adict)
 		self.__dict__.update(adict)
 
