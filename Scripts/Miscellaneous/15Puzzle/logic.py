@@ -16,10 +16,10 @@ def is_solvable(puzzle):
     if grid_width % 2 == 0:  # grid is even
         if blank_row % 2 == 0:  # blank on odd row; counting from bottom
             return parity % 2 == 0
-        else:  # blank on even row; counting from bottom
-            return parity % 2 != 0
-    else:  # odd grid
-        return parity % 2 == 0
+        # blank on even row; counting from bottom
+        return parity % 2 != 0
+    # odd grid
+    return parity % 2 == 0
 
 
 def is_solved(puzzle):
@@ -42,5 +42,4 @@ def convert_time(seconds):
         y += 's'
     if minutes:
         return f"{minutes} {x} {seconds} {y}"
-    else:
-        return f"{seconds} {y}"
+    return f"{seconds} {y}"
