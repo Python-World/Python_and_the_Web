@@ -1,28 +1,3 @@
-'''
-Author     : Advik
-Start Time : 05:00 pm; 13 October, 2020
-End Time   : 12:30 am; 14 October, 2020
-
-Tips:
-    To Move the Tiles you Can use your Arrow keys
-    You can also click the Tiles to move them
-    You can Press Escape key to reset your Grid
-
-How To Solve:
-    Step-1: Solve 1,2,3,4
-    Step-2: Solve 5,6,7,8
-    Step-3: Solve 9 and 13
-    Step-4: Solve 10 and 14
-    Step-5: Solve 11, 12 and 15
-    Step-6: There is no Step-6!
-
-Reference:
-    https://anzeljg.github.io/rin2/book2/2405/docs/tkinter/
-    http://www.math.ubc.ca/~cass/courses/m308-02b/projects/grant/fifteen.html
-    https://stackoverflow.com/questions/34570344/check-if-15-puzzle-is-solvable
-
-'''
-
 from tkinter import Frame, Label, PhotoImage, StringVar, CENTER
 import random
 import time
