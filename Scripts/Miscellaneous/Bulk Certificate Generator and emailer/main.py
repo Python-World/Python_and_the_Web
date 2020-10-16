@@ -44,8 +44,11 @@ def mail(df, from_, password):
 
             p = "pictures/{}.png".format(j)
             filename = p
+            
+            with open(filename) as f:    
+                attachment = f.read() 
 
-            attachment = open(filename, "rb")
+#             attachment = open(filename, "rb")
 
             p = MIMEBase('application', 'octet-stream')
 
