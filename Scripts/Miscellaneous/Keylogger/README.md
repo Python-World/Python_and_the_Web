@@ -9,7 +9,7 @@ A keylogger that -<br>
 ## Prerequisites
 Pyxhook -><br>
 `pip3 install pyxhook`<br>
-Python-xlib<br>
+Python-xlib -><br>
 `pip3 install python-xlib`<br>
 
 
