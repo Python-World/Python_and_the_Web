@@ -11,5 +11,4 @@ python TurtleClock.py
 <img src="demo.png">
 
 ## *Author*
-Made With ❤️ By Advik
-https://github.com/ADV1K
+Made With ❤️ By [Advik](https://github.com/ADV1K)
