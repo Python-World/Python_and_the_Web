@@ -25,5 +25,5 @@ Running Code:
 Delievered mail:
 ![image not found](out.png)<br>
 
-## *Author Name*
+## Author Name
 <a href="https://github.com/sohamsahare123">Soham Sahare</a>
