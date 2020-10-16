@@ -12,5 +12,4 @@ python main.py
 <img src="2.png">
 
 ## *Author*
-Made With ❤️ By Advik
-https://github.com/ADV1K
+Made With ❤️ By [Advik](https://github.com/ADV1K)
