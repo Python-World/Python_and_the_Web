@@ -37,50 +37,46 @@ def links(url):
         # Using beautiful soup to filter the scraped data
         soup = BeautifulSoup(html, "lxml")
         links = soup.find_all("a")
-        
-    except :
-        print("Enter a valid webpage URL!")
-        quit()
-
-    web_main = main_website(url)
-    internal_links = []
-    external_links = []
-    for link in links:
-        try:
-            final_url = ""
-            # x is used to check the first character of the scrapped link
-            x = link['href'][0:1]
-            if x == '/':
-                final_url = url + link['href']
-                internal_links.append(final_url)
-            elif x == '#':
-                final_url = url + '/' + link['href']
-                internal_links.append(final_url)
-            else:
-                check = present(link['href'], web_main)
-                if check:
-                    final_url = link['href']
+        web_main = main_website(url)
+        internal_links = []
+        external_links = []
+        for link in links:
+            try:
+                final_url = ""
+                # x is used to check the first character of the scrapped link
+                x = link['href'][0:1]
+                if x == '/':
+                    final_url = url + link['href']
+                    internal_links.append(final_url)
+                elif x == '#':
+                    final_url = url + '/' + link['href']
                     internal_links.append(final_url)
                 else:
-                    final_url = link['href']
-                    external_links.append(final_url)
-        except:
-            print("Working on your request.......")
+                    check = present(link['href'], web_main)
+                    if check:
+                        final_url = link['href']
+                        internal_links.append(final_url)
+                    else:
+                        final_url = link['href']
+                        external_links.append(final_url)
+            except:
+                print("Working on your request.......")
 
-    # After storing the internal and external links presenting them on the console
-    print("Links assosciated to the webpage: ")
-    print("\n\tInternal Links :")
-    if len(external_links)==0:
-        print("\t\t","No Internal Links!")
-    for i in range(1, len(internal_links)+1):
-        print("\t\t", internal_links[i-1])
+        # After storing the internal and external links presenting them on the console
+        print("Links assosciated to the webpage: ")
+        print("\n\tInternal Links :")
+        if len(external_links)==0:
+            print("\t\t","No Internal Links!")
+        for i in range(1, len(internal_links)+1):
+            print("\t\t", internal_links[i-1])
 
-    print("\n\tExternal Links :")
-    if len(external_links)==0:
-        print("\t\t","No External Links!")
-    for i in range(1, len(external_links)+1):
-        print("\t\t", external_links[i-1])
-
+        print("\n\tExternal Links :")
+        if len(external_links)==0:
+            print("\t\t","No External Links!")
+        for i in range(1, len(external_links)+1):
+            print("\t\t", external_links[i-1])
+    except :
+        print("Enter a valid webpage URL!")
 
 if __name__ == "__main__":                
     url = input("Enter the url of the webpage whose all links are to be grouped(As External or Internal) : ")
