@@ -1,8 +1,14 @@
+#import Gui Package and libraries
 import tkinter.font
 from tkinter import *
 import math
 
+
 def clearall():
+    
+    '''Clear function toclear the screen
+    and reset all variables'''
+    
     global expression
     global equation
     global value
@@ -13,9 +19,14 @@ def clearall():
     equation.set(expression)
 
 def sgn(a):
+    #Signum function
     return 1 if a>0 else -1 if a<0 else 0
 
 def clearback():
+    
+    '''Backspace button function to delete
+    a character from the screen'''
+    
     result1=""
     result2=""
     global equation
@@ -91,6 +102,12 @@ def clearback():
     except:pass
     
 def pressbtn(num):
+
+    '''Function to determine which button is pressed.
+    Everytime a button a pressed , this function is
+    called and a parameter is passed, which updates the
+    variables and the expression to be evaluated'''
+    
     global expression 
     global value
     global ans
@@ -137,6 +154,10 @@ def pressbtn(num):
     elif num=='e^':value += 'math.e**'
     
 def equal():
+
+    '''On pressing equal to button, this function is called.
+    And it prints the result on the screen.'''
+    
     global ans
     global value
     global expression
@@ -149,6 +170,7 @@ def equal():
     value=''
     expression=''
 
+#Configuring the layout of Calculator 
 root=Tk()
 root.title("Scientific Calculator")
 
@@ -163,18 +185,21 @@ area = Entry(cal, textvariable = equation,width= 60, font= ("Comic Sans MS", 15)
 area.insert(0,"0")
 area.grid(row=0,columnspan=8)
 
+#standard calculator
 def standard():
     root.geometry('361x350')
     area['width']=28
     area.grid(row=0,columnspan=4,sticky= EW)
     root.title("Standard Calculator")
-    
+
+#scientific calculator
 def scientific():
     root.geometry('742x350')
     area['width']=60
     area.grid(row=0,columnspan=8)
     root.title("Scientific Calculator")
 
+# adding menubar on top
 menubar = Menu(cal)
 filemenu= Menu(menubar,tearoff=0)
 menubar.add_cascade(label="File", menu=filemenu)
@@ -187,6 +212,7 @@ value=""
 ans=""
 expression=""
 
+#Fonts and Colours
 font= tkinter.font.Font(size=12,weight= "bold", family='Helvetica',)
 h=2
 w=7
@@ -200,14 +226,17 @@ fg2="black"
 
 numberpad = [7,8,9,4,5,6,1,2,3]
 i=0
+
 for j in range(3):
     for k in range(3):
         Button(cal,command  = lambda x = str(numberpad[i]) : pressbtn(x), text = str(numberpad[i]), bg= bg1, fg=fg2,activebackground=actvbgnd,
                height=h, width=w,font= font).grid(row=j+2,column=k)
         i+=1
 
-r=5
-c=7
+r=5 #number of rows
+c=7 #number of columns
+
+#creating buttons
 Button(cal,command  = lambda: pressbtn(0),  text = "0", bg= bg1, fg=fg2,activebackground=actvbgnd,
                     height=h, width=w,font= font).grid(row=r,column= c-7)
 Button(cal,command  = lambda: pressbtn('00'),text = "00", bg= bg1, fg=fg2,activebackground=actvbgnd,
@@ -238,6 +267,7 @@ for j in range(5):
                height=h,width=w,font= font).grid(row=j+1,column=k+4)
         i+=1
 
+#set the spacing between buttons
 msize=60
 cal.rowconfigure(0,minsize=50)
 for i in range(1,6):

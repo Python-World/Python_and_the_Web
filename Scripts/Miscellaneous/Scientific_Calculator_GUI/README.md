@@ -6,8 +6,8 @@ The Calculator is built in such a way that it first allows the user to enter the
 **Note:** Put Proper Paranthesis while writing the complete expression in Calculator.
 
 ## Modules Required
-Tkinter  
-Python3
+ Python3
+(No external library or module needed)
 
 ## How To Open
 Simply open the python file, Scientific_Calculator.py  
