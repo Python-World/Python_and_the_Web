@@ -1,7 +1,4 @@
 import subprocess
-import msvcrt
-import sys
-
 
 def fork(): 
     username = input("Your github username: ")
