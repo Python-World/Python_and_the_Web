@@ -3,9 +3,14 @@ Scientific and Standard Calculator combined, made in python using Tkinter module
 
 The Calculator is built in such a way that it first allows the user to enter the expression or the complete equation just like an actual scientific calulator in your device and then on pressing the equalto button , it shows the result.
 
-Though it may look like a long code, but it is very easy to understand. I tried to shorten it as much as possible. It works very efficiently and fastly for as many functions you enter in a single expression it will evaluate it correctly. 
+**Note:** Put Proper Paranthesis while writing the complete expression in Calculator.
 
-Note: The only condition with it is that must contain appropriate parantheses otherwise its gonna take it as an Invalid Expression.
+## Modules Required
+Tkinter  
+Python3
 
+## How To Open
+Simply open the python file, Scientific_Calculator.py  
 
-![alt text](https://github.com/lavish619/Scientific-Calculator-GUI-Tkinter/blob/master/scientific%20%20calc%20image.jpg?raw=true)
+## Screenshot
+![alt text](https://github.com/lavish619/Python_and_the_Web/blob/master/Scripts/Miscellaneous/Scientific_Calculator_GUI/Screenshots/Screenshot-scientific.jpg?raw=true)
