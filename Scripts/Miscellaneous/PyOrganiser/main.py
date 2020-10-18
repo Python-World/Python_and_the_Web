@@ -130,7 +130,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 self.changeProgress()
         except Exception as e:
             print(e)
-            pass
 
     def save(self):
         with open('data.db', 'w') as f:
