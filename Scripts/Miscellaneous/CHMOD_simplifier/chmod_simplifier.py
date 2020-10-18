@@ -1,3 +1,5 @@
+import sys
+
 notation = {
     '---': '0',
     '--x': '1',
@@ -9,7 +11,7 @@ notation = {
     'rwx': '7'
 }
 
-def perm_to_num(symbolic):
+def symb_to_num(symbolic):
     '''
         Convert symbolic permission notation to numeric notation.
     '''
@@ -21,11 +23,11 @@ def perm_to_num(symbolic):
         except:
             numeric =  "Invalid Symbolic Representation!"
     else:
-        numeric = "Symbolic input should be for lengh 9!"
+        numeric = "Symbolic input should be of lengh 9!"
 
     return numeric
 
-def num_to_perm(num):
+def num_to_symb(num):
     '''
         Convert number permission notation to symbolic notation.
     '''
@@ -46,5 +48,19 @@ def num_to_perm(num):
 
     return symbolic
 
+def main():
+    representation = sys.argv[1]
+    mode = sys.argv[2]
+    if mode == 'S':
+        print(num_to_symb(representation))
+    elif mode == 'N':
+        print(symb_to_num(representation))
+    else:
+        print("Invalid Mode Selection. Please select 'S' for numerical --> symbolic conversion or 'N' for symbolic --> numerical conversion!")
 
-print(num_to_perm(700))
+if __name__ == "__main__":
+    main()
+
+
+
+
