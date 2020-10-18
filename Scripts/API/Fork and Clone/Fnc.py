@@ -18,7 +18,7 @@ def clone(username, repo):
         answer = input("Did it clone properly (y/n)? ")
         if answer == "n": clone(username, repo) 
     else:
-        subprocess.run("git clone https://github.com/"+ username + "/" + repo + ".git" , shell=True)
+        subprocess.run("git clone https://github.com/"+ username + "/" + repo + ".git" , shell=True, check=True)
 
 if __name__ == "__main__":
     fork()
