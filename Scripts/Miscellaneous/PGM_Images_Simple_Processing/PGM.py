@@ -1,3 +1,4 @@
+#Creating the class to processing
 class image_processor_pgm:
     def __init__(self, path):
         self.__path = path
@@ -9,8 +10,10 @@ class image_processor_pgm:
         self.max_color = None
         self.marker = None
 
+    #Read the image file and stores in the "image_matrix" attribute
     def read(self):
         with open(self.__path, 'r') as f:
+            #here is the header being read and stored
             self.marker = f.readline()
             comment = f.readline()
 
@@ -20,7 +23,7 @@ class image_processor_pgm:
 
             self.max_color = int(f.readline())
 
-            #aqui começa a leitura da matriz
+            #here starts the image read
 
             self.data = f.read().split()
 
@@ -28,11 +31,13 @@ class image_processor_pgm:
                 self.image_matrix.append(self.data[:self.width])
                 self.data = self.data[self.width:]
 
-            #print(len(self.image_matrix[0]))
-            #print(len(self.image_matrix))
-            #print(self.image_matrix)
 
-    def save(self, path_to_save, matrix, width = None, height = None): #arrumar
+    #saves a matrix as a image into a given path
+    #path_to_save = path where the matrix will be saved as a image
+    #matrix = matrix of pixels
+    #width - if not given, will use the one that was read on the original image header
+    #height - same as width
+    def save(self, path_to_save, matrix, width = None, height = None):
         with open(path_to_save, "w+") as f:
             f.write(str(self.marker)+"\n")
             if(width == None):
@@ -47,6 +52,7 @@ class image_processor_pgm:
                     f.write(str(elem)+" ")
                 f.write("\n")
 
+    #subtract a value of all the pixels
     def get_darker(self, how_much_darker):
         copy_image_matrix = self.image_matrix
         for i in range(self.height):
@@ -57,6 +63,7 @@ class image_processor_pgm:
                     copy_image_matrix[i][j] = int(copy_image_matrix[i][j]) - how_much_darker
         return copy_image_matrix
 
+    #sum a value in all of the pixels
     def get_lighter(self, how_much_lighter):
         copy_image_matrix = self.image_matrix
         for i in range(self.height):
@@ -92,19 +99,20 @@ class image_processor_pgm:
 
 ##TEST AREA
 
-#Creating image processor object giving the path to the test image
+if __name__ == "__main__":
+    #Creating image processor object giving the path to the test image
 
-processor = image_processor_pgm("ctskull-256.pgm")
+    processor = image_processor_pgm("ctskull-256.pgm")
 
-#reading image to the memory
-processor.read()
+    #reading image to the memory
+    processor.read()
 
-#darker image by 100 grey levels
-darker_image = processor.get_darker(100)
-#saving the darker image
-processor.save("ctskull-256-darker.pgm", darker_image)
+    #darker image by 100 grey levels
+    darker_image = processor.get_darker(100)
+    #saving the darker image
+    processor.save("ctskull-256-darker.pgm", darker_image)
 
-#rotating image by 90 degrees
-rotated_image, rotated_width, rotated_height = processor.rotate(90)
-#saving rotated image
-processor.save("ctskull-256-rotated.pgm", rotated_image, rotated_width, rotated_height)
+    #rotating image by 90 degrees
+    rotated_image, rotated_width, rotated_height = processor.rotate(90)
+    #saving rotated image
+    processor.save("ctskull-256-rotated.pgm", rotated_image, rotated_width, rotated_height)
