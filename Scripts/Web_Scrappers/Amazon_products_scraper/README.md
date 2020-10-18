@@ -23,4 +23,4 @@ Scrapes all the data from a given amazon search result url.
 
 ## Author
 
-	Benji (https://github.com/CaptainRoberts)
+[Benji](https://github.com/CaptainRoberts)
