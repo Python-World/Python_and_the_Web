@@ -15,11 +15,10 @@ def clone(username, repo):
     location = input("Path for cloning repo into (if current current directory press enter): ")
     if len(location):
         subprocess.run("git clone https://github.com/"+ username + "/" + repo + ".git " + location , shell=True)
-        answer = input("Did it clone properly (y/n)?")
+        answer = input("Did it clone properly (y/n)? ")
         if answer == "n": clone(username, repo) 
     else:
         subprocess.run("git clone https://github.com/"+ username + "/" + repo + ".git" , shell=True)
 
 if __name__ == "__main__":
     fork()
-

@@ -13,7 +13,7 @@ python Fnc.py
 
 ### Screenshot/GIF showing the sample use of the script
 <!--Remove the below lines and add yours -->
-Screenshot showing sample use of script is present in example.png
+Screenshot showing sample use of script is present in Forking.png and Cloning.png
 
 ## *Author Name*
 <!--Remove the below lines and add yours -->
