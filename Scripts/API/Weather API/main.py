@@ -9,11 +9,11 @@ def get_weather(location):
 
 def display_data(data):
     print("Weather details")
-    print("weather-type: "+data['weather'][0]['main'])
-    print("temperature: "+str(data['main']['temp']))
-    print("pressure: "+str(data['main']['pressure']))
-    print("humidity: "+str(data['main']['humidity']))
-    print("wind-speed: "+str(data['wind']['speed']))
+    print("weather-type: " + data['weather'][0]['main'])
+    print("temperature: " + str(data['main']['temp']))
+    print("pressure: " + str(data['main']['pressure']))
+    print("humidity: " + str(data['main']['humidity']))
+    print("wind-speed: " + str(data['wind']['speed']))
 
 
 def complete_func():
