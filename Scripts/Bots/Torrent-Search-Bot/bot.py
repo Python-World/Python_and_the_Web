@@ -27,7 +27,7 @@ def unknown(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id, text="Sorry, I didn't understand that command.😔")
 
 def quote(update,context):
-    chat_id = update.message.chat_id
+    update.message.chat_id
     if update.message:  
             
             query = update.message.text

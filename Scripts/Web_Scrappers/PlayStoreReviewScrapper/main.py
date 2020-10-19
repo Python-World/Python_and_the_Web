@@ -37,7 +37,6 @@ def getPlaystoreReviews(app_id):
                     python_button.click()
                 except IndexError:
                     elem.send_keys(Keys.PAGE_UP)
-                    pass
                 
 
         if((no_of_pagedowns - 1) % 25 == 0):

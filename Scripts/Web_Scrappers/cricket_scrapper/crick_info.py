@@ -1,8 +1,6 @@
 import io
 from bs4 import BeautifulSoup
 import urllib.request as ulibr
-import urllib.parse as ulibp
-import urllib.error as ulibe
 
 
 

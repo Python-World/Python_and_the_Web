@@ -15,7 +15,6 @@ class InvalidCodeException(Exception):
     """
     Invalid problem code 
     """
-    pass
 
 
 def parse_problem_statement(problem_code: str):
