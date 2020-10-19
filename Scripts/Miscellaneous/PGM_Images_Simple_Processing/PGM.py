@@ -1,3 +1,4 @@
+import copy
 #Creating the class to processing
 class image_processor_pgm:
     def __init__(self, path):
@@ -15,7 +16,7 @@ class image_processor_pgm:
         with open(self.__path, 'r') as f:
             #here is the header being read and stored
             self.marker = f.readline()
-            comment = f.readline()
+            f.readline()
 
             dimensions = (f.readline()).split()
             self.width = int(dimensions[0])
@@ -27,7 +28,7 @@ class image_processor_pgm:
 
             self.data = f.read().split()
 
-            for i in range(self.height):
+            for _ in range(self.height):
                 self.image_matrix.append(self.data[:self.width])
                 self.data = self.data[self.width:]
 
@@ -40,9 +41,9 @@ class image_processor_pgm:
     def save(self, path_to_save, matrix, width = None, height = None):
         with open(path_to_save, "w+") as f:
             f.write(str(self.marker)+"\n")
-            if(width == None):
+            if(width is None):
                 width = self.width
-            if(height == None):
+            if(height is None):
                 height = self.height
 
             f.write(str(width)+" "+str(height)+"\n")
@@ -54,7 +55,7 @@ class image_processor_pgm:
 
     #subtract a value of all the pixels
     def get_darker(self, how_much_darker):
-        copy_image_matrix = self.image_matrix
+        copy_image_matrix = copy.deepcopy(self.image_matrix)
         for i in range(self.height):
             for j in range(self.width):
                 if(int(copy_image_matrix[i][j]) - how_much_darker < 0):
@@ -65,7 +66,7 @@ class image_processor_pgm:
 
     #sum a value in all of the pixels
     def get_lighter(self, how_much_lighter):
-        copy_image_matrix = self.image_matrix
+        copy_image_matrix = copy.deepcopy(self.image_matrix)
         for i in range(self.height):
             for j in range(self.width):
                 if(int(copy_image_matrix[i][j]) + how_much_lighter > 255):
@@ -83,8 +84,7 @@ class image_processor_pgm:
             times = times + 4
 
         rotated_image_matrix = [[0 for i in range(self.height)] for j in range(self.width)] #criando a nova matriz
-        aux_list = []
-        for time in range(times): #para cada vez no numero total de vezes
+        for _ in range(times): #para cada vez no numero total de vezes
             for i in range(self.height):
                 for j in range(self.width):
                     rotated_image_matrix[j][self.height - 1 - i] = self.image_matrix[i][j]
