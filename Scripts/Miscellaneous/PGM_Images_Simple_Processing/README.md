@@ -8,8 +8,11 @@ None
 
 ### How to run the script
 <!--Remove the below lines and add yours -->
-A test is inside the script, so you just need to run: python3 PGM.py
+A test is inside the script, so you just need to change the variable "image_path" in the "main" function for a PGM ASCII image path then run: python3 PGM.py
 If you want to use another image or something, just follow the example given in the "main" function.
+You can get another images from: https://people.sc.fsu.edu/~jburkardt/data/pgma/pgma.html
+
+WARNING: You have to use ASCII coded images.
 
 ### Screenshot/GIF showing the sample use of the script
 <!--Remove the below lines and add yours -->
