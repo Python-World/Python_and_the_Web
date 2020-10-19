@@ -1,7 +1,9 @@
+import sys
 import requests
+import urllib
 
 from bs4 import BeautifulSoup
-from whaaaaat import prompt, print_json, Separator
+from whaaaaat import prompt
 
 class ScrapeLyrics:
     """Class to scrape lyrics"""
@@ -44,7 +46,8 @@ class ScrapeLyrics:
             self.parse_songlist()
         else:
             self.parse_lyrics()
-        return self.out
+        
+
 
 class LyricsConsole(ScrapeLyrics):
     """Class for search and display"""
@@ -55,6 +58,28 @@ class LyricsConsole(ScrapeLyrics):
         
     def search_song(self):
         """"""
-    
-    def display_prompt():
+        form_url = "https://search.azlyrics.com/search.php?q={song_name}"\
+            .format(song_name='+'.join(self.song_name.split()))
+        self.url = form_url
+        self.parse_type = 'song_list'
+        self.driver()
+        
+    def display_prompt(self):
         """"""
+        questions = [{ 
+                      "type": "list", 
+                      "name": "link", 
+                      "message": "Please select from the list", 
+                      "choices": list(self.out.keys())
+                      }]
+        answers = prompt(questions)
+        self.url = self.out[answers['link']].replace("'",'')
+        self.parse_type = 'song'
+        self.driver()
+        return self.out
+
+if __name__ == "__main__":
+    song_name = sys.argv[1] 
+    obj = LyricsConsole(song_name)
+    obj.search_song()
+    print(obj.display_prompt())
