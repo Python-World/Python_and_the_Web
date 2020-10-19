@@ -1,8 +1,6 @@
 import io
 from bs4 import BeautifulSoup
 import urllib.request as ulibr
-import urllib.parse as ulibp
-import urllib.error as ulibe
 
 
 
@@ -12,7 +10,7 @@ base_url='https://en.wikipedia.org/wiki/'
 
 #this function creates name suitable for searching
 def create_name(first,last):
-    if first==None and last==None:
+    if first is None and last is None:
         return 'error'
     first=first[0].capitalize()+ first[1:]
     last=last[0].capitalize()+last[1:]
@@ -40,7 +38,7 @@ def get_table(soup):
 
 
         #getting headings
-        if len(head)>=1 and head[0]!=None and len(cells)>=1:
+        if len(head)>=1 and head[0] is not None and len(cells)>=1:
             row_list.append(head[0].get_text())
             row_list.append(' : ')
 
@@ -57,9 +55,9 @@ def get_table(soup):
 def write_to_file(content_table,name):
     with io.open('./scraped_texts/{}.txt'.format(name),'w',encoding='UTF-8') as dobj:
         for line in content_table:
-            if len(line)>=1 and line[0] != None:
+            if len(line)>=1 and line[0] is not None:
                 for value in line:
-                    if value!=None:
+                    if value is not None:
                         dobj.write(value+" ")
                 dobj.write("\n")
 

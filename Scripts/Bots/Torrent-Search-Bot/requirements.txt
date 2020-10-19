@@ -1,0 +1,5 @@
+bs4
+lxml
+gunicorn
+requests
+python-telegram-bot
