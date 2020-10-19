@@ -51,6 +51,7 @@ class LyricsConsole(ScrapeLyrics):
     def __init__(self, song_name):
         """"""
         self.song_name = song_name
+        super().__init__(url=None, parse_type=None)
         
     def search_song(self):
         """framing url and parsing list"""
