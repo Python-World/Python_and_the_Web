@@ -17,17 +17,13 @@ output: 777
 
 ### How to use this script?
 
-1. Make sure all the requirements for the script are present in your system by running:
-
-    pip install -r requirements.txt
-    
-2. The script has 2 options:
+1. The script has 2 options:
 - Symbolic to Numerical (N)
 - Numerical to Symbolic (S)
 
 Pass the desired mode of conversion while executing the script
 
-3. Run the following command:
+2. Run the following command:
     python chmod_simplifier.py <representation> <mode>
     
     Replace: 
