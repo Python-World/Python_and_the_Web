@@ -100,9 +100,13 @@ class image_processor_pgm:
 ##TEST AREA
 
 if __name__ == "__main__":
+    #WARNING: ASCII PGM IMAGE PATH, CHANGE TO YOUR IMAGE PATH HERE
+    image_path = "ctskull-256.pgm"
+
+
     #Creating image processor object giving the path to the test image
 
-    processor = image_processor_pgm("ctskull-256.pgm")
+    processor = image_processor_pgm(image_path)
 
     #reading image to the memory
     processor.read()
@@ -110,9 +114,9 @@ if __name__ == "__main__":
     #darker image by 100 grey levels
     darker_image = processor.get_darker(100)
     #saving the darker image
-    processor.save("ctskull-256-darker.pgm", darker_image)
+    processor.save("darker-image.pgm", darker_image)
 
     #rotating image by 90 degrees
     rotated_image, rotated_width, rotated_height = processor.rotate(90)
     #saving rotated image
-    processor.save("ctskull-256-rotated.pgm", rotated_image, rotated_width, rotated_height)
+    processor.save("rotated-image.pgm", rotated_image, rotated_width, rotated_height)
