@@ -19,9 +19,9 @@ original_path = vf.name
 
 x = bytearray(vectors)
 
-f = open(original_path, 'wb')
-f.write(x)
-f.close()
+with open(original_path, 'wb') as f:
+    f.write(x)
+    f.close()
 
 os.system('ffmpeg -loglevel panic -i ' + infile + ' -vf vidstabtransform=input='+ original_path +':smoothing='+smoothing+':crop=keep,unsharp=5:5:0.8:3:3:0.4 -vcodec libx264 -preset slow -tune film -crf 18 -acodec copy ' + outfile )
 
