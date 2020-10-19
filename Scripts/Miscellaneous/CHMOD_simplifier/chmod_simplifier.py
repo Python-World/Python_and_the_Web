@@ -11,6 +11,7 @@ notation = {
     'rwx': '7'
 }
 
+
 def symb_to_num(symbolic):
     '''
         Convert symbolic permission notation to numeric notation.
@@ -26,6 +27,7 @@ def symb_to_num(symbolic):
         numeric = "Symbolic input should be of lengh 9!"
 
     return numeric
+
 
 def num_to_symb(num):
     '''
@@ -48,6 +50,7 @@ def num_to_symb(num):
 
     return symbolic
 
+
 def main():
     representation = sys.argv[1]
     mode = sys.argv[2]
@@ -58,9 +61,6 @@ def main():
     else:
         print("Invalid Mode Selection. Please select 'S' for numerical --> symbolic conversion or 'N' for symbolic --> numerical conversion!")
 
+
 if __name__ == "__main__":
     main()
-
-
-
-
