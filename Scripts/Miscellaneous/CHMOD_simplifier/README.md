@@ -5,9 +5,15 @@ Example (numerical to symbolic representation):
 input: 777
 output: rwxrwxrwx
 
+![Symbolic Representation](./SymbolicNotation.PNG)
+[Symbolic Representation](./SymbolicNotation.PNG)
+
 Example (symbolic to numerical representation):
 input: rwxrwxrwx
 output: 777
+
+![Numerical Representation](./NumericalNotation.PNG)
+[Numerical Representation](./NumericalNotation.PNG)
 
 ### How to use this script?
 
