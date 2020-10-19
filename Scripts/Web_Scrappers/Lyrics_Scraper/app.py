@@ -9,7 +9,7 @@ class ScrapeLyrics:
     def __init__(self, url, parse_type):
         """"""
         self.url = url
-        self.type = parse_type
+        self.parse_type = parse_type
         self.soup = None
         self.out = None
         
@@ -29,10 +29,11 @@ class ScrapeLyrics:
             data = tds.attrs.get('onclick',None)
             if data :
                 self.out.append((tds.text, data.split('=')[-1]))
+        self.out = dict(self.out)
     
     def parse_lyrics(self):
         """"""
-        for tds in soup.find_all('div'):
+        for tds in self.soup.find_all('div'):
             if not tds.attrs:
                 self.out = tds.text
     
