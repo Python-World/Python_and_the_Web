@@ -21,7 +21,7 @@ class ScrapeLyrics:
         self.soup = BeautifulSoup(res.text,'html.parser')
             
     def parse_songlist(self):
-        """"""
+        """parsing the list of matched songs"""
         self.out = []
         for tds in self.soup.find_all('td'):
             data = tds.attrs.get('onclick',None)
@@ -30,13 +30,13 @@ class ScrapeLyrics:
         self.out = dict(self.out)
     
     def parse_lyrics(self):
-        """"""
+        """parsing the lyrics"""
         for tds in self.soup.find_all('div'):
             if not tds.attrs:
                 self.out = tds.text
     
     def driver(self):
-        """"""
+        """method for all methods"""
         self.parse()
         if self.parse_type == 'song_list':
             self.parse_songlist()
@@ -53,7 +53,7 @@ class LyricsConsole(ScrapeLyrics):
         self.song_name = song_name
         
     def search_song(self):
-        """"""
+        """framing url and parsing list"""
         form_url = "https://search.azlyrics.com/search.php?q={song_name}"\
             .format(song_name='+'.join(self.song_name.split()))
         self.url = form_url
@@ -61,7 +61,7 @@ class LyricsConsole(ScrapeLyrics):
         self.driver()
         
     def display_prompt(self):
-        """"""
+        """displaying the result on console"""
         choices = list(self.out.keys())
         if not choices :
             return
