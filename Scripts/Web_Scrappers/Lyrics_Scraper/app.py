@@ -19,10 +19,6 @@ class ScrapeLyrics:
         """"""
         res = requests.get(self.url)
         self.soup = BeautifulSoup(res.text,'html.parser')
-        if self.parse_type == 'song_list':
-            self.parse_songlist()
-        else:
-            self.parse_lyrics()
             
     def parse_songlist(self):
         """"""
@@ -66,11 +62,14 @@ class LyricsConsole(ScrapeLyrics):
         
     def display_prompt(self):
         """"""
+        choices = list(self.out.keys())
+        if not choices :
+            return
         questions = [{ 
                       "type": "list", 
                       "name": "link", 
-                      "message": "Please select from the list", 
-                      "choices": list(self.out.keys())
+                      "message": "Select the closet match", 
+                      "choices": choices
                       }]
         answers = prompt(questions)
         self.url = self.out[answers['link']].replace("'",'')
