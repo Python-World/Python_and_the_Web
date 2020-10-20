@@ -9,7 +9,7 @@ cv2.createTrackbar("min","Adjust",110,255, lambda x: None)
 def distance(x1,x2,y1,y2):
 	return (x1-x2)*(x1-x2) + (y1-y2)*(y1-y2)
 
-def exit():
+def terminate():
 	cap.release()
 	cv2.destroyAllWindows()
 
@@ -95,4 +95,4 @@ while True:
 	cv2.imshow('threshold',threshold) #Displaying threshold image
 	if cv2.waitKey(1) & 0xFF == ord('q'): #Program will quite when q is pressed
 		break
-exit()
+terminate()
