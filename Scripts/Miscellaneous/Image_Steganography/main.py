@@ -24,7 +24,7 @@ def encode(pic_path,text,name):
             i = j//height
             if counter >= len(text):
                 break
-            elif j == 0 and info == False:
+            elif j == 0 and info is False:
                 edit_image[i][k][2] = len(text)-1
                 edit_image[i][k+1][2] = skip
                 info = True
