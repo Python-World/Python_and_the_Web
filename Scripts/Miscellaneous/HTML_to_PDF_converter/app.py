@@ -18,7 +18,7 @@ class Html2Pdf:
 
 
 if __name__ == '__main__':
-    """taking the inputs from cli"""
+    #taking the inputs from cli
     parser = argparse.ArgumentParser()
     parser.add_argument("-inp", "--input", help="input file url")
     parser.add_argument("-out", "--output", help="output file name")
