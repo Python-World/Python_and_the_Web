@@ -1,10 +1,10 @@
 # Script Title
 <!--Remove the below lines and add yours -->
-A wrapper script for video stabilization using ffmpeg
+A wrapper script for video stabilization using ffmpeg. 
 
 ### Prerequisites
 <!--Remove the below lines and add yours -->
-* [ffmpeg](https://ffmpeg.org)
+* [ffmpeg](https://ffmpeg.org), needs to be compiled with vid.stab
 
 ### How to run the script
 <!--Remove the below lines and add yours -->
