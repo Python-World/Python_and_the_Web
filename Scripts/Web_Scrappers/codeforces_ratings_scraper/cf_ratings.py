@@ -8,10 +8,10 @@ def call_api(handle):
     base_url='https://codeforces.com/api/user.rating?handle='
     #Append the user
     url=base_url+handle
-
+    #Send request
     r = requests.get(url)
     raw = r.json()
-
+    #Parse response
     response=json.dumps(raw['result'])
 
     return(response)
@@ -20,7 +20,7 @@ def call_api(handle):
 #Check how many arguments were supplied
 if len(sys.argv)>3:
     print('Too many arguments.')
-    exit()
+    sys.exit(1)
 
 #Create parser
 parser = argparse.ArgumentParser(description='Scrape user ratings from codeforce.')
