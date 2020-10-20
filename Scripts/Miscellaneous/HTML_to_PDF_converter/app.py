@@ -11,13 +11,14 @@ class Html2Pdf:
         self.output_filename = output_filename
     
     def get_pdf(self):
-        """"""
+        """get the file url and create output"""
         pdf = weasyprint.HTML(self.url).write_pdf()
         file_name = 'outputs/' + self.output_filename
         open(file_name, 'wb').write(pdf)
 
 
 if __name__ == '__main__':
+    """taking the inputs from cli"""
     parser = argparse.ArgumentParser()
     parser.add_argument("-inp", "--input", help="input file url")
     parser.add_argument("-out", "--output", help="output file name")
