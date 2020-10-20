@@ -76,3 +76,7 @@ Random_Album_API (Root)
 ## Aim
 
 The Aim behind this was to write a small flask project to showcase how we can structure our code using flask blueprint , writing class based view for a better organized code and handling exceptions .
+
+### Author
+
+[Ankur Pandey](https://github.com/ankdos)
