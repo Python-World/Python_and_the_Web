@@ -1,4 +1,4 @@
-# Script Title
+# vid_stab.py
 <!--Remove the below lines and add yours -->
 A wrapper script for video stabilization using ffmpeg. 
 
