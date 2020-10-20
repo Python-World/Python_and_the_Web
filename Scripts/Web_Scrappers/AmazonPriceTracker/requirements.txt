@@ -1,0 +1,15 @@
+beautifulsoup4==4.9.0
+bs4==0.0.1
+certifi==2020.4.5.1
+chardet==3.0.4
+colorama==0.4.3
+idna==2.9
+mongoengine==0.19.1
+pymongo==3.10.1
+python-dateutil==2.8.1
+requests==2.23.0
+selenium==3.141.0
+six==1.14.0
+soupsieve==2.0
+tqdm==4.45.0
+urllib3==1.25.9
