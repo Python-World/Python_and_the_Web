@@ -839,6 +839,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "valterm",
+      "name": "Martin Valter",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/11588074?v=4",
+      "profile": "https://github.com/valterm",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
