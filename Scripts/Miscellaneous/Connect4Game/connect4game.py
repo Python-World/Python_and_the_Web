@@ -175,5 +175,5 @@ try:
 					if game_over:
 						pygame.time.wait(3000)
 
-except IndexError as e:
+except IndexError:
 	print('Game closed')

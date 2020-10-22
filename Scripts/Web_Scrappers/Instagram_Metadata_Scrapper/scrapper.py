@@ -35,7 +35,7 @@ def get_metadata(username):
             }
         return {"error" : "problem getting the data , please try again"}
 
-    except Exception as _unused:
+    except Exception:
         return {"error": "internal error"}
 
 if __name__ == '__main__':

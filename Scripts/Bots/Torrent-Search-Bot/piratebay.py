@@ -1,6 +1,5 @@
 import requests
 import json
-import urllib.request,urllib.parse
 from scrapmagnet import scrapmag
 
 def pirate(search):

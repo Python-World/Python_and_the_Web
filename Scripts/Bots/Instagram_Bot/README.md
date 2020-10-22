@@ -31,7 +31,7 @@ It waits for 50 seconds if you have second authorization enabled
     2. Cryptography *{$ pip install cryptography}*
     3. Pyinstaller (To convert it into `.exe` file) *{$ pip install pyinstaller}*
     
-    Or, simply run `pip3 install -r requirements.txt` in your command prompt in the same directory as your `Instagram_bot.py` file
+    Or, simply run `pip install -r requirements.txt` in your command prompt in the same directory as your `Instagram_bot.py` file
 
 3. **Web driver of your respective browser**
     - If you have Chrome installed in your system then download the [Chrome webdriver](https://chromedriver.chromium.org/downloads).

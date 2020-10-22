@@ -7,7 +7,7 @@ from tweepy import OAuthHandler
 from textblob import TextBlob
 
 
-class TwitterClient(object):
+class TwitterClient():
     def __init__(self):
         """
             Class constructor: Authentication via twitter API keys
@@ -28,7 +28,8 @@ class TwitterClient(object):
         except:
             print("Error: Authentication Failed")
 
-    def clean_tweet(self, tweet):
+    @staticmethod
+    def clean_tweet(tweet):
         """
             Removing links/special characters to clean up tweet
         """
@@ -41,10 +42,9 @@ class TwitterClient(object):
         analysis = TextBlob(self.clean_tweet(tweet))
         if analysis.sentiment.polarity > 0:
             return 'positive'
-        elif analysis.sentiment.polarity == 0:
+        if analysis.sentiment.polarity == 0:
             return 'neutral'
-        else:
-            return 'negative'
+        return 'negative'
 
     def get_tweets(self, hashtag):
         """

@@ -1,0 +1,1 @@
+web: python3 -m Random_Album_API.run_server

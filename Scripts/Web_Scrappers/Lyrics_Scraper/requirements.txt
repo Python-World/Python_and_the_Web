@@ -1,0 +1,4 @@
+beautifulsoup4==4.9.3
+bs4==0.0.1
+whaaaaat==0.5.2
+prompt-toolkit==1.0.14

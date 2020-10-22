@@ -5,7 +5,7 @@ class MyStreamer(TwythonStreamer):
 	@staticmethod
 	def on_success(data):
 		if 'text' in data:
-			a=data['text'].lower()
+			data['text'].lower()
 			username=data['user']['screen_name']
 			id=data['id']
 			st.create_favorite(id=id)
