@@ -16,10 +16,6 @@ markdown = html2text.html2text(html)
 # Created the README file for this project using index.html and main.py files
 
 # Opening a new file
-file = open("README.md", "w")
-
-# Writing into the README.md file
-file.write(markdown)
-
-# Closing the file
-file.close()
+with open("README.md", "w") as file:
+    # Writing into the README.md file
+    file.write(markdown)
