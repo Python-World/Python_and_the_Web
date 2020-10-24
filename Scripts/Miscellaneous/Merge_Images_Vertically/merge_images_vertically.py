@@ -22,7 +22,9 @@ def merge_pics_vertically(images_list, name):
         y += img.height
     img_merge.save(name + '.jpg')
 
-def get_files(directory, ext = [".jpg"]):
+def get_files(directory, ext = None):
+    if ext is None:
+        ext = [".jpg"]
     files = []
     for f in os.scandir(directory):
         if f.is_file():
@@ -34,6 +36,3 @@ name = input("Sub-folder with images to be merged: ")
 path = os.getcwd() + "/" + name
 pictures = get_files(path)
 merge_pics_vertically(pictures, path)
-
-
-
