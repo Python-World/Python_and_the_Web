@@ -1,0 +1,50 @@
+\documentclass[aps,floatfix,prd,showpacs]{revtex4}
+%\documentclass[aps,floatfix,prd,showpacs,twocolumn]{revtex4}
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+
+\voffset 1.0cm
+
+\begin{document}
+
+\title{Parallel Implementation of Support Vector Machine}
+\author{Pratik Merchant, Smit Moradiya, Jignesh Nagda, Niket Mehta}
+
+\date{\today}
+
+\begin{abstract}
+There is a growing influx of large datasets that are analysed using machine learning methods in natural sciences and engineering. A supervised learning algorithm which gives a solution of regression and classification problems is what SVM basically is. Even though, they are tremendously popular nowadays, but the high computational demands phase is still one of its remaining drawbacks. SVM is mostly used for a nonlinear kernel as in the boundary need not be a straight line. Now, there is a trade-off between the accuracy and training time as this is more computationally expensive. Hence, in this research done by us, a PSVM has been proposed by us to reduce the memory which is being used by the algorithm and also to parallelize computation as well as data loadin
+\end{abstract}
+\maketitle
+
+\section{Introduction}
+
+The name ‘support vectors’ (data points) used to define this dividing plane. Since we only require the SVs to create a classifier, the non SVs can be discarded. However, it becomes a problem when the points are not separable by a simple linear plane. Hence, to handle this problem, SVM uses what is known as the “kernel trick” on the training data and the mapping to a higher dimensional space is done by it, where such a dividing plane can be found more easily. Every improve accuracy. The role of Kernel is to transform the problem using some linear algebra for linear SVM and this is how the learning of the hyperplane happens. To avoid misclassifying each training example is given by the regularisation parameter. Lower is the regularisation value, more is the misclassification. To decide how far the influence of each training parameter reaches, the gamma parameter is used. Low gamma value means points which are at a far distance from the separation line are considered for calculation whereas a high gamma value implies that only the points nearby to the separation line are considered for calculation. Lastly, the separation of the line/hyperplane to the point which closest to it is called as margin. A larger separation for both the classes means a good margin and also no crossing into other class.
+The steps to implement SVM are as follows: Step 1: Import all the necessary libraries such as numpy, pandas, matplotlib. Step 2: Importing the dataset Step 3: Performing exploratory data analysis Step 4: Performing data pre-processing Step 5: Splitting the data into train and test. Step 6: Import SVM, create a classifier and train the model. Step 6: Making predictions Step 7: Evaluating the algorithm  Step 8: Results 
+
+\section{my_section}
+
+nlwekndw lweuidwe nulei nameiude includewe oiu wede oiuwe dn eiuqwend
+
+\section{Results}
+PSVM first loads the training data onto ‘m’ number of machines. This done in round robin fashion. The memory required by each memory is Big-Oh of nd/m. In the next step, PSVM performs a row-based ICF parallely on the data which has been loaded. At the end of this step, only a small portion of the factorized matrix is stored on each machine, which has a space complexity of Big-Oh of np/m. For the quadratic optimization problem, IPM is performed hereafter. Let, n- no. of training instances d-initial no. of dimensions p- After factorization, reduced matrix dimension (p<<<n) m- number of machines With the help of PSVM, the memory requirements reduce from a complexity of Big-Oh of n^2 to Big-Oh of np/m.  
+ 
+HDF5 which is a file format, data model, and a set of software allows users to store data and associated metadata. 
+
+Several of its features make it useful for high performance computing and big data applications, such as data compression, which along with binary value storage can greatly reduce file sizes. It also allows parallel file access, which enables one or more processors to read/write data from a single file, and features customizable data “chunking”, which allows users to define how the data is internally arranged into subsets. This can be used to tune parallel performance. 
+
+An open source cluster computing system intended for the analysis and processing of big data is Apache Spark. Spark clusters have the ability to scale up to thousands of distributed nodes that can work cooperatively to process very large datasets in parallel, this makes them an example of an HTC system. It also supports real-time streaming processing of data as well as real-time streaming processing of data. Some of its main components are Spark streaming, Spark SQL, Spark core which are used for stream processing, to enable structured data processing and handle task distribution and scheduling respectively. (mllib) Machine Learning Library supports many tasks such as linear SVM training,linear regression and clustering. However some extra code needs to be written to handle multi-class problems since it only supports binary classification. 
+ 
+There maybe a period of CPU idle time if one segment finishes training before it concatenation counterpart. The issue can be cumulative in severely distributed databases. The benefits of attempting to balance the segments after the processing has started are likely to be outweighed by the overhead in MPI communication. This difference should be mitigated by proper randomization of the input vector order. 
+ 
+Applications SVMs have been found particularly useful in earth observation and satellite imagery data analysis. Some of its other applications include: 1. Detetction of faces 2. Categorization of text and as well as hypertext 3. Image classifier 4. Fields related to biology 5. Remote homo-logy detection 6. Recognition of hand-written characters 7. GPC 8. Geo and Environmental Sciences 
+
+\section{Conclusions}
+
+Many algorithmic approaches are found to be more effective when kernels are not used or memory is not a constraint. Also, other approaches can be used to achieve good speedup by dividing a serial algorithm into subtasks. These subtasks are basically subsets of the training data. If no. of machines continue to expand and cross the data-size independent threshold, PSVM cannot achieve linear speedup in such cases. There are 2 types of overheads encountered while implementing parallel SVM- communication and synchronization overheads. During message passing, communication time is accounted for.  Computation, communication and synchronization together form the running time. To increase the accuracy, PSVM must select the correct no. of machines.  Hence, we can conclude by saying that when the parallelism of modern hardware is leveraged, massive speedups are possible a satisfactory performance is achieved
+
+\acknowledgments
+I am grateful to my college professors for providing me this wonderful oppurtunity to present this research paper.
+
+\end{document}

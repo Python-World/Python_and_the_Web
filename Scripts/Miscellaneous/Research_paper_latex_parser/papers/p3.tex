@@ -1,0 +1,63 @@
+\documentclass[aps,floatfix,prd,showpacs]{revtex4}
+%\documentclass[aps,floatfix,prd,showpacs,twocolumn]{revtex4}
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+
+\voffset 1.0cm
+
+\begin{document}
+
+\title{Prediction of human behaviour with the aid of sentiment analysis using social media datasets.}
+\author{Pratik Merchant}
+\affiliation{
+Department of Information Technology,
+K J Somaiya College of Engineering,
+Mumbai, Maharashtra,
+India.}
+
+\date{\today}
+
+\begin{abstract}
+The objective of this proposal is to better the prediction of human behaviour with the aid of sentiment analysis using social media datasets. What is the next step/action that a person or a group of people might take can be predicted by observing recurring patterns in their social media datasets. 
+The main issue addressed here is that of the accuracy in predicting the next course of action of an individual or a group of people might take. Negative actions if any predicted, can be stopped then and there itself be forehandedly. This research matters because we humans generally like to pride ourselves on our ability to be unpredictable, to do things for no other reason than because we want to. The truth is, we are complicated, but with the emergence of deep learning, we may become more predictable. Now, with the advent of sophisticated computer systems and cloud which helps to store huge repositories of data complement the development of deep learning. We can begin to parse that information to find patterns in the ways people operate. Deep learning is particularly tailored for the purpose of prediction since it has the intuitive ability similar to biological brains. 
+
+\end{abstract}
+\maketitle
+
+\section{Introduction}
+
+Social media data like Facebook, Twitter, Instagram blogs, etc. is currently growing in an exploding speed. Sentiment analysis–also called opinion mining–is the process of defining and categorizing opinions in a given piece of text as positive, negative, or neutral. The main purpose of conducting this research is to understand the sentiments which in turn can help us mine knowledge and capture the ideas without necessarily going through all data, which will save us a huge amount of time. Also, this analysis can further be used for a variety of purposes such as identifying influencers, competitive benchmarking, consumer opinion and brand sentiment, etc.
+The already existing models lack accuracy. Also, they predict on the basis of one or 2 factors which is too less a number considering the amount of thought processes a human brain goes through before coming on to a decision. Also, the inaccuracy occurring due to the automated bots need to be taken into consideration. Since, they can largely tilt the dataset to a particular side (positive or negative). 
+The main goal is to improve accuracy and also to remove the input of the bots from the datasets using appropriate filtering techniques. And also, to merge the prediction of all the various datasets together to obtain a cumulative prediction of all the social media accounts a person uses.
+The Government or the common public can largely benefit from this since any negative event(protests) if predicted by the model may help in taking adequate protective measures and hence in turn maybe avoid or reduce the magnitude of the same. This issue if addressed before could have prevented the negative impacts of a lot of events such as the Muzaffarnagar riots, FTII Agitation, Pro-Jallikattu protests which took place in Tamil Nadu, etc. Hence, any such events if again predicted in the future, can very well be avoided by taking appropriate advance action.   
+
+\section{Results}
+There are three machine learning classification algorithms that are predominantly used for sentiment analysis in social media and they are as follows:
+a.	Support Vector Machines (SVMs)
+b.	Naive-bayes
+c.	Decision Trees
+Each has it’s own advantages and drawbacks; however, a few different studies have concluded that the Naive-Bayes classifier is the more accurate of the three.[1]
+      
+Naive-Bayes classifier is a machine learning classification algorithm that asserts an independent value for each feature within a dataset. In other words, each element is valued individually to determine a probability that the sum of these values will constitute a pre-defined label or outcome. Effective sentiment analysis of social media datasets using Naive Bayesian Classification involves extraction of subjective information from textual data. A normal human can easily understand the sentiment of a document written in natural language based on its knowledge of understanding the polarity of words and in some cases the general semantics used to describe the subject. The project aims to make the machine extract the polarity (positive, negative or neutral) of social media dataset with respect to the queried keyword.
+This project introduces an approach for automatically classifying the sentiment of social media data by using the following procedure: First the training data is fed to the sentiment analysis engine for learning by using machine learning algorithm. The next step is to filter misleading data(mostly encountered because of bots).The next step involved is the training of the dataset by mathematical formulations. After the learning is complete with qualified accuracy, the machine starts accepting individual social data with respect to keyword that it analyses and interprets, and then classifies it as positive, negative or neutral with respect to the query term.[2] The prediction of an individual once obtained from the different social media datasets may then be cumulated and then compared with the prediction of other individuals to see if there is anything in common. Common predictions if found any may indicate the mass sentiment of the people and will also hint about their future course of actions if any.
+When talking about textual sentiment analysis, this usually comes in the form of a training set bag-of-words already sorted into positive or negative categories. A positive word may have a +1 scoring while a negative word will have a -1 scoring. You can also assign higher values to certain words that may be more negative in degree. Regardless, if the final score of a mention is positive, then the mention is positive and vice versa for negative final score.
+If word only appears once, we don’t need a frequency table. If we assign each positive and negative value a “1”, then we can simply divide the positive and negative words by the amount of words in the entire mention and then the subtract the negative words score from the positive one and  if the total of our mention comes out as positive, we can say the sentiment of the mention above is positive and vice versa for a negative result.
+Since the total of our mention comes out as positive, we can say the sentiment of the mention above is positive. This is a pretty clear-cut case as we didn’t encounter polarizing words that might skew the result if a computer can’t understand which category the word belongs to.[1] 
+
+Now, the maxim that more data will lead to better predictive models is not always true, because noise in the data can overwhelm predictive models. The ability to deal with noisy, incomplete, and inconsistent data will be at the heart of next-generation predictive models. For instance, when identifying “bots” on Twitter that are seeking to sway opinion to be positive about a political candidate, we needed to ignore the huge numbers of bots that were seeking to achieve other ends- such as spreading spam or seeking to influence opinions about other topics or to deceive users into clicking on links that generate revenue for the person who included that link in their tweet. Moreover, data about many Twitter handles are limited and, in some cases, intentionally misleading. Bot developers go to considerable effort to ensure that their bots elude detection.
+
+The generation and reduction to practice of robust multistage predictive modeling for emergent phenomena is an important step. For instance, social movements have been classified into five stages: genesis of the movement, increase in social unrest, enthusiastic mobilization to develop an organization, maintenance of the organization, and termination (when the movement starts to die down). When the protest is in an early stage (for example, of people expressing grievances on Twitter), some stakeholders would benefit from a prediction of the likelihood of violence occurring in any of the future stages. In such extreme cases, identifying bots is a very important part.
+In this way, the above proposed methodology if implemented, can be of great help in a variety of applications as seen above.
+
+
+\section{Conclusions}
+
+Ultimately, once can say that sentiment analysis isn’t perfect, but neither are we when trying to decipher what someone means. Within social media monitoring, we need sentiment analysis as a starting point to understand general public sentiment in aggregate. 
+Hence, we can say that social media is perhaps the largest pool from which we can mine for public opinion and begin to gather informative data for prediction purposes. 
+In this way, I plan to complete the above mentioned process as soon as possible once begun. If done correctly, the process would be completed within a stipulated period of time. If I am successful in meeting my objectives then, this shall be largely benefical to the Government authorities, the Police authorities as well as the common people at large. 
+
+\acknowledgments
+I would like to thank my college professors for supporting me immensely in this endeavor.
+
+\end{document}

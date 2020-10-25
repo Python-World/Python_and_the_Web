@@ -1,0 +1,146 @@
+%\documentclass[aps,floatfix,prd,showpacs]{revtex4}
+\documentclass[aps,floatfix,prd,showpacs,twocolumn]{revtex4}
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+
+\voffset 1.0cm
+
+\begin{document}
+
+\title{A Discourse-Aware Attention Model for
+Abstractive Summarization of Long Documents}
+\author{
+Arman Cohan
+Franck Dernoncourt
+Doo Soon Kim
+Trung Bui
+Seokhwan Kim 
+Walter Chang
+Nazli Goharian†
+}
+\affiliation{
+Department of Computer Science, 
+Georgetown University, 
+Washington, DC}
+
+\date{}
+
+\begin{abstract}
+Neural abstractive summarization models have
+led to promising results in summarizing relatively short documents. We propose the first
+model for abstractive summarization of single,
+longer-form documents (e.g., research papers).
+Our approach consists of a new hierarchical
+encoder that models the discourse structure of
+a document, and an attentive discourse-aware
+decoder to generate the summary. Empirical
+results on two large-scale datasets of scientific
+papers show that our model significantly outperforms state-of-the-art models. 
+\end{abstract}
+
+
+\section{Introduction}
+Existing large-scale summarization datasets
+consist of relatively short documents. For example, articles in the CNN/Daily Mail dataset (Hermann et al., 2015) are on average about 600 words
+long. Similarly, existing neural summarization
+models have focused on summarizing sentences
+and short documents. In this work, we propose a
+model for effective abstractive summarization of
+longer documents. Scientific papers are an example of documents that are significantly longer
+than news articles (see Table 1). They also follow a standard discourse structure describing the
+problem, methodology, experiments/results, and
+finally conclusions (Suppe, 1998).
+Most summarization works in the literature
+focus on extractive summarization. Examples
+of prominent approaches include frequency-based
+methods (Vanderwende et al., 2007), graph-based
+methods (Erkan and Radev, 2004), topic modeling (Steinberger and Jezek, 2004), and neural
+models (Nallapati et al., 2017). Abstractive summarization is an alternative approach where the
+generated summary may contain novel words and
+phrases and is more similar to how humans summarize documents (Jing, 2002). Recently, neural methods have led to encouraging results in
+abstractive summarization (Nallapati et al., 2016;
+See et al., 2017; Paulus et al., 2017; Li et al.,
+2017). These approaches employ a general framework of sequence-to-sequence (seq2seq) models
+(Sutskever et al., 2014) where the document is
+fed to an encoder network and another (recurrent)
+network learns to decode the summary. While
+promising, these methods focus on summarizing
+news articles which are relatively short. Many
+other document types, however, are longer and
+structured. Seq2seq models tend to struggle with
+longer sequences because at each decoding step,
+the decoder needs to learn to construct a context
+vector capturing relevant information from all the
+tokens in the source sequence (Shao et al., 2017).
+Our main contribution is an abstractive model
+for summarizing scientific papers which are an
+example of long-form structured document types.
+Our model includes a hierarchical encoder, capturing the discourse structure of the document and a
+discourse-aware decoder that generates the summary. Our decoder attends to different discourse
+sections and allows the model to more accurately
+represent important information from the source
+resulting in a better context vector. We also introduce two large-scale datasets of long and structured scientific papers obtained from arXiv and
+PubMed to support both training and evaluating
+models on the task of long document summarization. Evaluation results show that our method outperforms state-of-the-art summarization models1.
+
+
+\section{Results}
+Our main results are shown in Tables 2
+and 3. Our model significantly outperforms the
+state-of-the-art abstractive methods, showing its
+effectiveness on both datasets. We observe that
+in our ROUGE-1 score is respectively about 4 and
+3 points higher than the abstractive model PntrGen-Seq2Seq for the arXiv and PubMed datasets,
+providing a significant improvement. Our method
+also outperforms most of the extractive methods
+except for LexRank in one of the ROUGE scores.
+We note that since extractive methods copy salient
+sentences from the document, it is usually easier for them to achieve higher ROUGE scores.
+Figure 2 illustrates the effectiveness of our
+model extensions in capturing various discourse
+information from the papers. It can be observed
+that the state-of-the-art Pntr-Gen-Seq2Seq model
+generates a summary that mostly focuses on introducing the problem, whereas our model generates
+a summary that includes more information about
+the methodology and impacts of the target paper.
+This indicates that the context vector in our model
+compared with Pntr-Gen-Seq2Seq is better able to
+capture important information from the source by
+attending to various discourse sections.
+
+
+\section{Conclusions}
+This work was the first attempt at addressing
+neural abstractive summarization of single, long
+documents. We presented a neural sequence-tosequence model that is able to effectively summarize long and structured documents such as scientific papers. While our results are encouraging,
+there is still much room for improvement for this
+challenging task; our new datasets can help the
+community to further explore this problem.
+We note that following the convention in the
+summarization research, our quantitative evaluation is performed by ROUGE automatic metric.
+While ROUGE is an effective evaluation framework, nuances in the coherence or coverage of the
+summaries are not captured with it. It is non-trivial
+to evaluate such qualities especially for long document summarization; future work can design expert human evaluations to explore these nuances.
+
+\acknowledgments
+We thank the three anonymous reviewers for
+their comments and suggestions.
+
+\begin{thebibliography}
+Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio. 2014. Neural machine translation by jointly
+learning to align and translate. arXiv preprint
+arXiv:1409.0473 .
+Sumit Chopra, Michael Auli, Alexander M Rush, and
+SEAS Harvard. 2016. Abstractive sentence summarization with attentive recurrent neural networks. In
+HLT-NAACL. pages 93–98.
+Arman Cohan and Nazli Goharian. 2015. Scientific article summarization using citation-context
+and article’s discourse structure. In Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing. Association for Computational Linguistics, Lisbon, Portugal, pages 390–400. http://aclweb.org/
+anthology/D15-1045.
+Arman Cohan and Nazli Goharian. 2017a. Contextualizing citations for scientific summarization using
+word embeddings and domain knowledge. arXiv
+preprint arXiv:1705.08063 .
+
+\end{thebibliography}
+
+\end{document}
