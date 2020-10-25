@@ -18,7 +18,7 @@ class essential_data:
 
     def get_elements(self):
         data = self.tex_data
-        data_dict = dict()
+        data_dict = {}
 
         sections = re.findall(r'section{(.*?)\\', data, re.S)
         for obj in sections:
@@ -122,20 +122,21 @@ if __name__ == '__main__':
 
         p = os.path.join(directory_path, tex_file)
 
-        data = open(p, encoding='latin-1').read()
+        with open(p, 'r', encoding='latin-1') as f:
+            data_lst = f.readlines()
+            data = ' '.join([str(elem) for elem in data_lst])
+            cd = clean_data(data)
+            cd.purge_images()
+            cd.purge_tables()
+            cd.purge_equations()
 
-        cd = clean_data(data)
-        cd.purge_images()
-        cd.purge_tables()
-        cd.purge_equations()
+            ed = essential_data(cd.tex_data)
+            d = {}
+            d.update({"author": ed.get_author()})
+            d.update({"title": ed.get_title()})
+            d.update(ed.get_elements())
+            d.update({"acknowledgement": ed.get_ack()})
+            all_data.append(d)
 
-        ed = essential_data(cd.tex_data)
-        d = {}
-        d.update({"author": ed.get_author()})
-        d.update({"title": ed.get_title()})
-        d.update(ed.get_elements())
-        d.update({"acknowledgement": ed.get_ack()})
-        all_data.append(d)
-
-    with open(op_file, "w") as outfile:
-        json.dump(all_data, outfile, indent=4)
+            with open(op_file, "w") as outfile:
+                json.dump(all_data, outfile, indent=4)
