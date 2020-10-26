@@ -21,11 +21,7 @@ The script returns a json object containing following items for each research pa
 ### Prerequisites
 
 ```
-pip install os
-pip install json
-pip install re
-pip install argparse
-pip install tqdm
+pip install -r requirements.txt
 ```
 
 ***
