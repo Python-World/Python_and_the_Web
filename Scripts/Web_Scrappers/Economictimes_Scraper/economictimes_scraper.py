@@ -1,5 +1,5 @@
 from bs4 import BeautifulSoup
-import defusedxml
+import lxml
 import requests
 import json
 import datetime
@@ -38,7 +38,7 @@ if (end_date - start_date).days < 0:
 # Gets News article metadata from article url
 def fetchNewsArticle(url):
   html = requests.get(url).content
-  root = defusedxml.HTML(html)
+  root = lxml.HTML(html)
   x = root.xpath("/html/body//script[@type='application/ld+json']")
   metadata = None ## When Article does not exists (404) 
   if (len(x) >= 2): 
