@@ -6,7 +6,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-95-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-96-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![Issues](https://img.shields.io/github/issues/Python-World/Python_and_the_Web)
@@ -166,6 +166,7 @@ We now have a section for miscellaneous scripts/programs as well.
     <td align="center"><a href="https://github.com/valterm"><img src="https://avatars2.githubusercontent.com/u/11588074?v=4" width="100px;" alt=""/><br /><sub><b>Martin Valter</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=valterm" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/VyomGarg47"><img src="https://avatars0.githubusercontent.com/u/55129843?v=4" width="100px;" alt=""/><br /><sub><b>VyomGarg47</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=VyomGarg47" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/jrcamelo"><img src="https://avatars1.githubusercontent.com/u/21991537?v=4" width="100px;" alt=""/><br /><sub><b>João Rafael</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=jrcamelo" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/asiskumarroy"><img src="https://avatars2.githubusercontent.com/u/44539859?v=4" width="100px;" alt=""/><br /><sub><b>Asis Kumar Roy</b></sub></a><br /><a href="https://github.com/Python-World/Python_and_the_Web/commits?author=asiskumarroy" title="Code">💻</a></td>
   </tr>
 </table>
 
