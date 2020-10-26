@@ -1,0 +1,91 @@
+\documentclass[aps,floatfix,prd,showpacs]{revtex4}
+%\documentclass[aps,floatfix,prd,showpacs,twocolumn]{revtex4}
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+
+\voffset 1.0cm
+
+\begin{document}
+
+\title{A Sample Research Paper}
+\author{I.M. Great and So.R. Yu}
+\affiliation{
+Department of Physics and Astronomy,
+University of Pittsburgh,
+Pittsburgh, PA 15260,
+USA.}
+
+\date{\today}
+
+\begin{abstract}
+An abstract is a great convenience for the reader and is required by all journals. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam convallis diam at lobortis dapibus. In id efficitur libero. Vestibulum vel ullamcorper neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque et felis commodo, rutrum erat at, sodales odio. Nam mi ipsum, imperdiet vitae augue non, convallis accumsan ante. Vivamus in lacus id nisi gravida condimentum vitae convallis tortor. In viverra congue sollicitudin. Quisque eget leo feugiat, tincidunt enim et, pretium orci. Duis condimentum maximus turpis at malesuada. Morbi laoreet metus felis, et varius odio consequat ac. Curabitur rutrum ac sapien ut ultrices. Donec et pretium elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+\end{abstract}
+\pacs{PACS numbers go here. These are classification codes for your  research.}
+\maketitle
+
+\section{Introduction}
+
+Using latex is pretty easy if you have a sample document you can follow.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat ornare odio et faucibus. Donec fringilla massa eget auctor viverra. Mauris a imperdiet est. Cras tincidunt nulla ut elit tristique ultricies. Phasellus nec orci vel mi suscipit maximus at vitae tortor. Vivamus sed libero vel lacus aliquam rhoncus. Ut in lacinia nunc. Nullam quis mauris leo. Phasellus vitae nisl condimentum quam congue volutpat. Quisque et dapibus ipsum. Curabitur fringilla pellentesque elit, non posuere purus malesuada id. Pellentesque rutrum vitae urna eu mattis.
+
+Maecenas ac congue massa. Quisque a sem turpis. Duis et diam ex. Suspendisse et enim interdum, sodales risus eu, ultrices est. Suspendisse eu odio enim. In vulputate odio porttitor tincidunt vestibulum. Praesent tincidunt ullamcorper purus, quis semper felis volutpat quis.
+
+\section{Results}
+Including figures, tables, and equations is easy. Latex also permits easy reference to document elements (figures, tables, sections). Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt lorem luctus eros dictum faucibus. Fusce euismod libero et erat pretium dapibus. Pellentesque faucibus hendrerit est, ac fringilla urna. In porta, ante eu dictum vestibulum, nisl nulla euismod purus, ac bibendum nibh ante vel elit. Fusce diam ante, tincidunt id eleifend a, hendrerit vitae tellus. Duis pretium urna ac vestibulum eleifend. Suspendisse potenti. Aliquam varius odio in pretium semper. Ut faucibus lobortis mauris vel sollicitudin. Nullam condimentum, lacus quis mattis pellentesque, massa nulla cursus nisi, aliquet eleifend est tellus ut libero.
+
+\begin{figure}[ht]
+\includegraphics[width=7cm,angle=-90]{linear_q_eq_0.ps}
+\caption{You will need to include the package graphicx to be able to make figures like this.}
+\label{fig1}
+\end{figure}
+
+\begin{table}[ht]
+\caption{$X(3872)$ Discovery Modes.}
+\label{XmodesTab}
+\begin{tabular}{cclccl}
+\hline
+mass & width & production/decay mode & events & significance & experiment\\
+\hline
+\hline
+$3872.0 \pm 0.6 \pm 0.5$  & $< 2.3$ 90\% C.L.  & $B^\pm \to K^\pm X \to K^\pm \pi^+ \pi^- J/\psi$   &  $25.6 \pm 6.8$ & $10 \sigma$     & Belle\\
+$3871.3 \pm 0.7 \pm 0.4$  & resolution & $p\bar p \to  X \to \pi^+ \pi^- J/\psi$   &  $730 \pm 90$ & $11.6 \sigma$  & CDFII\\
+$M(J/\psi) + 774.9 \pm 3.1 \pm 3.0$ & resolution & $p\bar p \to X \to \pi^+\pi^-J/\psi$ & $522 \pm 100$ & $5.2 \sigma$  & D{\O} \\
+$3873.4 \pm 1.4$  &  --  & $B^- \to K^- X \to K^- \pi^+ \pi^- J/\psi$   &  $25.4 \pm 8.7$ &$3.5 \sigma$ & BaBar\\
+\hline
+\hline
+\end{tabular}
+\end{table}
+
+\begin{equation}
+\Gamma(X \to \alpha\beta D) = \int {d^3Q\over (2\pi)^3}  \Gamma(C\to \alpha\beta) {|\tilde T(Q)|^2 \over
+(M(X) - E_{CD}(Q))^2 + \Gamma_C^2/4}
+\label{XCD}
+\end{equation}
+
+\section{Conclusions}
+
+Man, latex is great! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt lorem luctus eros dictum faucibus. Fusce euismod libero et erat pretium dapibus. Pellentesque faucibus hendrerit est, ac fringilla urna. In porta, ante eu dictum vestibulum, nisl nulla euismod purus, ac bibendum nibh ante vel elit. Fusce diam ante, tincidunt id eleifend a, hendrerit vitae tellus. Duis pretium urna ac vestibulum eleifend. Suspendisse potenti. Aliquam varius odio in pretium semper. Ut faucibus lobortis mauris vel sollicitudin. Nullam condimentum, lacus quis mattis pellentesque, massa nulla cursus nisi, aliquet eleifend est tellus ut libero.
+
+\section{Some_title}
+
+Test title for user defined  section.
+
+\begin{user_defined_title_for_begin}
+
+wjlrhfwer ljqr flwuer j rlferfurl u airlf  aiurf uoiruf iuoqir oiuqr iuq woe
+\end{begin{user_defined_title_for_begin}}
+
+\acknowledgments
+The author is grateful to Donald Knuth for inventing tex, and making publication quality typesetting a reality for scientists around the world.
+
+\begin{thebibliography}{99}
+
+\bibitem{lamport}
+ {\sl LaTeX : A Documentation Preparation System User's Guide and Reference Manual}, Leslie Lamport [1994] (ISBN: 0-201-52983-1) pages: xvi+272.
+
+\bibitem{latt}
+I.M. Smart {\it et al.}, J. Plumb Phys. {\bf 50}, 393 (1983).
+
+\end{thebibliography}
+
+\end{document}
