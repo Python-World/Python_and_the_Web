@@ -5,7 +5,7 @@ import json
 import datetime
 import sys
 
-## Util
+# Util
 def datestr_to_date(datestr):
   [year, month, day] = datestr.split('-')
   return datetime.date(
@@ -14,8 +14,8 @@ def datestr_to_date(datestr):
     day=int(day)
   )
 
-## Reference dates
-reference_date = datetime.date(2001, 1, 1) ## 2001 Jan 1
+# Reference dates
+reference_date = datetime.date(2001, 1, 1)  # 2001 Jan 1
 reference_date_id = 36892
 
 if len(sys.argv) < 3:
@@ -35,7 +35,7 @@ if (end_date - start_date).days < 0:
   sys.exit(1)
 
 
-## Gets News article metadata from article url
+# Gets News article metadata from article url
 def fetchNewsArticle(url):
   html = requests.get(url).content
   root = defusedxml.HTML(html)
@@ -66,6 +66,5 @@ for dateid in range(start_dateid, end_dateid + 1):
     })
 
 out_filename = 'ET_NewsData_{}_{}.json'.format(start_date, end_date)
-output_file = open(out_filename, 'w+')
-output_file.write(json.dumps(fetched_data, indent=2))
-output_file.close()
+with open(out_filename, 'w+') as output_file: 
+    output_file.write(json.dumps(fetched_data, indent=2))
