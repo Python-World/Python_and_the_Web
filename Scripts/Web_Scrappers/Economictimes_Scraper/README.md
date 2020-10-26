@@ -15,7 +15,12 @@
 3. Example Usage
 `python economictimes_scraper.py 2020-05-15 2020-05-20`  
 Output will be saved in file `ET_NewsData_STARTDATE_ENDDATE.json`
-    
+
+## Sample use case
+
+<p align = "center">
+    <img src='sample.PNG' alt ='sample'>
+</p>    
 
 ### Author
 
