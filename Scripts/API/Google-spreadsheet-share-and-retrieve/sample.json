@@ -1,0 +1,35 @@
+[
+    {
+        "name": "Balu shahi",
+        "ingredients": "Maida flour, yogurt, oil, sugar",
+        "diet": "vegetarian",
+        "prep_time": 45,
+        "cook_time": 25,
+        "flavor_profile": "sweet",
+        "course": "dessert",
+        "state": "West Bengal",
+        "region": "East"
+    },
+    {
+        "name": "Boondi",
+        "ingredients": "Gram flour, ghee, sugar",
+        "diet": "vegetarian",
+        "prep_time": 80,
+        "cook_time": 30,
+        "flavor_profile": "sweet",
+        "course": "dessert",
+        "state": "Rajasthan",
+        "region": "West"
+    },
+    {
+        "name": "Gajar ka halwa",
+        "ingredients": "Carrots, milk, sugar, ghee, cashews, raisins",
+        "diet": "vegetarian",
+        "prep_time": 15,
+        "cook_time": 60,
+        "flavor_profile": "sweet",
+        "course": "dessert",
+        "state": "Punjab",
+        "region": "North"
+    }
+]
