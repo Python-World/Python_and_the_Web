@@ -11,7 +11,7 @@ This is a python utility script to take a screenshot of entire screen.
 Perform `python3 screenshot.py`, later a 3 seconds timer will start in which you can navigate to the screenshot to take screenshot of.
 
 <p align = "center">
-  <img src = 'screenshot.png' alt = 'sample'>
+  <img src = 'Screenshot.png' alt = 'sample'>
 </p>  
 The image gets saved in python script directory
 
