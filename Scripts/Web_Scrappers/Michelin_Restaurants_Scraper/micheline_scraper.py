@@ -2,9 +2,7 @@ from bs4 import BeautifulSoup
 import requests, string, re, sys
 from unidecode import unidecode
 
-
 base_url='https://guide.michelin.com/en/restaurant/'
-
 
 def normalize_input(resturant_name):
     # converting to lower case and replacing white spaces
@@ -52,11 +50,5 @@ def main():
     resturent = normalize_input(str(sys.argv[1]))
     print(get_resturent_details(resturent))
 
-
 if __name__ == "__main__":
     main()
-
-
-
-
-    
