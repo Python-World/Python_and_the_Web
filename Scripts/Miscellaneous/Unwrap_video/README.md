@@ -25,4 +25,4 @@ Creating panoramas:
 
 ## *Author Name*
 <!--Remove the below lines and add yours -->
-Made with ♥ by [valterm](github.com/valterm)
+Made with ♥ by [valterm](http://github.com/valterm)
