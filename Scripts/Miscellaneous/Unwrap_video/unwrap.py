@@ -7,19 +7,21 @@ for video in glob.glob('media/*'):
     if not 'jpeg' in video:
         #get video resolution
         try:
-            result = subprocess.run(['ffprobe', '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height', '-of', 'csv=s=,:p=0', video], stdout=subprocess.PIPE)
+            cwd = os.getcwd()
+            path = cwd + '/' + video
+            result = subprocess.run(['ffprobe', '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height', '-of', 'csv=s=,:p=0', path],check=True,stdout=subprocess.PIPE)
         except Exception:
             print('Error running ffprobe.')
             sys.exit()
 
         resolution = result.stdout.decode('utf-8')
-        height,width = resolution.split(',')                
+        height,width = resolution.split(',')
         height = int(height)
         width = int(width)
 
         #from each frame of the video, grab the center pixels and store them temporarily
         os.system('ffmpeg -i ' + video +' -filter:v "crop=2:' + str(height) + ':' + str(width/2) + ':1" -q:v 1 tmp/images-%04d.jpeg')
-        
+
         #define the series of images to be processed from the temp images
         series = glob.glob("tmp/*.jpeg")
         #the composite will be as wide as the number of images
@@ -41,4 +43,3 @@ for video in glob.glob('media/*'):
 
         #save composite
         composite.save(video + '_unwrapped.jpeg', 'JPEG')
-
