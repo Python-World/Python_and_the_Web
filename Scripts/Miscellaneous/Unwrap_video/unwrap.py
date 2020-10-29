@@ -6,7 +6,12 @@ for video in glob.glob('media/*'):
     #only process videos, ignore generated images
     if not 'jpeg' in video:
         #get video resolution
-        result = subprocess.run(['ffprobe', '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height', '-of', 'csv=s=,:p=0', video], stdout=subprocess.PIPE)
+        try:
+            result = subprocess.run(['ffprobe', '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height', '-of', 'csv=s=,:p=0', video], stdout=subprocess.PIPE)
+        except Exception:
+            print('Error running ffprobe.')
+            sys.exit()
+
         resolution = result.stdout.decode('utf-8')
         height,width = resolution.split(',')                
         height = int(height)
