@@ -9,7 +9,7 @@ for video in glob.glob('media/*'):
         try:
             cwd = os.getcwd()
             path = cwd + '/' + video
-            result = subprocess.run(['ffprobe', '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height', '-of', 'csv=s=,:p=0', path],check=True,stdout=subprocess.PIPE)
+            result = subprocess.run(['/usr/bin/ffprobe', '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height', '-of', 'csv=s=,:p=0', path],check=True,stdout=subprocess.PIPE)
         except Exception:
             print('Error running ffprobe.')
             sys.exit()
