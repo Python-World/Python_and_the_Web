@@ -1,5 +1,5 @@
 from PIL import Image
-import glob, os, subprocess
+import glob, os, sys, subprocess
 
 #process each video in media folder
 for video in glob.glob('media/*'):
