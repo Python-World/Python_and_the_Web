@@ -14,7 +14,7 @@ Move the videos you want unwrapped into the media directory, then run:
 Example video is located in media.
 
 This might not look like much, but with better source videos the unwrapped picture will be more meaningful too.
-![result](/media/IMG_6610.MOV_unwrapped.jpeg)
+![result](media/IMG_6610.MOV_unwrapped.jpeg)
 
 ## *Author Name*
 <!--Remove the below lines and add yours -->
