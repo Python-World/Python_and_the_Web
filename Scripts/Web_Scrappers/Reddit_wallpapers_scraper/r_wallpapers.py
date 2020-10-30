@@ -21,8 +21,3 @@ for submission in subreddit.hot(limit=5 ):
     filename = submission.title + '.jpg'
     #Save the image
     urllib.request.urlretrieve(url, filename)
-
-
-
-
-
