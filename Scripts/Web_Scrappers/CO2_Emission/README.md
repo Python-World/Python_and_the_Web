@@ -12,5 +12,7 @@ Execute in your terminal:
 python co2_emission.py
 ```
 
+![Screenshot](screenshot.png)
+
 ### Author
 [Jr Miranda](https://github.com/jrmiranda)
