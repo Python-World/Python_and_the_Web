@@ -21,8 +21,7 @@ def run(update):
         if str(stdout) or str(stderr):
             out = f'{stdout} \n{stderr}'
             return out
-        else:
-            return None
+        return None
 
     input_text = update.message.text
     out = func(input_text)
