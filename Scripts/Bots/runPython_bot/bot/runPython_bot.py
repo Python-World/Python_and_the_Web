@@ -22,22 +22,43 @@ If I am being used by too many people, there may be delay in response as I am de
 # the module docstring will be sent to the user if the bot is alive
 
 from telegram.ext import CommandHandler, MessageHandler, Filters, Updater
+# python-telegram-bot is a Pythonic Wrapper to the core Telegram API
+# it helps us to be DRY by giving us convinient wrapper functions to deal with Telegram API
+# you can install it by pip install python-telegram-bot --upgrade
+# learn more about it here https://github.com/python-telegram-bot/python-telegram-bot
+
+
 from .execute_code import run
 
+# read the token for authenticating our bot
 with open('token.txt') as f:
     tok = f.readline().strip()
 
 
 def bot():
+    '''
+    Running this function runs the bot
+    You may learn more from this tutorial 
+    https://github.com/python-telegram-bot/python-telegram-bot/wiki/Extensions-%E2%80%93-Your-first-Bot
+    '''
+
     updater = Updater(token=tok)
 
     dispatcher = updater.dispatcher
 
     def start(update, context):
+        '''
+        This fuction replies to the start command
+        '''
+
         context.bot.send_message(
             chat_id=update.effective_chat.id, text=f'{__doc__}\n', parse_mode='Markdown')
+        # for more info on parse modes see https://python-telegram-bot.readthedocs.io/en/stable/telegram.parsemode.html
 
     def reply(update, context):
+        '''
+        This function replies to any non-command messages
+        '''
         returned_val = run(update)
         context.bot.send_message(
             chat_id=update.effective_chat.id, text=returned_val)
@@ -49,3 +70,6 @@ def bot():
     dispatcher.add_handler(message_handler)
 
     updater.start_polling()
+    # Search google to know what is polling... 
+    # i came to know while building this project
+    # this can be stopped by interrupting the terminal by `Ctrl+C`
