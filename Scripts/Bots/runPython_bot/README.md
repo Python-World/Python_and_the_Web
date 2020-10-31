@@ -21,6 +21,8 @@ You may check whether the bot is alive or not, by clicking on the start command.
 
 You may use pythonic expressions to easily calculate any complex problem. Or you may test your algorithms on the go.
 
+> If you are viewing from a smartphone, click on the gif to view full screen ...
+
 ![runPython_bot](https://user-images.githubusercontent.com/66209958/97753037-1e383880-1b1b-11eb-863e-bcf82006820b.gif)
 
 ## Deploy
@@ -91,4 +93,3 @@ You may connect with me by clicking on any of the icons below !
 <a href = "https://www.youtube.com/channel/UCcEbN0d8iLTB6ZWBE_IDugg" > <img src = "https://github.com/aahnik/aahnik/blob/master/social_media_logos/youtube.png?raw=true" alt = "youtube" > </a >
 <a href = "https://stackoverflow.com/users/13523305/aahnik-daw" > <img src = "https://github.com/aahnik/aahnik/blob/master/social_media_logos/stackOverflow.png?raw=true" alt = "stackOverflow" > </a >
 <a href = "https://dev.to/aahnik" > <img src = "https://github.com/aahnik/aahnik/blob/master/social_media_logos/dev.png?raw=true" alt = "dev" > </a >
-
