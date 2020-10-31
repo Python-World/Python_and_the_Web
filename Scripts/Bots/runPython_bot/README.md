@@ -14,8 +14,8 @@ Run python code from your telegram chat !
 
 You can find this bot on Telegram: click on this [link](https://t.me/@runPython_bot) or search `@runPython_bot` on telegram. The spelling is case sensitive.
 
-Currently this bot is deployed on [Python Anywhere](https://www.pythonanywhere.com/) free Beginner Account.
-You may check whether the bot is alive or not, by clicking on the start command. If the bot reponds, it is alive.
+This bot is deployed on [Python Anywhere](https://www.pythonanywhere.com/) free Beginner Account.
+You may check whether the bot is alive or not, by clicking on the start command. If the bot responds, it is alive.
 
 ## Example Use
 
@@ -25,15 +25,15 @@ You may use pythonic expressions to easily calculate any complex problem. Or you
 
 ## Deploy
 
-You can easily *deploy this bot* on [Python Anywhere](https://www.pythonanywhere.com/) or on your **local machine**by following the below steps:
+You can easily *deploy this bot* on [Python Anywhere](https://www.pythonanywhere.com/) or your **local machine** by following the below steps:
 
-> Note: While pasting on your machine terminal you should use `Ctrl+Shift+V` but make sure to use `Ctrl+V` to paste in the Python Anywhere bash console from browser.
+> Note: While pasting on your machine terminal you should use `Ctrl+Shift+V` but make sure to use `Ctrl+V` to paste in the Python Anywhere bash console from the browser.
 
 Create a free Python Anywhere account and open a Bash Console, which has everything pre-loaded.
 
-If you are planning to deploy on your **own machine**, make sure to have `Python3+`, `pip`, and `make`. 
+If you are planning to deploy on your **own machine**, make sure to have `Python3+`, `pip`, and `make`.
 
-The following instructions will work smoothly on Linux and Mac. If you are on Windows, you may have to make slight modifications. Google is your best friend here.
+The following instructions will work smoothly on *Linux* and *Mac*. If you are on Windows, you may have to make slight modifications. Google is your best friend here.
 
 - Create a `projects` directory and move into it
 
@@ -53,11 +53,11 @@ The following instructions will work smoothly on Linux and Mac. If you are on Wi
 
 - Now add the token in the first line of `token.txt`.Run `cat > token.txt` -> Paste the token -> Press `Ctrl+D`
 
-- Now its time to install all dependancies. Simply run `make requirements`
+- To install all dependencies. Simply run `make requirements`
 
 - Activate the bot by running `make start`
 
-- You may now close the console window from your browser, but the bot will still continue running.
+- You may now close the Python Anywhere bash console window from your browser, but the bot will continue running.
 
 Your bot is now up and running, Enjoy ! 😊
 
@@ -65,22 +65,22 @@ To stop the bot, Press `Ctrl+C`. To restart the bot run `make start`
 
 ## Limitations
 
-Currently the bot is deployed on a Free Tier account of Python Anywhere.
+Currently, the bot is deployed on a Free Tier account of Python Anywhere.
 
-For security and performance reasons,you **cannot** do the following with the bot:
+For security and performance reasons, you **cannot** do the following with the bot:
 
 - import any package
 - run the `input()` function
 - run the `open()` function
-- Execute a piece of code which takes longer than 30s to execute.
+- Execute a piece of code which takes longer than 30 seconds to execute.
 
 You may overcome these limitations by tweaking the code a little bit and running the bot on your own server.
 
-## Shameless Plug
+## The Shameless Plug
 
-Author: Aahnik Daw.
+Authored by **Aahnik Daw**.
 
-You may get in touch with me by clicking any of the icons below !
+You may connect with me by clicking on any of the icons below !
 
 <a href = "https://medium.com/@aahnikdaw" > <img src = "https://github.com/aahnik/aahnik/blob/master/social_media_logos/medium.png?raw=true" alt = "medium" > </a >
 <a href = "https://www.facebook.com/aahnik.daw" > <img src = "https://github.com/aahnik/aahnik/blob/master/social_media_logos/facebook.png?raw=true" alt = "facebook" > </a >
@@ -91,3 +91,4 @@ You may get in touch with me by clicking any of the icons below !
 <a href = "https://www.youtube.com/channel/UCcEbN0d8iLTB6ZWBE_IDugg" > <img src = "https://github.com/aahnik/aahnik/blob/master/social_media_logos/youtube.png?raw=true" alt = "youtube" > </a >
 <a href = "https://stackoverflow.com/users/13523305/aahnik-daw" > <img src = "https://github.com/aahnik/aahnik/blob/master/social_media_logos/stackOverflow.png?raw=true" alt = "stackOverflow" > </a >
 <a href = "https://dev.to/aahnik" > <img src = "https://github.com/aahnik/aahnik/blob/master/social_media_logos/dev.png?raw=true" alt = "dev" > </a >
+
