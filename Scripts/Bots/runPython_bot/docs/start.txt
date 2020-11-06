@@ -1,0 +1,5 @@
+Hi! I'm the *Python Runner* bot 😀 
+
+You can run python code, right from your chat. _Start using me to figure out more about me_. 
+
+To learn usage send /help.
