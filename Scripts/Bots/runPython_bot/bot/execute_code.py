@@ -4,8 +4,8 @@ This module is responsible for handling the execution of python code given by th
 import logging
 from subprocess import TimeoutExpired
 import subprocess
-from .config import banned, timeout, timeout_message, restricted_message
 import multiprocessing
+from .config import banned, TIMEOUT, timeout_message, restricted_message
 
 
 def contains_restricted(input_text):
@@ -18,35 +18,42 @@ def contains_restricted(input_text):
 
 def run(update) -> str:
     '''
-    This function takes an Telegram `update` object, passed by the `reply` function in runPython_bot module, and returns the result after executing update.message.text.
+    This function takes an Telegram `update` object,
+    passed by the `reply` function in the runPython_bot module,
+    and returns the result after executing update.message.text.
     '''
 
     def execute_py(code):
         '''
-        This function takes a string of python code and executes it in a subprocess of timeout 30s, and returns the standard out and standard error.
+        This function takes a string of python code
+        and executes code in a subprocess of timeout 30s,
+        Returns the standard out and standard error.
 
-        Learn more about subprocesses from the official docs of Python 
+        Learn more about subprocesses from the official docs of Python
         https://docs.python.org/3/library/subprocess.html
 
-        For a shorter intro read this stack overflow answer 
+        For a shorter intro read this stack overflow answer
         https://stackoverflow.com/questions/64606880/how-to-get-the-python-interactive-shell-output-of-a-python-code-in-a-variable
         '''
 
         proc = subprocess.Popen(['/usr/bin/python3.8', '-c', code],
-                                stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+                                stdin=subprocess.PIPE,
+                                stdout=subprocess.PIPE,
+                                stderr=subprocess.PIPE)
         try:
-            stdout, stderr = proc.communicate(timeout=timeout)
+            stdout, stderr = proc.communicate(timeout=TIMEOUT)
             return stdout.decode('utf-8'), stderr.decode('utf-8')
         except TimeoutExpired:
             return '', timeout_message
-        except Exception as e:
-            return '', f'Problem occured \n{e}'
+        except Exception as error:
+            return '', f'Problem occured \n{error}'
         finally:
             proc.kill()
 
     def func(input_text: str):
         '''
-        This function is a helper function which does some validation job before passing the code to execute_py.
+        This function is a helper function which does some validation job before passing
+        the code to execute_py.
         '''
 
         if contains_restricted(input_text):
@@ -62,11 +69,10 @@ def run(update) -> str:
 
             out = func(input_text)
             return out
-        else:
-            return 'update.message.text was None'
-    except Exception as e:
+        return 'update.message.text was None'
+    except Exception as error:
         msg = 'Error in handling update.message.text'
-        logging.log(level=40, msg=msg)
+        logging.log(level=40, msg=error)
         return msg
 
 
@@ -80,24 +86,25 @@ def eval_py(input_text: str):
         '''wrapper for eval'''
         try:
             return_val[input_text] = str(eval(input_text))
-        except Exception as e:
+        except Exception as error:
             return_val[
-                input_text] = f'''😔 /e feeds your expression to python's eval function, and the following error occured: \n\n{e}'''
+                input_text] = f'''😔 /e feeds your expression to python's eval function.
+                The following error occured: \n\n{error}'''
 
     if contains_restricted(input_text):
         return restricted_message
 
     # using multiprocessing and getting value returned by target function
-    m = multiprocessing.Manager()
-    return_val = m.dict()  # enable target function to return a value
+    manger = multiprocessing.Manager()
+    return_val = manger.dict()  # enable target function to return a value
 
-    p = multiprocessing.Process(target=evaluate, args=(input_text, return_val))
-    p.start()
-    p.join(6)  # allow the process to run for 6 seconds
-    if p.is_alive():
+    process = multiprocessing.Process(
+        target=evaluate, args=(input_text, return_val))
+    process.start()
+    process.join(6)  # allow the process to run for 6 seconds
+    if process.is_alive():
         # kill the process if it is still alive
-        p.kill()
+        process.kill()
         return timeout_message
-    else:
-        output = return_val[input_text]
-        return output
+    output = return_val[input_text]
+    return output
