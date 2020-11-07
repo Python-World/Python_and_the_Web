@@ -1,31 +1,31 @@
-# runPython_bot
+# run-py-bot
 
-Run python code from your telegram chat !
+Run python code from your telegram chat!
 
-[![GitHub license](https://img.shields.io/github/license/aahnik/lovely-telegram)](https://github.com/aahnik/lovely-telegram/blob/main/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/aahnik/lovely-telegram)](https://github.com/aahnik/run-py-bot/blob/main/LICENSE)
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 [![Maintenance Yes](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://gitHub.com/aahnik/REPO/graphs/commit-activity)
 
-![RunPythonBot](https://user-images.githubusercontent.com/66209958/97750350-9d773d80-1b16-11eb-89a5-7626f5547a10.png)
+![RunPythonBot](https://github.com/aahnik/run-py-bot/blob/main/docs/images/runPython_bot.png?raw=true)
 
 <!-- A simple bot that runs python code. Free and Open Source. For more info visit http://bit.ly/runPython -->
 
-## Find on Telegram
+## 🕵️ Find on Telegram
 
-You can find this bot on Telegram: click on this [link](https://t.me/@runPython_bot) or search `@runPython_bot` on telegram. The spelling is case sensitive.
+You can find this bot on Telegram as [@runPython_bot](https://telegram.me/runPython_bot).
 
 This bot is deployed on [Python Anywhere](https://www.pythonanywhere.com/) free Beginner Account.
 You may check whether the bot is alive or not, by clicking on the start command. If the bot responds, it is alive.
 
-## Example Use
+## 💬 Example Use
 
 You may use pythonic expressions to easily calculate any complex problem. Or you may test your algorithms on the go.
 
 > If you are viewing from a smartphone, click on the gif to view full screen ...
 
-![runPython_bot](https://user-images.githubusercontent.com/66209958/97753037-1e383880-1b1b-11eb-863e-bcf82006820b.gif)
+![runPython_bot](https://github.com/aahnik/run-py-bot/blob/main/docs/images/runPython_bot_gif.gif?raw=true)
 
-## Deploy
+## ⚡ Deploy
 
 You can easily *deploy this bot* on [Python Anywhere](https://www.pythonanywhere.com/) or your **local machine** by following the below steps:
 
@@ -33,39 +33,32 @@ You can easily *deploy this bot* on [Python Anywhere](https://www.pythonanywhere
 
 Create a free Python Anywhere account and open a Bash Console, which has everything pre-loaded.
 
-If you are planning to deploy on your **own machine**, make sure to have `Python3+`, `pip`, and `make`.
+If you are planning to deploy on your **own machine**, make sure to have `Python3+`, `pip`.
 
 The following instructions will work smoothly on *Linux* and *Mac*. If you are on Windows, you may have to make slight modifications. Google is your best friend here.
 
-- Create a `projects` directory and move into it
+- Clone this repository and move into it.
 
-      mkdir projects && cd projects
-
-- Clone this repository containing the collection of bots
-  
-      git clone https://github.com/aahnik/lovely-telegram.git
-
-- Delete all other folders except the folder containing this bot
-  
-      find ./lovely-telegram -mindepth 1 ! -regex '^./lovely-telegram/runPython_bot\(/.*\)?' -delete
-
-- Now move into the directory which contains this README file, you are reading now.
-
-      cd lovely-telegram/runPython_bot
+      git clone https://github.com/aahnik/run-py-bot.git && cd run-py-bot
 
 - Now add the token in the first line of `token.txt`.Run `cat > token.txt` -> Paste the token -> Press `Ctrl+D`
 
-- To install all dependencies. Simply run `make requirements`
+- Create a virtual environment and install dependencies.
 
-- Activate the bot by running `make start`
+      python3.8 -m venv venv && source venv/bin/activate
+      python3.8 -m pip install -r requirements.txt
+
+- Activate the bot by running `python3.8 start.py`
 
 - You may now close the Python Anywhere bash console window from your browser, but the bot will continue running.
 
 Your bot is now up and running, Enjoy ! 😊
 
-To stop the bot, Press `Ctrl+C`. To restart the bot run `make start`
+All the logs will have the timestamp in the time-zone specified in the `start.py` file.
 
-## Limitations
+To stop the bot, press `Ctrl+C`. You may update the code running in your server by `git fetch && git pull`.
+
+## 😑 Limitations
 
 Currently, the bot is deployed on a Free Tier account of Python Anywhere.
 
@@ -74,11 +67,11 @@ For security and performance reasons, you **cannot** do the following with the b
 - import any package
 - run the `input()` function
 - run the `open()` function
-- Execute a piece of code which takes longer than 30 seconds to execute.
+- Execute a piece of code which takes longer than *6 seconds* to execute.
 
-You may overcome these limitations by tweaking the code a little bit and running the bot on your own server.
+You may overcome these limitations by changing the `config.py` file in the `bot` subdirectory and running the bot on your own server.
 
-## The Shameless Plug
+## 🤗 The Shameless Plug
 
 Authored by **Aahnik Daw**.
 

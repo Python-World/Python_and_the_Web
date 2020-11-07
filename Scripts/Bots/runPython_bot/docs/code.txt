@@ -1,0 +1,8 @@
+This bot has been built by @AahnikDaw and you can find the source code on GitHub at.
+
+Language: Python
+Uses: Telegram Bot API via python-telegram-bot wrapper
+License: MIT
+Link: https://github.com/aahnik/run-py-bot
+
+If you find a bug, or want to request a new feature you may create a new issue in the GitHub repo of this project. Code Contributions are most welcome. 
