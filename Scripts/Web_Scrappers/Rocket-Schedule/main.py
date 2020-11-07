@@ -17,7 +17,8 @@ for s in range(1, 8):
     r = requests.get(URL)
 
     soup = BeautifulSoup(r.content, 'html.parser')
-    f = soup.find_all("h4", {"itemprop": "name"})
+    soup.find('div', id="upcoming_launches_header").decompose()
+    f = soup.find_all("h4")
     f1 = soup.find_all("div", {"class": "launch_date rlt_date"})
     f2 = soup.find_all("div", {"class": "rlt-provider"})
     f3 = soup.find_all("div", {"class": "rlt-location"})
