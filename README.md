@@ -38,6 +38,12 @@ We now have a section for miscellaneous scripts/programs as well.
 
 [Join WhatsApp group](https://chat.whatsapp.com/Ghp25kidWLaGrAVA0G0GAa)
 
+### *Stargazers Over Time!* 
+
+[![Stargazers over time](https://starchart.cc/Python-World/Python_and_the_Web.svg)](https://starchart.cc/Python-World/Python_and_the_Web)
+
+Thank you everyone for being a part of **[Python-World](https://python-world.github.io/)**.
+
 ## *Contributors* ✨
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
