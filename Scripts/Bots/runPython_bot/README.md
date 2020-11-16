@@ -2,7 +2,7 @@
 
 Run python code from your telegram chat!
 
-[![GitHub license](https://img.shields.io/github/license/aahnik/lovely-telegram)](https://github.com/aahnik/run-py-bot/blob/main/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/aahnik/run-py-bot)](https://github.com/aahnik/run-py-bot/blob/main/LICENSE)
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 [![Maintenance Yes](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://gitHub.com/aahnik/REPO/graphs/commit-activity)
 
@@ -12,10 +12,18 @@ Run python code from your telegram chat!
 
 ## 🕵️ Find on Telegram
 
-You can find this bot on Telegram as [@runPython_bot](https://telegram.me/runPython_bot).
+You can find this bot on Telegram as [@runPython_bot](https://telegram.me/runPython_bot). 
+Note: I am constantly learning new concepts and I may update the source code running behind the bot. 
 
-This bot is deployed on [Python Anywhere](https://www.pythonanywhere.com/) free Beginner Account.
-You may check whether the bot is alive or not, by clicking on the start command. If the bot responds, it is alive.
+Here is the [link to the repo](https://github.com/aahnik/run-py-bot) which has the latest source for this bot. ![GitHub forks](https://img.shields.io/github/forks/aahnik/run-py-bot?style=social) ![GitHub Repo stars](https://img.shields.io/github/stars/aahnik/run-py-bot?style=social)
+
+
+## 😍 Featured in 
+
+1. Tweet by [Dev Community](https://twitter.com/ThePracticalDev/status/1325386583537803264)
+2. Tweet by [The Python Dev](https://twitter.com/The_Python_DEV/status/1325237102058016768)
+3. Dor Moshe's [Newsletter](https://dormoshe.io/newsletters/ag/python/7?utm_source=twitter&utm_campaign=twitter)
+4. My YouTube [Video](https://youtu.be/nCuQ-7Rw0gM) [![YouTube Video Views](https://img.shields.io/youtube/views/nCuQ-7Rw0gM?style=social)](https://youtu.be/nCuQ-7Rw0gM)
 
 ## 💬 Example Use
 
@@ -37,9 +45,10 @@ If you are planning to deploy on your **own machine**, make sure to have `Python
 
 The following instructions will work smoothly on *Linux* and *Mac*. If you are on Windows, you may have to make slight modifications. Google is your best friend here.
 
-- Clone this repository and move into it.
-
-      git clone https://github.com/aahnik/run-py-bot.git && cd run-py-bot
+- Clone this repository and move into this directory which has this README you are reading.
+```
+git clone https://github.com/Python-World/Python_and_the_Web.git && cd Scripts/Bots/runPython_bot
+```
 
 - Now add the token in the first line of `token.txt`.Run `cat > token.txt` -> Paste the token -> Press `Ctrl+D`
 
@@ -71,18 +80,19 @@ For security and performance reasons, you **cannot** do the following with the b
 
 You may overcome these limitations by changing the `config.py` file in the `bot` subdirectory and running the bot on your own server.
 
+As I am constantly learning new concepts, the [latest version](https://github.com/aahnik/run-py-bot) of this bot will not have these limitations.
+
 ## 🤗 The Shameless Plug
 
 Authored by **Aahnik Daw**.
 
-You may connect with me by clicking on any of the icons below !
+You may click on any of the icons below to connect with me.
 
-<a href = "https://medium.com/@aahnikdaw" > <img src = "https://github.com/aahnik/aahnik/blob/master/social_media_logos/medium.png?raw=true" alt = "medium" > </a >
-<a href = "https://www.facebook.com/aahnik.daw" > <img src = "https://github.com/aahnik/aahnik/blob/master/social_media_logos/facebook.png?raw=true" alt = "facebook" > </a >
-<a href = "https://www.linkedin.com/in/aahnik-daw-067a011b3/" > <img src = "https://github.com/aahnik/aahnik/blob/master/social_media_logos/linkedin.png?raw=true" alt = "linkedin" > </a >
-<a href = "https://t.me/AahniKDaw" > <img src = "https://github.com/aahnik/aahnik/blob/master/social_media_logos/telegram.png?raw=true" alt = "telegram" > </a >
-<a href = "https://twitter.com/AahnikD" > <img src = "https://github.com/aahnik/aahnik/blob/master/social_media_logos/twitter.png?raw=true" alt = "twitter" > </a >
-<a href = "https://www.quora.com/profile/Aahnik-Daw" > <img src = "https://github.com/aahnik/aahnik/blob/master/social_media_logos/quora.png?raw=true" alt = "quora" > </a >
-<a href = "https://www.youtube.com/channel/UCcEbN0d8iLTB6ZWBE_IDugg" > <img src = "https://github.com/aahnik/aahnik/blob/master/social_media_logos/youtube.png?raw=true" alt = "youtube" > </a >
-<a href = "https://stackoverflow.com/users/13523305/aahnik-daw" > <img src = "https://github.com/aahnik/aahnik/blob/master/social_media_logos/stackOverflow.png?raw=true" alt = "stackOverflow" > </a >
-<a href = "https://dev.to/aahnik" > <img src = "https://github.com/aahnik/aahnik/blob/master/social_media_logos/dev.png?raw=true" alt = "dev" > </a >
+<a href = "https://twitter.com/AahnikD" > <img src = "https://github.com/aahnik/aahnik/blob/master/svg_assets/twitter.svg?raw=true" alt = "twitter" width=35> </a>
+<a href = "https://medium.com/@aahnik" > <img src = "https://github.com/aahnik/aahnik/blob/master/svg_assets/medium.svg?raw=true" alt = "medium" width=35> </a>
+<a href = "https://www.facebook.com/aahnik.daw" > <img src = "https://github.com/aahnik/aahnik/blob/master/svg_assets/facebook.svg?raw=true" alt = "facebook" width=35> </a>
+<a href = "https://www.linkedin.com/in/aahnik-daw-067a011b3/" > <img src = "https://github.com/aahnik/aahnik/blob/master/svg_assets/linkedin.svg?raw=true" alt = "linkedin" width=35> </a>
+<a href = "https://dev.to/aahnik" > <img src = "https://github.com/aahnik/aahnik/blob/master/svg_assets/dev_to.svg?raw=true" alt = "dev_to" width=35> </a>
+<a href = "https://stackoverflow.com/users/13523305/aahnik-daw" > <img src = "https://github.com/aahnik/aahnik/blob/master/svg_assets/stackoverflow.svg?raw=true" alt = "stackoverflow" width=35> </a>
+<a href = "https://telegram.me/AahnikD" > <img src = "https://github.com/aahnik/aahnik/blob/master/svg_assets/telegram.svg?raw=true" alt = "telegram" width=35> </a>
+<a href = "https://www.youtube.com/channel/UCcEbN0d8iLTB6ZWBE_IDugg" > <img src = "https://github.com/aahnik/aahnik/blob/master/svg_assets/youtube.svg?raw=true" alt = "youtube" width=35> </a>
