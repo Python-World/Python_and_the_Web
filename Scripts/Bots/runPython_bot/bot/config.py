@@ -3,7 +3,7 @@ Configs for the bot
 '''
 
 # expressions which are banned
-banned = ['quit', 'input', 'open', 'import', 'exit']
+banned = ['quit', 'input', 'open', 'import', 'exit','exec']
 
 # timeout in seconds
 TIMEOUT = 6
