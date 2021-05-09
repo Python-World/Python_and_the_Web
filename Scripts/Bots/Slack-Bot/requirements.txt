@@ -1,18 +1,18 @@
--i https://pypi.org/simple
-aiohttp==3.6.2
+-i https://pypi.org/simple/
+aiohttp==3.7.4
 async-timeout==3.0.1
-attrs==20.2.0
+attrs==21.2.0
 chardet==3.0.4
 click==7.1.2
 flask==1.1.2
-idna==2.10
+idna==3.1
 itsdangerous==1.1.0
-jinja2==2.11.2
+jinja2==2.11.3
 markupsafe==1.1.1
-multidict==4.7.6
+multidict==5.1.0
 pyee==7.0.4
 slackclient==2.9.1
 slackeventsapi==2.2.1
-typing-extensions==3.7.4.3 ; python_version < '3.8'
+typing-extensions==3.10.0.0 ; python_version < '3.8'
 werkzeug==1.0.1
-yarl==1.6.0
+yarl==1.6.3
