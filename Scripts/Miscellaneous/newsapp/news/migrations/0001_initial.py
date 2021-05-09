@@ -7,15 +7,14 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='readers',
+            name="readers",
             fields=[
-                ('email', models.TextField(primary_key=True, serialize=False)),
-                ('password', models.TextField()),
+                ("email", models.TextField(primary_key=True, serialize=False)),
+                ("password", models.TextField()),
             ],
         ),
     ]

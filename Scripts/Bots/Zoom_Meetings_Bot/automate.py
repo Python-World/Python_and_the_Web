@@ -9,7 +9,7 @@ def zoom_automate(meeting_id, meeting_passcode):
     # Opens the zoom app
     # Change the path to the one where zoom app is stored
     subprocess.Popen("C:\\Users\\pc\\AppData\\Roaming\\Zoom\\bin\\Zoom.exe")
-    
+
     ## Opening time for App
     time.sleep(10)
 
@@ -52,13 +52,13 @@ def zoom_automate(meeting_id, meeting_passcode):
     # To mute using shortcut key - "Alt+A"
     mute = Controller()
     mute.press(Key.alt_l)
-    mute.press('a')
-    mute.release('a')
+    mute.press("a")
+    mute.release("a")
     mute.release(Key.alt_l)
 
 
 # Automating Zoom Meeting
-if __name__ == "__main__":                
+if __name__ == "__main__":
     meeting_id = input("Meeting Id: ")
     meeting_passcode = input("Meeting Passcode: ")
     print("\nZoom App is starting.......")

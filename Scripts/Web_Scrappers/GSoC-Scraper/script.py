@@ -127,7 +127,7 @@ try:
                 params=params,
             )
             json_data = None
-            
+
             json_data = response.json()
 
             for index in range(len(json_data["results"])):

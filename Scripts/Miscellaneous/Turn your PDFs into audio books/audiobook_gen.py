@@ -8,14 +8,18 @@ def main(book, pg_no):
 
     speaker = pyttsx3.init()
 
-    for num in range((pg_no-1), pages):
+    for num in range((pg_no - 1), pages):
         page = pdf_Reader.getPage(num)
         text = page.extractText()
         speaker.say(text)
         speaker.runAndWait()
-    
+
 
 if __name__ == "__main__":
-    book = open(input('Enter the book name: '), 'rb')
-    pg_no = int(input("Enter the page number from which you want the system to start reading text: "))
+    book = open(input("Enter the book name: "), "rb")
+    pg_no = int(
+        input(
+            "Enter the page number from which you want the system to start reading text: "
+        )
+    )
     main(book, pg_no)

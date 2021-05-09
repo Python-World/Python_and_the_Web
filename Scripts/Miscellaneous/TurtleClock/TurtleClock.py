@@ -4,9 +4,9 @@ import turtle
 
 wn = turtle.Screen()
 spongebob = turtle.Turtle()  # create a new turtle named spongebob
-colors = ['red', 'blue', 'green']
+colors = ["red", "blue", "green"]
 spongebob.speed(0)
-spongebob.shape('turtle')
+spongebob.shape("turtle")
 spongebob.penup()
 spongebob.hideturtle()
 spongebob.left(60)
@@ -31,8 +31,8 @@ for i in range(1, 13):
         spongebob.backward(160)
     spongebob.right(6)
 
-spongebob.color('orange')
-spongebob.shape('circle')
+spongebob.color("orange")
+spongebob.shape("circle")
 spongebob.stamp()
 spongebob.pendown()
 # It's spongebob's rest time so...
@@ -61,7 +61,9 @@ while True:
     print(f"{h:02}:{m:02}:{s:02} {'am' if h < 12 else 'pm'}")
 
     # draw Hour Hand
-    angle = h * 30 + m * (1 / 2) + s * (1 / 120) - 90  # subtract 90 deg bcz turtle starts at 3 o'clock not at 12 o'clock
+    angle = (
+        h * 30 + m * (1 / 2) + s * (1 / 120) - 90
+    )  # subtract 90 deg bcz turtle starts at 3 o'clock not at 12 o'clock
     a.clear()  # clear previous drawings drawn by our turtle
     a.right(angle)
     a.forward(100)
@@ -86,7 +88,7 @@ while True:
 
     # tick every 1 second
     time.sleep(1)
-    #if 1 - (time.time() - starttime) > 0:
+    # if 1 - (time.time() - starttime) > 0:
     #    time.sleep(1 - (time.time() - starttime))
 
 

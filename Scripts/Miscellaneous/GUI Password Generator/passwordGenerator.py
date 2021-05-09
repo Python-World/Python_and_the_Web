@@ -17,7 +17,7 @@ def generate():
             s = []
             s.extend(s1)
             random.shuffle(s)
-            password = "".join(s[0:passLen.get()])
+            password = "".join(s[0 : passLen.get()])
             TextArea.insert(1.0, f"Your password is : {password}")
         elif passType.get() == 2:
             s1 = string.ascii_lowercase
@@ -26,7 +26,7 @@ def generate():
             s.extend(s1)
             s.extend(s2)
             random.shuffle(s)
-            password = "".join(s[0:passLen.get()])
+            password = "".join(s[0 : passLen.get()])
             TextArea.insert(1.0, f"Your password is : {password}")
         elif passType.get() == 3:
             s1 = string.ascii_lowercase
@@ -39,11 +39,12 @@ def generate():
             s.extend(s3)
             s.extend(s4)
             random.shuffle(s)
-            password = "".join(s[0:passLen.get()])
+            password = "".join(s[0 : passLen.get()])
             TextArea.insert(1.0, f"Your password is : {password}")
 
         else:
             TextArea.insert(1.0, "Invalid Password Type\n")
+
 
 # Length of password
 passLen = IntVar()
@@ -61,9 +62,18 @@ e1 = Entry(f1, textvariable=passLen)
 e1.grid(row=1, column=5)
 
 # Radiobuttons for password type
-r1 = Radiobutton(f1, text="PIN", value=1, variable=passType, padx=10, font="lucida 12").grid(row=2, column=4, )
-r2 = Radiobutton(f1, text="AlphaNumeric", value=2, variable=passType, padx=10, font="lucida 12").grid(row=3, column=4)
-r3 = Radiobutton(f1, text="Extreme Secure", value=3, variable=passType, padx=10, font="lucida 12").grid(row=4, column=4)
+r1 = Radiobutton(
+    f1, text="PIN", value=1, variable=passType, padx=10, font="lucida 12"
+).grid(
+    row=2,
+    column=4,
+)
+r2 = Radiobutton(
+    f1, text="AlphaNumeric", value=2, variable=passType, padx=10, font="lucida 12"
+).grid(row=3, column=4)
+r3 = Radiobutton(
+    f1, text="Extreme Secure", value=3, variable=passType, padx=10, font="lucida 12"
+).grid(row=4, column=4)
 
 # Submit Button
 b1 = Button(f1, text="Submit", command=generate, font="lucida 12")

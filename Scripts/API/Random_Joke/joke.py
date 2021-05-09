@@ -18,9 +18,7 @@ DEFAULT_FORMAT = f"""{fg(46) + attr("bold") + attr("dim")}Category: {rst + fg(21
 
 {{joke}}{rst}"""
 
-ERROR_MSG = (
-    f"{fg(124) + attr('bold')}\u2718 Error: {{error_message}}"
-)
+ERROR_MSG = f"{fg(124) + attr('bold')}\u2718 Error: {{error_message}}"
 
 
 @app.command(

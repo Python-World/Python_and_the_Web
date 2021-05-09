@@ -1,3 +1,1 @@
-
-
 # Create your models here.

@@ -10,7 +10,9 @@ frame_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
 # FourCC Codec to identify the video file format
 fourcc = cv2.VideoWriter_fourcc(*"XVID")
-saved_frame = cv2.VideoWriter("car_detection.avi", fourcc, 20.0, (frame_width, frame_height))
+saved_frame = cv2.VideoWriter(
+    "car_detection.avi", fourcc, 20.0, (frame_width, frame_height)
+)
 
 # Load the model
 model = cv2.CascadeClassifier("haarcascade_car.xml")

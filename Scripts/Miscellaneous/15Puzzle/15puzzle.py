@@ -11,14 +11,14 @@ class Puzzle(Frame):
         Frame.__init__(self)
 
         self.grid()
-        self.master.title('15 Puzzle :: Made With ❤️ By Advik')
+        self.master.title("15 Puzzle :: Made With ❤️ By Advik")
 
-        self.master.bind('<Up>', self.move_up)
-        self.master.bind('<Down>', self.move_down)
-        self.master.bind('<Left>', self.move_left)
-        self.master.bind('<Right>', self.move_right)
+        self.master.bind("<Up>", self.move_up)
+        self.master.bind("<Down>", self.move_down)
+        self.master.bind("<Left>", self.move_left)
+        self.master.bind("<Right>", self.move_right)
 
-        self.master.bind('<Escape>', self.new_game)
+        self.master.bind("<Escape>", self.new_game)
 
         self.score = StringVar(self.master)
         self.init_grid()
@@ -32,7 +32,7 @@ class Puzzle(Frame):
 
         # reset the game state
         self.moves = 25
-        self.start_time = time.time()-54
+        self.start_time = time.time() - 54
         self.game_grid = list(range(1, c.GRID_LEN ** 2)) + [0]
         self.game_grid = list(range(0, c.GRID_LEN * c.GRID_LEN))
         random.shuffle(self.game_grid)
@@ -44,25 +44,39 @@ class Puzzle(Frame):
         self.update_grid()
 
     def game_over(self, *args):
-        self.score.set(f"{self.moves} moves and {convert_time(time.time() - self.start_time)}")
+        self.score.set(
+            f"{self.moves} moves and {convert_time(time.time() - self.start_time)}"
+        )
         self.game_over_dialog.place(relx=0.5, rely=0.5, anchor=CENTER)
 
     def init_grid(self):
         self.grid_cells = []
 
         # the background
-        self.game_scene = Frame(self, bg=c.BACKGROUND_COLOR_GAME,
-                                width=c.SIZE, height=c.SIZE)
+        self.game_scene = Frame(
+            self, bg=c.BACKGROUND_COLOR_GAME, width=c.SIZE, height=c.SIZE
+        )
         self.game_scene.grid()
 
         # game grid
         for i in range(c.GRID_LEN * c.GRID_LEN):
             cell = Frame(self.game_scene, bg=c.CELL_COLOR_EMPTY)
-            cell.grid(row=i // c.GRID_LEN, column=i % c.GRID_LEN,
-                      padx=c.GRID_PADDING, pady=c.GRID_PADDING)
-            t = Label(master=cell, text="", bg=c.CELL_COLOR_EMPTY,
-                      fg=c.TEXT_COLOR, justify=CENTER, font=c.FONT,
-                      width=4, height=2)
+            cell.grid(
+                row=i // c.GRID_LEN,
+                column=i % c.GRID_LEN,
+                padx=c.GRID_PADDING,
+                pady=c.GRID_PADDING,
+            )
+            t = Label(
+                master=cell,
+                text="",
+                bg=c.CELL_COLOR_EMPTY,
+                fg=c.TEXT_COLOR,
+                justify=CENTER,
+                font=c.FONT,
+                width=4,
+                height=2,
+            )
             t.bind("<Button-1>", lambda event, i=i: self.move_cell(i))
             t.grid()
 
@@ -78,10 +92,24 @@ class Puzzle(Frame):
         l.image = image
         l.grid(columnspan=2, padx=10, pady=5)
         # tell the performance
-        Label(f, text="It took you", bg="white", fg="#534648", font="Arial 16").grid(row=1, column=0, pady=10)
-        Label(f, textvariable=self.score, bg="white", fg="#534648", font="Arial 16 bold").grid(row=1, column=1, pady=10)
+        Label(f, text="It took you", bg="white", fg="#534648", font="Arial 16").grid(
+            row=1, column=0, pady=10
+        )
+        Label(
+            f, textvariable=self.score, bg="white", fg="#534648", font="Arial 16 bold"
+        ).grid(row=1, column=1, pady=10)
         # play again button
-        btn = Label(f, text="Play Again", bg="#3d2963", fg="white", font="Arial 22 bold", justify=CENTER, pady=10, padx=20, cursor="hand2")
+        btn = Label(
+            f,
+            text="Play Again",
+            bg="#3d2963",
+            fg="white",
+            font="Arial 22 bold",
+            justify=CENTER,
+            pady=10,
+            padx=20,
+            cursor="hand2",
+        )
         btn.bind("<Enter>", lambda event: btn.config(bg="tomato"))
         btn.bind("<Leave>", lambda event: btn.config(bg="#3d2963"))
         btn.bind("<Button-1>", self.new_game)

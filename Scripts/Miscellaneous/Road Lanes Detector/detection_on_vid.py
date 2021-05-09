@@ -2,7 +2,7 @@
 import cv2
 import numpy as np
 
-# ROI 
+# ROI
 def roi(image, vertices):
     mask = np.zeros_like(image)
     mask_color = 255
@@ -22,27 +22,25 @@ def draw_lines(image, hough_lines):
 
 # Process image for detection
 def process(img):
-    
+
     height = img.shape[0]
     width = img.shape[1]
-    
+
     # ROI vertices
-    roi_vertices = [
-        (0, 650),
-        (2*width/3, 2*height/3),
-        (width, 1000)
-    ]
-    
+    roi_vertices = [(0, 650), (2 * width / 3, 2 * height / 3), (width, 1000)]
+
     # Convert to Grayscale and apply dilations
     gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     gray_img = cv2.dilate(gray_img, kernel=np.ones((3, 3), np.uint8))
-    
+
     # Find edges using Canny method
     canny = cv2.Canny(gray_img, 130, 220)
 
     roi_img = roi(canny, np.array([roi_vertices], np.int32))
 
-    lines = cv2.HoughLinesP(roi_img, 1, np.pi / 180, threshold=10, minLineLength=15, maxLineGap=2)
+    lines = cv2.HoughLinesP(
+        roi_img, 1, np.pi / 180, threshold=10, minLineLength=15, maxLineGap=2
+    )
 
     final_img = draw_lines(img, lines)
 
@@ -55,7 +53,9 @@ frame_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
 frame_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
 fourcc = cv2.VideoWriter_fourcc(*"XVID")
-saved_frame = cv2.VideoWriter("lane_detection.avi", fourcc, 30.0, (frame_width, frame_height))
+saved_frame = cv2.VideoWriter(
+    "lane_detection.avi", fourcc, 30.0, (frame_width, frame_height)
+)
 
 while cap.isOpened():
     ret, frame = cap.read()

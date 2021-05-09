@@ -12,10 +12,10 @@ def get_sentiment(tweets):
         sentiment_dict = analyser.polarity_scores(t)
 
         # Considering compound score for determining tweet sentiment
-        if sentiment_dict['compound'] >= 0.05:
+        if sentiment_dict["compound"] >= 0.05:
             sentiment.append("Positive")
 
-        elif sentiment_dict['compound'] <= - 0.05:
+        elif sentiment_dict["compound"] <= -0.05:
             sentiment.append("Negative")
 
         else:

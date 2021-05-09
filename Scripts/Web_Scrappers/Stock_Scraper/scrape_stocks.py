@@ -45,7 +45,9 @@ def fetch_ticker_names():
 def fetch_daily_data_for_ticker(symbol):
     end_date = datetime.today()
     start_date = end_date - timedelta(weeks=12)
-    return yfinance.download(symbol, start_date.strftime("%Y-%m-%d"), end_date.strftime("%Y-%m-%d"))
+    return yfinance.download(
+        symbol, start_date.strftime("%Y-%m-%d"), end_date.strftime("%Y-%m-%d")
+    )
 
 
 if __name__ == "__main__":

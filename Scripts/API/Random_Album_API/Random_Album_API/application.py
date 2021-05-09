@@ -6,9 +6,7 @@ app = Flask(__name__)
 # Register the blueprint
 app.register_blueprint(random_album)
 # Add the route to the view class
-app.add_url_rule('/v1/random-album/',
-                 view_func=RandomAlbumAPI.as_view(
-                     'random-album'))
+app.add_url_rule("/v1/random-album/", view_func=RandomAlbumAPI.as_view("random-album"))
 
 # Exception Handler
 @app.errorhandler(APIException)

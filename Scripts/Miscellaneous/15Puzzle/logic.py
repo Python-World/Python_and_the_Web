@@ -1,6 +1,6 @@
 def is_solvable(puzzle):
     parity = 0
-    grid_width = int(len(puzzle) ** .5)
+    grid_width = int(len(puzzle) ** 0.5)
     row = 0  # the current row we are on
     blank_row = 0  # the row with the blank tile
     for i, num in enumerate(puzzle):
@@ -35,11 +35,11 @@ def convert_time(seconds):
     """
     seconds = round(seconds)
     minutes, seconds = divmod(seconds, 60)
-    x, y = 'minute', 'second'
+    x, y = "minute", "second"
     if minutes > 1:
-        x += 's'
+        x += "s"
     if seconds > 1:
-        y += 's'
+        y += "s"
     if minutes:
         return f"{minutes} {x} {seconds} {y}"
     return f"{seconds} {y}"

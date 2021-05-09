@@ -31,7 +31,7 @@ def scrapeCodeChef(code):
         )  # parse page source
         head = soup.find_all(["h1"])  # find all h1 tags
         body = soup.find_all(["p", "h3", "ul", "pre"])  # find all p, h3, ul, pre tags
-        with open("problems/" + url[34:] + ".txt", "a") as f: # open .txt file
+        with open("problems/" + url[34:] + ".txt", "a") as f:  # open .txt file
             f.write(head[1].text[:-7] + "\n")  # write title
             for i in range(8, len(body) - 18):
                 f.write(body[i].text + "\n")  # write body

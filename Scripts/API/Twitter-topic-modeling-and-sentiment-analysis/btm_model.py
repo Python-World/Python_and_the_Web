@@ -7,7 +7,7 @@ from biterm.biterm.utility import vec_to_biterms, topic_summuary
 def categorize(tweets_list, number_of_topics=3):
 
     # vectorize texts
-    vec = CountVectorizer(stop_words='english')
+    vec = CountVectorizer(stop_words="english")
     X = vec.fit_transform(tweets_list).toarray()
 
     # get vocabulary
@@ -21,14 +21,14 @@ def categorize(tweets_list, number_of_topics=3):
 
     # print("\n\n Train Online BTM ..")
     for i in range(0, len(biterms), 100):  # prozess chunk of 200 texts
-        biterms_chunk = biterms[i:i + 100]
+        biterms_chunk = biterms[i : i + 100]
         btm.fit(biterms_chunk, iterations=50)
     topics = btm.transform(biterms)
 
-    #print("\n\n Topic coherence ..")
+    # print("\n\n Topic coherence ..")
     res = topic_summuary(btm.phi_wz.T, X, vocab, 6)
 
-    topics_top_words = res['top_words']
+    topics_top_words = res["top_words"]
 
     topic_classification = []
 

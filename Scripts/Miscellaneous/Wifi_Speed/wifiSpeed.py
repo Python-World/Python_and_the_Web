@@ -14,17 +14,17 @@ print("3. Exit\n")
 
 # Run until valid option is selected
 while True:
-	# Getting options from user
-	option = int(input("Enter Option: "))
+    # Getting options from user
+    option = int(input("Enter Option: "))
 
-	if option == 1:
-		download = s.download() / 1000
-		print("Download Speed : %.2f kb/s\n" % download)
-	elif option == 2:
-		upload = s.upload() / 1000
-		print("Upload Speed : %.2f kb/s\n" % upload)
-	elif option == 3:
-		print("\nExiting Successfully...")
-		break
-	else:
-		print("INVALID OPTION SELECTED! Re-", end = "")
+    if option == 1:
+        download = s.download() / 1000
+        print("Download Speed : %.2f kb/s\n" % download)
+    elif option == 2:
+        upload = s.upload() / 1000
+        print("Upload Speed : %.2f kb/s\n" % upload)
+    elif option == 3:
+        print("\nExiting Successfully...")
+        break
+    else:
+        print("INVALID OPTION SELECTED! Re-", end="")

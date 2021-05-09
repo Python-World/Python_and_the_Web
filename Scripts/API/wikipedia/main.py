@@ -1,4 +1,5 @@
 import wikipedia as wiki
+
 """
 author: Monil [https://www.github.com/MNISAR]
 
@@ -14,7 +15,7 @@ def parse(content, esc):
         c = c.split(esc[::-1])
         if len(c) == 1:
             section = c[0]
-            content = ''
+            content = ""
         elif len(c) == 2:
             section = c[0]
             content = c[1]
@@ -26,12 +27,12 @@ def parse(content, esc):
 
 
 def traversal(content, esc):
-    if content != '':
+    if content != "":
         d = parse(content, esc)
         for k, v in d.items():
-            d[k] = traversal(v, esc=esc.strip(" ")+"= ")
-        if '' in d:
-            del d['']
+            d[k] = traversal(v, esc=esc.strip(" ") + "= ")
+        if "" in d:
+            del d[""]
         return d
     return None
 
@@ -44,37 +45,37 @@ def get_all_wiki(name):
         page = wiki.page(search_result[0], auto_suggest=True)
 
         d = {
-            'content': traversal(page.content, esc='\n== '),
-            'url': page.links,
-            'summary': page.summary
+            "content": traversal(page.content, esc="\n== "),
+            "url": page.links,
+            "summary": page.summary,
         }
     return d
 
 
 def main():
     name = input("Enter term to search('' to quit): ")
-    while name != '':
+    while name != "":
         # get name of item to search
         page = get_all_wiki(name)
-        parsed = page['content']
+        parsed = page["content"]
         keys = list(parsed.keys())
-        while isinstance(parsed,dict):
+        while isinstance(parsed, dict):
             for ind, (topic, content) in enumerate(parsed.items()):
                 if content is None:
                     print("\n\n", topic, "\n")
                 else:
-                    print(ind+1, ":", topic)
+                    print(ind + 1, ":", topic)
             if len(parsed) == 1:
                 parsed = list(parsed.values())[0]
             else:
                 tpc_idx = int(input("Enter topic index(-1 to break): "))
                 if tpc_idx == -1:
                     break
-                parsed = parsed[keys[tpc_idx-1]]
+                parsed = parsed[keys[tpc_idx - 1]]
 
-        print("="*20)
+        print("=" * 20)
         name = input("Enter term to search('' to quit): ")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

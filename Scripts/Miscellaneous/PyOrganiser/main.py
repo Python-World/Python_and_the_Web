@@ -1,16 +1,16 @@
 import sys
 import json
-from PyQt5 import QtCore, QtGui, QtWidgets,uic
+from PyQt5 import QtCore, QtGui, QtWidgets, uic
 from PyQt5.QtCore import Qt
 
 qt_creator_file = "media/mainwindow.ui"
 Ui_MainWindow, QtBaseClass = uic.loadUiType(qt_creator_file)
-tick = QtGui.QImage('media/tick.png')
-untick = QtGui.QImage('media/todo.png')
+tick = QtGui.QImage("media/tick.png")
+untick = QtGui.QImage("media/todo.png")
 
 
 class TodoModel(QtCore.QAbstractListModel):
-    def __init__(self, *args, todos=None, database=None, ** kwargs):
+    def __init__(self, *args, todos=None, database=None, **kwargs):
         super(TodoModel, self).__init__(*args, **kwargs)
         self.todos = todos or []
         self.database = database or {}
@@ -54,7 +54,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.model.todos.append((False, text))
             # Trigger refresh.
             self.model.layoutChanged.emit()
-            # Empty the input
+            # Empty the input
             self.todoEdit.setText("")
             self.save()
             self.changeProgress()
@@ -106,24 +106,24 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         total = len(self.model.todos)
         done = 0
         for item in self.model.todos:
-            if(item[0]):
+            if item[0]:
                 done += 1
         self.progressBar.setValue(int(float(done / total) * 100))
 
     def onDateChanged(self):
-        self.date = self.dateEdit.dateTime().toString('dd-MM-yyyy')
+        self.date = self.dateEdit.dateTime().toString("dd-MM-yyyy")
         self.model = TodoModel()
         self.load()
         self.todoView.setModel(self.model)
 
     def load(self):
         try:
-            with open('data.db', 'r') as f:
+            with open("data.db", "r") as f:
                 jsondata = json.load(f)
                 try:
                     k = jsondata[self.date][0]
-                except KeyError :
-                    jsondata[self.date] = [{'name': None, 'todos': []}]
+                except KeyError:
+                    jsondata[self.date] = [{"name": None, "todos": []}]
                 k = jsondata[self.date][0]
                 self.model.database = jsondata
                 self.model.todos = k["Topics"]
@@ -132,7 +132,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             print(e)
 
     def save(self):
-        with open('data.db', 'w') as f:
+        with open("data.db", "w") as f:
             json.dump(self.model.database, f)
 
 

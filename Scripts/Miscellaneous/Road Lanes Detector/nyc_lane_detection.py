@@ -27,11 +27,7 @@ def process(img):
 
         # Define roi vertices
         h, w, _ = img.shape
-        roi_vertices = [
-            (200, h),
-            (w/2, 2*h/3),
-            (w-100, h)
-        ]
+        roi_vertices = [(200, h), (w / 2, 2 * h / 3), (w - 100, h)]
 
         # Convert to GRAYSCALE
         gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -47,7 +43,9 @@ def process(img):
         roi_image = roi(canny, np.array([roi_vertices], np.int32))
 
         # Hough Lines
-        hough_lines = cv2.HoughLinesP(roi_image, 1, np.pi / 180, 40, minLineLength=10, maxLineGap=5)
+        hough_lines = cv2.HoughLinesP(
+            roi_image, 1, np.pi / 180, 40, minLineLength=10, maxLineGap=5
+        )
         final_img = draw_lines(hough_lines, img)
         return final_img
 
@@ -55,7 +53,7 @@ def process(img):
         return img
 
 
-# Capture the video file 
+# Capture the video file
 cap = cv2.VideoCapture("./Data/Manhattan_Trim.mp4")
 
 # PropIDs of the video frame
@@ -64,7 +62,9 @@ frame_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
 # FourCC Codec
 fourcc = cv2.VideoWriter_fourcc(*"XVID")
-saved_frame = cv2.VideoWriter("Manhattan_detection.avi", fourcc, 30.0, (frame_width, frame_height))
+saved_frame = cv2.VideoWriter(
+    "Manhattan_detection.avi", fourcc, 30.0, (frame_width, frame_height)
+)
 
 
 while cap.isOpened():
@@ -75,7 +75,7 @@ while cap.isOpened():
         frame = process(frame)
         saved_frame.write(frame)
         cv2.imshow("final", frame)
-        
+
         if cv2.waitKey(1) & 0xFF == 27:
             break
 
@@ -86,4 +86,3 @@ while cap.isOpened():
 cap.release()
 saved_frame.release()
 cv2.destroyAllWindows()
-

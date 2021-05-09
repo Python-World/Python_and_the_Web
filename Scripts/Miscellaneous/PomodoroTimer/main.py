@@ -1,15 +1,19 @@
 from pomodoro import Pomodoro
 import datetime
 from datetime import timedelta, datetime
+
+
 def main():
 
     # create pomodoro & begin first task
-    
+
     task_goal = input("Enter the number of tasks you want to do today: ")
     task_length_minutes = input("Enter the length of each task: ")
     short_break_length = input("Enter the length of a short break: ")
     long_break_length = input("Enter the length of a long break: ")
-    pomodoro = Pomodoro(task_goal, long_break_length, short_break_length, task_length_minutes)
+    pomodoro = Pomodoro(
+        task_goal, long_break_length, short_break_length, task_length_minutes
+    )
     pomodoro.start_task()
 
     while True:
@@ -46,7 +50,8 @@ def main():
             pomodoro.start_task()
 
     # we have met our pomodoro goal
-    print('\nPomodoro Complete!')
+    print("\nPomodoro Complete!")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

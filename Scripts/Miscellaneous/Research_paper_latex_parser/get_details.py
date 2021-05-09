@@ -25,11 +25,11 @@ class essential_data:
         Regular expressions are used to separate headings(h) and the content(c).
         The heading and content are then added to a dictionary object.
         """
-        sections = re.findall(r'section{(.*?)\\', data, re.S)
+        sections = re.findall(r"section{(.*?)\\", data, re.S)
         for obj in sections:
-            h = re.findall(r'(.*?)}', obj, re.S)
-            c = obj.replace(h[0]+"}", ' ')
-            data_dict['%s' % (h[0])] = '%s' % (c)
+            h = re.findall(r"(.*?)}", obj, re.S)
+            c = obj.replace(h[0] + "}", " ")
+            data_dict["%s" % (h[0])] = "%s" % (c)
             data = data.replace("section{" + obj, " ")
 
         """
@@ -37,13 +37,13 @@ class essential_data:
         Regular expressions are used to separate headings(h) and the content(c).
         The heading and content are then added to a dictionary object.
         """
-        begins = re.findall(r'\\begin{(.*?)\\end', data, re.S)
+        begins = re.findall(r"\\begin{(.*?)\\end", data, re.S)
         for obj in begins:
-            h = re.findall(r'(.*?)}', obj, re.S)
+            h = re.findall(r"(.*?)}", obj, re.S)
             if len(h) > 1:
                 continue
-            c = obj.replace(h[0]+"}", ' ')
-            data_dict['%s' % (h[0])] = '%s' % (c)
+            c = obj.replace(h[0] + "}", " ")
+            data_dict["%s" % (h[0])] = "%s" % (c)
             data = data.replace("\\begin{" + obj + "\\end", " ")
 
         return data_dict
@@ -55,7 +55,7 @@ class essential_data:
         The user can choose to specify the tag as 'Author' or 'author'.
         Hence the `[Aa]` is included in the regex.
         """
-        author = re.findall(r'[Aa]uthor(s?){(.*?)}', self.tex_data, re.S)
+        author = re.findall(r"[Aa]uthor(s?){(.*?)}", self.tex_data, re.S)
         return author[0][1]
 
     def get_title(self):
@@ -65,7 +65,7 @@ class essential_data:
         The user can choose to specify the tag as 'Title' or 'title'.
         Hence the `[Tt]` is included in the regex.
         """
-        title = re.findall(r'[Tt]itle{(.*?)}', self.tex_data, re.S)
+        title = re.findall(r"[Tt]itle{(.*?)}", self.tex_data, re.S)
         return title[0]
 
     def get_ack(self):
@@ -78,7 +78,8 @@ class essential_data:
         Hence the s is made optional at the end by writing `(s?)` in the regex.
         """
         acknowledgments = re.findall(
-            r'\\[Aa]cknowledgment(s?)(.*?)\\', self.tex_data, re.S)
+            r"\\[Aa]cknowledgment(s?)(.*?)\\", self.tex_data, re.S
+        )
         return acknowledgments[0][1]
 
 
@@ -94,8 +95,7 @@ class clean_data:
         """
         Purges images from the tex data using tag the '\begin{figure}'
         """
-        imgs = re.findall(
-            r'begin{figure}(.*?)end{figure}', self.tex_data, re.S)
+        imgs = re.findall(r"begin{figure}(.*?)end{figure}", self.tex_data, re.S)
         start = "\\begin{figure}"
         end = "end{figure}"
         imgs = [start + img + end for img in imgs]
@@ -106,8 +106,7 @@ class clean_data:
         """
         Purges tables from the tex data using tag the '\begin{table}'
         """
-        tables = re.findall(
-            r'begin{table}(.*?)end{table}', self.tex_data, re.S)
+        tables = re.findall(r"begin{table}(.*?)end{table}", self.tex_data, re.S)
         start = "\\begin{table}"
         end = "end{table}"
         tables = [start + table + end for table in tables]
@@ -119,7 +118,8 @@ class clean_data:
         Purges equation from the tex data using tag the '\begin{equation}'
         """
         equations = re.findall(
-            r'begin{equation}(.*?)end{equation}', self.tex_data, re.S)
+            r"begin{equation}(.*?)end{equation}", self.tex_data, re.S
+        )
         start = "\\begin{equation}"
         end = "end{equation}"
         equations = [start + equation + end for equation in equations]
@@ -129,17 +129,24 @@ class clean_data:
 
 # python get_details.py -p papers -o op_json.json
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     # Define description of the script.
     parser = argparse.ArgumentParser(
-        description="extract title,author,abstract,introduction,results,conclusions and acknowledgments from given set of research papers.")
+        description="extract title,author,abstract,introduction,results,conclusions and acknowledgments from given set of research papers."
+    )
 
     # Define inputs required for the script to run.
-    parser.add_argument("-parent", help="enter path to parent directory containing all research papers",
-                        dest="parent_path", type=str, required=True)
-    parser.add_argument("-output", help="enter path of output file",
-                        dest="op", type=str, required=True)
+    parser.add_argument(
+        "-parent",
+        help="enter path to parent directory containing all research papers",
+        dest="parent_path",
+        type=str,
+        required=True,
+    )
+    parser.add_argument(
+        "-output", help="enter path of output file", dest="op", type=str, required=True
+    )
 
     # Parse the arguments received from the command.
     args = parser.parse_args()
@@ -149,17 +156,16 @@ if __name__ == '__main__':
     all_data = []
 
     # Store all files from the mentioned directory.
-    all_files = [f for f in listdir(
-        directory_path) if isfile(join(directory_path, f))]
+    all_files = [f for f in listdir(directory_path) if isfile(join(directory_path, f))]
 
     # Read all the files and extract information form each file.
     for tex_file in tqdm(all_files):
 
         p = os.path.join(directory_path, tex_file)
 
-        with open(p, 'r', encoding='latin-1') as f:
+        with open(p, "r", encoding="latin-1") as f:
             data_lst = f.readlines()
-            data = ' '.join([str(elem) for elem in data_lst])
+            data = " ".join([str(elem) for elem in data_lst])
 
             # Use clean_data class methods to remove images, tables and equations/.
             cd = clean_data(data)
