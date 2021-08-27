@@ -4,8 +4,8 @@ from questions import *
 
 class Project:
     def __init__(self):
-        self.que=None
-        self.ans=None
+        self.que=""
+        self.ans=""
         self.correct=0
         self.count=-1
         self.__correct_answer=None
@@ -25,14 +25,14 @@ class Project:
 
 
     def set_(self):
-        if self.que==None:
+        if self.que=="":
             messagebox.showinfo("Error","Please select course first...")
             return
         self.count+=1
 
         if self.count==len(self.que):
             messagebox.showinfo("Result","You have answered {0} out of {1} questions correctly".format(self.correct,self.count))
-            exit()
+            sys.exit()
 
         if(self.count==len(self.que)-1):
             B.config(text="Finish")
