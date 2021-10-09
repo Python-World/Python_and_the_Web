@@ -56,7 +56,8 @@ async def mc(ctx):
 async def _8arm(ctx, *, question):
     responses = [
         "As I see it, yes.",
-        "Ask again later." "Better not tell you now.",
+        "Ask again later.",
+        "Better not tell you now.",
         "Cannot predict now.",
         "Concentrate and ask again.",
         "Don’t count on it.",
