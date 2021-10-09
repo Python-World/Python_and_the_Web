@@ -21,7 +21,7 @@ def remove_punctuation_stopwords_lemma(sentence):
     lemmatizer = WordNetLemmatizer()
     sentence = re.sub(r"[^\w\s]", "", sentence)
     words = nltk.word_tokenize(sentence)  # tokenization
-    words = [w for w in words if not w in stop_words]
+    words = [w for w in words if w not in stop_words]
     for word in words:
         filter_sentence = (
             filter_sentence + " " + str(lemmatizer.lemmatize(word)).lower()
