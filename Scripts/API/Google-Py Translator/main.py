@@ -53,7 +53,7 @@ def from_file(src, dst):
     print("\nTranslated text -> \n\n{}\n\n".format(output))
     print("-" * 100)
 
-    x = input("\nSave output to a file? y/n : ")
+    x = input("\nSave output to a file? y/n : ").lower()
 
     if x == "y":
         x = input("Enter file name : ")
@@ -79,7 +79,7 @@ Choose (1-3)
 
 """
 
-    choice = input(prompt)
+    choice = input(prompt).lower()
 
     if choice == "q":
         print("Bye")
