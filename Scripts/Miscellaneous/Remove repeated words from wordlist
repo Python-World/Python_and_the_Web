@@ -1,5 +1,5 @@
-wordlist = ['abc', 'bcf', 'abc', 'ghi', 'ghi','xyz']
+wordlist = [i for i in input().split()]
 finalWordlist = list(set(wordlist))
-f = open("nonRepeatedWords", "w")
+f = open("nonRepeatedWords.txt", "w")
 n = f.write(f"Wordlist: {finalWordlist}\n")
 f.close()
