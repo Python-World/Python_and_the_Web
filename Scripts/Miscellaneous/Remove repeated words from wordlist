@@ -1,0 +1,5 @@
+wordlist = ['abc', 'bcf', 'abc', 'ghi', 'ghi','xyz']
+finalWordlist = list(set(wordlist))
+f = open("nonRepeatedWords", "w")
+n = f.write(f"Wordlist: {finalWordlist}\n")
+f.close()
