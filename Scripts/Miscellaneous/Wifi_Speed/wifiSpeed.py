@@ -2,9 +2,14 @@
 
 # Python module for testing internet bandwidth
 import speedtest
+from sys import exit
 
 # Creating a instance
-s = speedtest.Speedtest()
+try:
+    s = speedtest.Speedtest()
+except speedtest.ConfigRetrievalError:
+    print('Sorry, looks like you are not connected to any network!\nPlease make sure you are connected to the internet.')
+    exit()
 
 # Menu
 print("Select a valid option from below:\n")
