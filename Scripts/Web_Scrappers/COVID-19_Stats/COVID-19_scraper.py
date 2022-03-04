@@ -19,13 +19,17 @@ def statsFind():
             source = requests.get(url, headers=header)
             soup = BeautifulSoup(source.content, "lxml")
             for i in range(1, 4, 1):
-                nameFound = soup.select_one(
-                    "#b_context > li:nth-child(1) > div > div.b_tophbb.bgtopgr.bgbtopnone > div > div.covid-modList > div:nth-child({}) > div.cov_modHead > div:nth-child(1)".format(
-                        i
-                    )
-                ).text
-                if nameFound == "Global cases":
-                    break
+                try:
+                    print(url)
+                    nameFound = soup.select_one(
+                        "#b_context > li:nth-child(1) > div > div.b_tophbb.bgtopgr.bgbtopnone > div > div.covid-modList > div:nth-child({}) > div.cov_modHead > div:nth-child(1)".format(
+                            i
+                        )
+                    ).text
+                    if nameFound == "Global cases":
+                        break
+                except:
+                    continue                    
                 update = soup.select_one(
                     "div:nth-child({}) > div.cov_modHead > div:nth-child(2)".format(i)
                 ).text
@@ -40,20 +44,20 @@ def statsFind():
                         i
                     )
                 ).text
-                ttlRecovered = soup.select_one(
-                    "div:nth-child({}) > div:nth-child(2) > div > div.cov_cases > div:nth-child(3) > div.c_row > div:nth-child(1)".format(
-                        i
-                    )
-                ).text
+#                ttlRecovered = soup.select_one(
+#                    "div:nth-child({}) > div:nth-child(2) > div > div.cov_cases > div:nth-child(3) > div.c_row > div:nth-child(1)".format(
+#                        i
+#                    )
+#                ).text
                 table = [
                     ["Country/State", " : ", name.upper(), "     ({})".format(update)],
                     ["Total Cases", " : ", ttlCase],
                     ["Total Deaths", " : ", ttlDeaths],
-                    ["Recovered", " : ", ttlRecovered],
+#                    ["Recovered", " : ", ttlRecovered],
                     [],
                     [],
                 ]
-                print(makeTable(table, [], "plain"))
+            print(makeTable(table, [], "plain"))
             print("Enter 0 to terminate")
             statsFind()
         except:
@@ -69,14 +73,14 @@ header = {"User-Agent": "Chrome/6.0.472.63 Safari/534.3"}
 source = requests.get(url, headers=header)
 soup = BeautifulSoup(source.content, "lxml")
 
-ttlCase = soup.select_one("tr.sorttop > th:nth-child(3)").text
-ttlDeaths = soup.select_one("tr.sorttop > th:nth-child(4)").text
-ttlRecovered = soup.select_one("tr.sorttop > th:nth-child(5)").text
+ttlCase = soup.select_one("tr.sorttop > td:nth-child(3)").text
+ttlDeaths = soup.select_one("tr.sorttop > td:nth-child(4)").text
+# ttlRecovered = soup.select_one("tr.sorttop > th:nth-child(5)").text
 
 table = [
     ["Total cases", " : ", ttlCase],
     ["Total deaths", " : ", ttlDeaths],
-    ["Total people recovered", " : ", ttlRecovered],
+#    ["Total people recovered", " : ", ttlRecovered],
 ]
 
 print(
@@ -87,13 +91,13 @@ print(makeTable(table, [], "plain") + "\n\n")
 
 print("         Top 10 countries suffering form COVID-19")
 top10 = []
-header = ["Rank", "Country\nName", "Total\nCases", "Total\nDeaths", "Total\nRecovered"]
+header = ["Rank", "Country\nName", "Total\nCases", "Total\nDeaths"]
 for i in range(3, 13, 1):
     country = soup.select_one(" tr:nth-child({}) > th:nth-child(2) > a".format(i)).text
     ttlCase = soup.select_one("tr:nth-child({}) > td:nth-child(3)".format(i)).text
     ttlDeaths = soup.select_one("tr:nth-child({}) > td:nth-child(4)".format(i)).text
-    ttlRecovered = soup.select_one(" tr:nth-child({}) > td:nth-child(5)".format(i)).text
-    top10.append([i - 2, country, ttlCase, ttlDeaths, ttlRecovered])
+ #   ttlRecovered = soup.select_one(" tr:nth-child({}) > td:nth-child(5)".format(i)).text
+    top10.append([i - 2, country, ttlCase, ttlDeaths])
 
 print(makeTable(top10, header, "grid"))
 
