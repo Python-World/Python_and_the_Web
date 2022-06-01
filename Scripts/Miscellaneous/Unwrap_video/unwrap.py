@@ -4,7 +4,7 @@ import glob, os, sys, subprocess
 # process each video in media folder
 for video in glob.glob("media/*"):
     # only process videos, ignore generated images
-    if not "jpeg" in video:
+    if "jpeg" not in video:
         # get video resolution
         try:
             cwd = os.getcwd()
