@@ -4,6 +4,9 @@ A simple Python script that uses 'speedtest' module to test the internet bandwid
 ### Prerequisites
 You will need to install speedtest module. 
 The installation commands are provided in requirements.txt
+```bash
+  pip install -r requirements.txt
+```
 
 ### How to run the script
 First you have to go to the Wifi_Speed directory. Run the following command once you are in project directory
