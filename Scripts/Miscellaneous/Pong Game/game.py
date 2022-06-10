@@ -112,47 +112,95 @@ class Ball:
             scoreRight += 1
             self.angle = 180 - self.angle
         if self.y < margin:
-            self.angle = - self.angle
+            self.angle = -self.angle
         if self.y + self.r >= height - margin:
-            self.angle = - self.angle
+            self.angle = -self.angle
 
     # Check and Reflect the Ball when it hits the padddle
     def checkForPaddle(self):
         if self.x < width / 2:
             if leftPaddle.x < self.x < leftPaddle.x + leftPaddle.w:
-                if leftPaddle.y < self.y < leftPaddle.y + 10 or leftPaddle.y < self.y + self.r < leftPaddle.y + 10:
+                if (
+                    leftPaddle.y < self.y < leftPaddle.y + 10
+                    or leftPaddle.y < self.y + self.r < leftPaddle.y + 10
+                ):
                     self.angle = -45
-                if leftPaddle.y + 10 < self.y < leftPaddle.y + 20 or leftPaddle.y + 10 < self.y + self.r < leftPaddle.y + 20:
+                if (
+                    leftPaddle.y + 10 < self.y < leftPaddle.y + 20
+                    or leftPaddle.y + 10 < self.y + self.r < leftPaddle.y + 20
+                ):
                     self.angle = -30
-                if leftPaddle.y + 20 < self.y < leftPaddle.y + 30 or leftPaddle.y + 20 < self.y + self.r < leftPaddle.y + 30:
+                if (
+                    leftPaddle.y + 20 < self.y < leftPaddle.y + 30
+                    or leftPaddle.y + 20 < self.y + self.r < leftPaddle.y + 30
+                ):
                     self.angle = -15
-                if leftPaddle.y + 30 < self.y < leftPaddle.y + 40 or leftPaddle.y + 30 < self.y + self.r < leftPaddle.y + 40:
+                if (
+                    leftPaddle.y + 30 < self.y < leftPaddle.y + 40
+                    or leftPaddle.y + 30 < self.y + self.r < leftPaddle.y + 40
+                ):
                     self.angle = -10
-                if leftPaddle.y + 40 < self.y < leftPaddle.y + 50 or leftPaddle.y + 40 < self.y + self.r < leftPaddle.y + 50:
+                if (
+                    leftPaddle.y + 40 < self.y < leftPaddle.y + 50
+                    or leftPaddle.y + 40 < self.y + self.r < leftPaddle.y + 50
+                ):
                     self.angle = 10
-                if leftPaddle.y + 50 < self.y < leftPaddle.y + 60 or leftPaddle.y + 50 < self.y + self.r < leftPaddle.y + 60:
+                if (
+                    leftPaddle.y + 50 < self.y < leftPaddle.y + 60
+                    or leftPaddle.y + 50 < self.y + self.r < leftPaddle.y + 60
+                ):
                     self.angle = 15
-                if leftPaddle.y + 60 < self.y < leftPaddle.y + 70 or leftPaddle.y + 60 < self.y + self.r < leftPaddle.y + 70:
+                if (
+                    leftPaddle.y + 60 < self.y < leftPaddle.y + 70
+                    or leftPaddle.y + 60 < self.y + self.r < leftPaddle.y + 70
+                ):
                     self.angle = 30
-                if leftPaddle.y + 70 < self.y < leftPaddle.y + 80 or leftPaddle.y + 70 < self.y + self.r < leftPaddle.y + 80:
+                if (
+                    leftPaddle.y + 70 < self.y < leftPaddle.y + 80
+                    or leftPaddle.y + 70 < self.y + self.r < leftPaddle.y + 80
+                ):
                     self.angle = 45
         else:
             if rightPaddle.x + rightPaddle.w > self.x + self.r > rightPaddle.x:
-                if rightPaddle.y < self.y < leftPaddle.y + 10 or leftPaddle.y < self.y + self.r < leftPaddle.y + 10:
+                if (
+                    rightPaddle.y < self.y < leftPaddle.y + 10
+                    or leftPaddle.y < self.y + self.r < leftPaddle.y + 10
+                ):
                     self.angle = -135
-                if rightPaddle.y + 10 < self.y < rightPaddle.y + 20 or rightPaddle.y + 10 < self.y + self.r < rightPaddle.y + 20:
+                if (
+                    rightPaddle.y + 10 < self.y < rightPaddle.y + 20
+                    or rightPaddle.y + 10 < self.y + self.r < rightPaddle.y + 20
+                ):
                     self.angle = -150
-                if rightPaddle.y + 20 < self.y < rightPaddle.y + 30 or rightPaddle.y + 20 < self.y + self.r < rightPaddle.y + 30:
+                if (
+                    rightPaddle.y + 20 < self.y < rightPaddle.y + 30
+                    or rightPaddle.y + 20 < self.y + self.r < rightPaddle.y + 30
+                ):
                     self.angle = -165
-                if rightPaddle.y + 30 < self.y < rightPaddle.y + 40 or rightPaddle.y + 30 < self.y + self.r < rightPaddle.y + 40:
+                if (
+                    rightPaddle.y + 30 < self.y < rightPaddle.y + 40
+                    or rightPaddle.y + 30 < self.y + self.r < rightPaddle.y + 40
+                ):
                     self.angle = 170
-                if rightPaddle.y + 40 < self.y < rightPaddle.y + 50 or rightPaddle.y + 40 < self.y + self.r < rightPaddle.y + 50:
+                if (
+                    rightPaddle.y + 40 < self.y < rightPaddle.y + 50
+                    or rightPaddle.y + 40 < self.y + self.r < rightPaddle.y + 50
+                ):
                     self.angle = 190
-                if rightPaddle.y + 50 < self.y < rightPaddle.y + 60 or rightPaddle.y + 50 < self.y + self.r < rightPaddle.y + 60:
+                if (
+                    rightPaddle.y + 50 < self.y < rightPaddle.y + 60
+                    or rightPaddle.y + 50 < self.y + self.r < rightPaddle.y + 60
+                ):
                     self.angle = 165
-                if rightPaddle.y + 60 < self.y < rightPaddle.y + 70 or rightPaddle.y + 60 < self.y + self.r < rightPaddle.y + 70:
+                if (
+                    rightPaddle.y + 60 < self.y < rightPaddle.y + 70
+                    or rightPaddle.y + 60 < self.y + self.r < rightPaddle.y + 70
+                ):
                     self.angle = 150
-                if rightPaddle.y + 70 < self.y < rightPaddle.y + 80 or rightPaddle.y + 70 < self.y + self.r < rightPaddle.y + 80:
+                if (
+                    rightPaddle.y + 70 < self.y < rightPaddle.y + 80
+                    or rightPaddle.y + 70 < self.y + self.r < rightPaddle.y + 80
+                ):
                     self.angle = 135
 
 
@@ -167,7 +215,7 @@ def showScore():
 
 # Game Over
 def gameOver():
-    if maxScore in(scoreLeft, scoreRight):
+    if maxScore in (scoreLeft, scoreRight):
         while True:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
@@ -181,10 +229,11 @@ def gameOver():
                 playerWins = largeFont.render("Red wins!Press R to reset!", True, red)
                 display.blit(playerWins, (40, height / 2))
             elif scoreRight == maxScore:
-                playerWins = largeFont.render("Blue wins! Press R to reset!", True, blue)
+                playerWins = largeFont.render(
+                    "Blue wins! Press R to reset!", True, blue
+                )
                 display.blit(playerWins, (30, height / 2))
             pygame.display.update()
-
 
 
 def reset():
@@ -211,7 +260,7 @@ def board():
                 close()
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_q:
-                    close() # add pause functionality after here if possible
+                    close()  # add pause functionality after here if possible
                 if event.key == pygame.K_r:
                     reset()
                 if event.key == pygame.K_w:

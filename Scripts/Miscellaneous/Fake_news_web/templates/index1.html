@@ -1,0 +1,55 @@
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10039895-6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-10039895-6');
+  </script>
+
+  <title>Fake News Detector AI | Detect Unreliable News Using Neural Networks</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Detect fake or unreliable news websites using neural networks.">
+  <meta name="keywords" content="fake, news, ai, neural, network">
+  <meta name="author" content="Karan Singhal">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body>
+
+  <img id="logo" src="images/fakenewstileweb.png"/>
+  <div class="container">
+
+      <form id="form_pred" class="contact100-form validate-form" method="post" action="/api">
+        <div id="inputs-wrapper">
+          <div id="title">
+            <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Title" id="url" type="text" name="url">
+          </div>
+          <div id="author">
+            <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Author" id="url" type="text" name="url">
+          </div>
+          <div id="text">
+            <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Text" id="url" type="text" name="url">
+          </div>
+          <input type="submit" class="button" value="" id="submit"/>
+        </div>
+
+      </form>
+
+      <div id="info"><p>Detect fake news sites using the power of artificial intelligence!</p><br />
+        We analyze websites to see if they are similar to known fake news sites using a neural network.
+        The same technology is used to power other artificial intelligence applications, like Siri and self-driving cars!</div>
+        <div id="innerContainer">
+        <div class="results" id="loading"><img src="images/loading.gif" id="loadingImage" alt="Loading detection results..."/></div>
+        <div class="results" id="fake"><h2>Fake!</h2>This site is probably not a reliable news source.</div>
+        <div class="results" id="real"><h2>Real!</h2>This site is probably not a fake news site.</div>
+        <div class="results" id="error"><h2>Error!</h2><span id="errorMessage"></span></div>
+      </div>
+    </div>
+
+  <div id="footer">Created by <a target="_blank" href="http://karansinghal.com">Karan Singhal</a>.</div>
+  <script type="text/javascript" src ="form.js"></script>
+</body>

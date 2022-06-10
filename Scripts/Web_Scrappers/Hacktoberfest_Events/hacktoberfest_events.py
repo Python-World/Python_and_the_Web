@@ -12,7 +12,7 @@ def scrape_tablerows():
     """
     hacktoberfest_events_url = "https://hacktoberfest.digitalocean.com/events"
     response = requests.get(hacktoberfest_events_url)
-    soup = bs(response.content, 'html.parser')
+    soup = bs(response.content, "html.parser")
     mydivs = soup.findAll("tbody", {"class": "list"})
     tablerows = mydivs[0].findAll("tr")
     return tablerows
@@ -29,7 +29,7 @@ def hacktoberfest_events(tablerows):
     events = {}
     for i, tablerow in enumerate(tablerows):
         location = tablerow.find("td", {"class": "location"}).text
-        link = tablerow.find("a")['href']
+        link = tablerow.find("a")["href"]
         name = tablerow.find("td", {"class": "event_name"}).text.strip()
         date = tablerow.find("td", {"class": "date is-hidden"}).text.strip()
         events[i] = [name, date, location, link]
@@ -43,9 +43,9 @@ def make_csv(events):
     Args:
         events (dict): Dictionary object containing the event information.
     """
-    df = pd.DataFrame.from_dict(events, orient='index')
-    df.columns = ['Name', 'Date', 'Location', 'Link']
-    df.to_csv('hacktoberfest_events.csv')
+    df = pd.DataFrame.from_dict(events, orient="index")
+    df.columns = ["Name", "Date", "Location", "Link"]
+    df.to_csv("hacktoberfest_events.csv")
 
 
 if __name__ == "__main__":

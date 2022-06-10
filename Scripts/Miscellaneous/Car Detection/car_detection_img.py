@@ -13,13 +13,12 @@ cars = model.detectMultiScale(img_gray, 1.1, 2)
 
 # Draw rectangles
 for x, y, w, h in cars:
-    cv2.rectangle(img, (x, y), (x+w, y+h), (0, 255, 0), 2)
+    cv2.rectangle(img, (x, y), (x + w, y + h), (0, 255, 0), 2)
 
-#  Show the results  
+#  Show the results
 cv2.imshow("image", img)
 cv2.imwrite("car_detection.jpg", img)
 
 # Cleaning
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-

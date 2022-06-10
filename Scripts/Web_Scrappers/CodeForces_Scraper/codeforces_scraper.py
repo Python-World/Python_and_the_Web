@@ -25,9 +25,9 @@ def get_problem_statement(problem_code):
     except Exception as e:
         print("Cannot Find CodeForces Problem!" + str(e))
         sys.exit(0)
-    soup = BeautifulSoup(page.content, 'html.parser')
-    soup.find('div', class_='header').decompose()
-    problem_statement_div = soup.find('div', class_="problem-statement")
+    soup = BeautifulSoup(page.content, "html.parser")
+    soup.find("div", class_="header").decompose()
+    problem_statement_div = soup.find("div", class_="problem-statement")
     response = problem_statement_div.text.replace("$$$", "")
     return response
 
@@ -37,7 +37,7 @@ def to_txt(problem_code, problem):
     Takes A Problem Code & Its Appropriate Parsed CodeForces Problem And
     Prints It To A Text File.
     """
-    with open(problem_code + '.txt', 'w') as output_file:
+    with open(problem_code + ".txt", "w") as output_file:
         output_file.writelines(problem)
 
 
@@ -45,10 +45,11 @@ if __name__ == "__main__":
     try:
         problem_code = sys.argv[1]
     except Exception:
-        print('Please Enter A CodeForces Problem Code as a',
-              'Command-Line Argument!')
+        print("Please Enter A CodeForces Problem Code as a", "Command-Line Argument!")
         sys.exit(0)
     problem = get_problem_statement(problem_code)
     to_txt(problem_code, problem)
-    print(f'Problem {problem_code} Successfully Scraped And Saved To',
-          f'{problem_code}.txt')
+    print(
+        f"Problem {problem_code} Successfully Scraped And Saved To",
+        f"{problem_code}.txt",
+    )

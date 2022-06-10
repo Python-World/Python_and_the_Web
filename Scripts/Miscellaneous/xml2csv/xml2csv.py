@@ -34,6 +34,7 @@ def getChildNodesFromRoot():
         itemsList = list(data_root.values())[0]
         return itemsList
 
+
 itemsList = getChildNodesFromRoot()
 # Declared a csvWrite (object to write rows on a csv file)
 csvFile = open(csvPath, "w")

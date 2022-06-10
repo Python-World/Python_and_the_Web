@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>
+            Home
+        </title>
+
+        <style>
+            table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            }
+
+            td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+            }
+
+            .negative{
+                background-color: #dddddd;
+            }
+
+            .topic{
+                font-family: arial, sans-serif;
+            }
+        </style>
+
+    </head>
+    <body>
+        <!--Jinja templating for retrieving data from the data object sent from the backend-->
+        <h2 style="text-align: center;">Welcome @{{ data['account_info_json']['screen_name'] }} !!</h2>
+        
+        <br>
+        {% for i in range (0,data['topics']| length)  %}
+        <p class='topic'>Topic {{ i }} is {{ data['topics'][i] }}</p>
+        {% endfor  %}
+
+        <br>
+
+        <h2>Classified tweets</h2>
+        <table>
+            <tr>
+                <th>TWEET</th>
+                <th>TOPIC</th>
+                <th>SENTIMENT</th>
+            </tr>
+            {% for i in range(0,data['all_tweets']| length) %}
+            <tr>
+
+                {% if data['sentiment'][i]=='Negative' %}
+                <td class="negative">
+                    {{ data['all_tweets'][i] }}
+                </td>
+                {% else %}
+                <td>
+                    {{ data['all_tweets'][i] }}
+                </td>
+                {% endif %}
+
+                {% if data['sentiment'][i]=='Negative' %}
+                <td class="negative">
+                    {{ data['classified_tweets'][i] }}
+                </td>
+                {% else %}
+                <td>
+                    {{ data['classified_tweets'][i] }}
+                </td>
+                {% endif %}
+
+                
+                
+                {% if data['sentiment'][i]=='Negative' %}
+                <td class="negative">
+                    {{ data['sentiment'][i] }}
+                </td>
+                {% else %}
+                <td>
+                    {{ data['sentiment'][i] }}
+                </td>
+                {% endif %}
+            </tr>
+            {% endfor %} 
+        </table>
+    </body>
+</html>

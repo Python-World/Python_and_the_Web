@@ -1,0 +1,7 @@
+flask
+requests
+Flask-Dance
+numpy
+vaderSentiment
+nltk
+re

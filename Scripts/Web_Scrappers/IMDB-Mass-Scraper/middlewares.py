@@ -54,7 +54,7 @@ class ImdbSpiderMiddleware:
 
     @staticmethod
     def spider_opened(spider):
-        spider.logger.info('Spider opened: %s' % spider.name)
+        spider.logger.info("Spider opened: %s" % spider.name)
 
 
 class ImdbDownloaderMiddleware:
@@ -104,4 +104,4 @@ class ImdbDownloaderMiddleware:
 
     @staticmethod
     def spider_opened(spider):
-        spider.logger.info('Spider opened: %s' % spider.name)
+        spider.logger.info("Spider opened: %s" % spider.name)

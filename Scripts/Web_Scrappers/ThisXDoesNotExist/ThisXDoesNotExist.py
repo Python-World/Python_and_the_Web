@@ -50,7 +50,10 @@ arg_parser.add_argument(
     help="Type of image to retrieve.",
 )
 arg_parser.add_argument(
-    "--memory", "-m", action="store_true", help="Pass to not save the image",
+    "--memory",
+    "-m",
+    action="store_true",
+    help="Pass to not save the image",
 )
 arg_parser.add_argument(
     "--outfile",
@@ -91,7 +94,9 @@ if not args.memory:
 # If --no-pil wasn't passed and Pil is installed, show the image
 if not args.no_pil and pillow_available:
     try:
-        PIL.Image.open(io.BytesIO(img_bytes),).show()
+        PIL.Image.open(
+            io.BytesIO(img_bytes),
+        ).show()
     except PIL.UnidentifiedImageError:
         # Sometimes the dog site will return a .mp4 file. Pillow can't open such files so it'll throw an exception.
         print(

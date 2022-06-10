@@ -31,7 +31,9 @@ def roi(image, vertices):
 roi_image = roi(canny, np.array([roi_vertices], np.int32))
 
 # Step 7) Apply Hough Lines P Method on ROI Image
-lines = cv2.HoughLinesP(roi_image, 1, np.pi/180, 100, minLineLength=100, maxLineGap=10)
+lines = cv2.HoughLinesP(
+    roi_image, 1, np.pi / 180, 100, minLineLength=100, maxLineGap=10
+)
 
 
 # Step 8) Draw Hough lines
@@ -45,7 +47,7 @@ def draw_lines(image, hough_lines):
 
 
 # Result
-final_img = draw_lines(img, lines)  
+final_img = draw_lines(img, lines)
 
 # Show the final resluts on a window
 plt.imshow(final_img)

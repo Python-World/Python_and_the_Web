@@ -17,35 +17,31 @@ remove the app part from discord webhook url
 url = "YOUR WEB HOOK URL"
 
 
-
 hook = Webhook(url)
 
 newz = getNews("")
 
-hook.send('**News Briefing**')
+hook.send("**News Briefing**")
 
-for bits in newz['data']:
-	newsTitle = bits['title']
-	newsContent = bits['content']
-	imageUrl = bits['imageUrl']
-	newsAuthor = bits['author']
-	newsReadmore = bits['readMoreUrl']
+for bits in newz["data"]:
+    newsTitle = bits["title"]
+    newsContent = bits["content"]
+    imageUrl = bits["imageUrl"]
+    newsAuthor = bits["author"]
+    newsReadmore = bits["readMoreUrl"]
 
-	embed = Embed(
-	title=newsTitle,
-	url=newsReadmore,
-	description=newsContent,
-	color=0x5CDBF0,
-	timestamp='now'
-	)
-	image1 = imageUrl
-	embed.set_image(image1)
-	embed.set_footer(text=newsAuthor)
+    embed = Embed(
+        title=newsTitle,
+        url=newsReadmore,
+        description=newsContent,
+        color=0x5CDBF0,
+        timestamp="now",
+    )
+    image1 = imageUrl
+    embed.set_image(image1)
+    embed.set_footer(text=newsAuthor)
 
+    hook.send(embed=embed)
+    time.sleep(2)
 
-	hook.send(embed=embed)
-	time.sleep(2)
-
-hook.send('**News Briefing Completed**')
-
-
+hook.send("**News Briefing Completed**")

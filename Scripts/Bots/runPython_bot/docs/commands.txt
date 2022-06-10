@@ -1,0 +1,4 @@
+start - know whether i am alive
+help - learn how to use me
+code - see my source code 
+e - pass any expression to eval

@@ -6,7 +6,7 @@ pull_request_rules:
       merge:
         method: merge
       label:
-        add: ["hacktoberfest-accepted"] 
+        add: ["nice-job"] 
   - name: automatic merge for ImgBot pull requests
     conditions:
       - author=imgbot[bot]

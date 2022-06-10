@@ -1,0 +1,13 @@
+*Every message is executed as fresh python code*. Suppose you define a variable in one message, you won't be able to access it in the next message.
+
+But you can write _multiline code in one message_ 😊.
+->Tab is 4 spaces
+-> Newline is a newline in the same message body
+
+To evaluate a pythonic expression, use the /e command.
+
+⚠️ Certain things like _importing packages_ is not allowed to prevent any horrible consequence.
+
+To get source code send /code.
+
+*Play around with me to explore more* 😍

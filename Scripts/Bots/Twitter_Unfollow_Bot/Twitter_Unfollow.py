@@ -5,17 +5,13 @@ import tweepy
 import sys
 
 # Replace the foo bar with your twitter API keys from dev.twitter.com
-auth = tweepy.auth.OAuthHandler(
-        consumer_key='foo',
-        consumer_secret='bar')
-auth.set_access_token(
-        'foo',
-        'bar')
+auth = tweepy.auth.OAuthHandler(consumer_key="foo", consumer_secret="bar")
+auth.set_access_token("foo", "bar")
 
 # the following dictionaries etc aren't strictly needed for this
 # but useful for your own more in-depth apps.
 
-api=tweepy.API(auth_handler=auth, wait_on_rate_limit=True)
+api = tweepy.API(auth_handler=auth, wait_on_rate_limit=True)
 
 print("Loading followers..")
 followers = []
@@ -45,7 +41,7 @@ non_friends = [friend for friend in friends if friend.id not in follower_dict]
 # double check, since this could be a rather traumatic operation.
 
 print("Unfollowing %s non-following users.." % len(non_friends))
-print("This will take approximately %s minutes." % (len(non_friends)/60.0))
+print("This will take approximately %s minutes." % (len(non_friends) / 60.0))
 answer = input("Are you sure? [Y/n]").lower()
 if answer and answer[0] != "y":
     sys.exit(1)

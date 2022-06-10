@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>A to Z News</title>
+  <meta charset="utf-8">
+<meta name="viewport" 
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" /> 
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"> 
+    </script> 
+    <script src= "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"> 
+    </script>
+  <style>
+  /* Make the image fully responsive */
+  body {
+  /*padding: 25px;*/
+  background-color: white;
+  color: black;
+  /*font-size: 10px;*/
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+
+.button {
+  background-color: #ff1a1a;
+  border: none;
+  color: white;
+  padding: 11px 20px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  object-position: right;
+}
+
+.button:hover {opacity: 1}
+
+
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  </style>
+
+
+
+
+</head>
+<body>
+<!--Nav bar-->
+ <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="">A to Z News</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="">Top Headlines</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="bussiness">Bussiness</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="entertainment">Entertainment</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="sports">Sports</a>
+    </li>
+    
+   </ul>
+</nav>
+
+  
+<div class="container">
+  <!--Carousel-->
+  {%block content%}
+  
+  {% endblock %}
+  <!--button or changing colour mode-->
+   <div class="text-right">
+      <button class = "button" onclick="myFunction()">change mode</button>
+   </div>
+
+   <!--news cards-->
+  {% block body%}
+
+  {% endblock %}   
+
+
+</div>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
+
+</body>
+</html>

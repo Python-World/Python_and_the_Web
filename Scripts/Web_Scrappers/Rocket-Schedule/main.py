@@ -13,11 +13,12 @@ for s in range(1, 8):
     s = str(s)
 
     # Using get() method to Open the URL
-    URL = str("https://www.rocketlaunch.live/?page="+s)
+    URL = str("https://www.rocketlaunch.live/?page=" + s)
     r = requests.get(URL)
 
-    soup = BeautifulSoup(r.content, 'html.parser')
-    f = soup.find_all("h4", {"itemprop": "name"})
+    soup = BeautifulSoup(r.content, "html.parser")
+    soup.find("div", id="upcoming_launches_header").decompose()
+    f = soup.find_all("h4")
     f1 = soup.find_all("div", {"class": "launch_date rlt_date"})
     f2 = soup.find_all("div", {"class": "rlt-provider"})
     f3 = soup.find_all("div", {"class": "rlt-location"})
@@ -27,24 +28,24 @@ for s in range(1, 8):
         myData = {}
 
         # get vehicle type
-        myData['vehicle'] = f[j].a.text
+        myData["vehicle"] = f[j].a.text
 
         # get mission name
-        myData['mission'] = f[j-1].a.text
+        myData["mission"] = f[j - 1].a.text
 
         print("Vehicle :", f[j].a.text)
-        print("Mission :", f[j-1].a.text)
+        print("Mission :", f[j - 1].a.text)
 
-        if(c < len(f1)):
+        if c < len(f1):
 
             # get lauch date
-            myData['launch'] = f1[c].a.text
+            myData["launch"] = f1[c].a.text
 
             # get provider/org name
-            myData['provider'] = f2[c].a.text
+            myData["provider"] = f2[c].a.text
 
             # get launch location
-            myData['location'] = f3[c].text.strip().replace("\n", ", ")
+            myData["location"] = f3[c].text.strip().replace("\n", ", ")
 
             print("Launch Date :", f1[c].a.text)
             print("Provider :", f2[c].a.text)
@@ -69,7 +70,7 @@ print("JSON File created!")
 
 
 # Create csv file
-resultFile = open('Scripts/Web_Scrappers/Rocket-Schedule/Result-file.csv', 'w')
+resultFile = open("Scripts/Web_Scrappers/Rocket-Schedule/Result-file.csv", "w")
 
 # create the csv writer object
 csv_writer = csv.writer(resultFile)

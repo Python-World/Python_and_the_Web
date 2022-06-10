@@ -16,7 +16,7 @@ soup = BeautifulSoup(response.content, "html.parser")
 # Locate the tables for 'Present' and 'Future' contests
 contest_tables = soup.find_all("table", class_="dataTable")[0:-1]
 
-# Scrape the data from inside the tables like contest code, name, 
+# Scrape the data from inside the tables like contest code, name,
 # start and end date
 contest_data = []
 for table in contest_tables:
@@ -30,7 +30,9 @@ print(f"Writing data to {OUTPUT_FILE}...")
 # Write the scraped data to the specified output file as a CSV
 with open(OUTPUT_FILE, "w+") as csv:
     csv.write("CodeChef Contests (Present and Upcoming)\n")
-    for contest_type, contests in zip(["Current Contests", "Future Contests"], contest_data):
+    for contest_type, contests in zip(
+        ["Current Contests", "Future Contests"], contest_data
+    ):
         csv.write("\n")
         csv.write(contest_type + "\n")
         csv.write(", ".join(HEADERS) + "\n")
