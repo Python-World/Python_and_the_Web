@@ -19,13 +19,19 @@ def user_input_features():
     Principal = st.sidebar.text_input("Please input Principal Amount", 10000)
     ##st.sidebar.add_rows
     No_Of_Years = st.sidebar.selectbox("Select No Of Years", Year_List, 2)
-    data = {"Int_Rate": Int_Rate, "Principal": Principal, "No_Of_Years": No_Of_Years}
+    data = {
+        "Int_Rate": Int_Rate,
+        "Principal": Principal,
+        "No_Of_Years": No_Of_Years,
+    }
     features = pd.DataFrame(data, index=[0])
     return features
 
 
 df = user_input_features()
-st.subheader("User Entered parameters for Rate, Principal amount and No of years is")
+st.subheader(
+    "User Entered parameters for Rate, Principal amount and No of years is"
+)
 st.write(df)
 
 

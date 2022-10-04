@@ -31,14 +31,16 @@ def getNews(category):
             title = None
 
         try:
-            imageUrl = card.find(class_="news-card-image")["style"].split("'")[1]
+            imageUrl = card.find(class_="news-card-image")["style"].split("'")[
+                1
+            ]
         except AttributeError:
             imageUrl = None
 
         try:
-            url = "https://www.inshorts.com" + card.find(class_="news-card-title").find(
-                "a"
-            ).get("href")
+            url = "https://www.inshorts.com" + card.find(
+                class_="news-card-title"
+            ).find("a").get("href")
         except AttributeError:
             url = None
 

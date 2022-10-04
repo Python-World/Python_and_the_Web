@@ -6,7 +6,9 @@ from twilio.rest import Client
 
 def send_message_phone(phone, body):
     account_sid = "<YOUR ACCOUNT_SID>"  # Replace this with your account sid
-    auth_token = "<YOUR AUTH_TOKEN>"  # Replace this with your account Auth Token
+    auth_token = (
+        "<YOUR AUTH_TOKEN>"  # Replace this with your account Auth Token
+    )
     # Create a client object from Twilio Rest
     client = Client(account_sid, auth_token)
     retry_count = 0

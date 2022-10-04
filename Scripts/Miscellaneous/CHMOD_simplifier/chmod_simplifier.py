@@ -20,7 +20,9 @@ def symb_to_num(symbolic):
     if len(symbolic) == 9:
         group = (symbolic[:-6], symbolic[3:-3], symbolic[6:])
         try:
-            numeric = notation[group[0]] + notation[group[1]] + notation[group[2]]
+            numeric = (
+                notation[group[0]] + notation[group[1]] + notation[group[2]]
+            )
         except:
             numeric = "Invalid Symbolic Representation!"
     else:

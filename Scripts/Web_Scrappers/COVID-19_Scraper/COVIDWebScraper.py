@@ -38,7 +38,9 @@ def scrapeCovidStats():
     )
 
     # Using get() method to Open a URL (WHO)
-    driver.get("https://www.who.int/emergencies/diseases/novel-coronavirus-2019")
+    driver.get(
+        "https://www.who.int/emergencies/diseases/novel-coronavirus-2019"
+    )
     driver.implicitly_wait(wait_imp)
     w_total = driver.find_element_by_id("confirmedCases")
     w_death = driver.find_element_by_id("confirmedDeaths")

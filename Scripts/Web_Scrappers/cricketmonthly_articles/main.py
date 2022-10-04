@@ -8,8 +8,12 @@ header = {
 }
 r = rq.get("https://www.thecricketmonthly.com/", headers=header)
 soup = BeautifulSoup(r.content, "html.parser")
-main_sec = soup.find("section", attrs={"class": re.compile("col-lhs lhs_content")})
-article = main_sec.find_all("article", attrs={"class": re.compile("col-1-1 module")})
+main_sec = soup.find(
+    "section", attrs={"class": re.compile("col-lhs lhs_content")}
+)
+article = main_sec.find_all(
+    "article", attrs={"class": re.compile("col-1-1 module")}
+)
 about = []
 link = []
 summary = []

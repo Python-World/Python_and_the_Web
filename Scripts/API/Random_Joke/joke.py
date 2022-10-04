@@ -11,7 +11,9 @@ rst = attr("reset")  # reset colors
 JOKE_TWO_PARTS = f"""{fg(40) + attr("bold") + attr("dim")}Setup: {rst + fg(202)}{{setup}}
 {fg(40) + attr("bold") + attr("dim")}Delivery: {rst + fg(202)}{{delivery}}"""
 
-JOKE_SINGLE = f"""{fg(40) + attr("bold") + attr("dim")}Joke: {rst + fg(202)}{{joke}}"""
+JOKE_SINGLE = (
+    f"""{fg(40) + attr("bold") + attr("dim")}Joke: {rst + fg(202)}{{joke}}"""
+)
 
 DEFAULT_FORMAT = f"""{fg(46) + attr("bold") + attr("dim")}Category: {rst + fg(214)}{{category}}
 {fg(46) + attr("bold") + attr("dim")}Type: {rst + fg(214)}{{type}}
@@ -56,7 +58,9 @@ def main(category: str = "Any", exclude: str = ""):
 
     if res["error"]:
         print(
-            ERROR_MSG.format(error_message=rst + fg(9) + res["additionalInfo"]),
+            ERROR_MSG.format(
+                error_message=rst + fg(9) + res["additionalInfo"]
+            ),
             file=sys.stderr,
         )
         sys.exit(1)
@@ -66,7 +70,9 @@ def main(category: str = "Any", exclude: str = ""):
             DEFAULT_FORMAT.format(
                 category=res["category"],
                 type=res["type"],
-                joke=JOKE_TWO_PARTS.format(setup=res["setup"], delivery=res["delivery"])
+                joke=JOKE_TWO_PARTS.format(
+                    setup=res["setup"], delivery=res["delivery"]
+                )
                 if res["type"] == "twopart"
                 else JOKE_SINGLE.format(joke=res["joke"]),
             )

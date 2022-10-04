@@ -24,7 +24,11 @@ def get_metadata(username):
         soup = BeautifulSoup(res.text, "html.parser")
         # Locating the string having metadata then parsing it
         ret_data = json.loads(
-            [sc.text for sc in soup.find_all("script") if "csrf_token" in str(sc)][0]
+            [
+                sc.text
+                for sc in soup.find_all("script")
+                if "csrf_token" in str(sc)
+            ][0]
             .replace("window._sharedData = ", "")
             .replace(";", "")
         )["entry_data"]["ProfilePage"][0]["graphql"]
@@ -32,7 +36,9 @@ def get_metadata(username):
         if "user" in ret_data.keys():
             return {
                 "username": ret_data["user"].get("username", None),
-                "profile_picture_url": ret_data["user"].get("profile_pic_url_hd", None),
+                "profile_picture_url": ret_data["user"].get(
+                    "profile_pic_url_hd", None
+                ),
                 "follower_count": ret_data["user"]
                 .get("edge_followed_by", {})
                 .get("count", None),

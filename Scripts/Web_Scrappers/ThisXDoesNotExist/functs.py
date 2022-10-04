@@ -49,9 +49,9 @@ def get_snack() -> ty.Tuple[str, bytes]:
     soup = BeautifulSoup(page_html, "html.parser")
     # the tag looks like:
     # <meta property="og:image" content="https://images.unsplash.com/photo-....">
-    img_url = soup.find("meta", attrs=dict(property="og:image")).get_attribute_list(
-        "content"
-    )[0]
+    img_url = soup.find(
+        "meta", attrs=dict(property="og:image")
+    ).get_attribute_list("content")[0]
     return "jpeg", requests.get(img_url).content
 
 
@@ -68,4 +68,7 @@ def get_waifu() -> ty.Tuple[str, bytes]:
 
 def get_dog() -> ty.Tuple[str, bytes]:
     img_url = requests.get("https://random.dog/woof").text
-    return img_url.split(".")[-1], requests.get("https://random.dog/" + img_url).content
+    return (
+        img_url.split(".")[-1],
+        requests.get("https://random.dog/" + img_url).content,
+    )

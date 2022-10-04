@@ -9,7 +9,9 @@ def normalize_input(resturant_name):
     # converting to lower case and replacing white spaces
     resturant_name = resturant_name.lower().strip()
     # removing punctuations
-    resturant_name = resturant_name.translate(str.maketrans("", "", string.punctuation))
+    resturant_name = resturant_name.translate(
+        str.maketrans("", "", string.punctuation)
+    )
     # converting all charecters to unicode (ie:- é->e) and replacing spaces with -
     return unidecode(resturant_name.replace(" ", "-"))
 
@@ -26,7 +28,9 @@ def get_resturent_details(resturant_name):
     # getting the name, address and description
     data["name"] = soup.h2.text
 
-    data["address"] = soup.find(class_="restaurant-details__heading--list").li.text
+    data["address"] = soup.find(
+        class_="restaurant-details__heading--list"
+    ).li.text
 
     data["description"] = soup.find("p").text
 

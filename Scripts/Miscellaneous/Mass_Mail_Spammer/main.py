@@ -44,7 +44,8 @@ def rand_msg(spam):
         print("Message number #{}/{}".format(i + 1, spam))
         msg.append(
             "".join(
-                random.choice(string.ascii_letters + string.digits) for _ in range(N)
+                random.choice(string.ascii_letters + string.digits)
+                for _ in range(N)
             )
         )
         sub.append(input("Enter subject : "))
@@ -93,7 +94,9 @@ def main():
     greeting()
 
     email = input("Enter your email : ")
-    passwd = getpass.getpass("Enter your passwd : ")  # take passwd into as hidden
+    passwd = getpass.getpass(
+        "Enter your passwd : "
+    )  # take passwd into as hidden
 
     target = input("Recipient's email : ")
     spam = input("Number of spam messages : ")

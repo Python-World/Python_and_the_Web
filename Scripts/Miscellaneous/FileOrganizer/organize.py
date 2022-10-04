@@ -21,7 +21,16 @@ def organizeThis(dir_path):
 
             # Check if files are music
             if filename.lower().endswith(
-                (".wav", ".mp3", ".flac", ".3gp", ".aa", ".aax", ".aiff", ".raw")
+                (
+                    ".wav",
+                    ".mp3",
+                    ".flac",
+                    ".3gp",
+                    ".aa",
+                    ".aax",
+                    ".aiff",
+                    ".raw",
+                )
             ):
                 # If music folder doesnt exist then create
                 if not os.path.exists(dir_path + "music"):
@@ -42,7 +51,9 @@ def organizeThis(dir_path):
                 # If executables folder doesnt exist then create
                 if not os.path.exists(dir_path + "/executables"):
                     os.makedirs(dir_path + "/executables")
-                shutil.copy2(dir_path + "/" + filename, dir_path + "/executables")
+                shutil.copy2(
+                    dir_path + "/" + filename, dir_path + "/executables"
+                )
                 os.remove(dir_path + "/" + filename)
 
             # Check if files are documents
@@ -52,7 +63,9 @@ def organizeThis(dir_path):
                 # If documents folder doesnt exist then create
                 if not os.path.exists(dir_path + "/documents"):
                     os.makedirs(dir_path + "/documents")
-                shutil.copy2(dir_path + "/" + filename, dir_path + "/documents")
+                shutil.copy2(
+                    dir_path + "/" + filename, dir_path + "/documents"
+                )
                 os.remove(dir_path + "/" + filename)
 
     except OSError:

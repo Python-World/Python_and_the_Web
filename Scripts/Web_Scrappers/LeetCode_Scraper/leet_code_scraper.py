@@ -49,7 +49,9 @@ def parse_problem_statement(problem_code: str):
         raise InvalidCodeException
 
     # Problem statement div
-    problem_div = soup.find("div", class_=re.compile(r"content\w+ question-content\w+"))
+    problem_div = soup.find(
+        "div", class_=re.compile(r"content\w+ question-content\w+")
+    )
     return problem_div.text
 
 
@@ -76,7 +78,9 @@ if __name__ == "__main__":
                     for l in wrapped_lines:
                         print(l, file=fout)
 
-        print(f"Successfully scraped {problem_code} and saved as {problem_code}.py!")
+        print(
+            f"Successfully scraped {problem_code} and saved as {problem_code}.py!"
+        )
 
     except InvalidCodeException:
         print("Invalid Problem Code! Please check the problem code provided!")

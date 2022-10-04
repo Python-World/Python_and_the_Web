@@ -48,7 +48,9 @@ def get_table(soup):
 
 # writes data to file
 def write_to_file(content_table, name):
-    with io.open("./scraped_texts/{}.txt".format(name), "w", encoding="UTF-8") as dobj:
+    with io.open(
+        "./scraped_texts/{}.txt".format(name), "w", encoding="UTF-8"
+    ) as dobj:
         for line in content_table:
             if len(line) >= 1 and line[0] is not None:
                 for value in line:
@@ -61,7 +63,9 @@ def write_to_file(content_table, name):
 def show_to_teeminal(name):
     not_needed = ["5 wickets in innings\n", "10 wickets in match\n"]
     final_list = []
-    with io.open("./scraped_texts/{}.txt".format(name), "r", encoding="UTF-8") as dobj:
+    with io.open(
+        "./scraped_texts/{}.txt".format(name), "r", encoding="UTF-8"
+    ) as dobj:
         print("----------------------------{}-------------------".format(name))
         for line in dobj:
             if len(line.split()) > 2 and line not in not_needed:

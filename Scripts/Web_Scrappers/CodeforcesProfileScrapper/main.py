@@ -22,7 +22,9 @@ class Profile:
         self.master.title(f"Codeforces Profiler - {handle}")
 
         try:
-            self.user = Bunch(user_info(handle)[0])  # bcz Namespace syntax is easy
+            self.user = Bunch(
+                user_info(handle)[0]
+            )  # bcz Namespace syntax is easy
             self.init()
         except UserNotFoundError:
             w = ttk.Label(self.master, text=f"User {handle} does not exists!")
@@ -36,7 +38,9 @@ class Profile:
         )
         RATING_COLOR = c.rating.get(self.user.rank)
         MAX_RATING_COLOR = c.rating.get(self.user.maxRank)
-        CONTRIBUTION = "+" * (self.user.contribution > 0) + str(self.user.contribution)
+        CONTRIBUTION = "+" * (self.user.contribution > 0) + str(
+            self.user.contribution
+        )
         CONTRIBUTION_COLOR = c.GREEN if self.user.contribution > 0 else c.GRAY
         # image
         img1 = Label(self.master, image=PROFILE_PIC)
@@ -69,14 +73,21 @@ class Profile:
         label3.grid(row=2, column=0, sticky="w", columnspan=2)
         # From
         label4 = Label(
-            self.master, fg="#777777", text=f"From {self.user.get('organization', '')}"
+            self.master,
+            fg="#777777",
+            text=f"From {self.user.get('organization', '')}",
         )
         label4.grid(row=3, column=0, sticky="w", columnspan=2)
         # Contest Rating:
-        label5 = Label(self.master, font="Arial 14", text="Contest Rating:         ")
+        label5 = Label(
+            self.master, font="Arial 14", text="Contest Rating:         "
+        )
         label5.grid(row=4, column=0, sticky="w")
         label6 = Label(
-            self.master, fg=RATING_COLOR, font="Arial 14", text=self.user.rating
+            self.master,
+            fg=RATING_COLOR,
+            font="Arial 14",
+            text=self.user.rating,
         )
         label6.grid(row=4, column=1, sticky="w")
         # Max Rating:
@@ -93,14 +104,19 @@ class Profile:
         label9 = Label(self.master, font="Arial 14", text="Contribution:")
         label9.grid(row=6, column=0, sticky="w")
         label10 = Label(
-            self.master, fg=CONTRIBUTION_COLOR, font="Arial 14", text=CONTRIBUTION
+            self.master,
+            fg=CONTRIBUTION_COLOR,
+            font="Arial 14",
+            text=CONTRIBUTION,
         )
         label10.grid(row=6, column=1, sticky="w")
         # Friend of:
         label11 = Label(self.master, font="Arial 14", text="Friend of:")
         label11.grid(row=7, column=0, sticky="w")
         label12 = Label(
-            self.master, font="Arial 14", text=f"{self.user.friendOfCount} users"
+            self.master,
+            font="Arial 14",
+            text=f"{self.user.friendOfCount} users",
         )
         label12.grid(row=7, column=1, sticky="w")
         # Last visit:
@@ -109,7 +125,9 @@ class Profile:
         label14 = Label(
             self.master,
             font="Arial 14",
-            text=datetime.utcfromtimestamp(int(self.user.lastOnlineTimeSeconds)),
+            text=datetime.utcfromtimestamp(
+                int(self.user.lastOnlineTimeSeconds)
+            ),
         )
         label14.grid(row=8, column=1, sticky="w")
         # Registered
@@ -118,7 +136,9 @@ class Profile:
         label16 = Label(
             self.master,
             font="Arial 14",
-            text=datetime.utcfromtimestamp(int(self.user.registrationTimeSeconds)),
+            text=datetime.utcfromtimestamp(
+                int(self.user.registrationTimeSeconds)
+            ),
         )
         label16.grid(row=9, column=1, sticky="w")
 
@@ -134,7 +154,9 @@ class App:
         self.entry1 = ttk.Entry(master)
         self.entry1.grid(row=0, column=1, padx=5, pady=5)
         self.entry1.focus_set()
-        button1 = ttk.Button(master, text="Fetch Data", command=self.display_profile)
+        button1 = ttk.Button(
+            master, text="Fetch Data", command=self.display_profile
+        )
         button1.grid(row=1, column=0, columnspan=2, padx=5, pady=5)
 
     def display_profile(self, event=None):

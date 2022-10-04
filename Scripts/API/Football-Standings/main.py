@@ -9,7 +9,10 @@ load_dotenv()
 LEAGUE_CODE = {
     "BSA": {"code": 2013, "name": "Brazilian First Division"},
     "BL": {"code": 2002, "name": "Bundesliga"},  # Bundesliga
-    "ECL": {"code": 2016, "name": "English Championship"},  # English Championship
+    "ECL": {
+        "code": 2016,
+        "name": "English Championship",
+    },  # English Championship
     "ERD": {"code": 2003, "name": "Eredivisie"},  # Eredivisie [Dutch]
     "L1": {"code": 2015, "name": "Ligue 1"},  # Ligue 1
     "SPA": {"code": 2014, "name": "La Liga"},  # La Liga
@@ -42,32 +45,27 @@ def print_standings(league_id):
         + str(obj["season"]["currentMatchday"])
         + "\n"
     )
-    str_re += (
-        "╔════╤════════════════════════════════════╤════╤════╤════╤════╤═════╤═════╗\n"
-    )
-    str_re += (
-        "║ SN │                TEAM                │ M  │ W  │ D  │ L  │ PTS │ GD  ║\n"
-    )
-    str_re += (
-        "╠════╪════════════════════════════════════╪════╪════╪════╪════╪═════╪═════╣\n"
-    )
+    str_re += "╔════╤════════════════════════════════════╤════╤════╤════╤════╤═════╤═════╗\n"
+    str_re += "║ SN │                TEAM                │ M  │ W  │ D  │ L  │ PTS │ GD  ║\n"
+    str_re += "╠════╪════════════════════════════════════╪════╪════╪════╪════╪═════╪═════╣\n"
     for team in obj["standings"][0]["table"]:
-        text = "║ %-2d │ %-34s │ %-2d │ %-2d │ %-2d │ %-2d │ %-3d │ %+-3d ║\n" % (
-            team["position"],
-            team["team"]["name"][:34],
-            team["playedGames"],
-            team["won"],
-            team["draw"],
-            team["lost"],
-            team["points"],
-            team["goalDifference"],
+        text = (
+            "║ %-2d │ %-34s │ %-2d │ %-2d │ %-2d │ %-2d │ %-3d │ %+-3d ║\n"
+            % (
+                team["position"],
+                team["team"]["name"][:34],
+                team["playedGames"],
+                team["won"],
+                team["draw"],
+                team["lost"],
+                team["points"],
+                team["goalDifference"],
+            )
         )
 
         str_re += text
 
-    str_re += (
-        "╚════╧════════════════════════════════════╧════╧════╧════╧════╧═════╧═════╝"
-    )
+    str_re += "╚════╧════════════════════════════════════╧════╧════╧════╧════╧═════╧═════╝"
 
     print(str_re)
 
@@ -88,7 +86,9 @@ if __name__ == "__main__":
         if arg in ["--help", "-h"]:
             print("List of leagues and the codes: ")
             for sno, key in enumerate(LEAGUE_CODE.keys()):
-                print("%2d. %-30s %s" % (sno + 1, LEAGUE_CODE[key]["name"], key))
+                print(
+                    "%2d. %-30s %s" % (sno + 1, LEAGUE_CODE[key]["name"], key)
+                )
             sys.exit(0)
 
         league_id = LEAGUE_CODE.get(arg)

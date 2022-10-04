@@ -36,7 +36,11 @@ if __name__ == "__main__":
         description="get data from spreadsheet in json format"
     )
     parser.add_argument(
-        "-json", help="Enter path of json file", dest="json", type=str, required=True
+        "-json",
+        help="Enter path of json file",
+        dest="json",
+        type=str,
+        required=True,
     )
     parser.add_argument(
         "-spreadsheet_name",

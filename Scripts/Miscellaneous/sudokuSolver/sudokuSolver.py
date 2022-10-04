@@ -59,7 +59,9 @@ def solve(board):
 if __name__ == "__main__":
     board = []
     print(
-        "=" * 5, "Enter Values separated by space and use 0 for empty values", "=" * 5
+        "=" * 5,
+        "Enter Values separated by space and use 0 for empty values",
+        "=" * 5,
     )
     for i in range(9):
         row = input(f"Enter row {i+1} values: ")

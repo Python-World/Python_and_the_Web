@@ -55,7 +55,9 @@ def get_quantocracy_articles():
 
 # function to get top 10 articles from quantstart systematic trading
 def get_quantstart_articles():
-    res = requests.get("https://www.quantstart.com/articles/topic/systematic-trading/")
+    res = requests.get(
+        "https://www.quantstart.com/articles/topic/systematic-trading/"
+    )
     soup = BeautifulSoup(res.text, "html.parser")
     posts = soup.select("body > div > section.mb-2 > div")[0]
 

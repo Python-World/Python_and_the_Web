@@ -25,7 +25,9 @@ current = set()
 
 
 def execute():
-    fname = time.strftime(os.path.join(path, "captures", "%Y%m%d%H%M%S") + ".png")
+    fname = time.strftime(
+        os.path.join(path, "captures", "%Y%m%d%H%M%S") + ".png"
+    )
     myScreenshot = pyautogui.screenshot()
     myScreenshot.save(fname)
     print("Uploading..")

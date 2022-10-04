@@ -51,7 +51,15 @@ with open("where.txt") as fh, open("where.js", "w", encoding="utf-8") as where:
 
     where.write("myData = [\n")
     for item in adrs:
-        st = "[" + str(item[0]) + ", " + str(item[1]) + ", '" + str(item[2]) + "' ], \n"
+        st = (
+            "["
+            + str(item[0])
+            + ", "
+            + str(item[1])
+            + ", '"
+            + str(item[2])
+            + "' ], \n"
+        )
         where.write(st)
         where.write(",\n")
     where.write("];\n")

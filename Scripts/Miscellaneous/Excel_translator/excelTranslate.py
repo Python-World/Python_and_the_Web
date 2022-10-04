@@ -54,7 +54,9 @@ while True:
 translator = Translator()
 for index in data.index:
     for col in coltochange:
-        lineres = translator.translate(data[col][index], src=fromLang, des=toLang)
+        lineres = translator.translate(
+            data[col][index], src=fromLang, des=toLang
+        )
         data[col][index] = lineres.text
 
 

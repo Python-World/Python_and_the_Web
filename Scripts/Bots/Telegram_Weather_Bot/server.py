@@ -17,7 +17,9 @@ def make_reply(message):
     reply = []
     reply.append(stats["name"])
     reply.append(f"Description: {stats['weather'][0]['description']}")
-    reply.append(f"Temperature(celcius): {round(stats['main']['temp'] - 273.15, 2)}")
+    reply.append(
+        f"Temperature(celcius): {round(stats['main']['temp'] - 273.15, 2)}"
+    )
     reply.append(
         f"Max Temperature(celcius): {round(stats['main']['temp_max'] - 273.15, 2)}"
     )

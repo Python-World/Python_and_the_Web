@@ -51,7 +51,9 @@ passLen = IntVar()
 passLen.set(0)
 passType = IntVar()
 
-Label(root, text="Welcome to Password Generator", font="lucida 20 bold").pack(pady=10)
+Label(root, text="Welcome to Password Generator", font="lucida 20 bold").pack(
+    pady=10
+)
 f1 = Frame(root)
 # Label for Enter Password length
 l1 = Label(f1, text="Enter password length", font="lucida 10 bold")
@@ -69,10 +71,20 @@ r1 = Radiobutton(
     column=4,
 )
 r2 = Radiobutton(
-    f1, text="AlphaNumeric", value=2, variable=passType, padx=10, font="lucida 12"
+    f1,
+    text="AlphaNumeric",
+    value=2,
+    variable=passType,
+    padx=10,
+    font="lucida 12",
 ).grid(row=3, column=4)
 r3 = Radiobutton(
-    f1, text="Extreme Secure", value=3, variable=passType, padx=10, font="lucida 12"
+    f1,
+    text="Extreme Secure",
+    value=3,
+    variable=passType,
+    padx=10,
+    font="lucida 12",
 ).grid(row=4, column=4)
 
 # Submit Button

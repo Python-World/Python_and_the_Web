@@ -12,7 +12,9 @@ class MyStreamer(TwythonStreamer):
             id = data["id"]
             st.create_favorite(id=id)
             # change 'nice tweet' too your desired retweet reply
-            st.update_status(status="Nice Tweet @" + username, in_reply_to_status_id=id)
+            st.update_status(
+                status="Nice Tweet @" + username, in_reply_to_status_id=id
+            )
             print("https://twitter.com/" + username + "/status/" + str(id))
 
 

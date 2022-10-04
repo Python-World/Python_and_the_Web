@@ -29,7 +29,9 @@ def pirate(search):
         "Accept-Encoding": "gzip, deflate",
         "Accept-Language": "en-US,en;q=0.9",
     }
-    result = json.loads(requests.get(url, headers=headers, cookies=cookies).text)
+    result = json.loads(
+        requests.get(url, headers=headers, cookies=cookies).text
+    )
     for index, value in enumerate(result):
         if index > 25:
             break
@@ -42,7 +44,8 @@ def pirate(search):
         data["uploaded-by"] = value["username"]
         data["magnetlink"] = scrapmag(data["hash"], data["name"])
         data["size"] = (
-            str(float("{:.2f}".format(float(value["size"]) / 1000000000))) + " GB"
+            str(float("{:.2f}".format(float(value["size"]) / 1000000000)))
+            + " GB"
         )
         array.append(data)
     return array

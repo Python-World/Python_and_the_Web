@@ -6,9 +6,7 @@ import configparser as cfg
 class weather_info:
     def __init__(self, config):
         self.token = self.read_config(config)
-        self.base = (
-            f"https://api.openweathermap.org/data/2.5/weather?appid={self.token}"
-        )
+        self.base = f"https://api.openweathermap.org/data/2.5/weather?appid={self.token}"
 
     def get_info(self, city):
         url = self.base + f"&q={city}"

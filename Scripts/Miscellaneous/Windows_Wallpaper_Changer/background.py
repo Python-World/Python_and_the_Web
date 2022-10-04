@@ -11,7 +11,9 @@ allowed_extensions = ["jpg", "png"]
 
 # Check for extension
 if filename.split(".")[-1] in allowed_extensions:
-    ctypes.windll.user32.SystemParametersInfoW(SPI_SETDESKWALLPAPER, 0, filename, 0)
+    ctypes.windll.user32.SystemParametersInfoW(
+        SPI_SETDESKWALLPAPER, 0, filename, 0
+    )
     print("Wallpaper Set Successfully!")
 else:
     print("Please select a JPEG/PNG file")

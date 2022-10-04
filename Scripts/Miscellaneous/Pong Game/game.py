@@ -98,7 +98,9 @@ class Ball:
 
     # Show the Ball
     def show(self):
-        pygame.draw.ellipse(display, self.color, (self.x, self.y, self.r, self.r))
+        pygame.draw.ellipse(
+            display, self.color, (self.x, self.y, self.r, self.r)
+        )
 
     # Move the Ball
     def move(self):
@@ -169,37 +171,51 @@ class Ball:
                     self.angle = -135
                 if (
                     rightPaddle.y + 10 < self.y < rightPaddle.y + 20
-                    or rightPaddle.y + 10 < self.y + self.r < rightPaddle.y + 20
+                    or rightPaddle.y + 10
+                    < self.y + self.r
+                    < rightPaddle.y + 20
                 ):
                     self.angle = -150
                 if (
                     rightPaddle.y + 20 < self.y < rightPaddle.y + 30
-                    or rightPaddle.y + 20 < self.y + self.r < rightPaddle.y + 30
+                    or rightPaddle.y + 20
+                    < self.y + self.r
+                    < rightPaddle.y + 30
                 ):
                     self.angle = -165
                 if (
                     rightPaddle.y + 30 < self.y < rightPaddle.y + 40
-                    or rightPaddle.y + 30 < self.y + self.r < rightPaddle.y + 40
+                    or rightPaddle.y + 30
+                    < self.y + self.r
+                    < rightPaddle.y + 40
                 ):
                     self.angle = 170
                 if (
                     rightPaddle.y + 40 < self.y < rightPaddle.y + 50
-                    or rightPaddle.y + 40 < self.y + self.r < rightPaddle.y + 50
+                    or rightPaddle.y + 40
+                    < self.y + self.r
+                    < rightPaddle.y + 50
                 ):
                     self.angle = 190
                 if (
                     rightPaddle.y + 50 < self.y < rightPaddle.y + 60
-                    or rightPaddle.y + 50 < self.y + self.r < rightPaddle.y + 60
+                    or rightPaddle.y + 50
+                    < self.y + self.r
+                    < rightPaddle.y + 60
                 ):
                     self.angle = 165
                 if (
                     rightPaddle.y + 60 < self.y < rightPaddle.y + 70
-                    or rightPaddle.y + 60 < self.y + self.r < rightPaddle.y + 70
+                    or rightPaddle.y + 60
+                    < self.y + self.r
+                    < rightPaddle.y + 70
                 ):
                     self.angle = 150
                 if (
                     rightPaddle.y + 70 < self.y < rightPaddle.y + 80
-                    or rightPaddle.y + 70 < self.y + self.r < rightPaddle.y + 80
+                    or rightPaddle.y + 70
+                    < self.y + self.r
+                    < rightPaddle.y + 80
                 ):
                     self.angle = 135
 
@@ -226,7 +242,9 @@ def gameOver():
                     if event.key == pygame.K_r:
                         reset()
             if scoreLeft == maxScore:
-                playerWins = largeFont.render("Red wins!Press R to reset!", True, red)
+                playerWins = largeFont.render(
+                    "Red wins!Press R to reset!", True, red
+                )
                 display.blit(playerWins, (40, height / 2))
             elif scoreRight == maxScore:
                 playerWins = largeFont.render(

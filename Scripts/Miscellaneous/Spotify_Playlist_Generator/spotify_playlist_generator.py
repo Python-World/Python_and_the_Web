@@ -23,9 +23,15 @@ def get_args():
         description="Split a playlist into multiple playlists"
     )
     # Required arguments for the program
-    parser.add_argument("-p", "--playlist_id", required=True, help="Playlist ID")
     parser.add_argument(
-        "-l", "--limit", required=True, default=20, help="Size of each small playlist"
+        "-p", "--playlist_id", required=True, help="Playlist ID"
+    )
+    parser.add_argument(
+        "-l",
+        "--limit",
+        required=True,
+        default=20,
+        help="Size of each small playlist",
     )
     return parser.parse_args()
 
@@ -58,7 +64,9 @@ def generate_playlists(playlist_size, playlist_songs, user_id):
         )
         # Add songs to the playlist and publish them
         spotipy_instance.playlist_add_items(created_playlist["id"], track_ids)
-        print("Generated Playlist", str(index + 1), " of size", (playlist_size))
+        print(
+            "Generated Playlist", str(index + 1), " of size", (playlist_size)
+        )
 
 
 def main():

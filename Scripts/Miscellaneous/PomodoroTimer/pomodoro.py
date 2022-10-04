@@ -13,7 +13,11 @@ class Pomodoro:
     TIMER_LONG_BREAK = 3
 
     def __init__(
-        self, task_goal, long_break_length, short_break_length, task_length_minutes
+        self,
+        task_goal,
+        long_break_length,
+        short_break_length,
+        task_length_minutes,
     ):
         """
         Initialize a pomodoro timer

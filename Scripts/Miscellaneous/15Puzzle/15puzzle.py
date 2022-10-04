@@ -33,7 +33,7 @@ class Puzzle(Frame):
         # reset the game state
         self.moves = 25
         self.start_time = time.time() - 54
-        self.game_grid = list(range(1, c.GRID_LEN ** 2)) + [0]
+        self.game_grid = list(range(1, c.GRID_LEN**2)) + [0]
         self.game_grid = list(range(0, c.GRID_LEN * c.GRID_LEN))
         random.shuffle(self.game_grid)
         while not is_solvable(self.game_grid):
@@ -92,11 +92,15 @@ class Puzzle(Frame):
         l.image = image
         l.grid(columnspan=2, padx=10, pady=5)
         # tell the performance
-        Label(f, text="It took you", bg="white", fg="#534648", font="Arial 16").grid(
-            row=1, column=0, pady=10
-        )
         Label(
-            f, textvariable=self.score, bg="white", fg="#534648", font="Arial 16 bold"
+            f, text="It took you", bg="white", fg="#534648", font="Arial 16"
+        ).grid(row=1, column=0, pady=10)
+        Label(
+            f,
+            textvariable=self.score,
+            bg="white",
+            fg="#534648",
+            font="Arial 16 bold",
         ).grid(row=1, column=1, pady=10)
         # play again button
         btn = Label(
@@ -132,7 +136,10 @@ class Puzzle(Frame):
 
     def swap_cells(self, x, y):
         self.moves += 1
-        self.game_grid[x], self.game_grid[y] = self.game_grid[y], self.game_grid[x]
+        self.game_grid[x], self.game_grid[y] = (
+            self.game_grid[y],
+            self.game_grid[x],
+        )
         self.update_grid()
         # check if grid is solved
         if is_solved(self.game_grid):

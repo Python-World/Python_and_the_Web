@@ -85,7 +85,9 @@ Type
 If Any Issues Contact : @Apex-code
 
 """
-    context.bot.send_message(chat_id=update.effective_chat.id, text=helpmessage)
+    context.bot.send_message(
+        chat_id=update.effective_chat.id, text=helpmessage
+    )
 
 
 def donate(update, context):

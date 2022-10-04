@@ -14,7 +14,9 @@ def statsFind():
     else:
         try:
             print("\nwait a sec....\n")
-            url = "https://www.bing.com/search?q=covid+stats+" + name.replace(" ", "+")
+            url = "https://www.bing.com/search?q=covid+stats+" + name.replace(
+                " ", "+"
+            )
             header = {"User-Agent": "Chrome/6.0.472.63 Safari/534.3"}
             source = requests.get(url, headers=header)
             soup = BeautifulSoup(source.content, "lxml")
@@ -27,7 +29,9 @@ def statsFind():
                 if nameFound == "Global cases":
                     break
                 update = soup.select_one(
-                    "div:nth-child({}) > div.cov_modHead > div:nth-child(2)".format(i)
+                    "div:nth-child({}) > div.cov_modHead > div:nth-child(2)".format(
+                        i
+                    )
                 ).text
                 name = nameFound.replace(" cases", "")
                 ttlCase = soup.select_one(
@@ -46,7 +50,12 @@ def statsFind():
                     )
                 ).text
                 table = [
-                    ["Country/State", " : ", name.upper(), "     ({})".format(update)],
+                    [
+                        "Country/State",
+                        " : ",
+                        name.upper(),
+                        "     ({})".format(update),
+                    ],
                     ["Total Cases", " : ", ttlCase],
                     ["Total Deaths", " : ", ttlDeaths],
                     ["Recovered", " : ", ttlRecovered],
@@ -87,12 +96,26 @@ print(makeTable(table, [], "plain") + "\n\n")
 
 print("         Top 10 countries suffering form COVID-19")
 top10 = []
-header = ["Rank", "Country\nName", "Total\nCases", "Total\nDeaths", "Total\nRecovered"]
+header = [
+    "Rank",
+    "Country\nName",
+    "Total\nCases",
+    "Total\nDeaths",
+    "Total\nRecovered",
+]
 for i in range(3, 13, 1):
-    country = soup.select_one(" tr:nth-child({}) > th:nth-child(2) > a".format(i)).text
-    ttlCase = soup.select_one("tr:nth-child({}) > td:nth-child(3)".format(i)).text
-    ttlDeaths = soup.select_one("tr:nth-child({}) > td:nth-child(4)".format(i)).text
-    ttlRecovered = soup.select_one(" tr:nth-child({}) > td:nth-child(5)".format(i)).text
+    country = soup.select_one(
+        " tr:nth-child({}) > th:nth-child(2) > a".format(i)
+    ).text
+    ttlCase = soup.select_one(
+        "tr:nth-child({}) > td:nth-child(3)".format(i)
+    ).text
+    ttlDeaths = soup.select_one(
+        "tr:nth-child({}) > td:nth-child(4)".format(i)
+    ).text
+    ttlRecovered = soup.select_one(
+        " tr:nth-child({}) > td:nth-child(5)".format(i)
+    ).text
     top10.append([i - 2, country, ttlCase, ttlDeaths, ttlRecovered])
 
 print(makeTable(top10, header, "grid"))
@@ -100,5 +123,7 @@ print(makeTable(top10, header, "grid"))
 statsFind()
 print(
     "\n\n"
-    + makeTable("Thanks . for . using . my . COVID-19 . scraper".split(), [], "plain")
+    + makeTable(
+        "Thanks . for . using . my . COVID-19 . scraper".split(), [], "plain"
+    )
 )

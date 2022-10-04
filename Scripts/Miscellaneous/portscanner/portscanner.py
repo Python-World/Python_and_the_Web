@@ -42,8 +42,12 @@ def portScan(host, ports):
 
 def Main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("-H", "--host", type=str, help="host name", default="127.0.0.1")
-    parser.add_argument("-p", "--port", type=str, help="port number[s]", default="80")
+    parser.add_argument(
+        "-H", "--host", type=str, help="host name", default="127.0.0.1"
+    )
+    parser.add_argument(
+        "-p", "--port", type=str, help="port number[s]", default="80"
+    )
     args = parser.parse_args()
     host = args.host
     ports = args.port.split(",")

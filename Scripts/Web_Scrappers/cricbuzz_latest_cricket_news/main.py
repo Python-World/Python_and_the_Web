@@ -12,7 +12,8 @@ time.sleep(1)
 print("Parsing the page")
 soup = BeautifulSoup(r.content, "html.parser")
 main_div = soup.find_all(
-    "div", attrs={"class": re.compile("cb-col cb-col-100 cb-lst-itm cb-lst-itm-lg")}
+    "div",
+    attrs={"class": re.compile("cb-col cb-col-100 cb-lst-itm cb-lst-itm-lg")},
 )
 links = []
 intro = []
@@ -28,7 +29,9 @@ for s in main_div:
     typ.append(s2.text)
     s3 = s.find("span", attrs={"class": re.compile("cb-nws-time")})
     time.append(s3.text)
-    s4 = s.find("h2", attrs={"class": re.compile("cb-nws-hdln cb-font-18 line-ht24")})
+    s4 = s.find(
+        "h2", attrs={"class": re.compile("cb-nws-hdln cb-font-18 line-ht24")}
+    )
     heading.append(s4.text)
 l = len(heading)
 with open("out.txt", "w") as file:

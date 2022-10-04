@@ -8,7 +8,8 @@ class Cryptozor:
 
     def convert(self, amount):
         api = requests.get(
-            "https://api.coinbase.com/v2/exchange-rates?currency=" + self.cryptocurrency
+            "https://api.coinbase.com/v2/exchange-rates?currency="
+            + self.cryptocurrency
         )
         try:
             currentPrice = api.json()["data"]["rates"][self.currency]

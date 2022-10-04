@@ -65,7 +65,9 @@ while cap.isOpened():
 
     try:
 
-        faces = cascade_model.detectMultiScale(frame, 1.1, 5)  # Detect faces in a frame
+        faces = cascade_model.detectMultiScale(
+            frame, 1.1, 5
+        )  # Detect faces in a frame
 
         for x, y, w, h in faces:
 
@@ -85,7 +87,9 @@ while cap.isOpened():
                 cv2.putText(frame, "Sad", (x, y), font, 1, (0, 0, 255), 2)
 
             else:
-                cv2.putText(frame, "Surprised", (x, y), font, 1, (0, 0, 255), 2)
+                cv2.putText(
+                    frame, "Surprised", (x, y), font, 1, (0, 0, 255), 2
+                )
 
             cv2.imshow("frame", frame)
 

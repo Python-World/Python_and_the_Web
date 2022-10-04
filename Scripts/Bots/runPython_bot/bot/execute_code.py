@@ -102,7 +102,9 @@ def eval_py(input_text: str):
     manger = multiprocessing.Manager()
     return_val = manger.dict()  # enable target function to return a value
 
-    process = multiprocessing.Process(target=evaluate, args=(input_text, return_val))
+    process = multiprocessing.Process(
+        target=evaluate, args=(input_text, return_val)
+    )
     process.start()
     process.join(6)  # allow the process to run for 6 seconds
     if process.is_alive():

@@ -34,7 +34,8 @@ def handle_long_message(msg):
     if msg:
         if len(msg) > 2000:
             return (
-                msg[:2000] + "\n\n 😟 Output was too long, truncated to 2000 characters"
+                msg[:2000]
+                + "\n\n 😟 Output was too long, truncated to 2000 characters"
             )
         return msg
     return "handle_long_message recieved an empty message"
@@ -55,7 +56,9 @@ def bot():
         """This fuction replies to the start command"""
 
         context.bot.send_message(
-            chat_id=update.effective_chat.id, text=start_text, parse_mode="Markdown"
+            chat_id=update.effective_chat.id,
+            text=start_text,
+            parse_mode="Markdown",
         )
         # for more info on parse modes
         # see https://python-telegram-bot.readthedocs.io/en/stable/telegram.parsemode.html
@@ -63,13 +66,17 @@ def bot():
     def bot_help(update, context):
         """This function replies to the help command"""
         context.bot.send_message(
-            chat_id=update.effective_chat.id, text=help_text, parse_mode="Markdown"
+            chat_id=update.effective_chat.id,
+            text=help_text,
+            parse_mode="Markdown",
         )
 
     def code_info(update, context):
         """This function replies to the code command."""
         context.bot.send_message(
-            chat_id=update.effective_chat.id, text=code_text, parse_mode="Markdown"
+            chat_id=update.effective_chat.id,
+            text=code_text,
+            parse_mode="Markdown",
         )
 
     def reply_execute(update, context):
@@ -82,7 +89,8 @@ def bot():
         if input_text == "hi":
             user = update.message.from_user
             context.bot.send_message(
-                chat_id=update.effective_chat.id, text=f'Hi! {user["username"]} 🥰'
+                chat_id=update.effective_chat.id,
+                text=f'Hi! {user["username"]} 🥰',
             )
 
         if input_text.endswith("/e"):
