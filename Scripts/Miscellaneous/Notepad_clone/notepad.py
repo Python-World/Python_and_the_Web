@@ -58,7 +58,9 @@ class MainWindow(QMainWindow):
         file_toolbar.addAction(save_file_action)
 
         saveas_file_action = QAction(
-            QIcon(os.path.join("images", "disk--pencil.png")), "Save As...", self
+            QIcon(os.path.join("images", "disk--pencil.png")),
+            "Save As...",
+            self,
         )
         saveas_file_action.setStatusTip("Save current page to specified file")
         saveas_file_action.triggered.connect(self.file_saveas)
@@ -79,7 +81,9 @@ class MainWindow(QMainWindow):
         edit_menu = self.menuBar().addMenu("&Edit")
 
         undo_action = QAction(
-            QIcon(os.path.join("images", "arrow-curve-180-left.png")), "Undo", self
+            QIcon(os.path.join("images", "arrow-curve-180-left.png")),
+            "Undo",
+            self,
         )
         undo_action.setStatusTip("Undo last change")
         undo_action.triggered.connect(self.editor.undo)
@@ -95,7 +99,9 @@ class MainWindow(QMainWindow):
 
         edit_menu.addSeparator()
 
-        cut_action = QAction(QIcon(os.path.join("images", "scissors.png")), "Cut", self)
+        cut_action = QAction(
+            QIcon(os.path.join("images", "scissors.png")), "Cut", self
+        )
         cut_action.setStatusTip("Cut selected text")
         cut_action.triggered.connect(self.editor.cut)
         edit_toolbar.addAction(cut_action)
@@ -120,7 +126,9 @@ class MainWindow(QMainWindow):
         edit_menu.addAction(paste_action)
 
         select_action = QAction(
-            QIcon(os.path.join("images", "selection-input.png")), "Select all", self
+            QIcon(os.path.join("images", "selection-input.png")),
+            "Select all",
+            self,
         )
         select_action.setStatusTip("Select all text")
         select_action.triggered.connect(self.editor.selectAll)
@@ -204,11 +212,14 @@ class MainWindow(QMainWindow):
 
     def update_title(self):
         self.setWindowTitle(
-            "%s - No2Pads" % (os.path.basename(self.path) if self.path else "Untitled")
+            "%s - No2Pads"
+            % (os.path.basename(self.path) if self.path else "Untitled")
         )
 
     def edit_toggle_wrap(self):
-        self.editor.setLineWrapMode(1 if self.editor.lineWrapMode() == 0 else 0)
+        self.editor.setLineWrapMode(
+            1 if self.editor.lineWrapMode() == 0 else 0
+        )
 
 
 if __name__ == "__main__":

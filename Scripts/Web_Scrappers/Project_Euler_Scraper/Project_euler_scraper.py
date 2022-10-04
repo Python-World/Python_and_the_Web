@@ -16,7 +16,9 @@ for n in tqdm(range(1, N_PAGES + 1)):
     src = bs4.BeautifulSoup(page, "html.parser")
 
     # get outermost container
-    main_div = src.find("div", id="content").find("div", id="problems_table_page")
+    main_div = src.find("div", id="content").find(
+        "div", id="problems_table_page"
+    )
 
     # get table including problems
     table = main_div.find("table", id="problems_table")

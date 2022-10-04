@@ -9,15 +9,23 @@ def fetch_news(link, file_name="custom_news.txt"):
     }
     r = rq.get(link, headers=header)
     soup = BeautifulSoup(r.content, "html.parser")
-    main_div = soup.find("div", attrs={"class": re.compile("lBwEZb BL5WZb GndZbb")})
-    news_set = main_div.find_all("div", attrs={"jscontroller": re.compile("d0DtYd")})
+    main_div = soup.find(
+        "div", attrs={"class": re.compile("lBwEZb BL5WZb GndZbb")}
+    )
+    news_set = main_div.find_all(
+        "div", attrs={"jscontroller": re.compile("d0DtYd")}
+    )
     news_set2 = main_div.find_all("div", attrs={"class": re.compile("xrnccd")})
     sources = []
     links = []
     headings = []
     for s in news_set:
-        source = s.find("a", attrs={"class": re.compile("wEwyrc AVN2gc uQIVzc Sksgp")})
-        time = s.find("time", attrs={"class": re.compile("WW6dff uQIVzc Sksgp")})
+        source = s.find(
+            "a", attrs={"class": re.compile("wEwyrc AVN2gc uQIVzc Sksgp")}
+        )
+        time = s.find(
+            "time", attrs={"class": re.compile("WW6dff uQIVzc Sksgp")}
+        )
         try:
             stri = source.text + ", Uploaded - " + time.text
         except AttributeError:
@@ -30,8 +38,12 @@ def fetch_news(link, file_name="custom_news.txt"):
     for s in news_set2:
         headings.append(s.h3.text)
         links.append("https://news.google.com" + s.a["href"][1:])
-        time = s.find("time", attrs={"class": re.compile("WW6dff uQIVzc Sksgp")})
-        source = s.find("a", attrs={"class": re.compile("wEwyrc AVN2gc uQIVzc Sksgp")})
+        time = s.find(
+            "time", attrs={"class": re.compile("WW6dff uQIVzc Sksgp")}
+        )
+        source = s.find(
+            "a", attrs={"class": re.compile("wEwyrc AVN2gc uQIVzc Sksgp")}
+        )
         try:
             stri = source.text + ", Uploaded - " + time.text
         except AttributeError:
@@ -72,7 +84,9 @@ print("")
 
 fetch = ""
 if ch == 1:
-    print("Enter the sub-topic of the category you selected. You can choose from :")
+    print(
+        "Enter the sub-topic of the category you selected. You can choose from :"
+    )
     print("\t a. Latest")
     print("\t b. Economy")
     print("\t c. Markets")
@@ -96,7 +110,9 @@ if ch == 1:
         print("Invalid Choice!")
         c2 = False
 elif ch == 2:
-    print("Enter the sub-topic of the category you selected. You can choose from :")
+    print(
+        "Enter the sub-topic of the category you selected. You can choose from :"
+    )
     print("\t a. Latest")
     print("\t b. Mobile")
     print("\t c. Gadgets")
@@ -123,7 +139,9 @@ elif ch == 2:
         print("Invalid Choice!")
         c2 = False
 elif ch == 3:
-    print("Enter the sub-topic of the category you selected. You can choose from :")
+    print(
+        "Enter the sub-topic of the category you selected. You can choose from :"
+    )
     print("\t a. Latest")
     print("\t b. Movies")
     print("\t c. Music")
@@ -150,7 +168,9 @@ elif ch == 3:
         print("Invalid Choice!")
         c2 = False
 elif ch == 4:
-    print("Enter the sub-topic of the category you selected. You can choose from :")
+    print(
+        "Enter the sub-topic of the category you selected. You can choose from :"
+    )
     print("\t a. Latest")
     print("\t b. Cricket")
     print("\t c. Hockey")
@@ -186,7 +206,9 @@ elif ch == 4:
         print("Invalid Choice!")
         c2 = False
 elif ch == 5:
-    print("Enter the sub-topic of the category you selected. You can choose from :")
+    print(
+        "Enter the sub-topic of the category you selected. You can choose from :"
+    )
     print("\t a. Latest")
     print("\t b. Environment")
     print("\t c. Outer space")
@@ -210,7 +232,9 @@ elif ch == 5:
         print("Invalid Choice!")
         c2 = False
 elif ch == 6:
-    print("Enter the sub-topic of the category you selected. You can choose from :")
+    print(
+        "Enter the sub-topic of the category you selected. You can choose from :"
+    )
     print("\t a. Latest")
     print("\t b. Medicine")
     print("\t c. Healthcare")

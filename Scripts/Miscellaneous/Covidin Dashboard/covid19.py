@@ -45,7 +45,12 @@ table_data = [
 if country != "":
     table_data = []
     table_data = [
-        [i["Country"], i["TotalConfirmed"], i["TotalRecovered"], i["TotalDeaths"]]
+        [
+            i["Country"],
+            i["TotalConfirmed"],
+            i["TotalRecovered"],
+            i["TotalDeaths"],
+        ]
         for i in data["Countries"]
         if i["Country"].lower() == country.lower()
     ]

@@ -14,7 +14,9 @@ class Typing_Test_Typer:
         # Click 'Start Typing Test'
         while True:
             try:
-                play_button = self.chrome.find_element_by_class_name("start-btn")
+                play_button = self.chrome.find_element_by_class_name(
+                    "start-btn"
+                )
                 play_button.click()
                 break
             except Exception:

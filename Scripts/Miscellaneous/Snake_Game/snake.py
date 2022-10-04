@@ -17,7 +17,10 @@ class Snake:
         return self.positions[0]
 
     def turn(self, point):
-        if self.length > 1 and (point[0] * -1, point[1] * -1) == self.direction:
+        if (
+            self.length > 1
+            and (point[0] * -1, point[1] * -1) == self.direction
+        ):
             return
         self.direction = point
 
@@ -82,7 +85,9 @@ class Food:
         )
 
     def draw(self, surface):
-        r = pygame.Rect((self.position[0], self.position[1]), (gridsize, gridsize))
+        r = pygame.Rect(
+            (self.position[0], self.position[1]), (gridsize, gridsize)
+        )
         pygame.draw.rect(surface, self.color, r)
         pygame.draw.rect(surface, (93, 216, 228), r, 1)
 
@@ -91,10 +96,14 @@ def drawGrid(surface):
     for y in range(0, int(grid_height)):
         for x in range(0, int(grid_width)):
             if (x + y) % 2 == 0:
-                r = pygame.Rect((x * gridsize, y * gridsize), (gridsize, gridsize))
+                r = pygame.Rect(
+                    (x * gridsize, y * gridsize), (gridsize, gridsize)
+                )
                 pygame.draw.rect(surface, (93, 216, 228), r)
             else:
-                rr = pygame.Rect((x * gridsize, y * gridsize), (gridsize, gridsize))
+                rr = pygame.Rect(
+                    (x * gridsize, y * gridsize), (gridsize, gridsize)
+                )
                 pygame.draw.rect(surface, (84, 194, 205), rr)
 
 

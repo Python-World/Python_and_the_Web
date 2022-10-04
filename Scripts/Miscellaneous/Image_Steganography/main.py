@@ -64,7 +64,9 @@ def main():
     mode = input("Encode/Decode (e/d) : ")
     if mode.lower() == "e":
         img_path = input("Enter path to Image that you want to Encode : ")
-        name = input("Enter the Name of the Output File (without extension) : ")
+        name = input(
+            "Enter the Name of the Output File (without extension) : "
+        )
         text = input("Enter the Text to be Hidden : ")
         encode(img_path, text, name)
     if mode.lower() == "d":

@@ -50,15 +50,23 @@ et_date_extension = ".cms"
 fetched_data = {}
 
 for dateid in range(start_dateid, end_dateid + 1):
-    date = str(reference_date + datetime.timedelta(days=dateid - reference_date_id))
-    html = requests.get("{}{}{}".format(et_date_url, dateid, et_date_extension)).content
+    date = str(
+        reference_date + datetime.timedelta(days=dateid - reference_date_id)
+    )
+    html = requests.get(
+        "{}{}{}".format(et_date_url, dateid, et_date_extension)
+    ).content
     soup = BeautifulSoup(html, "html.parser")
     fetched_data[date] = []
     for x in soup.select("#pageContent table li a"):
         print(x.text)
         article_metadata = fetchNewsArticle(et_host + x["href"])
         fetched_data[date].append(
-            {"metadata": article_metadata, "title": x.text, "url": et_host + x["href"]}
+            {
+                "metadata": article_metadata,
+                "title": x.text,
+                "url": et_host + x["href"],
+            }
         )
 
 out_filename = "ET_NewsData_{}_{}.json".format(start_date, end_date)

@@ -114,7 +114,13 @@ def expand_subtitle(full_subtitles_list, threshold=5):
     for i in range(start, end):
         sub = full_subtitles_list[i]
         if i == id:
-            result += " " + bcolors.WARNING + sub.content.strip() + bcolors.ENDC + " "
+            result += (
+                " "
+                + bcolors.WARNING
+                + sub.content.strip()
+                + bcolors.ENDC
+                + " "
+            )
         else:
             result += " " + sub.content.strip() + " "
 

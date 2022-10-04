@@ -55,8 +55,10 @@ class LyricsConsole(ScrapeLyrics):
 
     def search_song(self):
         """framing url and parsing list"""
-        form_url = "https://search.azlyrics.com/search.php?q={song_name}".format(
-            song_name="+".join(self.song_name.split())
+        form_url = (
+            "https://search.azlyrics.com/search.php?q={song_name}".format(
+                song_name="+".join(self.song_name.split())
+            )
         )
         super().__init__(url=form_url, parse_type="song_list")
         self.driver()

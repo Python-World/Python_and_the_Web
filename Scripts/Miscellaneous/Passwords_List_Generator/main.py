@@ -13,9 +13,9 @@ def get_information():
 
     more = input("Would you like to add more information? [y/N]: ")
     if more.lower() == "y":
-        more_info = input("Enter related keywords separated by commas: ").replace(
-            " ", ""
-        )
+        more_info = input(
+            "Enter related keywords separated by commas: "
+        ).replace(" ", "")
         info_list = more_info.split(",")
         for element in info_list:
             information.append(element)

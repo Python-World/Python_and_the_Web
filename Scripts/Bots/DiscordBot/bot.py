@@ -92,7 +92,9 @@ async def clear(ctx, amount=5):
 
 
 async def clear_error(ctx, error):
-    await ctx.send("Please specify the amount of messages to clear with tentacles")
+    await ctx.send(
+        "Please specify the amount of messages to clear with tentacles"
+    )
 
 
 @client.command()

@@ -6,12 +6,17 @@ from bs4 import BeautifulSoup as Soup
 
 HEADERS = {"Content-type": "application/xml"}
 LOCATION_XMLRPC = "xmlrpc.php"
-METHODS = {"validate": "system.listMethods", "list_methods": "system.listMethods"}
+METHODS = {
+    "validate": "system.listMethods",
+    "list_methods": "system.listMethods",
+}
 
 
 def get_template_call_simple() -> str:
     data = None
-    with open("method_call_simple_rpc.xml", encoding="utf-8") as template_simple_xml:
+    with open(
+        "method_call_simple_rpc.xml", encoding="utf-8"
+    ) as template_simple_xml:
         data = template_simple_xml.read()
 
     return data

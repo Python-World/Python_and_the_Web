@@ -48,7 +48,8 @@ def devfest_schedule():
                     "div", attrs={"class": "py-3 ma-1 fill-height"}
                 )
                 event_timings = event.find(
-                    "div", attrs={"class": "text-right my-0 py-0 col-md-2 col-3"}
+                    "div",
+                    attrs={"class": "text-right my-0 py-0 col-md-2 col-3"},
                 ).find_all("p")
 
                 event_name = event_details.find("p").text
@@ -74,11 +75,19 @@ def devfest_schedule():
                 )
                 event_authors = ""
                 for author in authors:
-                    event_authors = event_authors + author.text.replace(" ", "") + "  "
+                    event_authors = (
+                        event_authors + author.text.replace(" ", "") + "  "
+                    )
 
                 # Adding each event to csv file
                 writer.writerow(
-                    [event_name, event_date, event_time, event_tag, event_authors]
+                    [
+                        event_name,
+                        event_date,
+                        event_time,
+                        event_tag,
+                        event_authors,
+                    ]
                 )
 
             starting_date = starting_date + 1

@@ -45,7 +45,10 @@ if __name__ == "__main__":
     try:
         problem_code = sys.argv[1]
     except Exception:
-        print("Please Enter A CodeForces Problem Code as a", "Command-Line Argument!")
+        print(
+            "Please Enter A CodeForces Problem Code as a",
+            "Command-Line Argument!",
+        )
         sys.exit(0)
     problem = get_problem_statement(problem_code)
     to_txt(problem_code, problem)

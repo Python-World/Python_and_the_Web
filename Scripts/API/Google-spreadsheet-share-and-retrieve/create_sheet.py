@@ -71,7 +71,11 @@ if __name__ == "__main__":
         required=True,
     )
     parser.add_argument(
-        "-csv", help="Enter path of csv file", dest="csv", type=str, required=True
+        "-csv",
+        help="Enter path of csv file",
+        dest="csv",
+        type=str,
+        required=True,
     )
     parser.add_argument(
         "-spreadsheet_name",

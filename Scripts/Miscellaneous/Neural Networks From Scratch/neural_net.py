@@ -91,7 +91,9 @@ class MLP:
 
 
 # Heres a simple example with the XOR gate.
-X_train = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])  # Generate the training X data
+X_train = np.array(
+    [[0, 0], [0, 1], [1, 0], [1, 1]]
+)  # Generate the training X data
 
 y_train = np.array([[0], [1], [1], [0]])  # Generate the training y data
 

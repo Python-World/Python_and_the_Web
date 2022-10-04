@@ -96,7 +96,9 @@ def main():
             print("\nIt's a draw.")
             sleep(0.3)
 
-        q = input("\n\nPress enter to continue to next round. (Q to stop rounds)")
+        q = input(
+            "\n\nPress enter to continue to next round. (Q to stop rounds)"
+        )
 
         if q.upper() == "Q":
             break

@@ -11,7 +11,9 @@ class InstaBot:
     def __init__(self, username, pw):
         path = pathlib.Path().absolute()
         try:
-            self.driver = webdriver.Chrome(r"{}\{}".format(path, "chromedriver.exe"))
+            self.driver = webdriver.Chrome(
+                r"{}\{}".format(path, "chromedriver.exe")
+            )
         except:
             try:
                 self.driver = webdriver.Firefox(
@@ -32,12 +34,18 @@ class InstaBot:
         self.wait = WebDriverWait(self.driver, 10).until
 
         self.wait(
-            EC.presence_of_element_located((By.XPATH, "//input[@name='username']"))
+            EC.presence_of_element_located(
+                (By.XPATH, "//input[@name='username']")
+            )
         ).send_keys(username)
-        self.driver.find_element_by_xpath("//input[@name='password']").send_keys(pw)
+        self.driver.find_element_by_xpath(
+            "//input[@name='password']"
+        ).send_keys(pw)
         self.driver.find_element_by_xpath('//button[@type="submit"]').click()
         try:
-            self.driver.find_element_by_xpath("//input[@aria-label='Security Code']")
+            self.driver.find_element_by_xpath(
+                "//input[@aria-label='Security Code']"
+            )
             print("\nEnter the otp and login to continue\n")
             for _ in range(2):
                 WebDriverWait(self.driver, 50).until(
@@ -65,15 +73,23 @@ class InstaBot:
         ).click()
         self.driver.find_element_by_xpath("//div[text()='Profile']").click()
         self.wait(
-            EC.element_to_be_clickable((By.XPATH, "//a[contains(@href,'/following')]"))
+            EC.element_to_be_clickable(
+                (By.XPATH, "//a[contains(@href,'/following')]")
+            )
         ).click()
         following = self._get_names()
         self.wait(
-            EC.element_to_be_clickable((By.XPATH, "//a[contains(@href,'/followers')]"))
+            EC.element_to_be_clickable(
+                (By.XPATH, "//a[contains(@href,'/followers')]")
+            )
         ).click()
         followers = self._get_names()
-        not_following_back = [user for user in following if user not in followers]
-        you_not_following_back = [user for user in followers if user not in following]
+        not_following_back = [
+            user for user in following if user not in followers
+        ]
+        you_not_following_back = [
+            user for user in followers if user not in following
+        ]
         self.driver.find_element_by_xpath("//img[@alt='Instagram']").click()
 
         with open("Not Following Back", "w") as f1:
@@ -84,7 +100,9 @@ class InstaBot:
         self.driver.minimize_window()
 
         print(
-            "People who aren't following back ({}) :\n".format(len(not_following_back))
+            "People who aren't following back ({}) :\n".format(
+                len(not_following_back)
+            )
         )
         print("\n".join(not_following_back))
         print("\n\nDo you want to UNFOLLOW them all??")
@@ -142,14 +160,21 @@ class InstaBot:
                 )
             ).click()
             self.wait(
-                EC.element_to_be_clickable((By.XPATH, "//input[@placeholder='Search']"))
-            ).click()
-            self.wait(
-                EC.element_to_be_clickable((By.XPATH, "//a[@href='/{}/']".format(i)))
+                EC.element_to_be_clickable(
+                    (By.XPATH, "//input[@placeholder='Search']")
+                )
             ).click()
             self.wait(
                 EC.element_to_be_clickable(
-                    (By.XPATH, "//span[@class='glyphsSpriteFriend_Follow u-__7']")
+                    (By.XPATH, "//a[@href='/{}/']".format(i))
+                )
+            ).click()
+            self.wait(
+                EC.element_to_be_clickable(
+                    (
+                        By.XPATH,
+                        "//span[@class='glyphsSpriteFriend_Follow u-__7']",
+                    )
                 )
             ).click()
             sleep(1)
@@ -175,7 +200,9 @@ class InstaBot:
                 "//input[@placeholder='Search']"
             ).send_keys(i)
             self.wait(
-                EC.element_to_be_clickable((By.XPATH, "//a[@href='/{}/']".format(i)))
+                EC.element_to_be_clickable(
+                    (By.XPATH, "//a[@href='/{}/']".format(i))
+                )
             ).click()
             self.wait(
                 EC.element_to_be_clickable(
@@ -205,7 +232,9 @@ class InstaBot:
                 "//input[@placeholder='Search']"
             ).send_keys(i)
             self.wait(
-                EC.presence_of_element_located((By.XPATH, "//a[@class='yCE8d  ']"))
+                EC.presence_of_element_located(
+                    (By.XPATH, "//a[@class='yCE8d  ']")
+                )
             ).click()
             self.wait(
                 EC.element_to_be_clickable(
@@ -232,7 +261,9 @@ class InstaBot:
     def log_out(self):
         self.driver.find_element_by_xpath("//img[@alt='Instagram']").click()
         self.wait(
-            EC.element_to_be_clickable((By.XPATH, "//span[@class='_2dbep qNELH']"))
+            EC.element_to_be_clickable(
+                (By.XPATH, "//span[@class='_2dbep qNELH']")
+            )
         ).click()
         log_out = "/html/body/div[1]/section/nav/div[2]/div/div/div[3]/div/div[5]/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div"
         self.wait(EC.element_to_be_clickable((By.XPATH, log_out))).click()
@@ -290,7 +321,9 @@ class Users:
                     decrypted = Fernet(key).decrypt(
                         (str(data[i + 1])[0:-1].strip()).encode()
                     )
-                    self.users[str(data[i])[0:-1].strip()] = str(decrypted.decode())
+                    self.users[str(data[i])[0:-1].strip()] = str(
+                        decrypted.decode()
+                    )
             else:
                 return 0
 
@@ -316,7 +349,9 @@ class Users:
         a = int(input(" :-   ").strip())
         try:
             if a == 1:
-                print("\n----Please wait, this command will take several seconds----\n")
+                print(
+                    "\n----Please wait, this command will take several seconds----\n"
+                )
                 self.bot.get_unfollowers()
             elif a == 2:
                 self.bot.spamming()
@@ -339,7 +374,9 @@ def add_user():
         for i in range(a):
             username = input("Enter username {}: ".format(i + 1))
             f.write(username + "\n")
-            password = input("Enter password of username( {} ): ".format(username))
+            password = input(
+                "Enter password of username( {} ): ".format(username)
+            )
             encrypted = Fernet(key).encrypt(password.encode())
             f.write(encrypted.decode() + "\n")
     Users().check_user()

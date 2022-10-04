@@ -33,7 +33,15 @@ def selected_proposals(mydivs, df_columns):
         tag2 = test_list[7]
         author = test_list[11].strip()
         date = test_list[14].strip()
-        final[i] = [no_of_votes, no_of_messages, title, tag1, tag2, author, date]
+        final[i] = [
+            no_of_votes,
+            no_of_messages,
+            title,
+            tag1,
+            tag2,
+            author,
+            date,
+        ]
 
     df1 = pd.DataFrame.from_dict(final, orient="index")
     df1.columns = df_columns
@@ -60,14 +68,30 @@ def total_proposals(mydivs, df_columns):
         tag2 = test_list[8]
         author = test_list[12].strip()
         date = test_list[15].strip()
-        final_two[i] = [no_of_votes, no_of_messages, title, tag1, tag2, author, date]
+        final_two[i] = [
+            no_of_votes,
+            no_of_messages,
+            title,
+            tag1,
+            tag2,
+            author,
+            date,
+        ]
     df2 = pd.DataFrame.from_dict(final_two, orient="index")
     df2.columns = df_columns
     df2.to_csv("total_proposals.csv")
 
 
 if __name__ == "__main__":
-    df_columns = ["Votes", "Messages", "Title", "Tag1", "Tag2", "Author", "Date"]
+    df_columns = [
+        "Votes",
+        "Messages",
+        "Title",
+        "Tag1",
+        "Tag2",
+        "Author",
+        "Date",
+    ]
     mydivs = scrape_divs()
     selected_proposals(mydivs, df_columns)
     total_proposals(mydivs, df_columns)

@@ -18,7 +18,9 @@ def top_torrents(cat, subcat):
     print("Type the file_name for the csv file:")
     file_name = str(input())
 
-    url = "https://thepiratebay.org/search.php?q=top100:" + str(cat * 100 + subcat)
+    url = "https://thepiratebay.org/search.php?q=top100:" + str(
+        cat * 100 + subcat
+    )
 
     # Running the driver in headless mode
     options = webdriver.ChromeOptions()
@@ -45,23 +47,35 @@ def top_torrents(cat, subcat):
     with open(file_name + ".csv", "w") as csv_file:
         writer = csv.writer(csv_file)
         writer.writerow(
-            ["Name/Title of the file", "Category", "Link", "Date Uploaded", "File Size"]
+            [
+                "Name/Title of the file",
+                "Category",
+                "Link",
+                "Date Uploaded",
+                "File Size",
+            ]
         )
         for i in list:
             title = filter_output(
-                i.find("span", attrs={"class": "list-item item-name item-title"}).text
+                i.find(
+                    "span", attrs={"class": "list-item item-name item-title"}
+                ).text
             )
-            category = i.find("span", attrs={"class": "list-item item-type"}).text
+            category = i.find(
+                "span", attrs={"class": "list-item item-type"}
+            ).text
             link = (
                 "https://thepiratebay.org"
-                + i.find("span", attrs={"class": "list-item item-name item-title"}).a[
-                    "href"
-                ]
+                + i.find(
+                    "span", attrs={"class": "list-item item-name item-title"}
+                ).a["href"]
             )
             date_uploaded = i.find(
                 "span", attrs={"class": "list-item item-uploaded"}
             ).text
-            file_size = i.find("span", attrs={"class": "list-item item-size"}).text
+            file_size = i.find(
+                "span", attrs={"class": "list-item item-size"}
+            ).text
             writer.writerow([title, category, link, date_uploaded, file_size])
     print("\n\nDesired CSV File is generated :)")
 

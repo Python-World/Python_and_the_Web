@@ -81,7 +81,11 @@ def print_list():
     x = 1
     while x != -1:
 
-        x = int(input("Enter the index no. for getting complete links(-1 to quit): "))
+        x = int(
+            input(
+                "Enter the index no. for getting complete links(-1 to quit): "
+            )
+        )
         if x == -1:
             continue
         org_x = sorted(organization_list, reverse=True)[x - 1]
@@ -93,7 +97,9 @@ def print_list():
             print("Count: " + str(org_x.count))
             print("===========================================\n")
         except:
-            print("Organisation is missing some value. Kindly check on GSoc Website")
+            print(
+                "Organisation is missing some value. Kindly check on GSoc Website"
+            )
 
 
 headers = {
@@ -131,21 +137,27 @@ try:
             json_data = response.json()
 
             for index in range(len(json_data["results"])):
-                if language_filter(json_data["results"][index]["technology_tags"]):
+                if language_filter(
+                    json_data["results"][index]["technology_tags"]
+                ):
 
                     name = json_data["results"][index]["name"]
                     tech_stack = json_data["results"][index]["technology_tags"]
                     irc = json_data["results"][index]["irc_channel"]
                     org_page = URL + str(json_data["results"][index]["id"])
                     count = 1
-                    current_org = Organization(name, irc, org_page, tech_stack, count)
+                    current_org = Organization(
+                        name, irc, org_page, tech_stack, count
+                    )
                     organization_list.append(current_org)
 
             if json_data["results"] == []:
                 break
 
     spinner.ok("✅ ")
-    with yaspin(text="Counting previous year selection", color="yellow") as spinner:
+    with yaspin(
+        text="Counting previous year selection", color="yellow"
+    ) as spinner:
         check_previous()
     spinner.ok("✅ ")
     print_list()

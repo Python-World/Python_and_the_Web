@@ -60,7 +60,9 @@ def mail(df, from_, password):
             encoders.encode_base64(p)
 
             name = re.split("/", filename)[-1]
-            p.add_header("Content-Disposition", "attachment; filename= %s" % name)
+            p.add_header(
+                "Content-Disposition", "attachment; filename= %s" % name
+            )
 
             data.attach(p)
 
@@ -84,7 +86,9 @@ def generate_certificate(df):
     for j in df["Name"]:
         img = Image.open("certificate_template.png")
         draw = ImageDraw.Draw(img)
-        draw.text(xy=(151, 560), text="{}".format(j), fill=(0, 217, 225), font=font)
+        draw.text(
+            xy=(151, 560), text="{}".format(j), fill=(0, 217, 225), font=font
+        )
         img.save("pictures/{}.png".format(j))
 
 

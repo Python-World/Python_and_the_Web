@@ -35,7 +35,9 @@ class TwitterClient:
         """
         return " ".join(
             re.sub(
-                "(@[A-Za-z0-9]+)|([^0-9A-Za-z \t]) | (\w+:\ / \ / \S+)  ", " ", tweet
+                "(@[A-Za-z0-9]+)|([^0-9A-Za-z \t]) | (\w+:\ / \ / \S+)  ",
+                " ",
+                tweet,
             ).split()
         )
 
@@ -89,7 +91,9 @@ def main():
 
     for i in range(0, len(all_tweets)):
         sheet.write((i + 1), 0, all_tweets[i], style_rows)
-        sheet.write((i + 1), 1, api.get_tweet_sentiment(all_tweets[i]), style_rows)
+        sheet.write(
+            (i + 1), 1, api.get_tweet_sentiment(all_tweets[i]), style_rows
+        )
 
     wb.save("Sentiment_Analysis.xls")
 

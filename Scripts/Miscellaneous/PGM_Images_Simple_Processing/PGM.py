@@ -92,9 +92,9 @@ class image_processor_pgm:
         for _ in range(times):  # para cada vez no numero total de vezes
             for i in range(self.height):
                 for j in range(self.width):
-                    rotated_image_matrix[j][self.height - 1 - i] = self.image_matrix[i][
-                        j
-                    ]
+                    rotated_image_matrix[j][
+                        self.height - 1 - i
+                    ] = self.image_matrix[i][j]
 
         rotated_width = self.height
         rotated_height = self.width
@@ -122,4 +122,6 @@ if __name__ == "__main__":
     # rotating image by 90 degrees
     rotated_image, rotated_width, rotated_height = processor.rotate(90)
     # saving rotated image
-    processor.save("rotated-image.pgm", rotated_image, rotated_width, rotated_height)
+    processor.save(
+        "rotated-image.pgm", rotated_image, rotated_width, rotated_height
+    )

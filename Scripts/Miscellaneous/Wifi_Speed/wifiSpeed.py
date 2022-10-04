@@ -8,7 +8,9 @@ from sys import exit
 try:
     s = speedtest.Speedtest()
 except speedtest.ConfigRetrievalError:
-    print('Sorry, looks like you are not connected to any network!\nPlease make sure you are connected to the internet.')
+    print(
+        "Sorry, looks like you are not connected to any network!\nPlease make sure you are connected to the internet."
+    )
     exit()
 
 # Menu

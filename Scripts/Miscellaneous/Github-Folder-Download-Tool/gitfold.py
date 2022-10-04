@@ -66,10 +66,14 @@ def recursive_folder_download(folder_links_received, file_hrefs_received):
             mkdir(
                 folder_name
             )  # creates a local copy|mirror of the currently walked|selected github folder. ... helps preserve folder structure
-            chdir(folder_name)  # changes working directory to the just created folder
+            chdir(
+                folder_name
+            )  # changes working directory to the just created folder
             print("current dir ==> ", getcwd())
             # exit()
-            folder_list, file_list = get_folder_links("https://github.com" + folder)
+            folder_list, file_list = get_folder_links(
+                "https://github.com" + folder
+            )
             recursive_folder_download(folder_list, file_list)
             chdir(
                 ".."
@@ -88,9 +92,17 @@ if __name__ == "__main__":
         or "posix" in os_platform
     ):
         try:
-            mkdir(path.join(path.expanduser("~"), "Desktop", "Git-Folder_Download"))
+            mkdir(
+                path.join(
+                    path.expanduser("~"), "Desktop", "Git-Folder_Download"
+                )
+            )
         except FileExistsError:
-            chdir(path.join(path.expanduser("~"), "Desktop", "Git-Folder_Download"))
+            chdir(
+                path.join(
+                    path.expanduser("~"), "Desktop", "Git-Folder_Download"
+                )
+            )
 
     elif (
         "win32" in os_platform
@@ -99,16 +111,26 @@ if __name__ == "__main__":
         or "win64" in os_platform
     ):
         try:
-            mkdir(path.join(path.expanduser("~"), "Desktop", "Git-Folder_Download"))
+            mkdir(
+                path.join(
+                    path.expanduser("~"), "Desktop", "Git-Folder_Download"
+                )
+            )
         except FileExistsError:
-            chdir(path.join(path.expanduser("~"), "Desktop", "Git-Folder_Download"))
+            chdir(
+                path.join(
+                    path.expanduser("~"), "Desktop", "Git-Folder_Download"
+                )
+            )
 
     # This lines above are probably redundant ... and self explanatory ... i hope i dont have to explain what it does
     # could replace them with a single "chdir(path.join(os.path.expanduser('~'), 'Desktop','Git-Folder_Download'))""
 
     while True:
         try:
-            url = str(argv[1])  # retrieves argument from user and sets it as the URL
+            url = str(
+                argv[1]
+            )  # retrieves argument from user and sets it as the URL
         except:
             print("[x] No link supplied! ... \n")
             url = str(input("[-] Paste Github link here \n [Ctr-v] "))

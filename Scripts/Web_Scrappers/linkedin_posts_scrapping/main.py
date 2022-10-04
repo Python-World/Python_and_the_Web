@@ -60,7 +60,8 @@ if cond is True:
     print("Fetching the latest posts for you...")
     for d in divs:
         author = d.find(
-            "div", attrs={"class": re.compile("feed-shared-actor__meta relative")}
+            "div",
+            attrs={"class": re.compile("feed-shared-actor__meta relative")},
         )
         content = d.find(
             "div",
@@ -99,7 +100,14 @@ if cond is True:
         print("Done")
         print("Choose the post you want to see :")
         for i in range(len(authors)):
-            print("\t" + str(i + 1) + ". " + authors[i] + ". Added: " + timestamp[i])
+            print(
+                "\t"
+                + str(i + 1)
+                + ". "
+                + authors[i]
+                + ". Added: "
+                + timestamp[i]
+            )
         ans = "y"
         while ans == "y":
             ch = int(input("Enter your choice: "))

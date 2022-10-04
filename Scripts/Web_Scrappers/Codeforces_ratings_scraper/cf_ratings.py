@@ -23,7 +23,9 @@ if len(sys.argv) > 3:
     sys.exit(1)
 
 # Create parser
-parser = argparse.ArgumentParser(description="Scrape user ratings from codeforce.")
+parser = argparse.ArgumentParser(
+    description="Scrape user ratings from codeforce."
+)
 # Add argument for users
 parser.add_argument(
     "-u",

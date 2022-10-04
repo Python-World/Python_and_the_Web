@@ -96,17 +96,35 @@ def main():
         "-l", "--listen", type=bool, default=False, help="start a server"
     )
     parser.add_argument(
-        "-H", "--host", type=str, default="127.0.0.1", help="specify the host ip"
-    )
-    parser.add_argument("-p", "--port", type=int, default=1234, help="specify the port")
-    parser.add_argument(
-        "-s", "--shell", type=bool, default=False, help="get an interactive shell"
-    )
-    parser.add_argument(
-        "-e", "--execute", type=str, default=None, help="execute a single command"
+        "-H",
+        "--host",
+        type=str,
+        default="127.0.0.1",
+        help="specify the host ip",
     )
     parser.add_argument(
-        "-u", "--upload", type=bool, default=False, help="upload file to remote server"
+        "-p", "--port", type=int, default=1234, help="specify the port"
+    )
+    parser.add_argument(
+        "-s",
+        "--shell",
+        type=bool,
+        default=False,
+        help="get an interactive shell",
+    )
+    parser.add_argument(
+        "-e",
+        "--execute",
+        type=str,
+        default=None,
+        help="execute a single command",
+    )
+    parser.add_argument(
+        "-u",
+        "--upload",
+        type=bool,
+        default=False,
+        help="upload file to remote server",
     )
     options = parser.parse_args()
     host = options.host
@@ -123,7 +141,9 @@ def main():
     elif execute:
         getShell(host, port, False, execute)
     elif upload:
-        path = input("Enter absolute path of file to be uploaded on remote server: ")
+        path = input(
+            "Enter absolute path of file to be uploaded on remote server: "
+        )
         filename = input(
             "Enter new file name if you want to rename uploaded file on server: "
         )

@@ -19,7 +19,9 @@ class GetRandomAlbum:
 
     def get_random_album(self):
         """Get a random album from dataset"""
-        self.__out = self.dataset.iloc[[random.randint(0, 499)]].to_dict("record")
+        self.__out = self.dataset.iloc[[random.randint(0, 499)]].to_dict(
+            "record"
+        )
 
     def get_all_album(self):
         """In case if you want all the records"""

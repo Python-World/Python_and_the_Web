@@ -37,6 +37,8 @@ if __name__ == "__main__":
     try:
         movie = sys.argv[1]
     except Exception:
-        print("Please Enter a Movie Name In Single Quotes In The Command Line!")
+        print(
+            "Please Enter a Movie Name In Single Quotes In The Command Line!"
+        )
         sys.exit(0)
     movie = get_movie_ratings(movie)
