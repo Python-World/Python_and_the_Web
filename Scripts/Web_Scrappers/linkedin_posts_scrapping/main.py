@@ -26,8 +26,7 @@ passw.send_keys(Keys.ENTER)
 cond = True
 time.sleep(2)
 if (
-    driver.title == "LinkedIn Login, Sign in | LinkedIn"
-    or driver.title == "LinkedIn: Log In or Sign Up"
+    driver.title in ["LinkedIn Login, Sign in | LinkedIn", "LinkedIn: Log In or Sign Up"]
 ):
     print("Invalid Username or Password")
     print("The program will now exit")

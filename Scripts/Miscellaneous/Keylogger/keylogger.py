@@ -26,20 +26,22 @@ def OnKeyPress(event):
 
     # reduce load on CPU when special key is pressed
     if (
-        event.Key == "Left"
-        or event.Key == "Right"
-        or event.Key == "Up"
-        or event.Key == "Tab"
-        or event.Key == "Down"
-        or event.Key == "space"
-        or event.Key == "Shift_R"
-        or event.Key == "Return"
-        or event.Key == "Shift_L"
-        or event.Key == "Super_L"
-        or event.Key == "Super_R"
-        or event.Key == "Control_R"
-        or event.Key == "Control_L"
-        or event.Key == "BackSpace"
+        event.Key in [
+          "Left",
+          "Right",
+          "Up",
+          "Tab",
+          "Down",
+          "space",
+          "Shift_R",
+          "Return",
+          "Shift_L",
+          "Super_L",
+          "Super_R",
+          "Control_R",
+          "Control_L",
+          "BackSpace"
+        ]
     ):
         sleep(1)
 

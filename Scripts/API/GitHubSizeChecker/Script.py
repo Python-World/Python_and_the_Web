@@ -18,7 +18,7 @@ def SizeChecker(username, repository):
 
 if __name__ == "__main__":
     choice = "y"
-    while choice.lower() == "y" or choice.lower() == "yes":
+    while choice.lower() in ["y", "yes"]:
         username = input("Enter a GitHub username: ")
         repository = input("Enter the repository name: ")
         SizeChecker(username, repository)
