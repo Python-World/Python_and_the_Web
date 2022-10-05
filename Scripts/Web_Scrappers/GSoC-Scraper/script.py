@@ -28,11 +28,7 @@ class Organization:
 
 
 def language_filter(tech_stack_list):
-    for tech_stack in tech_stack_list:
-        if language in tech_stack:
-            return True
-    return False
-
+    return any((language in tech_stack) for tech_stack in tech_stack_list)
 
 def check_previous():
     for year in range(2016, 2020):
