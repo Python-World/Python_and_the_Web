@@ -1,7 +1,8 @@
-import pyxhook
 import getpass
 from sys import exit
 from time import sleep
+
+import pyxhook
 
 # get username
 USER = getpass.getuser()

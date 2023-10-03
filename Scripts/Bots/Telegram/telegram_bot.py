@@ -1,7 +1,7 @@
 from configparser import ConfigParser
+
 from telethon.sync import TelegramClient
 from telethon.tl.types import InputPeerUser
-
 
 configur = ConfigParser()
 configur.read("config.ini")

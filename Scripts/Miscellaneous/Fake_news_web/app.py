@@ -1,7 +1,6 @@
-from flask import Flask, request, render_template
-from sklearn.externals import joblib
 from feature import *
-
+from flask import Flask, render_template, request
+from sklearn.externals import joblib
 
 pipeline = joblib.load("pipeline.sav")
 

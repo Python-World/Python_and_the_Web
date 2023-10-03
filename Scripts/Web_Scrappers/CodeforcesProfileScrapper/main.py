@@ -1,12 +1,11 @@
 import tkinter as tk
-from tkinter import ttk
-from tkinter import Label
-from PIL import Image, ImageTk
-from urllib.request import urlopen
 from datetime import datetime
+from tkinter import Label, ttk
+from urllib.request import urlopen
 
-from scrapper import user_info, UserNotFoundError
 import constants as c
+from PIL import Image, ImageTk
+from scrapper import UserNotFoundError, user_info
 
 
 class Bunch(dict):

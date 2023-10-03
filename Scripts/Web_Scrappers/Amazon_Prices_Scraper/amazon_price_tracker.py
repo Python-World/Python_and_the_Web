@@ -1,6 +1,7 @@
+import smtplib
+
 import requests
 from bs4 import BeautifulSoup
-import smtplib
 
 # The below link in the URL is of MacBook 16 inch. But you can add the link of the product you want to track.
 URL = "https://www.amazon.in/Apple-MacBook-16-inch-Storage-2-3GHz/dp/B081JWZSSX/ref=sr_1_3?keywords=macbook+pro&qid=1580832880&sr=8-3"

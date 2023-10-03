@@ -1,7 +1,8 @@
-import streamlit as st
-import requests
-from pytablewriter import MarkdownTableWriter
 from datetime import datetime
+
+import requests
+import streamlit as st
+from pytablewriter import MarkdownTableWriter
 
 response = requests.get(
     "https://api.covid19api.com/summary"

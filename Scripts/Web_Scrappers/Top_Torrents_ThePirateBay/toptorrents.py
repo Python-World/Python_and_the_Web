@@ -1,6 +1,7 @@
 import csv
-from selenium import webdriver
+
 from bs4 import BeautifulSoup
+from selenium import webdriver
 
 
 # Method for filtering the contents of "title" variable as "charmap" repeatedly fails to encode some characters

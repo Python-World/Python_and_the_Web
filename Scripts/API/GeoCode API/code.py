@@ -1,8 +1,10 @@
-import urllib.request, urllib.parse, urllib.error
+import configparser
 import json
 import os
+import urllib.error
+import urllib.parse
+import urllib.request
 import webbrowser
-import configparser
 
 config = configparser.ConfigParser()
 config.read("config.ini")

@@ -1,6 +1,7 @@
 from json import load
-from yaml import dump
 from sys import argv
+
+from yaml import dump
 
 
 # validated the ammout of args passed from the command line,

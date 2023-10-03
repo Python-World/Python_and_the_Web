@@ -1,5 +1,5 @@
-from bs4 import BeautifulSoup
 import requests
+from bs4 import BeautifulSoup
 
 # Constants like the contest page link and contest data headers
 CONTEST_PAGE = "https://www.codechef.com/contests/"

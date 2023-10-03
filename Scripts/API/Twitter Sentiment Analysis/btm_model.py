@@ -1,7 +1,7 @@
 import numpy as np
 from biterm.biterm.btm import oBTM
+from biterm.biterm.utility import topic_summuary, vec_to_biterms
 from sklearn.feature_extraction.text import CountVectorizer
-from biterm.biterm.utility import vec_to_biterms, topic_summuary
 
 
 def categorize(tweets_list, number_of_topics=3):

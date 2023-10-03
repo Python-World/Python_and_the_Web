@@ -1,5 +1,6 @@
-import requests
 import json
+
+import requests
 from scrapmagnet import scrapmag
 
 

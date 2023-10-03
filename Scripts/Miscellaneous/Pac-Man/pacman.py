@@ -1,9 +1,10 @@
-import pygame
-from pygame.locals import *
-from numpy import loadtxt
-import time
 import random
 import sys
+import time
+
+import pygame
+from numpy import loadtxt
+from pygame.locals import *
 
 ##################################
 # Enter the name of the music file

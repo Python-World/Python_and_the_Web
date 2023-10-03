@@ -1,7 +1,8 @@
-import pygame
-import sys
 import random
+import sys
 from math import *
+
+import pygame
 
 pygame.init()
 

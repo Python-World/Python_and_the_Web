@@ -1,9 +1,10 @@
-from bs4 import BeautifulSoup
+import datetime
+import json
+import sys
+
 import lxml
 import requests
-import json
-import datetime
-import sys
+from bs4 import BeautifulSoup
 
 
 # Util

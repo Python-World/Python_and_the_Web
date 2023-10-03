@@ -1,6 +1,7 @@
-import PIL.Image as Image
-import numpy as np
 import random
+
+import numpy as np
+import PIL.Image as Image
 
 
 def encode(pic_path, text, name):

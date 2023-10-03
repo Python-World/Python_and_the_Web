@@ -1,7 +1,7 @@
 # Imports
 import cv2
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
 
 # Step 1) Load image
 img = cv2.imread("./Data/test_img.jpg")

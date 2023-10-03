@@ -2,10 +2,11 @@
 This module is responsible for handling the execution of python code given by the telegram user.
 """
 import logging
-from subprocess import TimeoutExpired
-import subprocess
 import multiprocessing
-from .config import banned, TIMEOUT, timeout_message, restricted_message
+import subprocess
+from subprocess import TimeoutExpired
+
+from .config import TIMEOUT, banned, restricted_message, timeout_message
 
 
 def contains_restricted(input_text):

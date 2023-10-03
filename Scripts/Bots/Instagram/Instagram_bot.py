@@ -1,10 +1,11 @@
-from selenium import webdriver
 import pathlib
 from time import sleep
+
 from cryptography.fernet import Fernet
+from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
 
 
 class InstaBot:

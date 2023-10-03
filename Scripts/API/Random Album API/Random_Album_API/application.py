@@ -1,6 +1,6 @@
 from flask import Flask, jsonify
-from Random_Album_API.views.api_view import RandomAlbumAPI, random_album
 from Random_Album_API.shared_resources.exceptions import APIException
+from Random_Album_API.views.api_view import RandomAlbumAPI, random_album
 
 app = Flask(__name__)
 # Register the blueprint

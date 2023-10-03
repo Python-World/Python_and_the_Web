@@ -1,8 +1,8 @@
-from tkinter import Tk, Label, Button  # from Tkinter import Tk for Python 2.x
-from tkinter.filedialog import askopenfilename
 import subprocess
-from sys import platform
 from pathlib import Path
+from sys import platform
+from tkinter import Button, Label, Tk  # from Tkinter import Tk for Python 2.x
+from tkinter.filedialog import askopenfilename
 
 # Permitted Extensions
 ALLOWED_EXTENSIONS = ["jpg", "jpeg", "png"]

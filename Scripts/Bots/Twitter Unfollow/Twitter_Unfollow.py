@@ -1,8 +1,9 @@
 #! /usr/bin/env python
 
-import time
-import tweepy
 import sys
+import time
+
+import tweepy
 
 # Replace the foo bar with your twitter API keys from dev.twitter.com
 auth = tweepy.auth.OAuthHandler(consumer_key="foo", consumer_secret="bar")

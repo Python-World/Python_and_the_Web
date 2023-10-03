@@ -1,5 +1,6 @@
-import requests as rq
 import re
+
+import requests as rq
 from bs4 import BeautifulSoup
 
 

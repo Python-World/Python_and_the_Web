@@ -1,8 +1,9 @@
 import base64
-from PIL import Image
 import io
-from skimage.metrics import structural_similarity
+
 import cv2
+from PIL import Image
+from skimage.metrics import structural_similarity
 
 im_path = "test.jpg"
 # Convert to base64 encoding

@@ -1,5 +1,6 @@
-import youtube_dl
 import sys
+
+import youtube_dl
 
 opts = {
     "outtmpl": "./videos/%(title)s.%(ext)s",

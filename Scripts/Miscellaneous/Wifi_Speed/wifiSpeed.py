@@ -1,8 +1,9 @@
 # Python script that provides the download and upload speed of your Wifi.
 
 # Python module for testing internet bandwidth
-import speedtest
 from sys import exit
+
+import speedtest
 
 # Creating a instance
 try:

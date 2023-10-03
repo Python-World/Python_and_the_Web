@@ -1,8 +1,9 @@
-import discord
 import os
-from discord.ext import commands, tasks
-from itertools import cycle
 import random
+from itertools import cycle
+
+import discord
+from discord.ext import commands, tasks
 
 TOKEN = "token"
 client = commands.Bot(command_prefix="/")

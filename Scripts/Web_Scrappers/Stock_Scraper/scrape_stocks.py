@@ -1,11 +1,12 @@
+import os
+import sys
+from contextlib import contextmanager
 from datetime import datetime, timedelta
+from pathlib import Path
+
 import requests
 import yfinance
 from bs4 import BeautifulSoup
-from contextlib import contextmanager
-import sys
-import os
-from pathlib import Path
 
 WIKI_ENDPOINT = "https://en.wikipedia.org/w/api.php"
 

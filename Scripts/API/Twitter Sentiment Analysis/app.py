@@ -1,9 +1,9 @@
-from flask import Flask, redirect, url_for, render_template
-from flask_dance.contrib.twitter import make_twitter_blueprint, twitter
-import requests
 import btm_model
-import text_cleaning
+import requests
 import sentiment
+import text_cleaning
+from flask import Flask, redirect, render_template, url_for
+from flask_dance.contrib.twitter import make_twitter_blueprint, twitter
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "youareawesomethiscanbeanything"

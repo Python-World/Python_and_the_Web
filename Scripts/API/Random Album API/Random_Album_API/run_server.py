@@ -1,4 +1,5 @@
 import os
+
 from Random_Album_API.application import app
 
 if __name__ == "__main__":

@@ -1,6 +1,7 @@
-from django.shortcuts import render
-import requests
 import json
+
+import requests
+from django.shortcuts import render
 
 # Create your views here.
 

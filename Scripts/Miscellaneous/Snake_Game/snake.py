@@ -1,8 +1,9 @@
-import pygame
-import sys
 import random
+import sys
 from tkinter import *
 from tkinter import messagebox
+
+import pygame
 
 
 class Snake:

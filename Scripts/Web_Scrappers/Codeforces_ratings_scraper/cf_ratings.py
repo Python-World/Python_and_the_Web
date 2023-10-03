@@ -1,6 +1,9 @@
-import json, csv
+import argparse
+import csv
+import json
+import sys
+
 import requests
-import sys, argparse
 
 
 def call_api(handle):

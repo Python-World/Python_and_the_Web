@@ -8,11 +8,13 @@ Note: Please create `details.ini` in same Directory
 
 """
 
+import configparser
+import time
+
+from bs4 import BeautifulSoup
+
 # import essential libraries
 from selenium import webdriver
-import time
-import configparser
-from bs4 import BeautifulSoup
 
 
 def main():

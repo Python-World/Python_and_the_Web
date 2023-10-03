@@ -1,7 +1,7 @@
 import io
-from bs4 import BeautifulSoup
 import urllib.request as ulibr
 
+from bs4 import BeautifulSoup
 
 # wikipedia url
 base_url = "https://en.wikipedia.org/wiki/"

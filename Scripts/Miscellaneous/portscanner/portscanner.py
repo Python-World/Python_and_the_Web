@@ -1,7 +1,7 @@
 import argparse
 import sys
 from socket import *
-from threading import Thread, Semaphore
+from threading import Semaphore, Thread
 
 lock = Semaphore(value=1)
 

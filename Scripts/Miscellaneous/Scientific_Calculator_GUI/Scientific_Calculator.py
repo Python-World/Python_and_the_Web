@@ -1,7 +1,7 @@
 # import Gui Package and libraries
+import math
 import tkinter.font
 from tkinter import *
-import math
 
 
 def clearall():

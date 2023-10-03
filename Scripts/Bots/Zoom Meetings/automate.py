@@ -1,5 +1,8 @@
-import time, subprocess, pyautogui
-from pynput.keyboard import Key, Controller
+import subprocess
+import time
+
+import pyautogui
+from pynput.keyboard import Controller, Key
 
 # In this program all the text-fields, buttons, check-boxes are located using screenshots
 # You can change the sleep-time as per the loading time of your pc

@@ -4,8 +4,8 @@
 # ---------------------------------
 # Imports
 import requests
-from plyer import notification
 from apscheduler.schedulers.blocking import BlockingScheduler
+from plyer import notification
 
 
 # Sub-Routines

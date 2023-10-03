@@ -1,5 +1,6 @@
-from googletrans import LANGUAGES, Translator
 from sys import exit
+
+from googletrans import LANGUAGES, Translator
 
 lang = LANGUAGES
 translator = Translator()

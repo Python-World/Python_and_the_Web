@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 
-import extracter
-import time
 import re
+import time
+
+import extracter
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys

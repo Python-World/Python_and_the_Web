@@ -1,6 +1,6 @@
-from twython import Twython
-from twython import TwythonStreamer
 import configparser
+
+from twython import Twython, TwythonStreamer
 
 
 class MyStreamer(TwythonStreamer):

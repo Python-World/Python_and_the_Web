@@ -1,10 +1,11 @@
-from pynput import keyboard
-import pyautogui
-import time
-import pyperclip
-import requests
 import os
 import platform
+import time
+
+import pyautogui
+import pyperclip
+import requests
+from pynput import keyboard
 
 if not os.path.exists("captures"):
     os.makedirs("captures")

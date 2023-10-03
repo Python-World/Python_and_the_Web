@@ -1,10 +1,11 @@
 import re
 import sys
+
 import tweepy
-import yaml
 import xlwt
-from tweepy import OAuthHandler
+import yaml
 from textblob import TextBlob
+from tweepy import OAuthHandler
 
 
 class TwitterClient:

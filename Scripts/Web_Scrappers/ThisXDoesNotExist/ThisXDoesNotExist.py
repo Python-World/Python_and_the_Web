@@ -18,9 +18,9 @@ from functs import (
     get_art,
     get_cat,
     get_dog,
-    get_pony,
-    get_politician,
     get_horse,
+    get_politician,
+    get_pony,
     get_snack,
     get_waifu,
 )

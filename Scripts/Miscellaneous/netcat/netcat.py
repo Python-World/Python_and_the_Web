@@ -1,4 +1,9 @@
-import os, subprocess, threading, socket, sys, argparse
+import argparse
+import os
+import socket
+import subprocess
+import sys
+import threading
 
 
 # to run a command
