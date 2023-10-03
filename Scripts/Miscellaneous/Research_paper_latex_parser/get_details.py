@@ -1,9 +1,10 @@
-from os.path import isfile, join
-import re
-import json
-from os import listdir
 import argparse
+import json
 import os
+import re
+from os import listdir
+from os.path import isfile, join
+
 from tqdm import tqdm
 
 

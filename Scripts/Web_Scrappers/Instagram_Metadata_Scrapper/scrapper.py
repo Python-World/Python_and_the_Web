@@ -1,7 +1,7 @@
 import json
 import pprint
-import requests
 
+import requests
 from bs4 import BeautifulSoup
 
 # from faker import Faker

@@ -1,8 +1,7 @@
 from flask import Blueprint, jsonify, request
 from flask.views import MethodView
-
-from Random_Album_API.shared_resources.argument_check import validate_arguments
 from Random_Album_API.logics.app_logic import GetRandomAlbum
+from Random_Album_API.shared_resources.argument_check import validate_arguments
 
 random_album = Blueprint("random_album", __name__)
 

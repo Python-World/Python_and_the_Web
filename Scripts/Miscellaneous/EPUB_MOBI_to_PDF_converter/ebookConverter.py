@@ -1,8 +1,9 @@
+import os
+import webbrowser
 from tkinter import *
 from tkinter import filedialog
-import webbrowser
+
 import convertapi
-import os
 
 
 # function to open the convertAPI webiste in browser

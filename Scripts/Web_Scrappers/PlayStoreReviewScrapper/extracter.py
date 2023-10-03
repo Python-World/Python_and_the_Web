@@ -1,6 +1,6 @@
-import os
-import errno
 import csv
+import errno
+import os
 
 
 # Write the reviews result to csv_file

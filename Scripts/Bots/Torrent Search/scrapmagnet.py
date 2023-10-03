@@ -1,4 +1,5 @@
-import urllib.request, urllib.parse
+import urllib.parse
+import urllib.request
 
 trackers = [
     "udp://tracker.coppersurfer.tk:6969/announce",

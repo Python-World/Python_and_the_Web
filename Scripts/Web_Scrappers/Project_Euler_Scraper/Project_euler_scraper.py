@@ -1,6 +1,7 @@
+import json
+
 import bs4
 import requests
-import json
 from tqdm import tqdm
 
 BASE_URL = "https://projecteuler.net/archives;page="

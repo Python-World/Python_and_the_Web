@@ -4,8 +4,9 @@
 
 #  Importing Pandas and json
 import json
-from pandas import DataFrame
 import os
+
+from pandas import DataFrame
 
 
 # Importing the data from a file using the load method

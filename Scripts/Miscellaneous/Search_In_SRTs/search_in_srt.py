@@ -9,10 +9,10 @@ class bcolors:
     UNDERLINE = "\033[4m"
 
 
-import srt
+import argparse
 import glob
 
-import argparse
+import srt
 
 parser = argparse.ArgumentParser()
 group = parser.add_mutually_exclusive_group(required=True)

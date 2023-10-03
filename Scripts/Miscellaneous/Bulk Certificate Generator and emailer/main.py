@@ -1,16 +1,14 @@
-import pandas as pd
-
-from PIL import Image, ImageDraw, ImageFont
-
-import smtplib
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
-from email.mime.base import MIMEBase
-from email import encoders
 import email.message as em
-
 import getpass
 import re
+import smtplib
+from email import encoders
+from email.mime.base import MIMEBase
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+
+import pandas as pd
+from PIL import Image, ImageDraw, ImageFont
 
 
 def mail(df, from_, password):

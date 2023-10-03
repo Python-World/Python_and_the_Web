@@ -1,9 +1,9 @@
-from tkinter import Frame, Label, PhotoImage, StringVar, CENTER
 import random
 import time
+from tkinter import CENTER, Frame, Label, PhotoImage, StringVar
 
-from logic import is_solvable, is_solved, convert_time
 import constants as c
+from logic import convert_time, is_solvable, is_solved
 
 
 class Puzzle(Frame):

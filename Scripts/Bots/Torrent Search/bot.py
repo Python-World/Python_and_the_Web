@@ -1,5 +1,6 @@
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 import logging
+
+from telegram.ext import CommandHandler, Filters, MessageHandler, Updater
 
 logging.basicConfig(level=logging.WARNING)
 import telegram

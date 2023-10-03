@@ -1,7 +1,7 @@
 import sys
-import requests
 import urllib
 
+import requests
 from bs4 import BeautifulSoup
 from whaaaaat import prompt
 

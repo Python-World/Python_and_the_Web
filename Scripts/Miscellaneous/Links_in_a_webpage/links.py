@@ -1,5 +1,5 @@
-from selenium import webdriver
 from bs4 import BeautifulSoup
+from selenium import webdriver
 
 
 # Method to find the main website from the given URL

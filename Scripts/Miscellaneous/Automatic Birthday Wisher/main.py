@@ -1,7 +1,8 @@
 # import required packages
-import pandas as pd
 import datetime
 import smtplib
+
+import pandas as pd
 
 # your gmail credentials here
 GMAIL_ID = "Your-Gmail-Id"

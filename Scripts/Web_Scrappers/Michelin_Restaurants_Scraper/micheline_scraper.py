@@ -1,5 +1,9 @@
+import re
+import string
+import sys
+
+import requests
 from bs4 import BeautifulSoup
-import requests, string, re, sys
 from unidecode import unidecode
 
 base_url = "https://guide.michelin.com/en/restaurant/"

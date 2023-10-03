@@ -1,8 +1,8 @@
-import requests
-from typing import List, Dict
 import json
-from bs4 import BeautifulSoup as Soup
+from typing import Dict, List
 
+import requests
+from bs4 import BeautifulSoup as Soup
 
 HEADERS = {"Content-type": "application/xml"}
 LOCATION_XMLRPC = "xmlrpc.php"

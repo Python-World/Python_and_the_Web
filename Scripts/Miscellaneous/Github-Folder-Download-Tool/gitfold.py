@@ -1,7 +1,9 @@
+import time
+from os import chdir, getcwd, mkdir, path
 from sys import argv, platform
+
+import requests
 from bs4 import BeautifulSoup
-from os import mkdir, getcwd, chdir, path
-import requests, time
 
 
 def get_folder_links(folder_url):

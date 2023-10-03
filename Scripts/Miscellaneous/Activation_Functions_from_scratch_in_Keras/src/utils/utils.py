@@ -1,6 +1,6 @@
-import tensorflow as tf
-import numpy as np
 import matplotlib.pyplot as plt  # loading dependencies
+import numpy as np
+import tensorflow as tf
 
 
 def load_data():  # method for loading mnist dataset

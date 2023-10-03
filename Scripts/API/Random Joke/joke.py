@@ -3,7 +3,7 @@ import sys
 
 import requests
 import typer
-from colored import fg, attr
+from colored import attr, fg
 
 app = typer.Typer()
 rst = attr("reset")  # reset colors

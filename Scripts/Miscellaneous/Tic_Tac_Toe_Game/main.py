@@ -1,7 +1,7 @@
-from tkinter import *
-import tkinter.messagebox
-import sys
 import os
+import sys
+import tkinter.messagebox
+from tkinter import *
 
 tk = Tk()
 tk.title("Tic Tac Toe")

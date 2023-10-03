@@ -1,8 +1,9 @@
-import re
-import requests
 import os
-from bs4 import BeautifulSoup
+import re
 import webbrowser
+
+import requests
+from bs4 import BeautifulSoup
 
 
 def scrape(http_response):

@@ -1,6 +1,6 @@
-from tkinter import *
-import string
 import random
+import string
+from tkinter import *
 
 root = Tk()
 root.title("Password Generator - By Rohit")

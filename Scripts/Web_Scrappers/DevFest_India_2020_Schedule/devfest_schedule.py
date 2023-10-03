@@ -1,6 +1,7 @@
 import csv
-from selenium import webdriver
+
 from bs4 import BeautifulSoup
+from selenium import webdriver
 
 
 # Method to scrape and store DevFest Schedule in csv file

@@ -1,6 +1,7 @@
-from bs4 import BeautifulSoup
-import requests
 import sys
+
+import requests
+from bs4 import BeautifulSoup
 
 
 def get_problem_statement(problem_code):

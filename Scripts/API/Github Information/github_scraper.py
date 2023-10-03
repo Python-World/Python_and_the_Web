@@ -1,4 +1,5 @@
 import sys
+
 import requests
 
 # Function to call API for details of the User.

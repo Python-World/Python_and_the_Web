@@ -1,6 +1,9 @@
-import base64, subprocess
-import getpass, sys
-import string, random
+import base64
+import getpass
+import random
+import string
+import subprocess
+import sys
 from time import sleep
 
 

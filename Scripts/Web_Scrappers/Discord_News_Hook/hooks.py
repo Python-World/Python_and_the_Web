@@ -1,6 +1,7 @@
-from dhooks import Webhook, Embed
-from inshorts import getNews
 import time
+
+from dhooks import Embed, Webhook
+from inshorts import getNews
 
 """
 Steps to Get Discord Channel WebHook

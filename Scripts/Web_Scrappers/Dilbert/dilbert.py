@@ -1,6 +1,7 @@
 import datetime
 import os
 import re
+
 import requests
 
 DIR = os.path.expanduser("~/Pictures/Dilbert/")

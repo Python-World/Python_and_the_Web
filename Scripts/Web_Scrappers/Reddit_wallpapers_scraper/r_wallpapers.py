@@ -1,5 +1,6 @@
-import praw
 import urllib.request
+
+import praw
 
 # An app will need to be registered with reddit under https://www.reddit.com/prefs/apps
 reddit = praw.Reddit(

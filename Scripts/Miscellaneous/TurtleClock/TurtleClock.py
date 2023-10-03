@@ -1,7 +1,6 @@
 import time
 import turtle
 
-
 wn = turtle.Screen()
 spongebob = turtle.Turtle()  # create a new turtle named spongebob
 colors = ["red", "blue", "green"]

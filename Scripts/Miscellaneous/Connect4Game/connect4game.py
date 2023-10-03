@@ -1,8 +1,9 @@
-import numpy as np
-from tkinter import *
-import pygame
-import sys
 import math
+import sys
+from tkinter import *
+
+import numpy as np
+import pygame
 
 BLACK = (33, 33, 33)
 GREY = (235, 235, 235)

@@ -2,15 +2,15 @@
 This module makes the bot actually run
 """
 
-from telegram.ext import CommandHandler, MessageHandler, Filters, Updater
+from telegram.ext import CommandHandler, Filters, MessageHandler, Updater
+
+from .execute_code import eval_py, run
 
 # python-telegram-bot is a Pythonic Wrapper to the core Telegram API
 # it helps us to be DRY by giving us convinient wrapper functions to deal with Telegram API
 # you can install it by pip install python-telegram-bot --upgrade
 # learn more about it here https://github.com/python-telegram-bot/python-telegram-bot
 
-
-from .execute_code import eval_py, run
 
 # read the token for authenticating our bot
 with open("token.txt") as f:

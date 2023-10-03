@@ -19,9 +19,3 @@ pull_request_rules:
     actions:
       merge:
         method: merge
-  - name: automatic merge for deepsorce-autofix pull requests
-    conditions:
-      - author=deepsource-autofix[bot]
-    actions:
-      merge:
-        method: merge

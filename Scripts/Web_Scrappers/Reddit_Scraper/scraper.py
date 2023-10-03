@@ -1,8 +1,8 @@
-import config
-
-import praw
-import pandas as pd
 import sys
+
+import config
+import pandas as pd
+import praw
 
 # Too many arguments
 if len(sys.argv) > 3:

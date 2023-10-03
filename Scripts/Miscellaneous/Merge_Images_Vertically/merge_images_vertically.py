@@ -1,9 +1,10 @@
-import numpy as np
-import PIL
-from PIL import Image
 import os
 from os import listdir
 from os.path import isfile, join
+
+import numpy as np
+import PIL
+from PIL import Image
 
 
 def merge_pics_vertically(images_list, name):

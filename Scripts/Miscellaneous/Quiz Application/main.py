@@ -1,6 +1,7 @@
-from quiz import start_quiz
-import random
 import json
+import random
+
+from quiz import start_quiz
 
 # QUESTIONS
 with open("./questions.json") as f:

@@ -1,9 +1,10 @@
 # Author : @Rajdeep-Ray
 
+import csv
+import json
+
 import requests
 from bs4 import BeautifulSoup
-import json
-import csv
 
 c = 0
 total = 0

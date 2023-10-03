@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-from bs4 import BeautifulSoup
-import requests
 import sys
+
+import requests
+from bs4 import BeautifulSoup
 
 
 def get_movie_ratings(movie):

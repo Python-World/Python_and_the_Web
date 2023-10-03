@@ -1,6 +1,6 @@
-import os, subprocess
+import os
+import subprocess
 from tempfile import NamedTemporaryFile
-
 
 infile = input("Input file: ")
 outfile = input("Output file: ")

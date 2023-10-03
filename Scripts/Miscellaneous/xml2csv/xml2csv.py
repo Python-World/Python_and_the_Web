@@ -1,7 +1,8 @@
-from xmltodict import parse as parseXML
 from csv import writer as CSVWriter
-from json import loads, dumps
+from json import dumps, loads
 from sys import argv
+
+from xmltodict import parse as parseXML
 
 
 # validated the ammout of args passed from the command line, so I could get the path from both files before starting the script

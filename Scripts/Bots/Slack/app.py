@@ -1,5 +1,6 @@
-import os
 import logging
+import os
+
 from flask import Flask
 from slack import WebClient
 from slackeventsapi import SlackEventAdapter

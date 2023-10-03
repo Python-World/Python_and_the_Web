@@ -1,6 +1,7 @@
+from os import name as OSname
+from os import system as OSsys
 from random import randint
 from time import sleep
-from os import system as OSsys, name as OSname
 
 
 # Clear screen after each round

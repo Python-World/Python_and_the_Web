@@ -1,6 +1,7 @@
-import requests
-import json
 import configparser as cfg
+import json
+
+import requests
 
 
 class weather_info:

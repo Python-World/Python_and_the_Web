@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
-from selectorlib import Extractor
-import requests
 import json
 
+import requests
+from selectorlib import Extractor
 
 # CSS selectors of the product we will scrape.
 e = Extractor.from_yaml_file("selectors.yml")
