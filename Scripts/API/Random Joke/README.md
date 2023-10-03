@@ -9,7 +9,7 @@
   - Make a virtual environment and activate it (suggested, can be skipped)
 - Get the code on your machine
   - Clone the repo `git clone https://github.com/Python-World/Python_and_the_Web.git`
-  - Move to this directory `cd Python_and_the_Web/Scripts/API/Random_Joke`
+  - Move to this directory `cd Python_and_the_Web/Scripts/API/Random Joke`
 - Install requirements `pip install -r requirements.txt`
 - Run it! `python joke.py` (on linux it's possible to run it with `./joke.py` too but you'll need to `chroot +x joke.py`)
 
