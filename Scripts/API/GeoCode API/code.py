@@ -14,7 +14,6 @@ with open("where.txt") as fh, open("where.js", "w", encoding="utf-8") as where:
     adrs = []
     parms = {}
     for line in fh:
-
         address = line.strip()
         parms["address"] = address
         parms["key"] = api_key
@@ -26,7 +25,6 @@ with open("where.txt") as fh, open("where.js", "w", encoding="utf-8") as where:
             raise ValueError from None
 
         with urllib.request.urlopen(req) as resp:
-
             data = resp.read().decode()
 
             try:

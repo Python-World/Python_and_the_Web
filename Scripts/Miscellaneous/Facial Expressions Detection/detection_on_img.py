@@ -12,7 +12,6 @@ model = load_model("detection_model.h5")
 
 
 def face_extraction(frame):
-
     """Detect faces in a frame and extract them"""
 
     faces = cascade_model.detectMultiScale(frame, 1.1, 5)
@@ -24,7 +23,6 @@ def face_extraction(frame):
 
 
 def image_processing(frame):
-
     """Preprocessing of the image for predictions"""
 
     frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
@@ -37,7 +35,6 @@ def image_processing(frame):
 
 
 def detect_expressions(frame, detection_model):
-
     """Detect final expressions and return the predictions
     done by the detection_model"""
 

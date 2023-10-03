@@ -15,7 +15,6 @@ def home():
 
 @app.route("/api", methods=["POST"])
 def get_delay():
-
     result = request.form
     query_title = result["title"]
     query_author = result["author"]

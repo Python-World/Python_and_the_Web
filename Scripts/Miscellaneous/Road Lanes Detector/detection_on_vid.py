@@ -2,6 +2,7 @@
 import cv2
 import numpy as np
 
+
 # ROI
 def roi(image, vertices):
     mask = np.zeros_like(image)
@@ -22,7 +23,6 @@ def draw_lines(image, hough_lines):
 
 # Process image for detection
 def process(img):
-
     height = img.shape[0]
     width = img.shape[1]
 

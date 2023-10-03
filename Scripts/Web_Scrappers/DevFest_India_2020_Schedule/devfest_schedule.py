@@ -2,6 +2,7 @@ import csv
 from selenium import webdriver
 from bs4 import BeautifulSoup
 
+
 # Method to scrape and store DevFest Schedule in csv file
 def devfest_schedule():
     url = "https://devfestindia.com/schedule"

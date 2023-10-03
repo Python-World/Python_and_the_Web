@@ -6,7 +6,6 @@ from bs4 import BeautifulSoup
 
 
 def search_with_genre(genre):
-
     # Creating the file name (for CSV file) same as input provided
     filename = genre
 

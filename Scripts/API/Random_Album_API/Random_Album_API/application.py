@@ -10,6 +10,7 @@ app.add_url_rule(
     "/v1/random-album/", view_func=RandomAlbumAPI.as_view("random-album")
 )
 
+
 # Exception Handler
 @app.errorhandler(APIException)
 def handle_invalid_usage(error):

@@ -11,6 +11,7 @@ slack_events_adapter = SlackEventAdapter(
     os.environ.get("SLACK_EVENTS_TOKEN"), "/slack/events", app
 )
 
+
 # When a 'message' event is detected by the events adapter, forward that payload
 # to this function.
 @slack_events_adapter.on("message")

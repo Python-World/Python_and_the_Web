@@ -24,9 +24,7 @@ kernel = np.ones((3, 3), np.uint8)
 
 # Capturing frames
 while cap.isOpened():
-
     try:
-
         diff = cv2.absdiff(
             frame1, frame2
         )  # Difference between two frames (frame1 and frame2)

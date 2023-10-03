@@ -10,7 +10,6 @@ e = Extractor.from_yaml_file("selectors.yml")
 
 
 def scrape(url):
-
     # The headers our scraper will use.
     headers = {
         "dnt": "1",

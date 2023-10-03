@@ -49,7 +49,6 @@ def chooseFile():
 
 # function that contacts convertAPI with the file & carries out the conversion
 def convertToPDF():
-
     global CHOSEN_FILE_LOC
     global CHOSEN_FILE_NAME
 
@@ -86,7 +85,6 @@ def convertToPDF():
 
 # first tkinter window of the code
 def window1():
-
     # define the labels, input box and buttons
     label = Label(
         main_frame, text="Step 1: Sign up at ConvertApi to get your secret key"

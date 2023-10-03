@@ -4,6 +4,7 @@ from pynput.keyboard import Key, Controller
 # In this program all the text-fields, buttons, check-boxes are located using screenshots
 # You can change the sleep-time as per the loading time of your pc
 
+
 # Method to host a new meeting with video off and audio off
 def zoom_automate(meeting_id, meeting_passcode):
     # Opens the zoom app

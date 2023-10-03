@@ -134,7 +134,6 @@ class clean_data:
 # python get_details.py -p papers -o op_json.json
 
 if __name__ == "__main__":
-
     # Define description of the script.
     parser = argparse.ArgumentParser(
         description="extract title,author,abstract,introduction,results,conclusions and acknowledgments from given set of research papers."
@@ -170,7 +169,6 @@ if __name__ == "__main__":
 
     # Read all the files and extract information form each file.
     for tex_file in tqdm(all_files):
-
         p = os.path.join(directory_path, tex_file)
 
         with open(p, "r", encoding="latin-1") as f:

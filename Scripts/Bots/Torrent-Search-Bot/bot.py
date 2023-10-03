@@ -7,7 +7,6 @@ from piratebay import pirate
 
 
 def get_quote(search):
-
     data = pirate(search)
     name = data[0]["name"]
     if name == "No results returned":
@@ -33,7 +32,6 @@ def unknown(update, context):
 def quote(update, context):
     update.message.chat_id
     if update.message:
-
         query = update.message.text
         context.bot.send_message(
             chat_id=update.effective_chat.id,

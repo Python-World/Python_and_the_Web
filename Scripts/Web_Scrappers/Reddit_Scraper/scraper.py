@@ -11,7 +11,6 @@ if len(sys.argv) > 3:
     )
 
 elif len(sys.argv) > 2:
-
     # Create reddit object
     reddit = praw.Reddit(
         client_id=config.client_id,

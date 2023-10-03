@@ -3,6 +3,8 @@ import requests
 import json
 
 app = Flask(__name__)
+
+
 # GET ALL API DATA
 # http://127.0.0.1:8000/
 @app.route("/")

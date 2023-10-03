@@ -7,6 +7,7 @@ import smtplib
 GMAIL_ID = "Your-Gmail-Id"
 GMAIL_PWD = "Your-Gmail-Password"
 
+
 # function for sending email
 def sendEmail(to, sub, msg):
     # conncection to gmail

@@ -22,9 +22,7 @@ def draw_lines(lines, image):
 
 # Preprocess the frames for detections
 def process(img):
-
     try:
-
         # Define roi vertices
         h, w, _ = img.shape
         roi_vertices = [(200, h), (w / 2, 2 * h / 3), (w - 100, h)]
@@ -71,7 +69,6 @@ while cap.isOpened():
     _, frame = cap.read()
 
     try:
-
         frame = process(frame)
         saved_frame.write(frame)
         cv2.imshow("final", frame)

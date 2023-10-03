@@ -4,7 +4,6 @@ from datetime import timedelta, datetime
 
 
 def main():
-
     # create pomodoro & begin first task
 
     task_goal = input("Enter the number of tasks you want to do today: ")
@@ -17,13 +16,11 @@ def main():
     pomodoro.start_task()
 
     while True:
-
         # Initialize last_summary variable to 15 seconds in the past
         last_summary = pomodoro.timer_start - timedelta(seconds=15)
 
         # while the timer is running
         while pomodoro.get_time_remaining() > timedelta(seconds=0):
-
             current_time = datetime.now()
 
             # print a summary of the current timer every 15 seconds
@@ -35,7 +32,6 @@ def main():
 
         # if we are on a task, complete the task.  Otherwise, we start the task timer
         if pomodoro.timer_type == Pomodoro.TIMER_TASK:
-
             # complete the task
             pomodoro.complete_task()
 

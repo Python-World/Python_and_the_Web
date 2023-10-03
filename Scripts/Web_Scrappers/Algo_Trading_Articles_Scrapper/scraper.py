@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
+
 # function to get top 10 articles from quantopian
 def get_quantopian_articles():
     res = requests.get("https://www.quantopian.com/posts")

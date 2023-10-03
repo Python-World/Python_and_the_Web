@@ -7,6 +7,7 @@ import json
 from pandas import DataFrame
 import os
 
+
 # Importing the data from a file using the load method
 def convert(inp_json_file: str) -> None:
     """Simple function to convert any .json file to a xlsx file of any name"""

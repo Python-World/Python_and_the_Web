@@ -30,7 +30,6 @@ HEADER = {"X-Auth-Token": str(API_KEY)}
 
 
 def print_standings(league_id):
-
     league_code = league_id.get("code")
     resource = f"competitions/{league_code}/standings"
     api_url = API_URL + resource
@@ -72,7 +71,6 @@ def print_standings(league_id):
 
 if __name__ == "__main__":
     try:
-
         # If API key is not stored
         if API_KEY is None or API_KEY == "YOUR_KEY_HERE":
             print(

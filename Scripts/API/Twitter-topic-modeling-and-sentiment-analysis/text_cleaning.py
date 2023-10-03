@@ -19,7 +19,6 @@ def remove_stop_words(sentence):
 
 
 def clean_tweets(tweets):
-
     # remove url
     no_url_tweets = [re.sub(r"http\S+", "", t) for t in tweets]
 

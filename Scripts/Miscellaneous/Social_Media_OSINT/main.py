@@ -2,6 +2,7 @@ import requests
 import re
 from bs4 import BeautifulSoup
 
+
 # Define Colors
 class colors:
     GREEN = "\033[92m"

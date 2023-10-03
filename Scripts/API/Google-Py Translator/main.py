@@ -21,7 +21,6 @@ def greeting():
 
 
 def custom(src, dst):
-
     sent = input("\nEnter your sentence : ")
 
     if src == 0:
@@ -31,7 +30,6 @@ def custom(src, dst):
 
 
 def from_file(src, dst):
-
     name = input("\nEnter absolute path for file : ")
 
     try:
@@ -69,7 +67,6 @@ def from_file(src, dst):
 
 
 def main():
-
     prompt = """
 Available options :
 1. Custom text translation
