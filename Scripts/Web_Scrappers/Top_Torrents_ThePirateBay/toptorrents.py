@@ -2,6 +2,7 @@ import csv
 from selenium import webdriver
 from bs4 import BeautifulSoup
 
+
 # Method for filtering the contents of "title" variable as "charmap" repeatedly fails to encode some characters
 def filter_output(s):
     event = ""
@@ -13,7 +14,6 @@ def filter_output(s):
 
 # Method for Scrapping top torrents from The Pirate Bay website and storing it in a csv file
 def top_torrents(cat, subcat):
-
     # To choose the file_name of CSV File
     print("Type the file_name for the csv file:")
     file_name = str(input())

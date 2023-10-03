@@ -80,7 +80,6 @@ def print_list():
     Console().print(table)
     x = 1
     while x != -1:
-
         x = int(
             input(
                 "Enter the index no. for getting complete links(-1 to quit): "
@@ -118,7 +117,6 @@ org_index = 1
 language = str(input("Enter the language you want to filter out: "))
 
 try:
-
     with yaspin(text="Loading current orgs", color="yellow") as spinner:
         while True:
             params = (
@@ -140,7 +138,6 @@ try:
                 if language_filter(
                     json_data["results"][index]["technology_tags"]
                 ):
-
                     name = json_data["results"][index]["name"]
                     tech_stack = json_data["results"][index]["technology_tags"]
                     irc = json_data["results"][index]["irc_channel"]
@@ -166,5 +163,4 @@ except Exception as e:
     print(e)
 
 finally:
-
     print("Script ran successfully!")

@@ -38,7 +38,6 @@ lines = cv2.HoughLinesP(
 
 # Step 8) Draw Hough lines
 def draw_lines(image, hough_lines):
-
     for line in hough_lines:
         x1, y1, x2, y2 = line[0]
         cv2.line(image, (x1, y1), (x2, y2), (0, 255, 0), 2)

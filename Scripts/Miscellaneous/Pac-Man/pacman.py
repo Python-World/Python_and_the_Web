@@ -38,6 +38,7 @@ pygame.mixer.music.play(-1)
 # else:
 # 	pygame.mixer.music.load('panther.mp3')
 
+
 # Draws a rectangle for the wall
 def draw_wall(screen, pos):
     pixels = pixels_from_points(pos)
@@ -142,7 +143,6 @@ while True:
             sys.exit()
 
         if event.type == pygame.KEYDOWN:
-
             if event.key == pygame.K_RIGHT:
                 move_direction = RIGHT
                 pac_pos = add_to_pos(pacman_position, move_direction)

@@ -5,7 +5,6 @@ from biterm.biterm.utility import vec_to_biterms, topic_summuary
 
 
 def categorize(tweets_list, number_of_topics=3):
-
     # vectorize texts
     vec = CountVectorizer(stop_words="english")
     X = vec.fit_transform(tweets_list).toarray()

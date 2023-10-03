@@ -22,6 +22,7 @@ xmlPath, csvPath = getInputAndOutputFiles()
 
 print("started to convert your file...")
 
+
 # from line 31 to 35
 # I read the file from the xmlPath variable, and got the dictory from parseXML
 # After that I got the first key from the dict (asumming the user passed a single xml liked the test.xml file)

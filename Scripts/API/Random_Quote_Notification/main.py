@@ -7,6 +7,7 @@ import requests
 from plyer import notification
 from apscheduler.schedulers.blocking import BlockingScheduler
 
+
 # Sub-Routines
 def fetch():  # This gets the quote from the API and turns it into the quote to be displayed
     quoteSite = requests.get("http://api.quotable.io/random")

@@ -14,7 +14,6 @@ import re
 
 
 def mail(df, from_, password):
-
     msg = em.Message()
     msg.add_header("Content-Type", "text/html")
 
@@ -24,7 +23,6 @@ def mail(df, from_, password):
     to_length = len(to)
 
     try:
-
         server = smtplib.SMTP(
             "smtp.outlook.com", 587
         )  # Change it to gamil or yahoo as per requirement
@@ -33,7 +31,6 @@ def mail(df, from_, password):
         print("Login Succesfull \n")
 
         for i, j in zip(to, name):
-
             print("" + str(to_length) + " left \n")
             print("Sending to {}".format(j))
 
@@ -75,13 +72,11 @@ def mail(df, from_, password):
         server.quit()
 
     except:
-
         print("Make sure have an active internet connection")
         print("Please check your credentials")
 
 
 def generate_certificate(df):
-
     font = ImageFont.truetype("Caveat-Bold.ttf", 120)
     for j in df["Name"]:
         img = Image.open("certificate_template.png")

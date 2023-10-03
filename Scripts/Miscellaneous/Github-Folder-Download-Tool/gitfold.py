@@ -29,7 +29,6 @@ def get_folder_links(folder_url):
 
 
 def download_files(files_to_download):
-
     for file in files_to_download:
         print("\nfile - ", file)
         filename = file.split("/")[
@@ -83,7 +82,6 @@ def recursive_folder_download(folder_links_received, file_hrefs_received):
 
 
 if __name__ == "__main__":
-
     os_platform = str(platform).lower()
     if (
         "linux" in os_platform

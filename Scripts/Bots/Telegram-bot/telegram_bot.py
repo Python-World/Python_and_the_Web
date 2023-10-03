@@ -38,7 +38,6 @@ def client_authenticate(client, phone):
     # ask either to input token or otp sent to
     # number or sent or your telegram id
     if not client.is_user_authorized():
-
         client.send_code_request(phone)
 
         # signing in the client
@@ -47,13 +46,11 @@ def client_authenticate(client, phone):
 
 def messasge_send(client, user_id, user_hash):
     try:
-
         receiver = InputPeerUser(user_id, user_hash)
 
         # sending message using telegram client
         client.send_message(receiver, "Hello", parse_mode="html")
     except Exception as e:
-
         # there may be many error coming in while like peer
         # error, wwrong access_hash, flood_error, etc
         print(e)

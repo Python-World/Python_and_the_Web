@@ -1,6 +1,7 @@
 from selenium import webdriver
 from bs4 import BeautifulSoup
 
+
 # Method to find the main website from the given URL
 def main_website(url):
     parts = url.split("/")

@@ -1,5 +1,6 @@
 import copy
 
+
 # Creating the class to processing
 class image_processor_pgm:
     def __init__(self, path):

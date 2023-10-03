@@ -64,7 +64,6 @@ def get_methods_allows(url_site: str, data_xml: str):
 
 
 def main():
-
     sites_wordpress = get_sites_wordpress()
     data_xml = get_template_call_simple()
 

@@ -9,7 +9,6 @@ from selenium.webdriver.common.keys import Keys
 
 
 def getPlaystoreReviews(app_id):
-
     # url of the playstore with application_id
     url = (
         "https://play.google.com/store/apps/details?id="
@@ -103,7 +102,6 @@ def getPlaystoreReviews(app_id):
 
 
 def main():
-
     infile = input("Enter file name: ")
     # for each application id get the application reviews
     with open(infile, "r") as file:

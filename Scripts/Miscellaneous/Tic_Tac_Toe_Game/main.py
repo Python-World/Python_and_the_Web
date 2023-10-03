@@ -10,6 +10,7 @@ tk.resizable(False, False)
 bclick = True
 count = 0
 
+
 # This function prevents the user from clicking the same button again.
 def button(buttons):
     global bclick, count

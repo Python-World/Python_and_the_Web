@@ -6,6 +6,8 @@ root = Tk()
 root.title("Password Generator - By Rohit")
 root.geometry("1000x700")
 root.wm_iconbitmap("pass.ico")
+
+
 # Function to generate a password
 def generate():
     if passLen.get() == 0:

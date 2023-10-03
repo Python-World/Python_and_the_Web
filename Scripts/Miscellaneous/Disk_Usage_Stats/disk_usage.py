@@ -6,7 +6,6 @@ import os
 
 
 def get_size(path):
-
     total = 0
     for entry in os.scandir(path):
         try:
@@ -24,7 +23,6 @@ def get_size(path):
 
 
 if __name__ == "__main__":
-
     # if you're running this in linux, change the default path to "/home"
     # also run the code as "sudo python3 Disk_usage.py" or "sudo ./Disk_usage.py"
     # i.e, with super user permissions
@@ -38,7 +36,6 @@ if __name__ == "__main__":
 
     for entry in os.scandir(directory):
         if entry.is_dir(follow_symlinks=False):
-
             print(entry.path + " is a directory.")
             print(get_size(entry.path))
             total = get_size(entry.path)

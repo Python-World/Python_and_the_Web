@@ -1,9 +1,9 @@
 import requests
 from bs4 import BeautifulSoup
 
+
 # Method for Scrapping the Cricbuzz and displaying live cricket match scores
 def live_score():
-
     url = "https://www.cricbuzz.com/cricket-match/live-scores"
     header = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
@@ -33,7 +33,6 @@ def live_score():
                 attrs={"class": "cb-mtch-lst cb-col cb-col-100 cb-tms-itm"}
             )
             for match in matches:
-
                 # Finding live score of a match and displaying it
                 schedule = match.find_all(
                     attrs={"class": "cb-col-100 cb-col cb-schdl"}

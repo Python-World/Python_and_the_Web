@@ -23,7 +23,6 @@ class Typing_Test_Typer:
                 time.sleep(2)
 
     def take_test(self):
-
         # Load textbox element
         while True:
             try:

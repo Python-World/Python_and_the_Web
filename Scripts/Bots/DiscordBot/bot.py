@@ -158,7 +158,6 @@ async def ping(ctx):
 @client.event
 async def on_message(message):
     if message.content in cursewords:
-
         await message.channel.purge(limit=1)
         await message.author.create_dm()
         await message.author.dm_channel.send(

@@ -14,6 +14,7 @@ COLUMN_COUNT = 7
 
 player_names = []
 
+
 # adding players
 def submit():
     player_names.append(player_one.get())
@@ -136,7 +137,6 @@ def draw_board(board):
 
 
 try:
-
     root = Tk()
     root.resizable(0, 0)
     player_one = StringVar(master=root)
@@ -160,7 +160,6 @@ try:
     root.mainloop()
 
     if player_names[0] != "" and player_names[1] != "":
-
         board = create_board()
 
         game_over = False
@@ -184,7 +183,6 @@ try:
         myfont = pygame.font.SysFont("monospace", 30)
 
         while not game_over:
-
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     sys.exit()

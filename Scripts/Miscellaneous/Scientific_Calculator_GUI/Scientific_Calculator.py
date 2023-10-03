@@ -5,7 +5,6 @@ import math
 
 
 def clearall():
-
     """Clear function toclear the screen
     and reset all variables"""
 
@@ -25,7 +24,6 @@ def sgn(a):
 
 
 def clearback():
-
     """Backspace button function to delete
     a character from the screen"""
 
@@ -129,7 +127,6 @@ def clearback():
 
 
 def pressbtn(num):
-
     """Function to determine which button is pressed.
     Everytime a button a pressed , this function is
     called and a parameter is passed, which updates the
@@ -213,7 +210,6 @@ def pressbtn(num):
 
 
 def equal():
-
     """On pressing equal to button, this function is called.
     And it prints the result on the screen."""
 
@@ -253,6 +249,7 @@ area = Entry(
 )
 area.insert(0, "0")
 area.grid(row=0, columnspan=8)
+
 
 # standard calculator
 def standard():

@@ -37,7 +37,6 @@ for s in range(1, 8):
         print("Mission :", f[j - 1].a.text)
 
         if c < len(f1):
-
             # get lauch date
             myData["launch"] = f1[c].a.text
 
@@ -78,7 +77,6 @@ csv_writer = csv.writer(resultFile)
 isHeader = False
 for emp in myList:
     if not isHeader:
-
         # Writing headers of CSV file
         header = emp.keys()
         csv_writer.writerow(header)

@@ -5,6 +5,7 @@ import json
 import datetime
 import sys
 
+
 # Util
 def datestr_to_date(datestr):
     [year, month, day] = datestr.split("-")
